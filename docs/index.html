@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"><html>
+<title>SPA Vocabulary</title>
+<style>
+body {
+    padding: 1em;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;    
+}
+h1 {
+    margin: 0 0 0.7em 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+a:hover {
+    color: #666;
+    border-bottom: 1px solid #666;
+}
+#navigation div.context {
+    display: flex;
+    padding-bottom: 0.6em;
+}
+#navigation div.label {
+    padding-top: 0.8em;
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 6em;
+    flex: 0 0 auto;
+}
+#navigation button {
+    border: none;
+    display: inline-block;
+    padding: 6px 8px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #eee;
+    cursor: pointer;
+}
+#navigation button:hover {
+    background-color: #999;
+    color: white;
+}
+.node circle {
+    fill: #999;
+}
+.node text {
+    font: 14px sans-serif;
+}
+.node--internal circle {
+    fill: #555;
+}
+.node--internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.2;
+    stroke-width: 2px;
+}
+svg {
+    border: none;
+}
+.node {
+    cursor: pointer;
+}
+.node text {
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    fill: #000;
+}
+.node text:hover {
+    fill: #666;
+}
+div.tooltip {
+    position: absolute;         
+    font-size: 12px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    max-width: 250px;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+}
+.link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 2px;
+}
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+</head>
+<body>
+<h1>SPA Vocabulary</h1>
+<div id="navigation"></div>
+<div id="diagram"><svg width="1200" height="1200"></svg></div>
+<p><a href="https://github.com/sapa/spa-vocabulary">https://github.com/sapa/spa-vocabulary</a>
+<script type="text/javascript">
+
+function Concept(json_) {
+    this.sort = json_['@sort'];
+    this.id = json_['@id'];
+    if (json_['@type']) {
+        this.type = json_['@type'][0].split('#').pop(); 
+    } else {
+        this.type = null;
+        console.error('missing type', json_);
+    }
+    this.prefLabels = {};
+    for (var p in json_['http://www.w3.org/2004/02/skos/core#prefLabel']) {
+        this.prefLabels[json_['http://www.w3.org/2004/02/skos/core#prefLabel'][p]['@language']] = json_['http://www.w3.org/2004/02/skos/core#prefLabel'][p]['@value'];
+    }
+    if (json_['http://www.w3.org/2004/02/skos/core#broader']) {
+        this.parentId = json_['http://www.w3.org/2004/02/skos/core#broader'][0]['@id'];
+    } else if (json_['http://www.w3.org/2004/02/skos/core#topConceptOf']) {
+        this.parentId = json_['http://www.w3.org/2004/02/skos/core#topConceptOf'][0]['@id'];
+    }
+    this.childrenIds = [];
+    this.getLabel = function(lang_) {
+        return this.prefLabels[lang_];
+    }
+    this.label = null;
+    for (l of ['en', 'de', 'fr', 'it']) {
+        this.label = this.getLabel(l);
+        if (this.label) {
+            break;
+        }
+    }
+    this.context = null;
+    if (json_['http://purl.org/dc/terms/subject']) {
+        this.context = json_['http://purl.org/dc/terms/subject'][0]['@value'];
+    }    
+}
+
+var contexts, concepts, context_select, csv_data;
+
+function getSchemeData(scheme_) {
+    var d = [];
+    for (entry of csv_data) {
+        if (entry.id.indexOf(scheme_) == 0) {
+            d.push(entry);
+        }
+    }
+    return d;
+}
+
+function onSchemeSelect(scheme_) {
+    draw(getSchemeData(scheme_));
+    window.history.pushState(null, '', '#' + scheme_);
+}
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+var stratify = d3.stratify()
+    .parentId(function(d) { return d.parent; });
+
+var div = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
+function tooltip(data) {
+    var tt = [];
+    for (var l of ['en', 'de', 'fr', 'it']) {
+        if (data['skos_prefLabel_' + l]) {
+            var pref = l + ': ' + data['skos_prefLabel_' + l]
+            var alt = '';
+            if (data['skos_altLabel_' + l]) {
+                alt = ' (' + data['skos_altLabel_' + l] + ')';
+            }
+            tt.push(pref + alt);
+        }        
+    }
+    if (data.rdfs_comment_en) {
+        tt.push((tt.length > 0)? '<hr />' + data.rdfs_comment_en : data.rdfs_comment_en);
+    }
+    if (data.skos_exactMatch) {
+        tt.push((tt.length > 0)? '<hr />' + data.skos_exactMatch : data.skos_exactMatch);
+    }
+    if (data.scheme == 'True') {
+        var s = [];
+        if (data.domain) {
+            s.push('domain: ' + data.domain);
+        }
+        if (data.property) {
+            s.push('property: ' + data.property);
+        }
+        if (s.length > 0) {
+            tt.push((tt.length > 0)? '<hr />' + s.join('<br />') : s.join('<br />'));
+        }
+    }
+    return tt.join('<br />');
+}
+
+function draw(data) {
+
+    svg.selectAll("*").remove();
+
+    var root = stratify(data)
+        .sort(function(a, b) {return (a.sort > b.sort) ? 1 : ((b.sort > a.sort) ? -1 : 0);} ); 
+    var g = svg.append("g").attr("transform", "translate(180,0)");
+    var tree = d3.tree().size([height, 150 * (root.height + 1)]);
+
+    var link = g.selectAll(".link")
+        .data(tree(root).links())
+        .enter().append("path")
+        .attr("class", "link")
+        .attr("d", d3.linkHorizontal()
+            .x(function(d) { return d.y; })
+            .y(function(d) { return d.x; }));
+
+    var node = g.selectAll(".node")
+        .data(root.descendants())
+        .enter().append("g")
+            .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+            .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+    node.append("circle")
+        .attr("r", 2.5);
+
+    node.append("text")
+        .attr("dy", 3)
+        .attr("x", function(d) { return d.children ? -8 : 8; })
+        .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+        .text(function(d) { return d.data.skos_prefLabel_en; })
+        .on("mouseover", function(d) {      
+            div.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+            div.html(tooltip(d.data))  
+                .style("left", (d3.event.pageX + 40) + "px")     
+                .style("top", (d3.event.pageY - 40) + "px");    
+            })
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(500)      
+                .style("opacity", 0);   });
+
+}
+
+d3.csv('vocabulary.csv', function(error, data) {
+    if (error) throw error;
+    csv_data = data;
+    contexts = [];
+    for (entry of data) {
+        if (entry.context && contexts.indexOf(entry.context) == -1) {
+            contexts.push(entry.context);
+        }
+    }
+    for (c of contexts){
+        var d = document.createElement('div');
+        d.classList.add('context');
+        document.getElementById('navigation').appendChild(d);
+        var l = document.createElement('div');
+        l.classList.add('label');
+        l.innerHTML = c;
+        d.appendChild(l);
+        var df = document.createElement('div');
+        df.classList.add('buttons');
+        d.appendChild(df);
+        var f = document.createElement('form');
+        df.appendChild(f);
+        for (entry of data) {
+            if (entry.context == c && entry.scheme == 'True') {
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.value = entry.id;
+                button.innerHTML = entry.skos_prefLabel_en + ' (' + (getSchemeData(entry.id).length - 1) + ')';
+                button.addEventListener('click', function () {
+                    onSchemeSelect(this.value);
+                }, true);
+                f.appendChild(button);
+            }
+        }
+    }
+    if (window.location.hash != '') {
+        onSchemeSelect(window.location.hash.substr(1));
+    }
+});
+
+window.onpopstate = function(event) {
+    onSchemeSelect(window.location.hash.substr(1));
+};
+
+</script>
+</body>
+</html>
