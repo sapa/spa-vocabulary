@@ -106,7 +106,7 @@ div.tooltip {
 <body>
 <h1>SPA Vocabulary</h1>
 <div id="navigation"></div>
-<div id="diagram"><svg width="1200" height="1200"></svg></div>
+<div id="diagram"><svg width="1200" height="1400"></svg></div>
 <p><a href="https://github.com/sapa/spa-vocabulary">https://github.com/sapa/spa-vocabulary</a>
 <script type="text/javascript">
 
@@ -155,6 +155,26 @@ function getSchemeData(scheme_) {
         }
     }
     return d;
+}
+
+function getTreeSize(root_) {
+    var x_min = 0;
+    var x_max = 0;
+    var y_min = 0;
+    var y_max = 0;
+    var measureNode = function(level, n) {
+        if (n.y) { x_min = Math.min(x_min, n.y); }
+        if (n.y) { x_max = Math.max(x_max, n.y); }
+        if (n.x) { y_min = Math.min(y_min, n.x); }
+        if (n.x) { y_max = Math.max(y_max, n.x); }
+        if (n.children && n.children.length > 0) {
+            n.children.forEach(function(d) {
+                measureNode(level + 1, d);
+            });
+        }
+    };
+    measureNode(0, root_);  
+    return { 'width': (x_max - x_min), 'height': (y_max - y_min), 'x_max': x_max, 'x_min': x_min, 'y_max': y_max, 'y_min': y_min };
 }
 
 function onSchemeSelect(scheme_) {
@@ -211,8 +231,18 @@ function draw(data) {
 
     var root = stratify(data)
         .sort(function(a, b) {return (a.sort > b.sort) ? 1 : ((b.sort > a.sort) ? -1 : 0);} ); 
-    var g = svg.append("g").attr("transform", "translate(180,0)");
-    var tree = d3.tree().size([height, 150 * (root.height + 1)]);
+    var g = svg.append('g')
+        .attr("visibility", "hidden");
+
+    setTimeout(function()
+    {
+        var size = getTreeSize(root);
+        g.attr("transform", "translate(" + 150 + "," + Math.max(160, (40 - size.y_min)) + ")")
+            .attr("visibility", "visible");
+    }, 100);
+
+    var tree = d3.tree().nodeSize([20, 180]);
+
 
     var link = g.selectAll(".link")
         .data(tree(root).links())
@@ -225,7 +255,7 @@ function draw(data) {
     var node = g.selectAll(".node")
         .data(root.descendants())
         .enter().append("g")
-            .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+            .attr("class", function(d) { return "node" + ((d.children || d.depth==0) ? " node--internal" : " node--leaf"); })
             .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
 
     node.append("circle")
@@ -233,8 +263,8 @@ function draw(data) {
 
     node.append("text")
         .attr("dy", 3)
-        .attr("x", function(d) { return d.children ? -8 : 8; })
-        .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+        .attr("x", function(d) { return (d.children || d.depth==0) ? -8 : 8; })
+        .style("text-anchor", function(d) { return (d.children || d.depth==0) ? "end" : "start"; })
         .text(function(d) { return d.data.skos_prefLabel_en; })
         .on("mouseover", function(d) {      
             div.transition()        
@@ -247,8 +277,8 @@ function draw(data) {
         .on("mouseout", function(d) {       
             div.transition()        
                 .duration(500)      
-                .style("opacity", 0);   });
-
+                .style("opacity", 0); 
+        });
 }
 
 d3.csv('vocabulary.csv', function(error, data) {
