@@ -85,7 +85,3 @@ for idx, row in df.iterrows():
 
 with open('target/vocabulary.ttl', 'wb') as f:
     f.write(graph.serialize(format='turtle'))
-
-with open('docs/vocabulary.json', 'wb') as f:
-    context = {"@vocab": "http://purl.org/dc/terms/", "@language": "en"}
-    f.write(graph.serialize(format='json-ld', context=None, indent=4))
