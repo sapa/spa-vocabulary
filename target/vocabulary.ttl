@@ -1658,13 +1658,13 @@ spav:medium-record45rpm a skos:Concept ;
     skos:broader spav:medium-phonographrecord ;
     skos:exactMatch <aat:300265800> ;
     skos:inScheme spav:medium ;
-    skos:prefLabel "45 rpm records"@en .
+    skos:prefLabel "45 rpm record"@en .
 
 spav:medium-record78rpm a skos:Concept ;
     skos:broader spav:medium-phonographrecord ;
     skos:exactMatch <aat:300265790> ;
     skos:inScheme spav:medium ;
-    skos:prefLabel "78 rpm records"@en .
+    skos:prefLabel "78 rpm record"@en .
 
 spav:medium-recordlp a skos:Concept ;
     skos:broader spav:medium-phonographrecord ;
@@ -2236,7 +2236,7 @@ spav:medium-openreelvideotape a skos:Concept ;
     skos:narrower spav:medium-halfinchopenreel,
         spav:medium-oneinchtypec,
         spav:medium-twoinchquad ;
-    skos:prefLabel "Open Reel Videotape"@en .
+    skos:prefLabel "open reel videotape"@en .
 
 spav:medium-phonographrecord a skos:Concept ;
     skos:exactMatch <aat:300028643> ;
@@ -2255,7 +2255,7 @@ spav:medium-v8mm a skos:Concept ;
         spav:medium-hi8,
         spav:medium-video8 ;
     skos:prefLabel "8mm Format"@de,
-        "8mm Format"@en .
+        "8mm format"@en .
 
 spav:videoscanningformat a skos:ConceptScheme ;
     skos:hasTopConcept spav:videoscanningformat-interlaced,
@@ -2482,7 +2482,7 @@ spav:medium-videocassette a skos:Concept ;
         spav:medium-vhs,
         spav:medium-video2000 ;
     skos:prefLabel "Videokassette"@de,
-        "Video Cassette"@en .
+        "video cassette"@en .
 
 spav:archivallevel a skos:ConceptScheme ;
     skos:hasTopConcept spav:archivallevel-collectiontype,
