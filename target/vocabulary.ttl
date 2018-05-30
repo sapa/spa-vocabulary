@@ -800,19 +800,17 @@ spav:genre-baroquedance a skos:Concept ;
         "Baroque dance"@en,
         "Danse baroque"@fr .
 
+spav:genre-breakdance a skos:Concept ;
+    skos:broader spav:genre-streetdance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Breakdance"@de,
+        "Break Dance"@en .
+
 spav:genre-butho a skos:Concept ;
-    skos:broader spav:genre-stagedance ;
+    skos:broader spav:genre-japanesetheatre ;
     skos:inScheme spav:genre ;
     skos:prefLabel "Butho"@de,
-        "Butho"@en,
-        "Butho"@fr .
-
-spav:genre-cabaret a skos:Concept ;
-    skos:broader spav:genre-dance ;
-    skos:inScheme spav:genre ;
-    skos:prefLabel "Kabarett"@de,
-        "cabaret"@en,
-        "Cabaret"@fr .
+        "Butho"@en .
 
 spav:genre-cabaret2 a skos:Concept ;
     skos:broader spav:genre-cabaret1 ;
@@ -821,6 +819,12 @@ spav:genre-cabaret2 a skos:Concept ;
         "cabaret"@en,
         "cabaret"@fr,
         "cabaret"@it .
+
+spav:genre-cancan a skos:Concept ;
+    skos:broader spav:genre-cabaret ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Cancan"@de,
+        "Cancan"@en .
 
 spav:genre-chanson a skos:Concept ;
     skos:broader spav:genre-cabaret1 ;
@@ -862,6 +866,18 @@ spav:genre-contemporarydance a skos:Concept ;
         "contemporary dance"@en,
         "Danse contemporaine"@fr .
 
+spav:genre-courtballet a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Hofballett"@de,
+        "court ballet"@en .
+
+spav:genre-customsdance a skos:Concept ;
+    skos:broader spav:genre-folkdance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Brauchtumstanz"@de,
+        "customs dance"@en .
+
 spav:genre-dada a skos:Concept ;
     skos:broader spav:genre-dance ;
     skos:inScheme spav:genre ;
@@ -873,8 +889,13 @@ spav:genre-danceinmusical a skos:Concept ;
     skos:broader spav:genre-stagedance ;
     skos:inScheme spav:genre ;
     skos:prefLabel "Tanz im Musical"@de,
-        "dance in musical"@en,
-        "Danse dans une comédie musicale"@fr .
+        "dance in musical"@en .
+
+spav:genre-discodance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Discotanz"@de,
+        "disco"@en .
 
 spav:genre-dramawithmusic a skos:Concept ;
     skos:broader spav:genre-spokentheatre ;
@@ -897,18 +918,17 @@ spav:genre-flamenco a skos:Concept ;
         "Flamenco"@en,
         "Flamenco"@fr .
 
-spav:genre-folkdance a skos:Concept ;
-    skos:broader spav:genre-dance ;
+spav:genre-folklore a skos:Concept ;
+    skos:broader spav:genre-folkdance ;
     skos:inScheme spav:genre ;
-    skos:prefLabel "Volkstanz, Welttanz"@de,
-        "folk dance"@en,
-        "Danse populaire"@fr .
+    skos:prefLabel "Folklore"@de,
+        "folklore"@en .
 
-spav:genre-hiphopbreakdance a skos:Concept ;
-    skos:broader spav:genre-dance ;
+spav:genre-hiphop a skos:Concept ;
+    skos:broader spav:genre-streetdance ;
     skos:inScheme spav:genre ;
-    skos:prefLabel "Hip Hop, Breakdance"@de,
-        "Hip Hop, Break Dance"@en .
+    skos:prefLabel "Hip Hop"@de,
+        "Hip Hop"@en .
 
 spav:genre-improvisation a skos:Concept ;
     skos:broader spav:genre-stagedance ;
@@ -916,12 +936,11 @@ spav:genre-improvisation a skos:Concept ;
     skos:prefLabel "Improvisation"@de,
         "improvisation"@en .
 
-spav:genre-japanesetheatre a skos:Concept ;
+spav:genre-indiandance a skos:Concept ;
     skos:broader spav:genre-dance ;
     skos:inScheme spav:genre ;
-    skos:prefLabel "Japanisches Theater"@de,
-        "Japanese Theatre"@en,
-        "Théâtre japonais"@fr .
+    skos:prefLabel "Indischer Tanz"@de,
+        "Indian dance"@en .
 
 spav:genre-jazzdance a skos:Concept ;
     skos:broader spav:genre-dance ;
@@ -931,11 +950,10 @@ spav:genre-jazzdance a skos:Concept ;
         "Danse jazz"@fr .
 
 spav:genre-kabuki a skos:Concept ;
-    skos:broader spav:genre-dance ;
+    skos:broader spav:genre-japanesetheatre ;
     skos:inScheme spav:genre ;
     skos:prefLabel "Kabuki"@de,
-        "Kabuki"@en,
-        "Kabuki"@fr .
+        "Kabuki"@en .
 
 spav:genre-magic a skos:Concept ;
     skos:broader spav:genre-vaudevillecircus ;
@@ -964,6 +982,13 @@ spav:genre-moderndance a skos:Concept ;
         "modern dance"@en,
         "Danse moderne"@fr .
 
+spav:genre-modernism1900 a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Moderne um 1900"@de,
+        "modernism around 1900"@en,
+        "Avantgarde vers 1900"@fr .
+
 spav:genre-musical a skos:Concept ;
     skos:broader spav:genre-musicaltheatre ;
     skos:inScheme spav:genre ;
@@ -978,6 +1003,25 @@ spav:genre-neoclassicaldance a skos:Concept ;
     skos:prefLabel "Neoklassik"@de,
         "neoclassical dance"@en,
         "Ballet néoclassique"@fr .
+
+spav:genre-nondance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Non-Dance"@de,
+        "non-dance"@en .
+
+spav:genre-notheatre a skos:Concept ;
+    skos:broader spav:genre-japanesetheatre ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "No-Theater"@de,
+        "No theatre"@en .
+
+spav:genre-nouveaucrique a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Nouveau cirque"@de,
+        "Nouveau cirque"@en,
+        "Nouveau cirque"@fr .
 
 spav:genre-objecttheatre a skos:Concept ;
     skos:broader spav:genre-puppetry1 ;
@@ -1004,6 +1048,18 @@ spav:genre-operetta a skos:Concept ;
         "opérette"@fr,
         "operetta"@it .
 
+spav:genre-orientaldance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Orientalischer Tanz"@de,
+        "oriental dance"@en .
+
+spav:genre-parisianclassic a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Pariser Klassik"@de,
+        "Parisian classic"@en .
+
 spav:genre-performance a skos:Concept ;
     skos:altLabel "performance art"@en ;
     skos:broader spav:genre-other ;
@@ -1011,6 +1067,12 @@ spav:genre-performance a skos:Concept ;
     skos:inScheme spav:genre ;
     skos:prefLabel "Performance"@de,
         "performance"@en .
+
+spav:genre-petipaclassic a skos:Concept ;
+    skos:broader spav:genre-stpetersburgclassic ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Petika Klassik"@de,
+        "Petipa classic"@en .
 
 spav:genre-physicaltheatre a skos:Concept ;
     skos:broader spav:genre-stagedance ;
@@ -1025,6 +1087,12 @@ spav:genre-postmoderndance a skos:Concept ;
     skos:prefLabel "Postmodern Dance"@de,
         "postmodern dance"@en,
         "Danse postmoderne"@fr .
+
+spav:genre-preromantic a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Vorromantik"@de,
+        "pre-ronamtic"@en .
 
 spav:genre-puppetry2 a skos:Concept ;
     skos:broader spav:genre-puppetry1 ;
@@ -1056,6 +1124,12 @@ spav:genre-renaissancedance a skos:Concept ;
         "Renaissance dance"@en,
         "Danse da la renaissance"@fr .
 
+spav:genre-ritual a skos:Concept ;
+    skos:broader spav:genre-cultdance ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Ritual"@de,
+        "ritual"@en .
+
 spav:genre-romanticdance a skos:Concept ;
     skos:broader spav:genre-dance ;
     skos:inScheme spav:genre ;
@@ -1063,24 +1137,17 @@ spav:genre-romanticdance a skos:Concept ;
         "romantic dance"@en,
         "Ballet romantique"@fr .
 
+spav:genre-russianclassic a skos:Concept ;
+    skos:broader spav:genre-stpetersburgclassic ;
+    skos:inScheme spav:genre ;
+    skos:prefLabel "Russische Klassik"@de,
+        "Russian classic"@en .
+
 spav:genre-storytelling a skos:Concept ;
     skos:broader spav:genre-cabaret1 ;
     skos:inScheme spav:genre ;
     skos:prefLabel "Erzählkunst"@de,
         "storytelling"@en .
-
-spav:genre-stpetersburgclassic a skos:Concept ;
-    skos:broader spav:genre-dance ;
-    skos:inScheme spav:genre ;
-    skos:prefLabel "St. Petersburger Klassik"@de,
-        "St. Petersburg classic"@en .
-
-spav:genre-streetdance a skos:Concept ;
-    skos:broader spav:genre-dance ;
-    skos:inScheme spav:genre ;
-    skos:prefLabel "Street Dance"@de,
-        "street dance"@en,
-        "Street Dance"@fr .
 
 spav:genre-tapdance a skos:Concept ;
     skos:broader spav:genre-dance ;
@@ -1996,6 +2063,21 @@ spav:archivallevel-itemtype a skos:Concept ;
         "item type"@en ;
     skos:topConceptOf spav:archivallevel .
 
+spav:genre-cabaret a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-cancan ;
+    skos:prefLabel "Kabarett"@de,
+        "cabaret"@en,
+        "Cabaret"@fr .
+
+spav:genre-cultdance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-ritual ;
+    skos:prefLabel "Kulttanz"@de,
+        "cult dance"@en .
+
 spav:grouptype-company a skos:Concept ;
     skos:altLabel "ensemble"@en ;
     skos:broader spav:grouptype-producer ;
@@ -2093,6 +2175,15 @@ spav:archivallevel-collectiontype a skos:Concept ;
         "collection type"@en ;
     skos:topConceptOf spav:archivallevel .
 
+spav:genre-folkdance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-customsdance,
+        spav:genre-folklore ;
+    skos:prefLabel "Volkstanz, Welttanz"@de,
+        "folk dance"@en,
+        "Danse populaire"@fr .
+
 spav:genre-puppetry1 a skos:Concept ;
     skos:broader spav:genre-other ;
     skos:exactMatch <aat:300248147> ;
@@ -2117,6 +2208,23 @@ spav:genre-spokentheatre a skos:Concept ;
         "théâtre dramatique"@fr,
         "teatro drammatico"@it ;
     skos:topConceptOf spav:genre .
+
+spav:genre-stpetersburgclassic a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-petipaclassic,
+        spav:genre-russianclassic ;
+    skos:prefLabel "St. Petersburger Klassik"@de,
+        "St. Petersburg classic"@en .
+
+spav:genre-streetdance a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-breakdance,
+        spav:genre-hiphop ;
+    skos:prefLabel "Street Dance"@de,
+        "street dance"@en,
+        "Street Dance"@fr .
 
 spav:medium-dvd a skos:Concept ;
     skos:altLabel "DVD-Video"@en,
@@ -2175,6 +2283,16 @@ spav:genre-ballet a skos:Concept ;
         "ballet"@en,
         "ballet"@fr,
         "balletto"@it .
+
+spav:genre-japanesetheatre a skos:Concept ;
+    skos:broader spav:genre-dance ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-butho,
+        spav:genre-kabuki,
+        spav:genre-notheatre ;
+    skos:prefLabel "Japanisches Theater"@de,
+        "Japanese Theatre"@en,
+        "Théâtre japonais"@fr .
 
 spav:genre-vaudevillecircus a skos:Concept ;
     skos:altLabel "spectacle de travesties"@fr ;
@@ -2484,19 +2602,11 @@ spav:medium-videocassette a skos:Concept ;
     skos:prefLabel "Videokassette"@de,
         "video cassette"@en .
 
-spav:archivallevel a skos:ConceptScheme ;
-    skos:hasTopConcept spav:archivallevel-collectiontype,
-        spav:archivallevel-itemtype,
-        spav:archivallevel-recordsettype ;
-    skos:prefLabel "Archivebene"@de,
-        "archival level"@en .
-
 spav:genre-stagedance a skos:Concept ;
     skos:altLabel "teatro-danza"@it ;
     skos:broader spav:genre-dance ;
     skos:inScheme spav:genre ;
     skos:narrower spav:genre-ballet,
-        spav:genre-butho,
         spav:genre-conceptualdance,
         spav:genre-contemporarydance,
         spav:genre-danceinmusical,
@@ -2511,6 +2621,13 @@ spav:genre-stagedance a skos:Concept ;
         "stage dance"@en,
         "théâtre dansé"@fr,
         "teatrodanza"@it .
+
+spav:archivallevel a skos:ConceptScheme ;
+    skos:hasTopConcept spav:archivallevel-collectiontype,
+        spav:archivallevel-itemtype,
+        spav:archivallevel-recordsettype ;
+    skos:prefLabel "Archivebene"@de,
+        "archival level"@en .
 
 spav:appellation a skos:ConceptScheme ;
     skos:hasTopConcept spav:appellation-name,
@@ -2544,33 +2661,6 @@ spav:productiontechnique a skos:ConceptScheme ;
         spav:productiontechnique-print ;
     skos:prefLabel "Produktionstechnik"@de,
         "production technique"@en .
-
-spav:genre-dance a skos:Concept ;
-    skos:inScheme spav:genre ;
-    skos:narrower spav:genre-ballroomdancing,
-        spav:genre-cabaret,
-        spav:genre-classicaldance,
-        spav:genre-communitydance,
-        spav:genre-dada,
-        spav:genre-flamenco,
-        spav:genre-folkdance,
-        spav:genre-hiphopbreakdance,
-        spav:genre-japanesetheatre,
-        spav:genre-jazzdance,
-        spav:genre-kabuki,
-        spav:genre-mime,
-        spav:genre-neoclassicaldance,
-        spav:genre-renaissancedance,
-        spav:genre-romanticdance,
-        spav:genre-stagedance,
-        spav:genre-stpetersburgclassic,
-        spav:genre-streetdance,
-        spav:genre-tapdance ;
-    skos:prefLabel "Tanz"@de,
-        "dance"@en,
-        "dansé"@fr,
-        "danza"@it ;
-    skos:topConceptOf spav:genre .
 
 spav:material a skos:ConceptScheme ;
     skos:hasTopConcept spav:material-glass,
@@ -2613,6 +2703,41 @@ spav:performancetype a skos:ConceptScheme ;
     skos:prefLabel "Performance-Art"@de,
         "performance type"@en .
 
+spav:genre-dance a skos:Concept ;
+    skos:inScheme spav:genre ;
+    skos:narrower spav:genre-ballroomdancing,
+        spav:genre-cabaret,
+        spav:genre-classicaldance,
+        spav:genre-communitydance,
+        spav:genre-courtballet,
+        spav:genre-cultdance,
+        spav:genre-dada,
+        spav:genre-discodance,
+        spav:genre-flamenco,
+        spav:genre-folkdance,
+        spav:genre-indiandance,
+        spav:genre-japanesetheatre,
+        spav:genre-jazzdance,
+        spav:genre-mime,
+        spav:genre-modernism1900,
+        spav:genre-neoclassicaldance,
+        spav:genre-nondance,
+        spav:genre-nouveaucrique,
+        spav:genre-orientaldance,
+        spav:genre-parisianclassic,
+        spav:genre-preromantic,
+        spav:genre-renaissancedance,
+        spav:genre-romanticdance,
+        spav:genre-stagedance,
+        spav:genre-stpetersburgclassic,
+        spav:genre-streetdance,
+        spav:genre-tapdance ;
+    skos:prefLabel "Tanz"@de,
+        "dance"@en,
+        "dansé"@fr,
+        "danza"@it ;
+    skos:topConceptOf spav:genre .
+
 spav:language a skos:ConceptScheme ;
     skos:hasTopConcept spav:language-ara,
         spav:language-deu,
@@ -2651,15 +2776,6 @@ spav:docform a skos:ConceptScheme ;
 spav:activity a skos:ConceptScheme ;
     skos:prefLabel "activity"@en .
 
-spav:genre a skos:ConceptScheme ;
-    skos:hasTopConcept spav:genre-dance,
-        spav:genre-musicaltheatre,
-        spav:genre-other,
-        spav:genre-spokentheatre,
-        spav:genre-youth ;
-    skos:prefLabel "Genre"@de,
-        "genre"@en .
-
 spav:medium a skos:ConceptScheme ;
     skos:hasTopConcept spav:medium-film,
         spav:medium-magneticdisc,
@@ -2669,4 +2785,13 @@ spav:medium a skos:ConceptScheme ;
         spav:medium-phonographrecord,
         spav:medium-photographicimage ;
     skos:prefLabel "medium"@en .
+
+spav:genre a skos:ConceptScheme ;
+    skos:hasTopConcept spav:genre-dance,
+        spav:genre-musicaltheatre,
+        spav:genre-other,
+        spav:genre-spokentheatre,
+        spav:genre-youth ;
+    skos:prefLabel "Genre"@de,
+        "genre"@en .
 
