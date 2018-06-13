@@ -2553,7 +2553,9 @@ spav:contactpoint a skos:ConceptScheme ;
     skos:hasTopConcept spav:contactpoint-address,
         spav:contactpoint-email,
         spav:contactpoint-telephone,
-        spav:contactpoint-website .
+        spav:contactpoint-website ;
+    skos:prefLabel "Kontakt"@de,
+        "contact point"@en .
 
 spav:identitytype a skos:ConceptScheme ;
     skos:hasTopConcept spav:identitytype-given,

@@ -10,7 +10,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 8,http://vocab.performing-arts.ch/identitytype-individualassumed,http://vocab.performing-arts.ch/identitytype,False,Agent,,,,,individual assumed,,,individuell vermutet,,,,,
 9,http://vocab.performing-arts.ch/identitytype-jointassumed,http://vocab.performing-arts.ch/identitytype,False,Agent,,,,,joint assumed,,,allgemein angenommen,,,,,
 10,http://vocab.performing-arts.ch/identitytype-unknown,http://vocab.performing-arts.ch/identitytype,False,Agent,,,,,unknown,,,unbekannt,,,,,
-11,http://vocab.performing-arts.ch/contactpoint,,True,Agent,crm:E51_Contact_Point,crm:P2_has_type,,,,,,,,,,,
+11,http://vocab.performing-arts.ch/contactpoint,,True,Agent,crm:E51_Contact_Point,crm:P2_has_type,,,contact point,,,Kontakt,,,,,
 12,http://vocab.performing-arts.ch/contactpoint-address,http://vocab.performing-arts.ch/contactpoint,False,Agent,,,,,address,,,Adresse,,,,,
 13,http://vocab.performing-arts.ch/contactpoint-telephone,http://vocab.performing-arts.ch/contactpoint,False,Agent,,,,,telephone,,,Telefon,,,,,
 14,http://vocab.performing-arts.ch/contactpoint-email,http://vocab.performing-arts.ch/contactpoint,False,Agent,,,,,e-mail,,,E-Mail,,,,,
