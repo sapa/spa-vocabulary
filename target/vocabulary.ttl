@@ -482,6 +482,12 @@ spav:appellation-workingtitle a skos:Concept ;
         "titre de travail"@fr,
         "titolo di lavoro"@it .
 
+spav:archivallevel-collection a skos:Concept ;
+    skos:inScheme spav:archivallevel ;
+    skos:prefLabel "Sammlung"@de,
+        "collection"@en ;
+    skos:topConceptOf spav:archivallevel .
+
 spav:archivallevel-file a skos:Concept ;
     skos:broader spav:archivallevel-recordsettype ;
     skos:inScheme spav:archivallevel ;
@@ -495,10 +501,10 @@ spav:archivallevel-fonds a skos:Concept ;
         "fonds"@en .
 
 spav:archivallevel-item a skos:Concept ;
-    skos:broader spav:archivallevel-itemtype ;
     skos:inScheme spav:archivallevel ;
     skos:prefLabel "Dokument"@de,
-        "item"@en .
+        "item"@en ;
+    skos:topConceptOf spav:archivallevel .
 
 spav:archivallevel-section a skos:Concept ;
     skos:broader spav:archivallevel-collectiontype ;
@@ -573,6 +579,30 @@ spav:colorcontent-polychrom a skos:Concept ;
     skos:prefLabel "mehrfarbig"@de,
         "polychrom"@en ;
     skos:topConceptOf spav:colorcontent .
+
+spav:contactpoint-address a skos:Concept ;
+    skos:inScheme spav:contactpoint ;
+    skos:prefLabel "Adresse"@de,
+        "address"@en ;
+    skos:topConceptOf spav:contactpoint .
+
+spav:contactpoint-email a skos:Concept ;
+    skos:inScheme spav:contactpoint ;
+    skos:prefLabel "E-Mail"@de,
+        "e-mail"@en ;
+    skos:topConceptOf spav:contactpoint .
+
+spav:contactpoint-telephone a skos:Concept ;
+    skos:inScheme spav:contactpoint ;
+    skos:prefLabel "Telefon"@de,
+        "telephone"@en ;
+    skos:topConceptOf spav:contactpoint .
+
+spav:contactpoint-website a skos:Concept ;
+    skos:inScheme spav:contactpoint ;
+    skos:prefLabel "Website"@de,
+        "website"@en ;
+    skos:topConceptOf spav:contactpoint .
 
 spav:docform-artposter a skos:Concept ;
     skos:broader spav:docform-poster ;
@@ -1257,7 +1287,7 @@ spav:identitytype-given a skos:Concept ;
 
 spav:identitytype-individualassumed a skos:Concept ;
     skos:inScheme spav:identitytype ;
-    skos:prefLabel "individuell vermuted"@de,
+    skos:prefLabel "individuell vermutet"@de,
         "individual assumed"@en ;
     skos:topConceptOf spav:identitytype .
 
@@ -1641,23 +1671,23 @@ spav:medium-dvhs a skos:Concept ;
 spav:medium-floppy3half a skos:Concept ;
     skos:broader spav:medium-floppydisk ;
     skos:inScheme spav:medium ;
-    skos:prefLabel "3\"1/2 Floppy"@en .
+    skos:prefLabel "3\"1/2 floppy"@en .
 
 spav:medium-floppy5quarter a skos:Concept ;
     skos:broader spav:medium-floppydisk ;
     skos:inScheme spav:medium ;
-    skos:prefLabel "5\"1/4 Floppy"@en .
+    skos:prefLabel "5\"1/4 floppy"@en .
 
 spav:medium-floppy8 a skos:Concept ;
     skos:broader spav:medium-floppydisk ;
     skos:inScheme spav:medium ;
-    skos:prefLabel "8\" Floppy"@en .
+    skos:prefLabel "8\" floppy"@en .
 
 spav:medium-halfinchopenreel a skos:Concept ;
     skos:broader spav:medium-openreelvideotape ;
     skos:inScheme spav:medium ;
     skos:prefLabel "1/2\" Open Reel"@de,
-        "1/2\" Open Reel"@en .
+        "1/2\" open reel"@en .
 
 spav:medium-hddvd a skos:Concept ;
     skos:broader spav:medium-opticaldisc ;
@@ -2056,12 +2086,8 @@ spav:agenttype-group a skos:Concept ;
         "group"@en ;
     skos:topConceptOf spav:agenttype .
 
-spav:archivallevel-itemtype a skos:Concept ;
-    skos:inScheme spav:archivallevel ;
-    skos:narrower spav:archivallevel-item ;
-    skos:prefLabel "Dokumenttyp"@de,
-        "item type"@en ;
-    skos:topConceptOf spav:archivallevel .
+spav:archivallevel-collectiontype skos:narrower spav:archivallevel-section,
+        spav:archivallevel-subsection .
 
 spav:genre-cabaret a skos:Concept ;
     skos:broader spav:genre-dance ;
@@ -2166,14 +2192,6 @@ spav:productiontechnique-photography a skos:Concept ;
     skos:prefLabel "Fotografie"@de,
         "photography"@en ;
     skos:topConceptOf spav:productiontechnique .
-
-spav:archivallevel-collectiontype a skos:Concept ;
-    skos:inScheme spav:archivallevel ;
-    skos:narrower spav:archivallevel-section,
-        spav:archivallevel-subsection ;
-    skos:prefLabel "Sammlungstyp"@de,
-        "collection type"@en ;
-    skos:topConceptOf spav:archivallevel .
 
 spav:genre-folkdance a skos:Concept ;
     skos:broader spav:genre-dance ;
@@ -2531,6 +2549,12 @@ spav:broadcaststandard a skos:ConceptScheme ;
         spav:broadcaststandard-secam ;
     skos:prefLabel "broadcast standard"@en .
 
+spav:contactpoint a skos:ConceptScheme ;
+    skos:hasTopConcept spav:contactpoint-address,
+        spav:contactpoint-email,
+        spav:contactpoint-telephone,
+        spav:contactpoint-website .
+
 spav:identitytype a skos:ConceptScheme ;
     skos:hasTopConcept spav:identitytype-given,
         spav:identitytype-individualassumed,
@@ -2602,6 +2626,13 @@ spav:medium-videocassette a skos:Concept ;
     skos:prefLabel "Videokassette"@de,
         "video cassette"@en .
 
+spav:archivallevel a skos:ConceptScheme ;
+    skos:hasTopConcept spav:archivallevel-collection,
+        spav:archivallevel-item,
+        spav:archivallevel-recordsettype ;
+    skos:prefLabel "Archivebene"@de,
+        "archival level"@en .
+
 spav:genre-stagedance a skos:Concept ;
     skos:altLabel "teatro-danza"@it ;
     skos:broader spav:genre-dance ;
@@ -2622,17 +2653,10 @@ spav:genre-stagedance a skos:Concept ;
         "théâtre dansé"@fr,
         "teatrodanza"@it .
 
-spav:archivallevel a skos:ConceptScheme ;
-    skos:hasTopConcept spav:archivallevel-collectiontype,
-        spav:archivallevel-itemtype,
-        spav:archivallevel-recordsettype ;
-    skos:prefLabel "Archivebene"@de,
-        "archival level"@en .
-
 spav:appellation a skos:ConceptScheme ;
     skos:hasTopConcept spav:appellation-name,
         spav:appellation-title ;
-    skos:prefLabel "appelation"@en .
+    skos:prefLabel "appellation"@en .
 
 spav:docform-poster a skos:Concept ;
     skos:exactMatch <aat:300027221> ;
