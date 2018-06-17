@@ -2558,7 +2558,11 @@ spav:objecttype a crm:E55_Type,
 
 spav:title a crm:E55_Type,
         skos:ConceptScheme ;
-    skos:hasTopConcept spav:title-title .
+    skos:hasTopConcept spav:title-title ;
+    skos:prefLabel "Titel"@de,
+        "title"@en,
+        "titre"@fr,
+        "titolo"@it .
 
 spav:appellation a crm:E55_Type,
         skos:ConceptScheme ;

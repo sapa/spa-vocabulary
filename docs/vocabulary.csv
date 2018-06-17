@@ -27,7 +27,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 25,http://vocab.performing-arts.ch/appellation-acronym,http://vocab.performing-arts.ch/appellation-name,False,Agent,,,aat:300404659,,acronym,,,Akronym,,acronyme,,acronimo,
 26,http://vocab.performing-arts.ch/appellation-byline,http://vocab.performing-arts.ch/appellation,False,Agent,,,,,byline,,,,,,,,
 27,http://vocab.performing-arts.ch/appellation-attribute,http://vocab.performing-arts.ch/appellation,False,Agent,,,aat:300404658,,attribute,,,,,,,,
-28,http://vocab.performing-arts.ch/title,,True,Work,crm:E35_Title,crm:P2_has_type,,,,,,,,,,,
+28,http://vocab.performing-arts.ch/title,,True,Work,crm:E35_Title,crm:P2_has_type,,,title,,,Titel,,titre,,titolo,
 29,http://vocab.performing-arts.ch/title-title,http://vocab.performing-arts.ch/title,False,Work,,,aat:300417193,title of a work,title,,,Titel,,titre,,titolo,
 30,http://vocab.performing-arts.ch/title-subtitle,http://vocab.performing-arts.ch/title-title,False,Work,,,aat:300312006,,subtitle,,,Untertitel,,sous-titre,,sottotitolo,
 31,http://vocab.performing-arts.ch/title-alttitle,http://vocab.performing-arts.ch/title-title,False,Work,,,aat:300417226,,alternative title,,,Alternativtitel,,titre alternatif,,titolo alternativo,
