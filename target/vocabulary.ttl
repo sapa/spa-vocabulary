@@ -1,4 +1,5 @@
 @prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix iso639-2: <http://id.loc.gov/vocabulary/iso639-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdabs: <http://rdaregistry.info/termList/broadcastStand/> .
@@ -14,7 +15,8 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-spav:accrualstatus a skos:ConceptScheme ;
+spav:accrualstatus a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "accrual status"@en .
 
 spav:activity-actor a skos:Concept ;
@@ -356,23 +358,29 @@ spav:appellation-byline a skos:Concept ;
     skos:inScheme spav:appellation ;
     skos:prefLabel "byline"@en .
 
-spav:classification a skos:ConceptScheme ;
+spav:classification a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
 
-spav:conditionsofaccess a skos:ConceptScheme ;
+spav:conditionsofaccess a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en .
 
-spav:conditionsofuse a skos:ConceptScheme ;
+spav:conditionsofuse a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
 
-spav:encodingformat a skos:ConceptScheme ;
+spav:encodingformat a crm:E55_Type,
+        skos:ConceptScheme ;
     rdfs:comment "mime types"@en ;
     skos:prefLabel "encoding format"@en .
 
-spav:identifier a skos:ConceptScheme ;
+spav:identifier a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "identifier"@en .
 
-spav:permission a skos:ConceptScheme ;
+spav:permission a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "permission"@en .
 
 spav:accesscategory-public a skos:Concept ;
@@ -409,15 +417,6 @@ spav:agenttype-unknown a skos:Concept ;
         "unknown"@en ;
     skos:topConceptOf spav:agenttype .
 
-spav:appellation-abrtitle a skos:Concept ;
-    skos:broader spav:appellation-title ;
-    skos:exactMatch <aat:300417210> ;
-    skos:inScheme spav:appellation ;
-    skos:prefLabel "Kurztitel"@de,
-        "abbreviated title"@en,
-        "titre abrégé"@fr,
-        "titolo breve"@it .
-
 spav:appellation-acronym a skos:Concept ;
     skos:broader spav:appellation-name ;
     skos:exactMatch <aat:300404659> ;
@@ -437,15 +436,6 @@ spav:appellation-altname a skos:Concept ;
         "nom alternatif"@fr,
         "nome alternativo"@it .
 
-spav:appellation-alttitle a skos:Concept ;
-    skos:broader spav:appellation-title ;
-    skos:exactMatch <aat:300417226> ;
-    skos:inScheme spav:appellation ;
-    skos:prefLabel "Alternativtitel"@de,
-        "alternative title"@en,
-        "titre alternatif"@fr,
-        "titolo alternativo"@it .
-
 spav:appellation-officialname a skos:Concept ;
     skos:broader spav:appellation-name ;
     skos:exactMatch <aat:300404686> ;
@@ -463,24 +453,6 @@ spav:appellation-pseudonym a skos:Concept ;
         "pseudonym"@en,
         "pseudonyme"@fr,
         "pseudonimo"@it .
-
-spav:appellation-subtitle a skos:Concept ;
-    skos:broader spav:appellation-title ;
-    skos:exactMatch <aat:300312006> ;
-    skos:inScheme spav:appellation ;
-    skos:prefLabel "Untertitel"@de,
-        "subtitle"@en,
-        "sous-titre"@fr,
-        "sottotitolo"@it .
-
-spav:appellation-workingtitle a skos:Concept ;
-    skos:broader spav:appellation-title ;
-    skos:exactMatch <aat:300417228> ;
-    skos:inScheme spav:appellation ;
-    skos:prefLabel "Arbeitstitel"@de,
-        "working title"@en,
-        "titre de travail"@fr,
-        "titolo di lavoro"@it .
 
 spav:archivallevel-collection a skos:Concept ;
     skos:inScheme spav:archivallevel ;
@@ -2057,6 +2029,42 @@ spav:productiontechnique-screenprint a skos:Concept ;
         "screen print"@en,
         "sérigraphie"@fr .
 
+spav:title-abrtitle a skos:Concept ;
+    skos:broader spav:title-title ;
+    skos:exactMatch <aat:300417210> ;
+    skos:inScheme spav:title ;
+    skos:prefLabel "Kurztitel"@de,
+        "abbreviated title"@en,
+        "titre abrégé"@fr,
+        "titolo breve"@it .
+
+spav:title-alttitle a skos:Concept ;
+    skos:broader spav:title-title ;
+    skos:exactMatch <aat:300417226> ;
+    skos:inScheme spav:title ;
+    skos:prefLabel "Alternativtitel"@de,
+        "alternative title"@en,
+        "titre alternatif"@fr,
+        "titolo alternativo"@it .
+
+spav:title-subtitle a skos:Concept ;
+    skos:broader spav:title-title ;
+    skos:exactMatch <aat:300312006> ;
+    skos:inScheme spav:title ;
+    skos:prefLabel "Untertitel"@de,
+        "subtitle"@en,
+        "sous-titre"@fr,
+        "sottotitolo"@it .
+
+spav:title-workingtitle a skos:Concept ;
+    skos:broader spav:title-title ;
+    skos:exactMatch <aat:300417228> ;
+    skos:inScheme spav:title ;
+    skos:prefLabel "Arbeitstitel"@de,
+        "working title"@en,
+        "titre de travail"@fr,
+        "titolo di lavoro"@it .
+
 spav:videoscanningformat-interlaced a skos:Concept ;
     skos:inScheme spav:videoscanningformat ;
     skos:prefLabel "interlaced"@en ;
@@ -2280,12 +2288,14 @@ spav:medium-photopositive a skos:Concept ;
     skos:prefLabel "Fotopositiv"@de,
         "photo positive"@en .
 
-spav:accesscategory a skos:ConceptScheme ;
+spav:accesscategory a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:accesscategory-public,
         spav:accesscategory-staffonly ;
     skos:prefLabel "access category"@en .
 
-spav:colorcontent a skos:ConceptScheme ;
+spav:colorcontent a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:altLabel "colour content"@en ;
     skos:hasTopConcept spav:colorcontent-monochrom,
         spav:colorcontent-polychrom ;
@@ -2393,12 +2403,14 @@ spav:medium-v8mm a skos:Concept ;
     skos:prefLabel "8mm Format"@de,
         "8mm format"@en .
 
-spav:videoscanningformat a skos:ConceptScheme ;
+spav:videoscanningformat a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:videoscanningformat-interlaced,
         spav:videoscanningformat-progressive ;
     skos:prefLabel "video scanning format"@en .
 
-spav:videoscanningorder a skos:ConceptScheme ;
+spav:videoscanningorder a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:videoscanningorder-bottom,
         spav:videoscanningorder-top ;
     skos:prefLabel "video scanning order"@en .
@@ -2415,20 +2427,6 @@ spav:appellation-name a skos:Concept ;
         "name"@en,
         "nom"@fr,
         "nome"@it ;
-    skos:topConceptOf spav:appellation .
-
-spav:appellation-title a skos:Concept ;
-    rdfs:comment "title of a work"@en ;
-    skos:exactMatch <aat:300417193> ;
-    skos:inScheme spav:appellation ;
-    skos:narrower spav:appellation-abrtitle,
-        spav:appellation-alttitle,
-        spav:appellation-subtitle,
-        spav:appellation-workingtitle ;
-    skos:prefLabel "Titel"@de,
-        "title"@en,
-        "titre"@fr,
-        "titolo"@it ;
     skos:topConceptOf spav:appellation .
 
 spav:archivallevel-recordsettype a skos:Concept ;
@@ -2508,7 +2506,22 @@ spav:medium-vhs a skos:Concept ;
     skos:prefLabel "VHS"@de,
         "VHS"@en .
 
-spav:gender a skos:ConceptScheme ;
+spav:title-title a skos:Concept ;
+    rdfs:comment "title of a work"@en ;
+    skos:exactMatch <aat:300417193> ;
+    skos:inScheme spav:title ;
+    skos:narrower spav:title-abrtitle,
+        spav:title-alttitle,
+        spav:title-subtitle,
+        spav:title-workingtitle ;
+    skos:prefLabel "Titel"@de,
+        "title"@en,
+        "titre"@fr,
+        "titolo"@it ;
+    skos:topConceptOf spav:title .
+
+spav:gender a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:gender-female,
         spav:gender-male,
         spav:gender-other ;
@@ -2536,20 +2549,32 @@ spav:medium-magnetictape a skos:Concept ;
         "magnetic tape"@en ;
     skos:topConceptOf spav:medium .
 
-spav:objecttype a skos:ConceptScheme ;
+spav:objecttype a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:objecttype-item,
         spav:objecttype-place,
         spav:objecttype-venue ;
     skos:prefLabel "object type"@en .
 
-spav:broadcaststandard a skos:ConceptScheme ;
+spav:title a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:title-title .
+
+spav:appellation a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:appellation-name ;
+    skos:prefLabel "appellation"@en .
+
+spav:broadcaststandard a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:broadcaststandard-hdtv,
         spav:broadcaststandard-ntsc,
         spav:broadcaststandard-pal,
         spav:broadcaststandard-secam ;
     skos:prefLabel "broadcast standard"@en .
 
-spav:contactpoint a skos:ConceptScheme ;
+spav:contactpoint a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:contactpoint-address,
         spav:contactpoint-email,
         spav:contactpoint-telephone,
@@ -2557,21 +2582,24 @@ spav:contactpoint a skos:ConceptScheme ;
     skos:prefLabel "Kontakt"@de,
         "contact point"@en .
 
-spav:identitytype a skos:ConceptScheme ;
+spav:identitytype a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:identitytype-given,
         spav:identitytype-individualassumed,
         spav:identitytype-jointassumed,
         spav:identitytype-unknown ;
     skos:prefLabel "identity type"@en .
 
-spav:mediatype a skos:ConceptScheme ;
+spav:mediatype a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:mediatype-audio,
         spav:mediatype-computer,
         spav:mediatype-unmediated,
         spav:mediatype-video ;
     skos:prefLabel "media type"@en .
 
-spav:agenttype a skos:ConceptScheme ;
+spav:agenttype a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:agenttype-family,
         spav:agenttype-group,
         spav:agenttype-person,
@@ -2628,7 +2656,8 @@ spav:medium-videocassette a skos:Concept ;
     skos:prefLabel "Videokassette"@de,
         "video cassette"@en .
 
-spav:archivallevel a skos:ConceptScheme ;
+spav:archivallevel a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:archivallevel-collection,
         spav:archivallevel-item,
         spav:archivallevel-recordsettype ;
@@ -2655,11 +2684,6 @@ spav:genre-stagedance a skos:Concept ;
         "théâtre dansé"@fr,
         "teatrodanza"@it .
 
-spav:appellation a skos:ConceptScheme ;
-    skos:hasTopConcept spav:appellation-name,
-        spav:appellation-title ;
-    skos:prefLabel "appellation"@en .
-
 spav:docform-poster a skos:Concept ;
     skos:exactMatch <aat:300027221> ;
     skos:inScheme spav:docform ;
@@ -2680,7 +2704,8 @@ spav:docform-poster a skos:Concept ;
         "poster"@en ;
     skos:topConceptOf spav:docform .
 
-spav:productiontechnique a skos:ConceptScheme ;
+spav:productiontechnique a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:productiontechnique-collotype,
         spav:productiontechnique-photocopy,
         spav:productiontechnique-photography,
@@ -2688,7 +2713,8 @@ spav:productiontechnique a skos:ConceptScheme ;
     skos:prefLabel "Produktionstechnik"@de,
         "production technique"@en .
 
-spav:material a skos:ConceptScheme ;
+spav:material a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:material-glass,
         spav:material-leather,
         spav:material-metal,
@@ -2699,7 +2725,8 @@ spav:material a skos:ConceptScheme ;
         spav:material-wood ;
     skos:prefLabel "material"@en .
 
-spav:grouptype a skos:ConceptScheme ;
+spav:grouptype a crm:E55_Type,
+        skos:ConceptScheme ;
     rdfs:comment "form of organisation and general purpose"@en ;
     skos:hasTopConcept spav:grouptype-agency,
         spav:grouptype-archive,
@@ -2714,7 +2741,8 @@ spav:grouptype a skos:ConceptScheme ;
     skos:prefLabel "Gruppentyp"@de,
         "group type"@en .
 
-spav:performancetype a skos:ConceptScheme ;
+spav:performancetype a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:performancetype-de,
         spav:performancetype-ea,
         spav:performancetype-ee,
@@ -2764,7 +2792,8 @@ spav:genre-dance a skos:Concept ;
         "danza"@it ;
     skos:topConceptOf spav:genre .
 
-spav:language a skos:ConceptScheme ;
+spav:language a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:language-ara,
         spav:language-deu,
         spav:language-dut,
@@ -2783,7 +2812,8 @@ spav:language a skos:ConceptScheme ;
     skos:prefLabel "Sprache"@de,
         "language"@en .
 
-spav:docform a skos:ConceptScheme ;
+spav:docform a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:docform-costumedesign,
         spav:docform-diary,
         spav:docform-invoice,
@@ -2799,10 +2829,12 @@ spav:docform a skos:ConceptScheme ;
     skos:prefLabel "Formen der Dokumentation"@de,
         "documentary form"@en .
 
-spav:activity a skos:ConceptScheme ;
+spav:activity a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:prefLabel "activity"@en .
 
-spav:medium a skos:ConceptScheme ;
+spav:medium a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:medium-film,
         spav:medium-magneticdisc,
         spav:medium-magnetictape,
@@ -2812,7 +2844,8 @@ spav:medium a skos:ConceptScheme ;
         spav:medium-photographicimage ;
     skos:prefLabel "medium"@en .
 
-spav:genre a skos:ConceptScheme ;
+spav:genre a crm:E55_Type,
+        skos:ConceptScheme ;
     skos:hasTopConcept spav:genre-dance,
         spav:genre-musicaltheatre,
         spav:genre-other,
