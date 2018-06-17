@@ -22,6 +22,7 @@ graph.bind('rdfs', RDFS)
 graph.bind('skos', SKOS)
 graph.bind('owl', OWL)
 graph.bind('aat', Namespace('http://vocab.getty.edu/aat/'))
+graph.bind('crm', Namespace('http://www.cidoc-crm.org/cidoc-crm/'))
 graph.bind('rdabs', Namespace('http://rdaregistry.info/termList/broadcastStand/'))
 graph.bind('rdamat', Namespace('http://rdaregistry.info/termList/RDAMaterial/'))
 graph.bind('rdacc', Namespace('http://rdaregistry.info/termList/RDAColourContent/'))
@@ -47,6 +48,8 @@ for idx, row in df.iterrows():
             print(f'{uri} already exists!')
         uris.append(uri)
         graph.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
+        # TODO: Validate if this is always correct.
+        graph.add((scheme_uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
         scheme_ns = Namespace(scheme_uri + '/')
     # concept
     elif not pd.isnull(row['skos_Concept']) and scheme_ns:
