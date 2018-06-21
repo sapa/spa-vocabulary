@@ -19,135 +19,140 @@ spav:accrualstatus a crm:E55_Type,
         skos:ConceptScheme ;
     skos:prefLabel "accrual status"@en .
 
-spav:activitytype-actor a skos:Concept ;
+spav:activitytype-acting a skos:Concept ;
     rdfs:comment "is actor of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "actor"@en .
+    skos:prefLabel "acting"@en .
 
-spav:activitytype-adaptor a skos:Concept ;
+spav:activitytype-adaption a skos:Concept ;
     rdfs:comment "is adaptor of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "adaptor"@en .
+    skos:prefLabel "adaption"@en .
+
+spav:activitytype-addedlyrics a skos:Concept ;
+    rdfs:comment "is writer of added lyrics of"@en ;
+    skos:inScheme spav:activitytype ;
+    skos:prefLabel "added lyrics"@en .
+
+spav:activitytype-addedtext a skos:Concept ;
+    rdfs:comment "is writer of added text of"@en ;
+    skos:inScheme spav:activitytype ;
+    skos:prefLabel "added text"@en .
 
 spav:activitytype-addresse a skos:Concept ;
     rdfs:comment "is addresse of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "addresse"@en .
 
-spav:activitytype-arrangerofmusic a skos:Concept ;
-    rdfs:comment "is arranger of music of"@en ;
-    skos:inScheme spav:activitytype ;
-    skos:prefLabel "arranger of music"@en .
-
-spav:activitytype-artdirector a skos:Concept ;
+spav:activitytype-artdirection a skos:Concept ;
     rdfs:comment "is art director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "art director"@en .
+    skos:prefLabel "art direction"@en .
 
-spav:activitytype-assistantstagedirector a skos:Concept ;
+spav:activitytype-assistantstagedirection a skos:Concept ;
     rdfs:comment "is assistant stage director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "assistant stage director"@en .
+    skos:prefLabel "assistant stage direction"@en .
 
 spav:activitytype-associatedwith a skos:Concept ;
     rdfs:comment "is associated with"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "associated with"@en .
 
-spav:activitytype-audioengineer a skos:Concept ;
+spav:activitytype-audioengineering a skos:Concept ;
     rdfs:comment "is audio engineer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "audio engineer"@en .
+    skos:prefLabel "audio engineering"@en .
 
-spav:activitytype-author a skos:Concept ;
+spav:activitytype-authorship a skos:Concept ;
     rdfs:comment "is author of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "author"@en .
+    skos:prefLabel "authorship"@en .
 
-spav:activitytype-cameraoperator a skos:Concept ;
+spav:activitytype-cameraoperation a skos:Concept ;
     rdfs:comment "is camera operator of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "camera operator"@en .
+    skos:prefLabel "camera operation"@en .
 
-spav:activitytype-castingdirector a skos:Concept ;
+spav:activitytype-castingdirection a skos:Concept ;
     rdfs:comment "is casting director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "casting director"@en .
+    skos:prefLabel "casting direction"@en .
 
 spav:activitytype-choralconductor a skos:Concept ;
     rdfs:comment "is choral conductor of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "choral conductor"@en .
 
-spav:activitytype-choreographer a skos:Concept ;
+spav:activitytype-choreography a skos:Concept ;
     rdfs:comment "is choreographer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "choreographer"@en .
+    skos:prefLabel "choreography"@en .
 
-spav:activitytype-composer a skos:Concept ;
+spav:activitytype-composition a skos:Concept ;
     rdfs:comment "is composer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "composer"@en .
+    skos:prefLabel "composition"@en .
 
 spav:activitytype-conductor a skos:Concept ;
     rdfs:comment "is conductor of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "conductor"@en .
 
-spav:activitytype-controls a skos:Concept ;
+spav:activitytype-control a skos:Concept ;
     rdfs:comment "controls"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "controls"@en .
+    skos:prefLabel "control"@en .
 
-spav:activitytype-costumedesigner a skos:Concept ;
+spav:activitytype-costumedesign a skos:Concept ;
     rdfs:comment "is costume designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "costume designer"@en .
+    skos:prefLabel "costume design"@en .
 
-spav:activitytype-creator a skos:Concept ;
+spav:activitytype-creation a skos:Concept ;
     rdfs:comment "is creator of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "creator"@en .
+    skos:prefLabel "creation"@en .
 
-spav:activitytype-dancer a skos:Concept ;
+spav:activitytype-dance a skos:Concept ;
     rdfs:comment "is dancer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "dancer"@en .
+    skos:prefLabel "dance"@en .
 
-spav:activitytype-designer a skos:Concept ;
+spav:activitytype-design a skos:Concept ;
     rdfs:comment "is designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "designer"@en .
+    skos:prefLabel "design"@en .
 
-spav:activitytype-director a skos:Concept ;
+spav:activitytype-direction a skos:Concept ;
     rdfs:comment "is director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "director"@en .
+    skos:prefLabel "direction"@en .
 
-spav:activitytype-directorofphotography a skos:Concept ;
+spav:activitytype-directionofphotography a skos:Concept ;
     rdfs:comment "is director of photography of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "director of photography"@en .
+    skos:prefLabel "direction of photography"@en .
 
 spav:activitytype-donor a skos:Concept ;
     rdfs:comment "is donor of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "donor"@en .
 
-spav:activitytype-dramaturge a skos:Concept ;
+spav:activitytype-dramaturgy a skos:Concept ;
     rdfs:comment "is dramaturge of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "dramaturge"@en .
+    skos:prefLabel "dramaturgy"@en .
 
-spav:activitytype-editor a skos:Concept ;
+spav:activitytype-editing a skos:Concept ;
     rdfs:comment "is editor of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "editor"@en .
+    skos:prefLabel "editing"@en .
 
-spav:activitytype-editorofmovingimagework a skos:Concept ;
+spav:activitytype-editingofmovingimagework a skos:Concept ;
     rdfs:comment "is editor of moving image work of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "editor of moving image work"@en .
+    skos:prefLabel "editing of moving image work"@en .
 
 spav:activitytype-fulfils a skos:Concept ;
     rdfs:comment "fulfils"@en ;
@@ -164,55 +169,60 @@ spav:activitytype-host a skos:Concept ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "host"@en .
 
-spav:activitytype-instrumentalist a skos:Concept ;
+spav:activitytype-instrumentalperfomance a skos:Concept ;
     rdfs:comment "is instrumentalist of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "instrumentalist"@en .
+    skos:prefLabel "instrumental perfomance"@en .
 
 spav:activitytype-keeper a skos:Concept ;
     rdfs:comment "is keeper of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "keeper"@en .
 
-spav:activitytype-librettist a skos:Concept ;
+spav:activitytype-libretto a skos:Concept ;
     rdfs:comment "is librettist of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "librettist"@en .
+    skos:prefLabel "libretto"@en .
 
-spav:activitytype-lightingdesigner a skos:Concept ;
+spav:activitytype-lightingdesign a skos:Concept ;
     rdfs:comment "is lighting designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "lighting designer"@en .
+    skos:prefLabel "lighting design"@en .
 
-spav:activitytype-lyricist a skos:Concept ;
+spav:activitytype-lyrics a skos:Concept ;
     rdfs:comment "is lyricist of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "lyricist"@en .
+    skos:prefLabel "lyrics"@en .
 
-spav:activitytype-manages a skos:Concept ;
+spav:activitytype-management a skos:Concept ;
     rdfs:comment "manages"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "manages"@en .
+    skos:prefLabel "management"@en .
 
 spav:activitytype-member a skos:Concept ;
     rdfs:comment "is member of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "member"@en .
 
-spav:activitytype-moderator a skos:Concept ;
+spav:activitytype-moderation a skos:Concept ;
     rdfs:comment "is moderator of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "moderator"@en .
+    skos:prefLabel "moderation"@en .
 
-spav:activitytype-musicperformer a skos:Concept ;
+spav:activitytype-mucisacalarrangement a skos:Concept ;
+    rdfs:comment "is arranger of music of"@en ;
+    skos:inScheme spav:activitytype ;
+    skos:prefLabel "mucisacal arrangement"@en .
+
+spav:activitytype-musicperformance a skos:Concept ;
     rdfs:comment "is music performer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "music performer"@en .
+    skos:prefLabel "music performance"@en .
 
-spav:activitytype-narrator a skos:Concept ;
+spav:activitytype-narration a skos:Concept ;
     rdfs:comment "is narrator of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "narrator"@en .
+    skos:prefLabel "narration"@en .
 
 spav:activitytype-occupies a skos:Concept ;
     rdfs:comment "occupies"@en ;
@@ -224,60 +234,60 @@ spav:activitytype-owner a skos:Concept ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "owner"@en .
 
-spav:activitytype-performer a skos:Concept ;
+spav:activitytype-performance a skos:Concept ;
     rdfs:comment "is performer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "performer"@en .
+    skos:prefLabel "performance"@en .
 
-spav:activitytype-photographer a skos:Concept ;
+spav:activitytype-photography a skos:Concept ;
     rdfs:comment "is photographer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "photographer"@en .
+    skos:prefLabel "photography"@en .
 
-spav:activitytype-producer a skos:Concept ;
-    rdfs:comment "is producer of"@en ;
+spav:activitytype-productiondesign a skos:Concept ;
+    rdfs:comment "is production designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "producer"@en .
+    skos:prefLabel "production design"@en .
 
 spav:activitytype-productiondesigner a skos:Concept ;
-    rdfs:comment "is production designer of"@en ;
+    rdfs:comment "is producer of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "production designer"@en .
 
-spav:activitytype-projectiondesigner a skos:Concept ;
+spav:activitytype-projectiondesign a skos:Concept ;
     rdfs:comment "is projection designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "projection designer"@en .
+    skos:prefLabel "projection design"@en .
 
-spav:activitytype-puppeteer a skos:Concept ;
+spav:activitytype-puppeteery a skos:Concept ;
     rdfs:comment "is puppeteer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "puppeteer"@en .
+    skos:prefLabel "puppeteery"@en .
 
 spav:activitytype-pursues a skos:Concept ;
     rdfs:comment "pursues"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "pursues"@en .
 
-spav:activitytype-recordingengineer a skos:Concept ;
-    rdfs:comment "is recording engineer of"@en ;
-    skos:inScheme spav:activitytype ;
-    skos:prefLabel "recording engineer"@en .
-
-spav:activitytype-recordist a skos:Concept ;
+spav:activitytype-recording a skos:Concept ;
     rdfs:comment "is recordist of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "recordist"@en .
+    skos:prefLabel "recording"@en .
+
+spav:activitytype-recordingengineering a skos:Concept ;
+    rdfs:comment "is recording engineer of"@en ;
+    skos:inScheme spav:activitytype ;
+    skos:prefLabel "recording engineering"@en .
 
 spav:activitytype-rightsholder a skos:Concept ;
     rdfs:comment "is rights holder of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "rights holder"@en .
 
-spav:activitytype-screenwriter a skos:Concept ;
+spav:activitytype-screenplay a skos:Concept ;
     rdfs:comment "is screenwriter of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "screenwriter"@en .
+    skos:prefLabel "screenplay"@en .
 
 spav:activitytype-seller a skos:Concept ;
     rdfs:comment "is seller of"@en ;
@@ -289,65 +299,55 @@ spav:activitytype-sender a skos:Concept ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "sender"@en .
 
-spav:activitytype-setdesigner a skos:Concept ;
+spav:activitytype-setdesign a skos:Concept ;
     rdfs:comment "is set designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "set designer"@en .
+    skos:prefLabel "set design"@en .
 
-spav:activitytype-singer a skos:Concept ;
+spav:activitytype-singing a skos:Concept ;
     rdfs:comment "is singer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "singer"@en .
+    skos:prefLabel "singing"@en .
 
-spav:activitytype-sounddesigner a skos:Concept ;
+spav:activitytype-sounddesign a skos:Concept ;
     rdfs:comment "is sound designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "sound designer"@en .
+    skos:prefLabel "sound design"@en .
 
-spav:activitytype-stagedirector a skos:Concept ;
+spav:activitytype-stagedirection a skos:Concept ;
     rdfs:comment "is stage director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "stage director"@en .
+    skos:prefLabel "stage direction"@en .
 
 spav:activitytype-subject a skos:Concept ;
     rdfs:comment "is subject of"@en ;
     skos:inScheme spav:activitytype ;
     skos:prefLabel "subject"@en .
 
-spav:activitytype-substitute a skos:Concept ;
+spav:activitytype-substitution a skos:Concept ;
     rdfs:comment "is substitute of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "substitute"@en .
+    skos:prefLabel "substitution"@en .
 
-spav:activitytype-technicaldirector a skos:Concept ;
+spav:activitytype-technicaldirection a skos:Concept ;
     rdfs:comment "is technical director of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "technical director"@en .
+    skos:prefLabel "technical direction"@en .
 
-spav:activitytype-televisionadaptor a skos:Concept ;
+spav:activitytype-televisionadaption a skos:Concept ;
     rdfs:comment "is television adaptor of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "television adaptor"@en .
+    skos:prefLabel "television adaption"@en .
 
-spav:activitytype-translator a skos:Concept ;
+spav:activitytype-translation a skos:Concept ;
     rdfs:comment "is translator of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "translator"@en .
+    skos:prefLabel "translation"@en .
 
-spav:activitytype-videodesigner a skos:Concept ;
+spav:activitytype-videodesign a skos:Concept ;
     rdfs:comment "is video designer of"@en ;
     skos:inScheme spav:activitytype ;
-    skos:prefLabel "video designer"@en .
-
-spav:activitytype-writerofaddedlyrics a skos:Concept ;
-    rdfs:comment "is writer of added lyrics of"@en ;
-    skos:inScheme spav:activitytype ;
-    skos:prefLabel "writer of added lyrics"@en .
-
-spav:activitytype-writerofaddedtext a skos:Concept ;
-    rdfs:comment "is writer of added text of"@en ;
-    skos:inScheme spav:activitytype ;
-    skos:prefLabel "writer of added text"@en .
+    skos:prefLabel "video design"@en .
 
 spav:appellation-attribute a skos:Concept ;
     skos:exactMatch <aat:300404658> ;
@@ -374,10 +374,6 @@ spav:encodingformat a crm:E55_Type,
         skos:ConceptScheme ;
     rdfs:comment "mime types"@en ;
     skos:prefLabel "encoding format"@en .
-
-spav:identifier a crm:E55_Type,
-        skos:ConceptScheme ;
-    skos:prefLabel "identifier"@en .
 
 spav:permission a crm:E55_Type,
         skos:ConceptScheme ;
@@ -446,6 +442,7 @@ spav:appellation-officialname a skos:Concept ;
         "nome ufficiale"@it .
 
 spav:appellation-pseudonym a skos:Concept ;
+    skos:altLabel "Künstlername"@de ;
     skos:broader spav:appellation-name ;
     skos:exactMatch <aat:300404657> ;
     skos:inScheme spav:appellation ;
@@ -1251,6 +1248,27 @@ spav:grouptype-subcompany a skos:Concept ;
         "subcompany"@en,
         "sous-ensemble"@fr .
 
+spav:identifiertype-deliverynumber a skos:Concept ;
+    skos:inScheme spav:identifiertype ;
+    skos:prefLabel "Ablieferungsnummer"@de,
+        "delivery number"@en,
+        "n° de versement"@fr ;
+    skos:topConceptOf spav:identifiertype .
+
+spav:identifiertype-previoussignature a skos:Concept ;
+    skos:inScheme spav:identifiertype ;
+    skos:prefLabel "vorherige Signatur"@de,
+        "previous signature"@en,
+        "cote précédente"@fr ;
+    skos:topConceptOf spav:identifiertype .
+
+spav:identifiertype-signature a skos:Concept ;
+    skos:inScheme spav:identifiertype ;
+    skos:prefLabel "Signature"@de,
+        "signature"@en,
+        "cote"@fr ;
+    skos:topConceptOf spav:identifiertype .
+
 spav:identitytype-given a skos:Concept ;
     skos:inScheme spav:identitytype ;
     skos:prefLabel "gegeben"@de,
@@ -1858,32 +1876,25 @@ spav:objecttype-venue a skos:Concept ;
     skos:topConceptOf spav:objecttype .
 
 spav:performancetype-de a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Deutschsprachige Erstaufführung"@de,
         "German language premiere"@en,
-        "première en allemand"@fr ;
-    skos:topConceptOf spav:performancetype .
-
-spav:performancetype-ea a skos:Concept ;
-    skos:inScheme spav:performancetype ;
-    skos:prefLabel "Erstaufführung"@de,
-        "premiere"@en,
-        "première"@fr ;
-    skos:topConceptOf spav:performancetype .
+        "première en allemand"@fr .
 
 spav:performancetype-ee a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Europäische Erstaufführung"@de,
         "European premiere"@en,
-        "première européenne"@fr ;
-    skos:topConceptOf spav:performancetype .
+        "première européenne"@fr .
 
 spav:performancetype-fe a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Französischsprachige Erstaufführung"@de,
         "French language premiere"@en,
-        "première en français"@fr ;
-    skos:topConceptOf spav:performancetype .
+        "première en français"@fr .
 
 spav:performancetype-gs a skos:Concept ;
     skos:inScheme spav:performancetype ;
@@ -1893,10 +1904,10 @@ spav:performancetype-gs a skos:Concept ;
     skos:topConceptOf spav:performancetype .
 
 spav:performancetype-ie a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Italienischsprachige Erstaufführung"@de,
-        "Italian language premiere"@en ;
-    skos:topConceptOf spav:performancetype .
+        "Italian language premiere"@en .
 
 spav:performancetype-ma a skos:Concept ;
     skos:inScheme spav:performancetype ;
@@ -1911,18 +1922,18 @@ spav:performancetype-ni a skos:Concept ;
     skos:topConceptOf spav:performancetype .
 
 spav:performancetype-se a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Schweizerische Erstaufführung"@de,
         "Swiss premiere"@en,
-        "première suisse"@fr ;
-    skos:topConceptOf spav:performancetype .
+        "première suisse"@fr .
 
 spav:performancetype-ua a skos:Concept ;
+    skos:broader spav:performancetype-ea ;
     skos:inScheme spav:performancetype ;
     skos:prefLabel "Uraufführung"@de,
         "world premiere"@en,
-        "première mondiale"@fr ;
-    skos:topConceptOf spav:performancetype .
+        "première mondiale"@fr .
 
 spav:performancetype-wa a skos:Concept ;
     skos:inScheme spav:performancetype ;
@@ -2030,40 +2041,50 @@ spav:productiontechnique-screenprint a skos:Concept ;
         "sérigraphie"@fr .
 
 spav:titletype-abrtitle a skos:Concept ;
-    skos:broader spav:titletype-title ;
     skos:exactMatch <aat:300417210> ;
     skos:inScheme spav:titletype ;
     skos:prefLabel "Kurztitel"@de,
         "abbreviated title"@en,
         "titre abrégé"@fr,
-        "titolo breve"@it .
+        "titolo breve"@it ;
+    skos:topConceptOf spav:titletype .
 
 spav:titletype-alttitle a skos:Concept ;
-    skos:broader spav:titletype-title ;
     skos:exactMatch <aat:300417226> ;
     skos:inScheme spav:titletype ;
     skos:prefLabel "Alternativtitel"@de,
         "alternative title"@en,
         "titre alternatif"@fr,
-        "titolo alternativo"@it .
+        "titolo alternativo"@it ;
+    skos:topConceptOf spav:titletype .
 
 spav:titletype-subtitle a skos:Concept ;
-    skos:broader spav:titletype-title ;
     skos:exactMatch <aat:300312006> ;
     skos:inScheme spav:titletype ;
     skos:prefLabel "Untertitel"@de,
         "subtitle"@en,
         "sous-titre"@fr,
-        "sottotitolo"@it .
+        "sottotitolo"@it ;
+    skos:topConceptOf spav:titletype .
+
+spav:titletype-title a skos:Concept ;
+    rdfs:comment "title of a work"@en ;
+    skos:exactMatch <aat:300417193> ;
+    skos:inScheme spav:titletype ;
+    skos:prefLabel "Titel"@de,
+        "title"@en,
+        "titre"@fr,
+        "titolo"@it ;
+    skos:topConceptOf spav:titletype .
 
 spav:titletype-workingtitle a skos:Concept ;
-    skos:broader spav:titletype-title ;
     skos:exactMatch <aat:300417228> ;
     skos:inScheme spav:titletype ;
     skos:prefLabel "Arbeitstitel"@de,
         "working title"@en,
         "titre de travail"@fr,
-        "titolo di lavoro"@it .
+        "titolo di lavoro"@it ;
+    skos:topConceptOf spav:titletype .
 
 spav:videoscanningformat-interlaced a skos:Concept ;
     skos:inScheme spav:videoscanningformat ;
@@ -2506,20 +2527,6 @@ spav:medium-vhs a skos:Concept ;
     skos:prefLabel "VHS"@de,
         "VHS"@en .
 
-spav:titletype-title a skos:Concept ;
-    rdfs:comment "title of a work"@en ;
-    skos:exactMatch <aat:300417193> ;
-    skos:inScheme spav:titletype ;
-    skos:narrower spav:titletype-abrtitle,
-        spav:titletype-alttitle,
-        spav:titletype-subtitle,
-        spav:titletype-workingtitle ;
-    skos:prefLabel "Titel"@de,
-        "title"@en,
-        "titre"@fr,
-        "titolo"@it ;
-    skos:topConceptOf spav:titletype .
-
 spav:gender a crm:E55_Type,
         skos:ConceptScheme ;
     skos:hasTopConcept spav:gender-female,
@@ -2537,6 +2544,13 @@ spav:genre-circus a skos:Concept ;
         spav:genre-ZirkusLaien ;
     skos:prefLabel "Zirkus"@de,
         "circus"@en .
+
+spav:identifiertype a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:identifiertype-deliverynumber,
+        spav:identifiertype-previoussignature,
+        spav:identifiertype-signature ;
+    skos:prefLabel "identifier"@en .
 
 spav:medium-magnetictape a skos:Concept ;
     skos:inScheme spav:medium ;
@@ -2556,13 +2570,18 @@ spav:objecttype a crm:E55_Type,
         spav:objecttype-venue ;
     skos:prefLabel "object type"@en .
 
-spav:titletype a crm:E55_Type,
-        skos:ConceptScheme ;
-    skos:hasTopConcept spav:titletype-title ;
-    skos:prefLabel "Titelart"@de,
-        "title type"@en,
-        "titre"@fr,
-        "titolo"@it .
+spav:performancetype-ea a skos:Concept ;
+    skos:inScheme spav:performancetype ;
+    skos:narrower spav:performancetype-de,
+        spav:performancetype-ee,
+        spav:performancetype-fe,
+        spav:performancetype-ie,
+        spav:performancetype-se,
+        spav:performancetype-ua ;
+    skos:prefLabel "Erstaufführung"@de,
+        "premiere"@en,
+        "première"@fr ;
+    skos:topConceptOf spav:performancetype .
 
 spav:appellation a crm:E55_Type,
         skos:ConceptScheme ;
@@ -2643,6 +2662,18 @@ spav:productiontechnique-print a skos:Concept ;
         "stampa"@it ;
     skos:topConceptOf spav:productiontechnique .
 
+spav:titletype a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:titletype-abrtitle,
+        spav:titletype-alttitle,
+        spav:titletype-subtitle,
+        spav:titletype-title,
+        spav:titletype-workingtitle ;
+    skos:prefLabel "Titelart"@de,
+        "title type"@en,
+        "titre"@fr,
+        "titolo"@it .
+
 spav:medium-videocassette a skos:Concept ;
     skos:broader spav:medium-magnetictape ;
     skos:exactMatch <aat:300028692> ;
@@ -2708,6 +2739,16 @@ spav:docform-poster a skos:Concept ;
         "poster"@en ;
     skos:topConceptOf spav:docform .
 
+spav:performancetype a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:performancetype-ea,
+        spav:performancetype-gs,
+        spav:performancetype-ma,
+        spav:performancetype-ni,
+        spav:performancetype-wa ;
+    skos:prefLabel "Performance-Art"@de,
+        "performance type"@en .
+
 spav:productiontechnique a crm:E55_Type,
         skos:ConceptScheme ;
     skos:hasTopConcept spav:productiontechnique-collotype,
@@ -2744,22 +2785,6 @@ spav:grouptype a crm:E55_Type,
         spav:grouptype-publisher ;
     skos:prefLabel "Gruppenart"@de,
         "group type"@en .
-
-spav:performancetype a crm:E55_Type,
-        skos:ConceptScheme ;
-    skos:hasTopConcept spav:performancetype-de,
-        spav:performancetype-ea,
-        spav:performancetype-ee,
-        spav:performancetype-fe,
-        spav:performancetype-gs,
-        spav:performancetype-ie,
-        spav:performancetype-ma,
-        spav:performancetype-ni,
-        spav:performancetype-se,
-        spav:performancetype-ua,
-        spav:performancetype-wa ;
-    skos:prefLabel "Performance-Art"@de,
-        "performance type"@en .
 
 spav:genre-dance a skos:Concept ;
     skos:inScheme spav:genre ;
