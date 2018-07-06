@@ -600,7 +600,7 @@ spav:docform-clipping a skos:Concept ;
         "clipping"@en,
         "article de presse"@fr .
 
-spav:docform-concert-poster a skos:Concept ;
+spav:docform-concertposter a skos:Concept ;
     skos:broader spav:docform-poster ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Konzertplakat"@de,
@@ -2876,7 +2876,7 @@ spav:docform-poster a skos:Concept ;
     skos:inScheme spav:docform ;
     skos:narrower spav:docform-artposter,
         spav:docform-circusposter,
-        spav:docform-concert-poster,
+        spav:docform-concertposter,
         spav:docform-courseposter,
         spav:docform-eventposter,
         spav:docform-exhibitionposter,
