@@ -174,7 +174,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 173,http://vocab.performing-arts.ch/docform-design,http://vocab.performing-arts.ch/docform,False,Object,,,,,design,,,Entwurf,,Projet,,,
 174,http://vocab.performing-arts.ch/docform-stagesetdesign,http://vocab.performing-arts.ch/docform-design,False,Object,,,aat:300054190,,stage set design,scenography,,Bühnenbildentwurf,,projet de décor,,schizzo di scenografia,bozzetto
 175,http://vocab.performing-arts.ch/docform-costumedesign,http://vocab.performing-arts.ch/docform-design,False,Object,,,aat:300163423,,costume design,,,Kostümentwurf,,projet de costume,,,
-176,http://vocab.performing-arts.ch/docform-object,http://vocab.performing-arts.ch/docform-object,False,Object,,,aat:300185711,,object,,,,,objet,,,
+176,http://vocab.performing-arts.ch/docform-object,http://vocab.performing-arts.ch/docform,False,Object,,,aat:300185711,,object,,,,,objet,,,
 177,http://vocab.performing-arts.ch/docform-costume,http://vocab.performing-arts.ch/docform-object,False,Object,,,,,costume,,,Kostüm,,costume,,,
 178,http://vocab.performing-arts.ch/docform-stageaccessorie,http://vocab.performing-arts.ch/docform-object,False,Object,,,aat:300251645,,stage accessorie,,,,,accessoire de scène,,,
 179,http://vocab.performing-arts.ch/docform-stagemodel,http://vocab.performing-arts.ch/docform-object,False,Object,,,,,stage model,,,Bühnenbildmodell,,maquette,maquette construite de scène,modello di scenografia,

@@ -2584,6 +2584,17 @@ spav:archivallevel-recordsettype a skos:Concept ;
         "record set type"@en ;
     skos:topConceptOf spav:archivallevel .
 
+spav:docform-object a skos:Concept ;
+    skos:exactMatch <aat:300185711> ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-costume,
+        spav:docform-personalobject,
+        spav:docform-stageaccessorie,
+        spav:docform-stagemodel ;
+    skos:prefLabel "object"@en,
+        "objet"@fr ;
+    skos:topConceptOf spav:docform .
+
 spav:genre-cabaret1 a skos:Concept ;
     skos:broader spav:genre-other ;
     skos:inScheme spav:genre ;
@@ -2650,18 +2661,6 @@ spav:medium-vhs a skos:Concept ;
         spav:medium-vhsc ;
     skos:prefLabel "VHS"@de,
         "VHS"@en .
-
-spav:docform-object a skos:Concept ;
-    skos:broader spav:docform-object ;
-    skos:exactMatch <aat:300185711> ;
-    skos:inScheme spav:docform ;
-    skos:narrower spav:docform-costume,
-        spav:docform-object,
-        spav:docform-personalobject,
-        spav:docform-stageaccessorie,
-        spav:docform-stagemodel ;
-    skos:prefLabel "object"@en,
-        "objet"@fr .
 
 spav:gender a crm:E55_Type,
         skos:ConceptScheme ;
@@ -2999,6 +2998,7 @@ spav:docform a crm:E55_Type,
     skos:hasTopConcept spav:docform-design,
         spav:docform-document,
         spav:docform-drawing,
+        spav:docform-object,
         spav:docform-painting,
         spav:docform-photograph,
         spav:docform-poster,
