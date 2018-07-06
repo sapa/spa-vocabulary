@@ -573,6 +573,13 @@ spav:contactpoint-website a skos:Concept ;
         "website"@en ;
     skos:topConceptOf spav:contactpoint .
 
+spav:docform-acrylicpainting a skos:Concept ;
+    skos:broader spav:docform-painting ;
+    skos:exactMatch <aat:300181918> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "acrylic painting"@en,
+        "peinture acrylique"@fr .
+
 spav:docform-artposter a skos:Concept ;
     skos:broader spav:docform-poster ;
     skos:inScheme spav:docform ;
@@ -585,17 +592,42 @@ spav:docform-circusposter a skos:Concept ;
     skos:prefLabel "Zirkusplakat"@de,
         "circus poster"@en .
 
+spav:docform-clipping a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300026867> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "Zeitungsartikel"@de,
+        "clipping"@en,
+        "article de presse"@fr .
+
 spav:docform-concert-poster a skos:Concept ;
     skos:broader spav:docform-poster ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Konzertplakat"@de,
         "concert poster"@en .
 
+spav:docform-correspondence a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300026877> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "Korrespondenz"@de,
+        "correspondence"@en,
+        "correspondance"@fr .
+
+spav:docform-costume a skos:Concept ;
+    skos:broader spav:docform-object ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "Kostüm"@de,
+        "costume"@en,
+        "costume"@fr .
+
 spav:docform-costumedesign a skos:Concept ;
+    skos:broader spav:docform-design ;
+    skos:exactMatch <aat:300163423> ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Kostümentwurf"@de,
-        "costume design"@en ;
-    skos:topConceptOf spav:docform .
+        "costume design"@en,
+        "projet de costume"@fr .
 
 spav:docform-courseposter a skos:Concept ;
     skos:broader spav:docform-poster ;
@@ -603,10 +635,28 @@ spav:docform-courseposter a skos:Concept ;
     skos:prefLabel "Kursplakat"@de,
         "course poster"@en .
 
+spav:docform-dancenotation a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300417623> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "Notation"@de,
+        "dance notation"@en,
+        "notation"@fr .
+
 spav:docform-diary a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300027112> ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Tagebuch"@de,
-        "diary"@en ;
+        "diary"@en,
+        "agenda"@fr .
+
+spav:docform-drawing a skos:Concept ;
+    skos:exactMatch <aat:300033973> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "Zeichnung"@de,
+        "drawing"@en,
+        "dessin"@fr ;
     skos:topConceptOf spav:docform .
 
 spav:docform-eventposter a skos:Concept ;
@@ -642,40 +692,54 @@ spav:docform-institutionalposter a skos:Concept ;
         "institutional poster"@en .
 
 spav:docform-invoice a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300027568> ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Rechnung"@de,
-        "invoice"@en ;
-    skos:topConceptOf spav:docform .
+        "invoice"@en,
+        "facture"@fr .
 
-spav:docform-letter a skos:Concept ;
+spav:docform-negative a skos:Concept ;
+    skos:broader spav:docform-photograph ;
+    skos:exactMatch <aat:300127173> ;
     skos:inScheme spav:docform ;
-    skos:prefLabel "Brief"@de,
-        "letter"@en ;
-    skos:topConceptOf spav:docform .
-
-spav:docform-notation a skos:Concept ;
-    skos:inScheme spav:docform ;
-    skos:prefLabel "Notation"@de,
-        "notation"@en ;
-    skos:topConceptOf spav:docform .
+    skos:prefLabel "negative"@en,
+        "négatif"@fr .
 
 spav:docform-note a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300027200> ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Notiz"@de,
-        "note"@en ;
-    skos:topConceptOf spav:docform .
+        "note"@en,
+        "note"@fr .
 
-spav:docform-photography a skos:Concept ;
+spav:docform-oilpainting a skos:Concept ;
+    skos:broader spav:docform-painting ;
+    skos:exactMatch <aat:300033799> ;
     skos:inScheme spav:docform ;
-    skos:prefLabel "Fotografie"@de,
-        "photography"@en ;
-    skos:topConceptOf spav:docform .
+    skos:prefLabel "oil painting"@en,
+        "peinture à l'huile"@fr .
 
-spav:docform-pressclipping a skos:Concept ;
+spav:docform-personalobject a skos:Concept ;
+    skos:broader spav:docform-object ;
     skos:inScheme spav:docform ;
-    skos:prefLabel "Zeitungsartikel"@de,
-        "press clipping"@en ;
-    skos:topConceptOf spav:docform .
+    skos:prefLabel "personal object"@en,
+        "object personnel"@fr .
+
+spav:docform-personalpaper a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300028037> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "personal paper"@en,
+        "document personnel"@fr .
+
+spav:docform-positive a skos:Concept ;
+    skos:broader spav:docform-photograph ;
+    skos:exactMatch <aat:300138191> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "positive"@en,
+        "positif"@fr .
 
 spav:docform-productionposter a skos:Concept ;
     skos:broader spav:docform-poster ;
@@ -689,6 +753,13 @@ spav:docform-programposter a skos:Concept ;
     skos:prefLabel "Programmplakat"@de,
         "program poster"@en .
 
+spav:docform-promotionalmaterial a skos:Concept ;
+    skos:broader spav:docform-document ;
+    skos:exactMatch <aat:300249572> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "promotional material"@en,
+        "matériel promotionnel"@fr .
+
 spav:docform-scheduleposter a skos:Concept ;
     skos:broader spav:docform-poster ;
     skos:inScheme spav:docform ;
@@ -701,29 +772,53 @@ spav:docform-seasonposter a skos:Concept ;
     skos:prefLabel "Saisonplakat"@de,
         "season poster"@en .
 
+spav:docform-sketch a skos:Concept ;
+    skos:exactMatch <aat:300015617> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "sketch"@en,
+        "esquisse"@fr ;
+    skos:topConceptOf spav:docform .
+
+spav:docform-stageaccessorie a skos:Concept ;
+    skos:broader spav:docform-object ;
+    skos:exactMatch <aat:300251645> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "stage accessorie"@en,
+        "accessoire de scène"@fr .
+
 spav:docform-stagemodel a skos:Concept ;
     skos:altLabel "maquette construite de scène"@fr ;
+    skos:broader spav:docform-object ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Bühnenbildmodell"@de,
         "stage model"@en,
         "maquette"@fr,
-        "modello di scenografia"@it ;
-    skos:topConceptOf spav:docform .
+        "modello di scenografia"@it .
 
 spav:docform-stagesetdesign a skos:Concept ;
-    skos:altLabel "bozzetto"@it ;
+    skos:altLabel "scenography"@en,
+        "bozzetto"@it ;
+    skos:broader spav:docform-design ;
+    skos:exactMatch <aat:300054190> ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Bühnenbildentwurf"@de,
         "stage set design"@en,
         "projet de décor"@fr,
-        "schizzo di scenografia"@it ;
-    skos:topConceptOf spav:docform .
+        "schizzo di scenografia"@it .
 
 spav:docform-videorecording a skos:Concept ;
     skos:inScheme spav:docform ;
     skos:prefLabel "Videoaufzeichnung"@de,
-        "video recording"@en ;
+        "video recording"@en,
+        "enregistrement vidéo"@fr ;
     skos:topConceptOf spav:docform .
+
+spav:docform-watercolor a skos:Concept ;
+    skos:broader spav:docform-painting ;
+    skos:exactMatch <aat:300078925> ;
+    skos:inScheme spav:docform ;
+    skos:prefLabel "watercolor"@en,
+        "aquarelle"@fr .
 
 spav:gender-female a skos:Concept ;
     skos:exactMatch <aat:300189557>,
@@ -2222,6 +2317,25 @@ spav:productiontechnique-photography a skos:Concept ;
         "photography"@en ;
     skos:topConceptOf spav:productiontechnique .
 
+spav:docform-design a skos:Concept ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-costumedesign,
+        spav:docform-stagesetdesign ;
+    skos:prefLabel "Entwurf"@de,
+        "design"@en,
+        "Projet"@fr ;
+    skos:topConceptOf spav:docform .
+
+spav:docform-photograph a skos:Concept ;
+    skos:exactMatch <aat:300046300> ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-negative,
+        spav:docform-positive ;
+    skos:prefLabel "Fotografie"@de,
+        "photograph"@en,
+        "photographie"@fr ;
+    skos:topConceptOf spav:docform .
+
 spav:genre-folkdance a skos:Concept ;
     skos:broader spav:genre-dance ;
     skos:inScheme spav:genre ;
@@ -2321,6 +2435,16 @@ spav:colorcontent a crm:E55_Type,
     skos:hasTopConcept spav:colorcontent-monochrom,
         spav:colorcontent-polychrom ;
     skos:prefLabel "color content"@en .
+
+spav:docform-painting a skos:Concept ;
+    skos:exactMatch <aat:300033618> ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-acrylicpainting,
+        spav:docform-oilpainting,
+        spav:docform-watercolor ;
+    skos:prefLabel "painting"@en,
+        "peinture"@fr ;
+    skos:topConceptOf spav:docform .
 
 spav:genre-ballet a skos:Concept ;
     skos:broader spav:genre-stagedance ;
@@ -2527,6 +2651,18 @@ spav:medium-vhs a skos:Concept ;
     skos:prefLabel "VHS"@de,
         "VHS"@en .
 
+spav:docform-object a skos:Concept ;
+    skos:broader spav:docform-object ;
+    skos:exactMatch <aat:300185711> ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-costume,
+        spav:docform-object,
+        spav:docform-personalobject,
+        spav:docform-stageaccessorie,
+        spav:docform-stagemodel ;
+    skos:prefLabel "object"@en,
+        "objet"@fr .
+
 spav:gender a crm:E55_Type,
         skos:ConceptScheme ;
     skos:hasTopConcept spav:gender-female,
@@ -2628,6 +2764,22 @@ spav:agenttype a crm:E55_Type,
         spav:agenttype-person,
         spav:agenttype-unknown ;
     skos:prefLabel "agent type"@en .
+
+spav:docform-document a skos:Concept ;
+    skos:exactMatch <aat:300026031> ;
+    skos:inScheme spav:docform ;
+    skos:narrower spav:docform-clipping,
+        spav:docform-correspondence,
+        spav:docform-dancenotation,
+        spav:docform-diary,
+        spav:docform-invoice,
+        spav:docform-note,
+        spav:docform-personalpaper,
+        spav:docform-promotionalmaterial ;
+    skos:prefLabel "Dokumentgattungen"@de,
+        "document genre"@en,
+        "genre de document"@fr ;
+    skos:topConceptOf spav:docform .
 
 spav:medium-opticaldisc a skos:Concept ;
     skos:inScheme spav:medium ;
@@ -2736,7 +2888,8 @@ spav:docform-poster a skos:Concept ;
         spav:docform-scheduleposter,
         spav:docform-seasonposter ;
     skos:prefLabel "Plakat"@de,
-        "poster"@en ;
+        "poster"@en,
+        "affiche"@fr ;
     skos:topConceptOf spav:docform .
 
 spav:performancetype a crm:E55_Type,
@@ -2843,17 +2996,13 @@ spav:language a crm:E55_Type,
 
 spav:docform a crm:E55_Type,
         skos:ConceptScheme ;
-    skos:hasTopConcept spav:docform-costumedesign,
-        spav:docform-diary,
-        spav:docform-invoice,
-        spav:docform-letter,
-        spav:docform-notation,
-        spav:docform-note,
-        spav:docform-photography,
+    skos:hasTopConcept spav:docform-design,
+        spav:docform-document,
+        spav:docform-drawing,
+        spav:docform-painting,
+        spav:docform-photograph,
         spav:docform-poster,
-        spav:docform-pressclipping,
-        spav:docform-stagemodel,
-        spav:docform-stagesetdesign,
+        spav:docform-sketch,
         spav:docform-videorecording ;
     skos:prefLabel "Formen der Dokumentation"@de,
         "documentary form"@en .
