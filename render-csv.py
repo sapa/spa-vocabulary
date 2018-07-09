@@ -13,12 +13,12 @@ df['scheme'] = ~df['skos_ConceptScheme'].isnull()
 # merge ConceptScheme and Concept to URI
 df['skos_ConceptScheme'].fillna(method='ffill', inplace=True)
 df['skos_Concept'].fillna('', inplace=True)
-df['skos_Concept'] = df['skos_Concept'].apply(lambda x: int(bool(x)) * '-' + x)
+# df['skos_Concept'] = df['skos_Concept'].apply(lambda x: int(bool(x)) * '-' + x)
 df['id'] = 'http://vocab.performing-arts.ch/' + \
     df['skos_ConceptScheme'].str.strip() + df['skos_Concept'].str.strip()
 df['broader'].fillna('', inplace=True)
 df['broader'].replace('-', '', inplace=True)
-df['broader'] = df['broader'].apply(lambda x: int(bool(x)) * '-' + x)
+# df['broader'] = df['broader'].apply(lambda x: int(bool(x)) * '-' + x)
 df['parent'] = df.apply(lambda x: '' if x['scheme'] else 'http://vocab.performing-arts.ch/' +
                         x['skos_ConceptScheme'].strip() + x['broader'].strip(), axis=1)
 df['skos_exactMatch'].replace('-', '', inplace=True)

@@ -16,21 +16,24 @@ for ns in ['skos']:
         for l in ['en', 'de', 'fr', 'it']:
             label_columns.append('skos_' + p + '_' + l)
 
+vocabs = dict()
+vocabs['aat'] = Namespace('http://vocab.getty.edu/aat/')
+vocabs['crm'] = Namespace('http://www.cidoc-crm.org/cidoc-crm/')
+vocabs['rdabs'] = Namespace('http://rdaregistry.info/termList/broadcastStand/')
+vocabs['rdamat'] = Namespace('http://rdaregistry.info/termList/RDAMaterial/')
+vocabs['rdacc'] = Namespace('http://rdaregistry.info/termList/RDAColourContent/')
+vocabs['rdapm'] = Namespace('http://rdaregistry.info/termList/RDAproductionMethod/')
+vocabs['rdavf'] = Namespace('http://rdaregistry.info/termList/videoFormat/')
+vocabs['rdagd'] = Namespace('http://rdaregistry.info/termList/gender/')
+vocabs['iso639-2'] = Namespace('http://id.loc.gov/vocabulary/iso639-2/')
 
 graph = Graph()
 graph.bind('rdfs', RDFS)
 graph.bind('skos', SKOS)
 graph.bind('owl', OWL)
-graph.bind('aat', Namespace('http://vocab.getty.edu/aat/'))
-graph.bind('crm', Namespace('http://www.cidoc-crm.org/cidoc-crm/'))
-graph.bind('rdabs', Namespace('http://rdaregistry.info/termList/broadcastStand/'))
-graph.bind('rdamat', Namespace('http://rdaregistry.info/termList/RDAMaterial/'))
-graph.bind('rdacc', Namespace('http://rdaregistry.info/termList/RDAColourContent/'))
-graph.bind('rdapm', Namespace('http://rdaregistry.info/termList/RDAproductionMethod/'))
-graph.bind('rdavf', Namespace('http://rdaregistry.info/termList/videoFormat/'))
-graph.bind('rdagd', Namespace('http://rdaregistry.info/termList/gender/'))
-graph.bind('iso639-2', Namespace('http://id.loc.gov/vocabulary/iso639-2/'))
 graph.bind('spav', vocab_ns)
+for k, v in vocabs.items():
+    graph.bind(k, v)
 
 uris = []
 
@@ -54,7 +57,7 @@ for idx, row in df.iterrows():
     # concept
     elif not pd.isnull(row['skos_Concept']) and scheme_ns:
         # uri = URIRef(scheme_ns[row['skos_Concept'].strip()])
-        uri = URIRef(vocab_ns[f'{scheme}-{row["skos_Concept"].strip()}'])
+        uri = URIRef(vocab_ns[f'{scheme}{row["skos_Concept"].strip()}'])
         try:
             assert uri not in uris
         except AssertionError:
@@ -69,7 +72,7 @@ for idx, row in df.iterrows():
                 graph.add((scheme_uri, SKOS.hasTopConcept, uri))
             else:
                 # broader_uri = URIRef(scheme_ns[row['broader'].strip()])
-                broader_uri = URIRef(vocab_ns[f'{scheme}-{row["broader"].strip()}'])
+                broader_uri = URIRef(vocab_ns[f'{scheme}{row["broader"].strip()}'])
                 graph.add((uri, SKOS.broader, broader_uri))
                 graph.add((broader_uri, SKOS.narrower, uri))
     # concepts and schemes
@@ -84,7 +87,10 @@ for idx, row in df.iterrows():
     # same as
     if not pd.isnull(row['skos_exactMatch']) and row['skos_exactMatch'].strip() != '-':
         for s in row['skos_exactMatch'].split(';'):
-            graph.add((uri, SKOS.exactMatch, URIRef(s.strip())))
+            p = s.strip().split(':')[0]
+            q = s.strip().split(':')[1]
+            if p in vocabs:
+                graph.add((uri, SKOS.exactMatch, URIRef(vocabs[p] + q)))
 
 with open('target/vocabulary.ttl', 'wb') as f:
     f.write(graph.serialize(format='turtle'))
