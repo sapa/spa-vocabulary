@@ -1293,12 +1293,42 @@ spav:grouptype-association a skos:Concept ;
         "association"@fr ;
     skos:topConceptOf spav:grouptype .
 
+spav:grouptype-atv a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Amateur-Theaterverein (Bühnen)"@de,
+        "Amateur-Theaterverein (Bühnen)"@en .
+
+spav:grouptype-aus a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Ausbildungsstätte (Bühnen)"@de,
+        "Ausbildungsstätte (Bühnen)"@en .
+
 spav:grouptype-education a skos:Concept ;
     skos:inScheme spav:grouptype ;
     skos:prefLabel "Bildungsinstitution"@de,
         "education"@en,
         "institution de formation"@fr ;
     skos:topConceptOf spav:grouptype .
+
+spav:grouptype-ggh a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "grosses Gastspielhaus (Mitglied bei SBV, Inthega oder Corodis)"@de,
+        "grosses Gastspielhaus (Mitglied bei SBV, Inthega oder Corodis)"@en .
+
+spav:grouptype-gst a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "grosses Stadttheater mit Ensemble"@de,
+        "grosses Stadttheater mit Ensemble"@en .
+
+spav:grouptype-kte a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "kleines Theaterhaus mit Ensemble oder Eigenproduktionen"@de,
+        "kleines Theaterhaus mit Ensemble oder Eigenproduktionen"@en .
 
 spav:grouptype-library a skos:Concept ;
     skos:inScheme spav:grouptype ;
@@ -1335,6 +1365,42 @@ spav:grouptype-publisher a skos:Concept ;
         "maison d'édition"@fr ;
     skos:topConceptOf spav:grouptype .
 
+spav:grouptype-rest a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Restkategorien: Grosser Konzertsaal, Gourmettheater"@de,
+        "Restkategorien: Grosser Konzertsaal, Gourmettheater"@en .
+
+spav:grouptype-rkt a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "regionales Kleintheater mit Mischprogrammen"@de,
+        "regionales Kleintheater mit Mischprogrammen"@en .
+
+spav:grouptype-rkz a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "regionale Kulturzentrum mit Theaterbühnen"@de,
+        "regionale Kulturzentrum mit Theaterbühnen"@en .
+
+spav:grouptype-stk a skos:Concept ;
+    skos:broader spav:grouptype-st ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Kinder- und Jugendtheater"@de,
+        "Kinder- und Jugendtheater"@en .
+
+spav:grouptype-stp a skos:Concept ;
+    skos:broader spav:grouptype-st ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Figuren- und Puppentheater"@de,
+        "Figuren- und Puppentheater"@en .
+
+spav:grouptype-stt a skos:Concept ;
+    skos:broader spav:grouptype-st ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Tanztheater"@de,
+        "Tanztheater"@en .
+
 spav:grouptype-subcompany a skos:Concept ;
     skos:altLabel "subensemble"@en ;
     skos:broader spav:grouptype-company ;
@@ -1342,6 +1408,18 @@ spav:grouptype-subcompany a skos:Concept ;
     skos:prefLabel "Teilensemble"@de,
         "subcompany"@en,
         "sous-ensemble"@fr .
+
+spav:grouptype-tfs a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Theaterhaus der Freien Szene im engeren Sinne"@de,
+        "Theaterhaus der Freien Szene im engeren Sinne"@en .
+
+spav:grouptype-vok a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:prefLabel "Veranstaltungsort der Kleinkunst im engeren Sinne"@de,
+        "Veranstaltungsort der Kleinkunst im engeren Sinne"@en .
 
 spav:identifiertype-deliverynumber a skos:Concept ;
     skos:inScheme spav:identifiertype ;
@@ -2237,14 +2315,6 @@ spav:grouptype-company a skos:Concept ;
         "company"@en,
         "ensemble"@fr .
 
-spav:grouptype-producer a skos:Concept ;
-    skos:inScheme spav:grouptype ;
-    skos:narrower spav:grouptype-company ;
-    skos:prefLabel "Produzent"@de,
-        "producer"@en,
-        "producteur"@fr ;
-    skos:topConceptOf spav:grouptype .
-
 spav:material-paper a skos:Concept ;
     skos:exactMatch <aat:300014109>,
         <rdamat:1025> ;
@@ -2479,6 +2549,15 @@ spav:genre-vaudevillecircus a skos:Concept ;
         "vaudeville"@en,
         "music-hall"@fr,
         "varietà"@it .
+
+spav:grouptype-st a skos:Concept ;
+    skos:broader spav:grouptype-producer ;
+    skos:inScheme spav:grouptype ;
+    skos:narrower spav:grouptype-stk,
+        spav:grouptype-stp,
+        spav:grouptype-stt ;
+    skos:prefLabel "sektorielles Haus"@de,
+        "sektorielles Haus"@en .
 
 spav:material-textile a skos:Concept ;
     skos:altLabel "Textil"@de ;
@@ -2870,6 +2949,25 @@ spav:genre-stagedance a skos:Concept ;
         "théâtre dansé"@fr,
         "teatrodanza"@it .
 
+spav:grouptype-producer a skos:Concept ;
+    skos:inScheme spav:grouptype ;
+    skos:narrower spav:grouptype-atv,
+        spav:grouptype-aus,
+        spav:grouptype-company,
+        spav:grouptype-ggh,
+        spav:grouptype-gst,
+        spav:grouptype-kte,
+        spav:grouptype-rest,
+        spav:grouptype-rkt,
+        spav:grouptype-rkz,
+        spav:grouptype-st,
+        spav:grouptype-tfs,
+        spav:grouptype-vok ;
+    skos:prefLabel "Produzent"@de,
+        "producer"@en,
+        "producteur"@fr ;
+    skos:topConceptOf spav:grouptype .
+
 spav:docform-poster a skos:Concept ;
     skos:exactMatch <aat:300027221> ;
     skos:inScheme spav:docform ;
@@ -2921,22 +3019,6 @@ spav:material a crm:E55_Type,
         spav:material-textile,
         spav:material-wood ;
     skos:prefLabel "material"@en .
-
-spav:grouptype a crm:E55_Type,
-        skos:ConceptScheme ;
-    rdfs:comment "form of organisation and general purpose"@en ;
-    skos:hasTopConcept spav:grouptype-agency,
-        spav:grouptype-archive,
-        spav:grouptype-association,
-        spav:grouptype-education,
-        spav:grouptype-library,
-        spav:grouptype-museum,
-        spav:grouptype-organizer,
-        spav:grouptype-producer,
-        spav:grouptype-provider,
-        spav:grouptype-publisher ;
-    skos:prefLabel "Gruppenart"@de,
-        "group type"@en .
 
 spav:genre-dance a skos:Concept ;
     skos:inScheme spav:genre ;
@@ -2992,6 +3074,22 @@ spav:language a crm:E55_Type,
         spav:language-swe ;
     skos:prefLabel "Sprache"@de,
         "language"@en .
+
+spav:grouptype a crm:E55_Type,
+        skos:ConceptScheme ;
+    rdfs:comment "form of organisation and general purpose"@en ;
+    skos:hasTopConcept spav:grouptype-agency,
+        spav:grouptype-archive,
+        spav:grouptype-association,
+        spav:grouptype-education,
+        spav:grouptype-library,
+        spav:grouptype-museum,
+        spav:grouptype-organizer,
+        spav:grouptype-producer,
+        spav:grouptype-provider,
+        spav:grouptype-publisher ;
+    skos:prefLabel "Gruppenart"@de,
+        "group type"@en .
 
 spav:docform a crm:E55_Type,
         skos:ConceptScheme ;
