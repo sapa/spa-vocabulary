@@ -761,6 +761,13 @@ spav:fvbrm a skos:Concept ;
     skos:prefLabel "Fotonegative"@de,
         "photo negative"@en .
 
+spav:fvdex a skos:Concept ;
+    skos:broader spav:fvuut ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300127104> ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "Abzug (Fotografie)"@de,
+        "photographic print"@en .
+
 spav:fvecx a skos:Concept ;
     skos:altLabel "Mini-DV"@en ;
     skos:broader spav:fvpmq ;
@@ -871,7 +878,7 @@ spav:fvjbs a skos:Concept ;
 
 spav:fvjej a skos:Concept ;
     skos:altLabel "Super VHS-C"@en ;
-    skos:broader spav:fvywh ;
+    skos:broader spav:fvoda ;
     skos:inScheme spav:fv ;
     skos:prefLabel "S-VHS-C"@de,
         "S-VHS-C"@en .
@@ -883,7 +890,7 @@ spav:fvkyo a skos:Concept ;
         "1/2\" open reel"@en .
 
 spav:fvlxb a skos:Concept ;
-    skos:broader spav:fvywh ;
+    skos:broader spav:fvoda ;
     skos:inScheme spav:fv ;
     skos:prefLabel "VHS-C"@de,
         "VHS-C"@en .
@@ -895,7 +902,7 @@ spav:fvlyj a skos:Concept ;
 
 spav:fvlyk a skos:Concept ;
     skos:altLabel "Digital Audio Tape"@en ;
-    skos:broader spav:fvodj ;
+    skos:broader spav:fvzxp ;
     skos:inScheme spav:fv ;
     skos:prefLabel "DAT"@en .
 
@@ -940,10 +947,18 @@ spav:fvodg a skos:Concept ;
 
 spav:fvpco a skos:Concept ;
     skos:altLabel "Digital VHS"@en ;
-    skos:broader spav:fvywh ;
+    skos:broader spav:fvoda ;
     skos:inScheme spav:fv ;
     skos:prefLabel "D-VHS"@de,
         "D-VHS"@en .
+
+spav:fvpln a skos:Concept ;
+    skos:altLabel "CAC"@en,
+        "Compact Audio Cassette"@en ;
+    skos:broader spav:fvzxp ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "Kompaktkassette"@de,
+        "Compact Cassette"@en .
 
 spav:fvpro a skos:Concept ;
     skos:broader spav:fvunk ;
@@ -957,6 +972,14 @@ spav:fvqle a skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300264688> ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Digital Betacam"@en .
+
+spav:fvqow a skos:Concept ;
+    skos:altLabel "Normal-8"@de ;
+    skos:broader spav:fvpso ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300263859> ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "8mm"@de,
+        "8mm"@en .
 
 spav:fvrpy a skos:Concept ;
     skos:broader spav:fvgye ;
@@ -1027,7 +1050,7 @@ spav:fvvax a skos:Concept ;
 
 spav:fvviy a skos:Concept ;
     skos:altLabel "Super VHS"@en ;
-    skos:broader spav:fvywh ;
+    skos:broader spav:fvoda ;
     skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1012>,
         <http://vocab.getty.edu/aat/300264684> ;
     skos:inScheme spav:fv ;
@@ -1038,6 +1061,13 @@ spav:fvvnm a skos:Concept ;
     skos:broader spav:fvjtf ;
     skos:inScheme spav:fv ;
     skos:prefLabel "BetacamSX"@en .
+
+spav:fvvyd a skos:Concept ;
+    skos:broader spav:fvhcu ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300263815> ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "16mm"@de,
+        "16mm"@en .
 
 spav:fvwry a skos:Concept ;
     skos:broader spav:fvuut ;
@@ -1063,6 +1093,14 @@ spav:fvxpt a skos:Concept ;
     skos:inScheme spav:fv ;
     skos:prefLabel "U-matic 1/2\""@de,
         "U-matic 1/2\""@en .
+
+spav:fvywh a skos:Concept ;
+    skos:broader spav:fvoda ;
+    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1015>,
+        <http://vocab.getty.edu/aat/300264683> ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "VHS"@de,
+        "VHS"@en .
 
 spav:fvyxa a skos:Concept ;
     skos:broader spav:fvgye ;
@@ -2299,14 +2337,6 @@ spav:fvajf a skos:Concept ;
         "paper"@en ;
     skos:topConceptOf spav:fv .
 
-spav:fvhcu a skos:Concept ;
-    skos:broader spav:fvzfk ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263815> ;
-    skos:inScheme spav:fv ;
-    skos:narrower spav:fvhhx ;
-    skos:prefLabel "16mm"@de,
-        "16mm"@en .
-
 spav:fvlkh a skos:Concept ;
     skos:altLabel "Compact Disc"@en ;
     skos:broader spav:fvaha ;
@@ -2314,28 +2344,12 @@ spav:fvlkh a skos:Concept ;
     skos:narrower spav:fvgbf ;
     skos:prefLabel "CD"@en .
 
-spav:fvpso a skos:Concept ;
-    skos:altLabel "Normal-8"@de ;
-    skos:broader spav:fvzfk ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263859> ;
-    skos:inScheme spav:fv ;
-    skos:narrower spav:fvmrk ;
-    skos:prefLabel "8mm"@de,
-        "8mm"@en .
-
 spav:fvqpw a skos:Concept ;
     skos:altLabel "Video CD"@en ;
     skos:broader spav:fvaha ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvfce ;
     skos:prefLabel "VCD"@en .
-
-spav:fvzxp a skos:Concept ;
-    skos:broader spav:fvodj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028661> ;
-    skos:inScheme spav:fv ;
-    skos:narrower spav:fvicw ;
-    skos:prefLabel "audio cassette"@en .
 
 spav:gndex a skos:Concept ;
     skos:inScheme spav:gn ;
@@ -2413,14 +2427,21 @@ spav:fvese a skos:Concept ;
         "photographic image"@en ;
     skos:topConceptOf spav:fv .
 
-spav:fvuut a skos:Concept ;
-    skos:broader spav:fvese ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
+spav:fvhcu a skos:Concept ;
+    skos:broader spav:fvzfk ;
     skos:inScheme spav:fv ;
-    skos:narrower spav:fvmoi,
-        spav:fvwry ;
-    skos:prefLabel "Fotopositiv"@de,
-        "photo positive"@en .
+    skos:narrower spav:fvhhx,
+        spav:fvvyd ;
+    skos:prefLabel "16mm Format"@de,
+        "16mm format"@en .
+
+spav:fvpso a skos:Concept ;
+    skos:broader spav:fvzfk ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fvmrk,
+        spav:fvqow ;
+    skos:prefLabel "8mm Format"@de,
+        "8mm format"@en .
 
 spav:fvzuj a skos:Concept ;
     skos:altLabel "DVD-Video"@en,
@@ -2554,6 +2575,16 @@ spav:fvunk a skos:Concept ;
     skos:prefLabel "8mm Format"@de,
         "8mm format"@en .
 
+spav:fvuut a skos:Concept ;
+    skos:broader spav:fvese ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fvdex,
+        spav:fvmoi,
+        spav:fvwry ;
+    skos:prefLabel "Fotopositiv"@de,
+        "photo positive"@en .
+
 spav:fvzfk a skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300014637> ;
     skos:inScheme spav:fv ;
@@ -2562,6 +2593,16 @@ spav:fvzfk a skos:Concept ;
         spav:fvpso ;
     skos:prefLabel "film"@en ;
     skos:topConceptOf spav:fv .
+
+spav:fvzxp a skos:Concept ;
+    skos:broader spav:fvodj ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300028661> ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fvicw,
+        spav:fvlyk,
+        spav:fvpln ;
+    skos:prefLabel "Audiokassette"@de,
+        "audio cassette"@en .
 
 spav:mnbcj a skos:Concept ;
     skos:broader spav:mnlcp ;
@@ -2649,6 +2690,16 @@ spav:dfrwd a skos:Concept ;
         "objet"@fr ;
     skos:topConceptOf spav:df .
 
+spav:fvodj a skos:Concept ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fverx,
+        spav:fvlvi,
+        spav:fvtfa,
+        spav:fvzxp ;
+    skos:prefLabel "Magnetband"@de,
+        "magnetic tape"@en ;
+    skos:topConceptOf spav:fv .
+
 spav:fvpmq a skos:Concept ;
     skos:broader spav:fverx ;
     skos:inScheme spav:fv ;
@@ -2668,18 +2719,6 @@ spav:fvskn a skos:Concept ;
         spav:fvxpt ;
     skos:prefLabel "U-matic"@de,
         "U-matic"@en .
-
-spav:fvywh a skos:Concept ;
-    skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1015>,
-        <http://vocab.getty.edu/aat/300264683> ;
-    skos:inScheme spav:fv ;
-    skos:narrower spav:fvjej,
-        spav:fvlxb,
-        spav:fvpco,
-        spav:fvviy ;
-    skos:prefLabel "VHS"@de,
-        "VHS"@en .
 
 spav:mnnvd a skos:Concept ;
     skos:inScheme spav:mn ;
@@ -2747,16 +2786,16 @@ spav:dw a crm:E55_Type,
         spav:dwvhk ;
     skos:prefLabel "object type"@en .
 
-spav:fvodj a skos:Concept ;
+spav:fvoda a skos:Concept ;
+    skos:broader spav:fverx ;
     skos:inScheme spav:fv ;
-    skos:narrower spav:fverx,
-        spav:fvlvi,
-        spav:fvlyk,
-        spav:fvtfa,
-        spav:fvzxp ;
-    skos:prefLabel "Magnetband"@de,
-        "magnetic tape"@en ;
-    skos:topConceptOf spav:fv .
+    skos:narrower spav:fvjej,
+        spav:fvlxb,
+        spav:fvpco,
+        spav:fvviy,
+        spav:fvywh ;
+    skos:prefLabel "VHS Format"@de,
+        "VHS format"@en .
 
 spav:kn a crm:E55_Type,
         skos:ConceptScheme ;
@@ -2910,12 +2949,12 @@ spav:fverx a skos:Concept ;
     skos:narrower spav:fvgwb,
         spav:fvhiw,
         spav:fvjtf,
+        spav:fvoda,
         spav:fvpmq,
         spav:fvruf,
         spav:fvskn,
         spav:fvunk,
         spav:fvuus,
-        spav:fvywh,
         spav:fvzrb ;
     skos:prefLabel "Videokassette"@de,
         "video cassette"@en .
