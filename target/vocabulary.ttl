@@ -2019,29 +2019,17 @@ spav:uqtmg a skos:Concept ;
     skos:prefLabel "progressive"@en ;
     skos:topConceptOf spav:uq .
 
+spav:vrctx a skos:Concept ;
+    skos:broader spav:vrjhq ;
+    skos:inScheme spav:vr ;
+    skos:prefLabel "Fördergesellschaft"@de,
+        "promoter"@en .
+
 spav:vrdat a skos:Concept ;
     skos:broader spav:vrxbs ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "grosses Gastspielhaus (Mitglied bei SBV, Inthega oder Corodis)"@de,
-        "grosses Gastspielhaus (Mitglied bei SBV, Inthega oder Corodis)"@en .
-
-spav:vrddy a skos:Concept ;
-    skos:broader spav:vrunb ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Figuren- und Puppentheater"@de,
-        "Figuren- und Puppentheater"@en .
-
-spav:vrdsg a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "regionale Kulturzentrum mit Theaterbühnen"@de,
-        "regionale Kulturzentrum mit Theaterbühnen"@en .
-
-spav:vrdug a skos:Concept ;
-    skos:broader spav:vrunb ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Kinder- und Jugendtheater"@de,
-        "Kinder- und Jugendtheater"@en .
+    skos:prefLabel "Amateurproduzent"@de,
+        "amateur producer"@en .
 
 spav:vrggs a skos:Concept ;
     skos:inScheme spav:vr ;
@@ -2050,17 +2038,11 @@ spav:vrggs a skos:Concept ;
         "archives"@fr ;
     skos:topConceptOf spav:vr .
 
-spav:vrgup a skos:Concept ;
-    skos:broader spav:vrxbs ;
+spav:vrgvx a skos:Concept ;
+    skos:broader spav:vrfcm ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "kleines Theaterhaus mit Ensemble oder Eigenproduktionen"@de,
-        "kleines Theaterhaus mit Ensemble oder Eigenproduktionen"@en .
-
-spav:vrgvi a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Veranstaltungsort der Kleinkunst im engeren Sinne"@de,
-        "Veranstaltungsort der Kleinkunst im engeren Sinne"@en .
+    skos:prefLabel "regionales Kleintheater"@de,
+        "regional cultural center"@en .
 
 spav:vriqe a skos:Concept ;
     skos:inScheme spav:vr ;
@@ -2076,29 +2058,16 @@ spav:vriuw a skos:Concept ;
         "agence"@fr ;
     skos:topConceptOf spav:vr .
 
-spav:vrixv a skos:Concept ;
-    skos:broader spav:vrunb ;
+spav:vrivu a skos:Concept ;
+    skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Tanztheater"@de,
-        "Tanztheater"@en .
-
-spav:vriyu a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "regionales Kleintheater mit Mischprogrammen"@de,
-        "regionales Kleintheater mit Mischprogrammen"@en .
-
-spav:vrjhq a skos:Concept ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Verband"@de,
-        "association"@en,
-        "association"@fr ;
-    skos:topConceptOf spav:vr .
+    skos:prefLabel "professioneller Produzent mit eigener Spielstätte"@de,
+        "professional producer with own venue"@en .
 
 spav:vrjiw a skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Trägerschaft"@de,
-        "provider"@en,
+        "responsible body"@en,
         "organisme responsable"@fr ;
     skos:topConceptOf spav:vr .
 
@@ -2110,24 +2079,12 @@ spav:vrjva a skos:Concept ;
         "subcompany"@en,
         "sous-ensemble"@fr .
 
-spav:vrlhq a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Amateur-Theaterverein (Bühnen)"@de,
-        "Amateur-Theaterverein (Bühnen)"@en .
-
 spav:vrmjk a skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Bildungsinstitution"@de,
         "education"@en,
         "institution de formation"@fr ;
     skos:topConceptOf spav:vr .
-
-spav:vrmpj a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "grosses Stadttheater mit Ensemble"@de,
-        "grosses Stadttheater mit Ensemble"@en .
 
 spav:vrorh a skos:Concept ;
     skos:inScheme spav:vr ;
@@ -2136,17 +2093,17 @@ spav:vrorh a skos:Concept ;
         "maison d'édition"@fr ;
     skos:topConceptOf spav:vr .
 
-spav:vrqox a skos:Concept ;
+spav:vrrml a skos:Concept ;
     skos:broader spav:vrxbs ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Theaterhaus der Freien Szene im engeren Sinne"@de,
-        "Theaterhaus der Freien Szene im engeren Sinne"@en .
+    skos:prefLabel "Zirkus"@de,
+        "circus"@en .
 
-spav:vrqqk a skos:Concept ;
-    skos:broader spav:vrxbs ;
+spav:vrsiw a skos:Concept ;
+    skos:broader spav:vrjhq ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Ausbildungsstätte (Bühnen)"@de,
-        "Ausbildungsstätte (Bühnen)"@en .
+    skos:prefLabel "Besucherorganisation"@de,
+        "visitor care"@en .
 
 spav:vrsjj a skos:Concept ;
     skos:inScheme spav:vr ;
@@ -2155,18 +2112,17 @@ spav:vrsjj a skos:Concept ;
         "musée"@fr ;
     skos:topConceptOf spav:vr .
 
-spav:vrxrs a skos:Concept ;
+spav:vrtxc a skos:Concept ;
+    skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Veranstalter"@de,
-        "organizer"@en,
-        "organisateur"@fr ;
-    skos:topConceptOf spav:vr .
+    skos:prefLabel "professioneller Produzent ohne eigene Spielstätte"@de,
+        "professional producer without own venue"@en .
 
-spav:vryng a skos:Concept ;
+spav:vrvhu a skos:Concept ;
     skos:broader spav:vrxbs ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Restkategorien: Grosser Konzertsaal, Gourmettheater"@de,
-        "Restkategorien: Grosser Konzertsaal, Gourmettheater"@en .
+    skos:prefLabel "Produzent Figuren- und Puppentheater"@de,
+        "producer puppet theater"@en .
 
 spav:wajzb a skos:Concept ;
     skos:inScheme spav:wa ;
@@ -2373,6 +2329,13 @@ spav:mnseo a skos:Concept ;
         "cabaret"@en,
         "Cabaret"@fr .
 
+spav:vrfcm a skos:Concept ;
+    skos:broader spav:vrxrs ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrgvx ;
+    skos:prefLabel "Gastspielhaus"@de,
+        "guest performance host"@en .
+
 spav:vrkzi a skos:Concept ;
     skos:altLabel "ensemble"@en ;
     skos:broader spav:vrxbs ;
@@ -2381,6 +2344,14 @@ spav:vrkzi a skos:Concept ;
     skos:prefLabel "Ensemble"@de,
         "company"@en,
         "ensemble"@fr .
+
+spav:vrxrs a skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrfcm ;
+    skos:prefLabel "Veranstalter"@de,
+        "organizer"@en,
+        "organisateur"@fr ;
+    skos:topConceptOf spav:vr .
 
 spav:zjajf a skos:Concept ;
     skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1025>,
@@ -2512,6 +2483,23 @@ spav:qeicn a skos:Concept ;
     skos:prefLabel "Sammlung"@de,
         "collection"@en ;
     skos:topConceptOf spav:qe .
+
+spav:vrjhq a skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrctx,
+        spav:vrsiw ;
+    skos:prefLabel "Verband"@de,
+        "association"@en,
+        "association"@fr ;
+    skos:topConceptOf spav:vr .
+
+spav:vrmpj a skos:Concept ;
+    skos:broader spav:vrxbs ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrivu,
+        spav:vrtxc ;
+    skos:prefLabel "professioneller Produzent"@de,
+        "professional producer"@en .
 
 spav:bp a crm:E55_Type,
         skos:ConceptScheme ;
@@ -2656,15 +2644,6 @@ spav:uq a crm:E55_Type,
     skos:hasTopConcept spav:uqrpj,
         spav:uqtmg ;
     skos:prefLabel "video scanning format"@en .
-
-spav:vrunb a skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:narrower spav:vrddy,
-        spav:vrdug,
-        spav:vrixv ;
-    skos:prefLabel "sektorielles Haus"@de,
-        "sektorielles Haus"@en .
 
 spav:zjyky a skos:Concept ;
     skos:altLabel "Textil"@de ;
@@ -2814,6 +2793,18 @@ spav:mnnhz a skos:Concept ;
         spav:mnydj ;
     skos:prefLabel "Zirkus"@de,
         "circus"@en .
+
+spav:vrxbs a skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrdat,
+        spav:vrkzi,
+        spav:vrmpj,
+        spav:vrrml,
+        spav:vrvhu ;
+    skos:prefLabel "Produzent"@de,
+        "producer"@en,
+        "producteur"@fr ;
+    skos:topConceptOf spav:vr .
 
 spav:wa a crm:E55_Type,
         skos:ConceptScheme ;
@@ -2986,25 +2977,6 @@ spav:qe a crm:E55_Type,
         spav:qexvc ;
     skos:prefLabel "Archivebene"@de,
         "archival level"@en .
-
-spav:vrxbs a skos:Concept ;
-    skos:inScheme spav:vr ;
-    skos:narrower spav:vrdat,
-        spav:vrdsg,
-        spav:vrgup,
-        spav:vrgvi,
-        spav:vriyu,
-        spav:vrkzi,
-        spav:vrlhq,
-        spav:vrmpj,
-        spav:vrqox,
-        spav:vrqqk,
-        spav:vrunb,
-        spav:vryng ;
-    skos:prefLabel "Produzent"@de,
-        "producer"@en,
-        "producteur"@fr ;
-    skos:topConceptOf spav:vr .
 
 spav:dfqot a skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300027221> ;
