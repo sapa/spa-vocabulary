@@ -362,15 +362,6 @@ spav:xg a crm:E55_Type,
         skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
 
-spav:yapbs a skos:Concept ;
-    skos:inScheme spav:ya ;
-    skos:prefLabel "byline"@en .
-
-spav:yapzt a skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404658> ;
-    skos:inScheme spav:ya ;
-    skos:prefLabel "attribute"@en .
-
 spav:yy a crm:E55_Type,
         skos:ConceptScheme ;
     skos:prefLabel "permission"@en .
@@ -655,6 +646,24 @@ spav:dwvhk a skos:Concept ;
     skos:prefLabel "Ort"@de,
         "place"@en ;
     skos:topConceptOf spav:dw .
+
+spav:eoept a skos:Concept ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "Beschreibung"@de,
+        "description"@en ;
+    skos:topConceptOf spav:eo .
+
+spav:eokdx a skos:Concept ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "interner Kommentar"@de,
+        "internal note"@en ;
+    skos:topConceptOf spav:eo .
+
+spav:eonvd a skos:Concept ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "öffentlicher Kommentar"@de,
+        "public note"@en ;
+    skos:topConceptOf spav:eo .
 
 spav:frabo a skos:Concept ;
     skos:broader spav:frgzf ;
@@ -2765,6 +2774,13 @@ spav:dw a crm:E55_Type,
         spav:dwvhk ;
     skos:prefLabel "object type"@en .
 
+spav:eo a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:eoept,
+        spav:eokdx,
+        spav:eonvd ;
+    skos:prefLabel "note type"@en .
+
 spav:fvoda a skos:Concept ;
     skos:broader spav:fverx ;
     skos:inScheme spav:fv ;
@@ -2813,6 +2829,11 @@ spav:wa a crm:E55_Type,
         spav:wayst ;
     skos:prefLabel "identifier"@en .
 
+spav:ya a crm:E55_Type,
+        skos:ConceptScheme ;
+    skos:hasTopConcept spav:yakdx ;
+    skos:prefLabel "appellation"@en .
+
 spav:hlamu a skos:Concept ;
     skos:inScheme spav:hl ;
     skos:narrower spav:hlboj,
@@ -2858,11 +2879,6 @@ spav:rm a crm:E55_Type,
         spav:rmivu,
         spav:rmoda ;
     skos:prefLabel "identity type"@en .
-
-spav:ya a crm:E55_Type,
-        skos:ConceptScheme ;
-    skos:hasTopConcept spav:yakdx ;
-    skos:prefLabel "appellation"@en .
 
 spav:dflvv a skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
