@@ -51,8 +51,6 @@ for idx, row in df.iterrows():
             print(f'{uri} already exists!')
         uris.append(uri)
         graph.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
-        # TODO: Validate if this is always correct.
-        graph.add((scheme_uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
         scheme_ns = Namespace(scheme_uri + '/')
     # concept
     elif not pd.isnull(row['skos_Concept']) and scheme_ns:
@@ -64,6 +62,7 @@ for idx, row in df.iterrows():
             print(f'{uri} already exists!')
         uris.append(uri)
         graph.add((uri, RDF.type, SKOS.Concept))
+        graph.add((uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
         graph.add((uri, SKOS.inScheme, scheme_uri))
         # broader, narrower
         if not pd.isnull(row['broader']):
