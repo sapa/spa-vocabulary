@@ -279,6 +279,60 @@ function draw(data) {
             div.transition()        
                 .duration(500)      
                 .style("opacity", 0); 
+        })
+        .on("click", function(d) {       
+            if (d.data.skos_exactMatch) {
+                var s = d.data.skos_exactMatch.split(';');
+                for (var i = 0; i < s.length; i++) {
+                    var prefix = s[i].split(':')[0];
+                    var id = s[i].split(':')[1];
+                    var url;
+                    switch(prefix) {
+                        case 'aat':
+                            url = 'http://vocab.getty.edu/page/aat/' + id;
+                            break;
+                        case 'rdaa':
+                            url = 'http://www.rdaregistry.info/Elements/a/#' + id;
+                            break;
+                        case 'rdau':
+                            url = 'http://www.rdaregistry.info/Elements/u/#' + id;
+                            break;
+                        case 'rdagd':
+                            url = 'http://www.rdaregistry.info/termList/gender/#' + id;
+                            break;
+                        case 'rdapm':
+                            url = 'http://www.rdaregistry.info/termList/RDAproductionMethod/#' + id;
+                            break;
+                        case 'rdamat':
+                            url = 'http://www.rdaregistry.info/termList/RDAMaterial/#' + id;
+                            break;
+                        case 'rdavf':
+                            url = 'http://www.rdaregistry.info/termList/videoFormat/#' + id;
+                            break;
+                        case 'rdacc':
+                            url = 'http://www.rdaregistry.info/termList/RDAColourContent/#' + id;
+                            break;
+                        case 'rdabs':
+                            url = 'http://www.rdaregistry.info/termList/broadcastStand/#' + id;
+                            break;
+                        case 'frbr':
+                            url = 'http://purl.org/vocab/frbr/core#' + id;
+                            break;
+                        case 'eclap':
+                            url = 'http://www.eclap.eu/schema/eclap/';
+                            break;
+                        case 'iso639-2':
+                            url = 'https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes';
+                            break;
+                        default:
+                            alert('prefix ' + prefix + ' not found!');
+                    }
+                    if (url) {
+                        var w = window.open(url);
+                        break;
+                    }
+                }
+            }
         });
 }
 
