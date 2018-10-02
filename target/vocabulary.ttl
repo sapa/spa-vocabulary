@@ -1098,6 +1098,14 @@ spav:hluxz a crm:E55_Type,
         "Swiss premiere"@en,
         "première suisse"@fr .
 
+spav:hlvtx a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:hl ;
+    skos:prefLabel "Dernière"@de,
+        "dernière"@en,
+        "dernière"@fr ;
+    skos:topConceptOf spav:hl .
+
 spav:hlwdj a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:hlamu ;
@@ -1724,13 +1732,6 @@ spav:mufcc a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "choral conductor"@en .
 
-spav:mufif a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is audio engineer of"@en ;
-    skos:broader spav:munuj ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "audio engineering"@en .
-
 spav:mufwk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is projection designer of"@en ;
@@ -1756,7 +1757,7 @@ spav:muhkf a crm:E55_Type,
 spav:muhti a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is recording engineer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mufif ;
     skos:inScheme spav:mu ;
     skos:prefLabel "recording engineering"@en .
 
@@ -2411,10 +2412,11 @@ spav:vrorh a crm:E55_Type,
 
 spav:vrrml a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:vrxbs ;
+    rdfs:comment "e.g. circus"@en ;
+    skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Zirkus"@de,
-        "circus"@en .
+    skos:prefLabel "professioneller Produzent mit mobiler Spielstätte"@de,
+        "professional producer with mobile venue"@en .
 
 spav:vrsiw a crm:E55_Type,
         skos:Concept ;
@@ -2437,13 +2439,6 @@ spav:vrtxc a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "professioneller Produzent ohne eigene Spielstätte"@de,
         "professional producer without own venue"@en .
-
-spav:vrvhu a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:prefLabel "Produzent Figuren- und Puppentheater"@de,
-        "producer puppet theater"@en .
 
 spav:wajzb a crm:E55_Type,
         skos:Concept ;
@@ -2691,6 +2686,14 @@ spav:mueeb a crm:E55_Type,
     skos:narrower spav:mujig ;
     skos:prefLabel "recording"@en .
 
+spav:mufif a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is audio engineer of"@en ;
+    skos:broader spav:munuj ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muhti ;
+    skos:prefLabel "audio engineering"@en .
+
 spav:muqfg a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is conductor of"@en ;
@@ -2890,15 +2893,6 @@ spav:vrjhq a crm:E55_Type,
         "association"@fr ;
     skos:topConceptOf spav:vr .
 
-spav:vrmpj a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:vrxbs ;
-    skos:inScheme spav:vr ;
-    skos:narrower spav:vrivu,
-        spav:vrtxc ;
-    skos:prefLabel "professioneller Produzent"@de,
-        "professional producer"@en .
-
 spav:bp a skos:ConceptScheme ;
     skos:hasTopConcept spav:bpwfe,
         spav:bpycy ;
@@ -3076,6 +3070,27 @@ spav:uq a skos:ConceptScheme ;
         spav:uqtmg ;
     skos:prefLabel "video scanning format"@en .
 
+spav:vrmpj a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:vrxbs ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrivu,
+        spav:vrrml,
+        spav:vrtxc ;
+    skos:prefLabel "professioneller Produzent"@de,
+        "professional producer"@en .
+
+spav:vrxbs a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:narrower spav:vrdat,
+        spav:vrkzi,
+        spav:vrmpj ;
+    skos:prefLabel "Produzent"@de,
+        "producer"@en,
+        "producteur"@fr ;
+    skos:topConceptOf spav:vr .
+
 spav:zjyky a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Textil"@de ;
@@ -3149,6 +3164,7 @@ spav:mnnvd a crm:E55_Type,
 spav:mnyuk a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "théâtre lyrique"@fr ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300417617> ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnbfm,
         spav:mnkqm,
@@ -3234,19 +3250,6 @@ spav:mnnhz a crm:E55_Type,
         spav:mnydj ;
     skos:prefLabel "Zirkus"@de,
         "circus"@en .
-
-spav:vrxbs a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:vr ;
-    skos:narrower spav:vrdat,
-        spav:vrkzi,
-        spav:vrmpj,
-        spav:vrrml,
-        spav:vrvhu ;
-    skos:prefLabel "Produzent"@de,
-        "producer"@en,
-        "producteur"@fr ;
-    skos:topConceptOf spav:vr .
 
 spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
@@ -3467,15 +3470,6 @@ spav:dfqot a crm:E55_Type,
         "affiche"@fr ;
     skos:topConceptOf spav:df .
 
-spav:hl a skos:ConceptScheme ;
-    skos:hasTopConcept spav:hlamu,
-        spav:hlepi,
-        spav:hlprv,
-        spav:hltwd,
-        spav:hlyjh ;
-    skos:prefLabel "Performance-Art"@de,
-        "performance type"@en .
-
 spav:fr a skos:ConceptScheme ;
     skos:hasTopConcept spav:frbvo,
         spav:frbyr,
@@ -3483,6 +3477,16 @@ spav:fr a skos:ConceptScheme ;
         spav:froqj ;
     skos:prefLabel "Produktionstechnik"@de,
         "production technique"@en .
+
+spav:hl a skos:ConceptScheme ;
+    skos:hasTopConcept spav:hlamu,
+        spav:hlepi,
+        spav:hlprv,
+        spav:hltwd,
+        spav:hlvtx,
+        spav:hlyjh ;
+    skos:prefLabel "Performance-Art"@de,
+        "performance type"@en .
 
 spav:zj a skos:ConceptScheme ;
     skos:hasTopConcept spav:zjajf,
@@ -3508,7 +3512,6 @@ spav:munuj a crm:E55_Type,
         spav:mufif,
         spav:mufwk,
         spav:mugkn,
-        spav:muhti,
         spav:muiqu,
         spav:mujpp,
         spav:mulga,
