@@ -180,7 +180,7 @@ function getTreeSize(root_) {
 
 function onSchemeSelect(scheme_) {
     draw(getSchemeData(scheme_));
-    window.history.pushState(null, '', '#' + scheme_);
+    window.history.pushState(null, '', '#' + scheme_.substr(32));
 }
 
 var svg = d3.select("svg"),
@@ -372,12 +372,12 @@ d3.csv('vocabulary.csv', function(error, data) {
         }
     }
     if (window.location.hash != '') {
-        onSchemeSelect(window.location.hash.substr(1));
+        onSchemeSelect('http://vocab.performing-arts.ch/' + window.location.hash.substr(1));
     }
 });
 
 window.onpopstate = function(event) {
-    onSchemeSelect(window.location.hash.substr(1));
+    onSchemeSelect('http://vocab.performing-arts.ch/' + window.location.hash.substr(1));
 };
 
 </script>
