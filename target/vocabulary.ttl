@@ -22,72 +22,6 @@ spav:en a skos:ConceptScheme ;
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
 
-spav:mubfx a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: pursues; RiC R294 pursues"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "pursues"@en .
-
-spav:mucbq a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is director of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "direction"@en .
-
-spav:mucdi a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is casting director of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "casting direction"@en .
-
-spav:mudvs a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is director of photography of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "direction of photography"@en .
-
-spav:mufct a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: fulfils; RiC-R302 fulfils"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "fulfils"@en .
-
-spav:mujqh a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is member of; RiC-266 is member of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "member"@en .
-
-spav:munor a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is donor of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "donor"@en .
-
-spav:mupjw a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: occupies; RiC-R299 occupies"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "occupies"@en .
-
-spav:murwo a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is seller of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "seller"@en .
-
-spav:muxqw a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is substitute of"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "substitute"@en .
-
-spav:muzwu a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is keeper of; CIDOC CRM-P49 (is former or current keeper of)"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "keeper"@en .
-
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en .
 
@@ -1465,44 +1399,50 @@ spav:muacs a crm:E55_Type,
 spav:mubbv a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is choreographer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:muyql ;
     skos:inScheme spav:mu ;
     skos:prefLabel "choreography"@en .
 
 spav:mubyr a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is photographer of"@en ;
-    skos:broader spav:muyql ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "photography"@en .
-
-spav:mucfl a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is addresse of; RiC R214 was addresse of"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "addresse"@en .
+    skos:prefLabel "photography"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muclm a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is technical director of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "technical direction"@en .
+    skos:prefLabel "technical direction"@en ;
+    skos:topConceptOf spav:mu .
+
+spav:muctj a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mucbq ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "film direction"@en .
+
+spav:mudcw a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is adaptor of"@en ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "adaption"@en ;
+    skos:topConceptOf spav:mu .
+
+spav:mudvs a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is director of photography of"@en ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "direction of photography"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muecs a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is costume designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "costume design"@en .
-
-spav:mueip a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
-    skos:broader spav:muyql ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "design"@en .
 
 spav:mufbo a crm:E55_Type,
         skos:Concept ;
@@ -1518,17 +1458,24 @@ spav:mufcc a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "choral conductor"@en .
 
+spav:mufif a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is audio engineer of"@en ;
+    skos:broader spav:muhti ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "audio engineering"@en .
+
 spav:mufwk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is projection designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "projection design"@en .
 
 spav:mugkn a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is assistant stage director of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mutnt ;
     skos:inScheme spav:mu ;
     skos:prefLabel "assistant stage direction"@en .
 
@@ -1540,26 +1487,12 @@ spav:muhkf a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "puppeteery"@en .
 
-spav:muhti a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is recording engineer of"@en ;
-    skos:broader spav:mufif ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "recording engineering"@en .
-
 spav:muiqu a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is editor of moving image work of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "editing of moving image work"@en .
-
-spav:mujfv a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: manages; in analogy to RiC R242 manages"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "management"@en .
+    skos:prefLabel "editing of moving image work"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:mujig a crm:E55_Type,
         skos:Concept ;
@@ -1578,16 +1511,9 @@ spav:mujmh a crm:E55_Type,
 spav:mujpp a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is editor of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "editing"@en .
-
-spav:mujzo a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is sender of; RiC R213 sent"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "sender"@en .
+    skos:prefLabel "editing"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:mulcp a crm:E55_Type,
         skos:Concept ;
@@ -1600,23 +1526,16 @@ spav:mulga a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
     skos:altLabel "scenographery"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "art direction"@en .
+    skos:prefLabel "art direction"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:mulnl a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is production designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "production design"@en .
-
-spav:mumaw a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is holder of; RiC R208 is holder of"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "holder"@en .
 
 spav:mumnc a crm:E55_Type,
         skos:Concept ;
@@ -1631,6 +1550,13 @@ spav:munib a crm:E55_Type,
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
     skos:prefLabel "acting"@en .
+
+spav:munuj a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is contributer of"@en ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "contribution"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:mupah a crm:E55_Type,
         skos:Concept ;
@@ -1656,65 +1582,44 @@ spav:mupot a crm:E55_Type,
 spav:mupvk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is writer of added text of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "added text"@en .
+    skos:prefLabel "added text"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muqjb a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is set designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "set design"@en .
 
 spav:muqju a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is video designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "video design"@en .
 
 spav:muqtj a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is arranger of music of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "musical arrangement"@en .
-
-spav:muqwg a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is television adaptor of"@en ;
-    skos:broader spav:mudcw ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "television adaption"@en .
+    skos:prefLabel "musical arrangement"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:murni a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is lighting designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "lighting design"@en .
 
 spav:musim a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is dramaturge of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "dramaturgy"@en .
-
-spav:mutnt a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is stage director of"@en ;
-    skos:broader spav:munuj ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "stage direction"@en .
-
-spav:mutvt a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is subject of"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "subject"@en .
+    skos:prefLabel "dramaturgy"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muvhj a crm:E55_Type,
         skos:Concept ;
@@ -1726,37 +1631,23 @@ spav:muvhj a crm:E55_Type,
 spav:muwgo a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is producer of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "production"@en .
-
-spav:muwgv a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is owner of; RiC R212 owns"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "owner"@en .
+    skos:prefLabel "production"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muwyo a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is translator of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "translation"@en .
+    skos:prefLabel "translation"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muxzh a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is sound designer of"@en ;
-    skos:broader spav:munuj ;
+    skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
     skos:prefLabel "sound design"@en .
-
-spav:muyfk a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: controls; RiC R251 controls"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "control"@en .
 
 spav:muygg a crm:E55_Type,
         skos:Concept ;
@@ -1768,16 +1659,9 @@ spav:muygg a crm:E55_Type,
 spav:muzua a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is writer of added lyrics of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "added lyrics"@en .
-
-spav:muzzg a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is rights holder of; in analogy to RiC-R209 is rights holder of"@en ;
-    skos:broader spav:muqbk ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "rights holder"@en .
+    skos:prefLabel "added lyrics"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:nicsh a crm:E55_Type,
         skos:Concept ;
@@ -2439,37 +2323,37 @@ spav:gndex a crm:E55_Type,
         "group"@en ;
     skos:topConceptOf spav:gn .
 
-spav:mudcw a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is adaptor of"@en ;
-    skos:broader spav:munuj ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muqwg ;
-    skos:prefLabel "adaption"@en .
-
 spav:mueeb a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is recordist of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mujig ;
-    skos:prefLabel "recording"@en .
+    skos:prefLabel "recording"@en ;
+    skos:topConceptOf spav:mu .
 
-spav:mufif a crm:E55_Type,
+spav:muhti a crm:E55_Type,
         skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is audio engineer of"@en ;
-    skos:broader spav:munuj ;
+    rdfs:comment "equivalent in SPA Data Model: is recording engineer of"@en ;
     skos:inScheme spav:mu ;
-    skos:narrower spav:muhti ;
-    skos:prefLabel "audio engineering"@en .
+    skos:narrower spav:mufif ;
+    skos:prefLabel "recording engineering"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muqfg a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is conductor of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mufcc ;
-    skos:prefLabel "conductor"@en .
+    skos:prefLabel "conductor"@en ;
+    skos:topConceptOf spav:mu .
+
+spav:mutnt a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is stage director of"@en ;
+    skos:broader spav:mucbq ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:mugkn ;
+    skos:prefLabel "stage direction"@en .
 
 spav:vrfcm a crm:E55_Type,
         skos:Concept ;
@@ -2615,6 +2499,15 @@ spav:mnlcp a crm:E55_Type,
         "danse"@fr,
         "danza"@it ;
     skos:topConceptOf spav:mn .
+
+spav:mucbq a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is director of"@en ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muctj,
+        spav:mutnt ;
+    skos:prefLabel "direction"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:muiim a crm:E55_Type,
         skos:Concept ;
@@ -2776,11 +2669,11 @@ spav:muyql a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is creator of"@en ;
     skos:inScheme spav:mu ;
-    skos:narrower spav:mubyr,
-        spav:mueip,
+    skos:narrower spav:mubbv,
         spav:mufbo,
         spav:muiuk ;
-    skos:prefLabel "creation"@en .
+    skos:prefLabel "creation"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:oe a skos:ConceptScheme ;
     skos:altLabel "colour content"@en ;
@@ -3054,7 +2947,6 @@ spav:mnhbj a crm:E55_Type,
 spav:muawx a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is performer of"@en ;
-    skos:broader spav:munuj ;
     skos:inScheme spav:mu ;
     skos:narrower spav:muacs,
         spav:muhkf,
@@ -3063,21 +2955,22 @@ spav:muawx a crm:E55_Type,
         spav:mumnc,
         spav:munib,
         spav:mupfz ;
-    skos:prefLabel "performance"@en .
+    skos:prefLabel "performance"@en ;
+    skos:topConceptOf spav:mu .
 
-spav:muqbk a crm:E55_Type,
+spav:mugja a crm:E55_Type,
         skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is associated with; in analogy to RiC R237 is associated with"@en ;
+    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
     skos:inScheme spav:mu ;
-    skos:narrower spav:mucfl,
-        spav:mujfv,
-        spav:mujzo,
-        spav:mumaw,
-        spav:mutvt,
-        spav:muwgv,
-        spav:muyfk,
-        spav:muzzg ;
-    skos:prefLabel "associated with"@en .
+    skos:narrower spav:muecs,
+        spav:mufwk,
+        spav:mulnl,
+        spav:muqjb,
+        spav:muqju,
+        spav:murni,
+        spav:muxzh ;
+    skos:prefLabel "design"@en ;
+    skos:topConceptOf spav:mu .
 
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
@@ -3246,37 +3139,6 @@ spav:zj a skos:ConceptScheme ;
         spav:zjyky ;
     skos:prefLabel "material"@en .
 
-spav:munuj a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is contributer of"@en ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muawx,
-        spav:mubbv,
-        spav:muclm,
-        spav:mudcw,
-        spav:muecs,
-        spav:mueeb,
-        spav:mufif,
-        spav:mufwk,
-        spav:mugkn,
-        spav:muiqu,
-        spav:mujpp,
-        spav:mulga,
-        spav:mulnl,
-        spav:mupvk,
-        spav:muqfg,
-        spav:muqjb,
-        spav:muqju,
-        spav:muqtj,
-        spav:murni,
-        spav:musim,
-        spav:mutnt,
-        spav:muwgo,
-        spav:muwyo,
-        spav:muxzh,
-        spav:muzua ;
-    skos:prefLabel "contribution"@en .
-
 spav:ni a skos:ConceptScheme ;
     skos:hasTopConcept spav:nicsh,
         spav:nidup,
@@ -3334,6 +3196,27 @@ spav:mn a skos:ConceptScheme ;
         "genre"@en .
 
 spav:mu a skos:ConceptScheme ;
+    skos:hasTopConcept spav:muawx,
+        spav:mubyr,
+        spav:mucbq,
+        spav:muclm,
+        spav:mudcw,
+        spav:mudvs,
+        spav:mueeb,
+        spav:mugja,
+        spav:muhti,
+        spav:muiqu,
+        spav:mujpp,
+        spav:mulga,
+        spav:munuj,
+        spav:mupvk,
+        spav:muqfg,
+        spav:muqtj,
+        spav:musim,
+        spav:muwgo,
+        spav:muwyo,
+        spav:muyql,
+        spav:muzua ;
     skos:prefLabel "activity type"@en .
 
 spav:fv a skos:ConceptScheme ;
