@@ -26,6 +26,7 @@ vocabs['rdapm'] = Namespace('http://rdaregistry.info/termList/RDAproductionMetho
 vocabs['rdavf'] = Namespace('http://rdaregistry.info/termList/videoFormat/')
 vocabs['rdagd'] = Namespace('http://rdaregistry.info/termList/gender/')
 vocabs['iso639-2'] = Namespace('http://id.loc.gov/vocabulary/iso639-2/')
+vocabs['wd'] = Namespace('http://www.wikidata.org/entity/')
 
 graph = Graph()
 graph.bind('rdfs', RDFS)

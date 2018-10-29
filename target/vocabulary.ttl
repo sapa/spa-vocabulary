@@ -12,6 +12,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix spav: <http://vocab.performing-arts.ch/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -1130,7 +1131,8 @@ spav:mnbfm a crm:E55_Type,
     skos:altLabel "théâtre lyrique"@fr,
         "teatro lirico"@it ;
     skos:broader spav:mnyuk ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300054147> ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300054147>,
+        wd:Q1344 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Oper"@de,
         "opera"@en,
@@ -1245,6 +1247,7 @@ spav:mnoiw a crm:E55_Type,
 spav:mnols a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnyuk ;
+    skos:exactMatch wd:Q170384 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Operette"@de,
         "operetta"@en,
@@ -1287,6 +1290,7 @@ spav:mnsis a crm:E55_Type,
 spav:mnslv a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mneyg ;
+    skos:exactMatch wd:Q39894018 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Schauspiel mit Musik"@de,
         "drama with music"@en .
@@ -1344,6 +1348,7 @@ spav:mnvyr a crm:E55_Type,
 spav:mnwna a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnyuk ;
+    skos:exactMatch wd:Q2743 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Musical"@de,
         "musical"@en,
@@ -2465,7 +2470,8 @@ spav:fvzuj a crm:E55_Type,
 spav:mndvh a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300248147> ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300248147>,
+        wd:Q588750 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnuzw,
         spav:mnzgv ;
@@ -2478,8 +2484,10 @@ spav:mneyg a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Drama"@de,
         "Schaupiel"@de,
+        "drama"@en,
         "teatro di prosa"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300054148> ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300054148>,
+        wd:Q39892385 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnslv,
         spav:mnzgw ;
@@ -2823,6 +2831,7 @@ spav:mnyuk a crm:E55_Type,
 spav:mnztb a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
+    skos:exactMatch wd:Q1746926 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnbjn,
         spav:mnbyg,
@@ -2931,6 +2940,7 @@ spav:mnhbj a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "teatro-danza"@it ;
     skos:broader spav:mnlcp ;
+    skos:exactMatch wd:Q1020618 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnajh,
         spav:mnemr,
