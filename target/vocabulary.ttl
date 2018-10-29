@@ -1670,7 +1670,8 @@ spav:muzua a crm:E55_Type,
 
 spav:nicsh a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:por ;
+    skos:exactMatch iso639-2:por,
+        wd:Q5146 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Portugiesisch"@de,
         "Portuguese"@en,
@@ -1680,7 +1681,8 @@ spav:nicsh a crm:E55_Type,
 
 spav:nidup a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:swe ;
+    skos:exactMatch iso639-2:swe,
+        wd:Q9027 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Schwedisch"@de,
         "Swedish"@en,
@@ -1690,7 +1692,8 @@ spav:nidup a crm:E55_Type,
 
 spav:nienp a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:deu ;
+    skos:exactMatch iso639-2:deu,
+        wd:Q188 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Deutsch"@de,
         "German"@en,
@@ -1700,7 +1703,8 @@ spav:nienp a crm:E55_Type,
 
 spav:nifij a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:eng ;
+    skos:exactMatch iso639-2:eng,
+        wd:Q1860 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Englisch"@de,
         "English"@en,
@@ -1710,7 +1714,8 @@ spav:nifij a crm:E55_Type,
 
 spav:nijjo a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:hun ;
+    skos:exactMatch iso639-2:hun,
+        wd:Q9067 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Ungarisch"@de,
         "Hungarian"@en,
@@ -1721,7 +1726,8 @@ spav:nijjo a crm:E55_Type,
 spav:nikxf a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Flemish"@en ;
-    skos:exactMatch iso639-2:dut ;
+    skos:exactMatch iso639-2:dut,
+        wd:Q7411 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Niederländisch"@de,
         "Dutch"@en,
@@ -1731,7 +1737,8 @@ spav:nikxf a crm:E55_Type,
 
 spav:nimdm a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:jap ;
+    skos:exactMatch iso639-2:jap,
+        wd:Q5287 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Japanisch"@de,
         "Japanese"@en,
@@ -1741,7 +1748,8 @@ spav:nimdm a crm:E55_Type,
 
 spav:nioei a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:spa ;
+    skos:exactMatch iso639-2:spa,
+        wd:Q1321 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Spanisch"@de,
         "Spanish"@en,
@@ -1751,7 +1759,8 @@ spav:nioei a crm:E55_Type,
 
 spav:niqkq a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:ara ;
+    skos:exactMatch iso639-2:ara,
+        wd:Q13955 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Arabisch"@de,
         "Arabic"@en,
@@ -1761,7 +1770,8 @@ spav:niqkq a crm:E55_Type,
 
 spav:nirhb a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:rus ;
+    skos:exactMatch iso639-2:rus,
+        wd:Q7737 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Russisch"@de,
         "Russian"@en,
@@ -1771,7 +1781,8 @@ spav:nirhb a crm:E55_Type,
 
 spav:nirhc a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:pol ;
+    skos:exactMatch iso639-2:pol,
+        wd:Q809 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Polnisch"@de,
         "Polish"@en,
@@ -1781,7 +1792,8 @@ spav:nirhc a crm:E55_Type,
 
 spav:nirkx a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:fra ;
+    skos:exactMatch iso639-2:fra,
+        wd:Q150 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Französisch"@de,
         "French"@en,
@@ -1791,7 +1803,8 @@ spav:nirkx a crm:E55_Type,
 
 spav:niwaj a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:ita ;
+    skos:exactMatch iso639-2:ita,
+        wd:Q652 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Italienisch"@de,
         "Italian"@en,
@@ -1801,7 +1814,8 @@ spav:niwaj a crm:E55_Type,
 
 spav:niwgi a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:roh ;
+    skos:exactMatch iso639-2:roh,
+        wd:Q13199 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Rätoromanisch"@de,
         "Romansh"@en,
@@ -1811,7 +1825,8 @@ spav:niwgi a crm:E55_Type,
 
 spav:niwjl a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:gsw ;
+    skos:exactMatch iso639-2:gsw,
+        wd:Q387066 ;
     skos:inScheme spav:ni ;
     skos:prefLabel "Schweizerdeutsch"@de,
         "Swiss German"@en,
