@@ -1021,7 +1021,7 @@ spav:hlprv a crm:E55_Type,
 spav:hltwd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:hl ;
-    skos:prefLabel "(Neuinszenierung)"@de,
+    skos:prefLabel "Neuinszenierung"@de,
         "restaging"@en ;
     skos:topConceptOf spav:hl .
 
@@ -1355,6 +1355,12 @@ spav:mnwna a crm:E55_Type,
         "comédie musicale"@fr,
         "musical"@it .
 
+spav:mnxbs a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnnvd ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "pantomime"@en .
+
 spav:mnydj a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnhz ;
@@ -1498,6 +1504,12 @@ spav:muiqu a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "editing of moving image work"@en ;
     skos:topConceptOf spav:mu .
+
+spav:mujhq a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:muawx ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "pantomime"@en .
 
 spav:mujig a crm:E55_Type,
         skos:Concept ;
@@ -1821,6 +1833,15 @@ spav:niwgi a crm:E55_Type,
         "Romansh"@en,
         "Rhéto-roman"@fr,
         "romancio"@it ;
+    skos:topConceptOf spav:ni .
+
+spav:niwgn a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ces,
+        wd:Q9056 ;
+    skos:inScheme spav:ni ;
+    skos:prefLabel "Tschechisch"@de,
+        "Czech"@en ;
     skos:topConceptOf spav:ni .
 
 spav:niwjl a crm:E55_Type,
@@ -2817,17 +2838,6 @@ spav:mnmqk a crm:E55_Type,
     skos:prefLabel "world dance and culture"@en,
         "Danses et culture du monde"@fr .
 
-spav:mnnvd a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:mn ;
-    skos:narrower spav:mnawx,
-        spav:mndvh,
-        spav:mnubc,
-        spav:mnztb ;
-    skos:prefLabel "andere"@de,
-        "other"@en ;
-    skos:topConceptOf spav:mn .
-
 spav:mnyuk a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "théâtre lyrique"@fr ;
@@ -2919,6 +2929,18 @@ spav:mnnhz a crm:E55_Type,
     skos:prefLabel "Zirkus"@de,
         "circus"@en .
 
+spav:mnnvd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnawx,
+        spav:mndvh,
+        spav:mnubc,
+        spav:mnxbs,
+        spav:mnztb ;
+    skos:prefLabel "andere"@de,
+        "other"@en ;
+    skos:topConceptOf spav:mn .
+
 spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
         spav:wamim,
@@ -2968,20 +2990,6 @@ spav:mnhbj a crm:E55_Type,
         "stage dance"@en,
         "danse de scène"@fr,
         "teatrodanza"@it .
-
-spav:muawx a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is performer of"@en ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muacs,
-        spav:muhkf,
-        spav:muiim,
-        spav:mulcp,
-        spav:mumnc,
-        spav:munib,
-        spav:mupfz ;
-    skos:prefLabel "performance"@en ;
-    skos:topConceptOf spav:mu .
 
 spav:mugja a crm:E55_Type,
         skos:Concept ;
@@ -3077,6 +3085,21 @@ spav:gn a skos:ConceptScheme ;
         spav:gnvyd ;
     skos:prefLabel "agent type"@en .
 
+spav:muawx a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is performer of"@en ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muacs,
+        spav:muhkf,
+        spav:muiim,
+        spav:mujhq,
+        spav:mulcp,
+        spav:mumnc,
+        spav:munib,
+        spav:mupfz ;
+    skos:prefLabel "performance"@en ;
+    skos:topConceptOf spav:mu .
+
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
         spav:goctm,
@@ -3164,6 +3187,21 @@ spav:zj a skos:ConceptScheme ;
         spav:zjyky ;
     skos:prefLabel "material"@en .
 
+spav:vr a skos:ConceptScheme ;
+    rdfs:comment "form of organisation and general purpose"@en ;
+    skos:hasTopConcept spav:vrggs,
+        spav:vriqe,
+        spav:vriuw,
+        spav:vrjhq,
+        spav:vrjiw,
+        spav:vrmjk,
+        spav:vrorh,
+        spav:vrsjj,
+        spav:vrxbs,
+        spav:vrxrs ;
+    skos:prefLabel "Gruppenart"@de,
+        "group type"@en .
+
 spav:ni a skos:ConceptScheme ;
     skos:hasTopConcept spav:nicsh,
         spav:nidup,
@@ -3179,24 +3217,10 @@ spav:ni a skos:ConceptScheme ;
         spav:nirkx,
         spav:niwaj,
         spav:niwgi,
+        spav:niwgn,
         spav:niwjl ;
     skos:prefLabel "Sprache"@de,
         "language"@en .
-
-spav:vr a skos:ConceptScheme ;
-    rdfs:comment "form of organisation and general purpose"@en ;
-    skos:hasTopConcept spav:vrggs,
-        spav:vriqe,
-        spav:vriuw,
-        spav:vrjhq,
-        spav:vrjiw,
-        spav:vrmjk,
-        spav:vrorh,
-        spav:vrsjj,
-        spav:vrxbs,
-        spav:vrxrs ;
-    skos:prefLabel "Gruppenart"@de,
-        "group type"@en .
 
 spav:df a skos:ConceptScheme ;
     skos:hasTopConcept spav:dfdui,
