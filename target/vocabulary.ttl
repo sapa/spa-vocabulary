@@ -1109,6 +1109,590 @@ spav:knsiw a crm:E55_Type,
         "female"@en ;
     skos:topConceptOf spav:kn .
 
+spav:lgalb a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:alb ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Albanian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgals a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:gsw ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Elsässisch"@de,
+        "Alsatian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgara a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ara,
+        wd:Q13955 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Arabisch"@de,
+        "Arabic"@en,
+        "Arabe"@fr,
+        "arabo"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgarm a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:arm ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Armenisch"@de,
+        "Armenian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgbam a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:bam ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Bambara"@de,
+        "Bambara"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgbos a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:bos ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Bosnisch"@de,
+        "Bosnian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgbul a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:bul ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Bulgarisch"@de,
+        "Bulgarian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgces a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ces,
+        wd:Q9056 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Tschechisch"@de,
+        "Czech"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgcez a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:cez ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Tschechisch"@de,
+        "Czech"@en,
+        "Tchèque"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgchi a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Kantonesisch"@de,
+        "Cantonese"@en ;
+    skos:exactMatch iso639-2:chi ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Chinesisch"@de,
+        "Chinese"@en,
+        "Chinois"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgdan a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:dan ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Dänisch"@de,
+        "Danish"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgdeu a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:deu,
+        wd:Q188 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Deutsch"@de,
+        "German"@en,
+        "Allemand"@fr,
+        "tedesco"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgdut a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Flemish"@en ;
+    skos:exactMatch iso639-2:dut,
+        wd:Q7411 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Niederländisch"@de,
+        "Dutch"@en,
+        "Néerlandais"@fr,
+        "olandese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgell a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Modern Greek"@en ;
+    skos:exactMatch iso639-2:ell ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Griechisch"@de,
+        "Greek"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgeng a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:eng,
+        wd:Q1860 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Englisch"@de,
+        "English"@en,
+        "Anglais"@fr,
+        "inglese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgest a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:est ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Estnisch"@de,
+        "Estonian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgfao a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:fao ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Färöisch"@de,
+        "Faroese"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgfas a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Farsi"@en ;
+    skos:exactMatch iso639-2:fas ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Farsi"@de,
+        "Persian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgfin a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:fin ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Finnisch"@de,
+        "Finnish"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgfra a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:fra,
+        wd:Q150 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Französisch"@de,
+        "French"@en,
+        "Français"@fr,
+        "francese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgfur a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Furlanisch"@de,
+        "Friulan"@en ;
+    skos:exactMatch iso639-2:fur ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Friaulisch"@de,
+        "Friulian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lggrn a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Paraguayan Guarani"@en ;
+    skos:exactMatch iso639-2:grn ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Guaraní"@de,
+        "Guarani"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lggsw a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:gsw,
+        wd:Q387066 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Schweizerdeutsch"@de,
+        "Swiss German"@en,
+        "Suisse allemand"@fr,
+        "svizzero tedesco"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lghbo a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Althebräisch"@de,
+        "Old Hebrew"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgheb a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:heb ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Hebräisch"@de,
+        "Hebrew"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lghin a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:hin ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Hindi"@de,
+        "Hindi"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lghrv a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:hrv ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Kroatisch"@de,
+        "Croatian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lghun a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:hun,
+        wd:Q9067 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Ungarisch"@de,
+        "Hungarian"@en,
+        "Hongrois"@fr,
+        "ungherese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgind a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ind ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Indonesisch"@de,
+        "Indonesian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgita a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ita,
+        wd:Q652 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Italienisch"@de,
+        "Italian"@en,
+        "Italien"@fr,
+        "italiano"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgjap a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:jap,
+        wd:Q5287 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Japanisch"@de,
+        "Japanese"@en,
+        "Japonais"@fr,
+        "giapponese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgkor a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:kor ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Koreanisch"@de,
+        "Korean"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgkur a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:kur ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Kurdisch"@de,
+        "Kurdish"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lglat a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:lat ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Latein"@de,
+        "Latin"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lglav a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:lav ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Lettisch"@de,
+        "Latvian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lglin a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:lin ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Lingala"@de,
+        "Lingala"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lglit a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:lit ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Litauisch"@de,
+        "Lithuanian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgmao a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:mao ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Maori"@de,
+        "Maori"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgmlg a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Malagassi"@de ;
+    skos:exactMatch iso639-2:mlg ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Malagasy"@de,
+        "Malagasy"@en,
+        "Malgache"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgmnd a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:chi ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Mandarin"@de,
+        "Mandarin"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgmos a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Moore"@de,
+        "Mòoré"@en,
+        "Mòoré"@fr ;
+    skos:exactMatch iso639-2:mos ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Mòoré"@de,
+        "Mossi"@en,
+        "Moré"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgnou a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Noussi"@fr ;
+    skos:exactMatch wd:Q3344819 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Nouchi"@en,
+        "Nouchi"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgoci a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:oci ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Okzitanisch"@de,
+        "Occitan"@en,
+        "Occitan"@fr ;
+    skos:topConceptOf spav:lg .
+
+spav:lgpol a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:pol,
+        wd:Q809 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Polnisch"@de,
+        "Polish"@en,
+        "Polonais"@fr,
+        "polacco"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgpor a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:por,
+        wd:Q5146 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Portugiesisch"@de,
+        "Portuguese"@en,
+        "Portugais"@fr,
+        "portoghese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgroh a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:roh,
+        wd:Q13199 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Rätoromanisch"@de,
+        "Romansh"@en,
+        "Rhéto-roman"@fr,
+        "romancio"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgrum a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:rum ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Rumänisch"@de,
+        "Romanian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgrus a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:rus,
+        wd:Q7737 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Russisch"@de,
+        "Russian"@en,
+        "Russe"@fr,
+        "russo"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgsan a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:san ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Sanskrit"@de,
+        "Sanskrit"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgsgn a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:sgn ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Gebärdensprache"@de,
+        "Sign Languages"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgspa a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:spa,
+        wd:Q1321 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Spanisch"@de,
+        "Spanish"@en,
+        "Espagnol"@fr,
+        "spagnolo"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgsrp a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:srp ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Serbisch"@de,
+        "Serbian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgswa a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Suaheli"@de,
+        "Kiswahili"@en ;
+    skos:exactMatch iso639-2:swa ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Swahili"@de,
+        "Swahili"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgswe a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:swe,
+        wd:Q9027 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Schwedisch"@de,
+        "Swedish"@en,
+        "Suédois"@fr,
+        "svedese"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgtam a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Tamilisch"@de ;
+    skos:exactMatch iso639-2:tam ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Tamil"@de,
+        "Tamil"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgtha a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:tha ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Thai"@de,
+        "Thai"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgtuk a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:tuk ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Turkmenisch"@de,
+        "Turkmen"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgtur a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:tur ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Türkisch"@de,
+        "Turkish"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgukr a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ukr ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Ukrainisch"@de,
+        "Ukrainian"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgvie a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:vie ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Vietnamesisch"@de,
+        "Vietnamese"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgwen a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:wen ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Sorbische Sprachen"@de,
+        "Sorbian languages"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgxho a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "isiXhosa"@de,
+        "isiXhosa"@en ;
+    skos:exactMatch iso639-2:xho ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Xhosa"@de,
+        "Xhosa"@en,
+        "Xhosa"@fr,
+        "Xhosa"@it ;
+    skos:topConceptOf spav:lg .
+
+spav:lgyid a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:yid ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Jiddisch"@de,
+        "Yiddish"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgzza a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Zazaisch"@de ;
+    skos:exactMatch iso639-2:zza ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Zaza"@de,
+        "Zaza"@en,
+        "Zazaki"@fr,
+        "Zazaki"@it ;
+    skos:topConceptOf spav:lg .
+
 spav:mnawx a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "performance art"@en ;
@@ -1679,181 +2263,6 @@ spav:muzua a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "added lyrics"@en ;
     skos:topConceptOf spav:mu .
-
-spav:nicsh a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:por,
-        wd:Q5146 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Portugiesisch"@de,
-        "Portuguese"@en,
-        "Portugais"@fr,
-        "portoghese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nidup a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:swe,
-        wd:Q9027 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Schwedisch"@de,
-        "Swedish"@en,
-        "Suédois"@fr,
-        "svedese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nienp a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:deu,
-        wd:Q188 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Deutsch"@de,
-        "German"@en,
-        "Allemand"@fr,
-        "tedesco"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nifij a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:eng,
-        wd:Q1860 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Englisch"@de,
-        "English"@en,
-        "Anglais"@fr,
-        "inglese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nijjo a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:hun,
-        wd:Q9067 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Ungarisch"@de,
-        "Hungarian"@en,
-        "Hongrois"@fr,
-        "ungherese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nikxf a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "Flemish"@en ;
-    skos:exactMatch iso639-2:dut,
-        wd:Q7411 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Niederländisch"@de,
-        "Dutch"@en,
-        "Néerlandais"@fr,
-        "olandese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nimdm a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:jap,
-        wd:Q5287 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Japanisch"@de,
-        "Japanese"@en,
-        "Japonais"@fr,
-        "giapponese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nioei a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:spa,
-        wd:Q1321 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Spanisch"@de,
-        "Spanish"@en,
-        "Espagnol"@fr,
-        "spagnolo"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:niqkq a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:ara,
-        wd:Q13955 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Arabisch"@de,
-        "Arabic"@en,
-        "Arabe"@fr,
-        "arabo"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nirhb a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:rus,
-        wd:Q7737 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Russisch"@de,
-        "Russian"@en,
-        "Russe"@fr,
-        "russo"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nirhc a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:pol,
-        wd:Q809 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Polnisch"@de,
-        "Polish"@en,
-        "Polonais"@fr,
-        "polacco"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:nirkx a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:fra,
-        wd:Q150 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Französisch"@de,
-        "French"@en,
-        "Français"@fr,
-        "francese"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:niwaj a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:ita,
-        wd:Q652 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Italienisch"@de,
-        "Italian"@en,
-        "Italien"@fr,
-        "italiano"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:niwgi a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:roh,
-        wd:Q13199 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Rätoromanisch"@de,
-        "Romansh"@en,
-        "Rhéto-roman"@fr,
-        "romancio"@it ;
-    skos:topConceptOf spav:ni .
-
-spav:niwgn a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:ces,
-        wd:Q9056 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Tschechisch"@de,
-        "Czech"@en ;
-    skos:topConceptOf spav:ni .
-
-spav:niwjl a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:gsw,
-        wd:Q387066 ;
-    skos:inScheme spav:ni ;
-    skos:prefLabel "Schweizerdeutsch"@de,
-        "Swiss German"@en,
-        "Suisse allemand"@fr,
-        "svizzero tedesco"@it ;
-    skos:topConceptOf spav:ni .
 
 spav:nnhwm a crm:E55_Type,
         skos:Concept ;
@@ -3202,26 +3611,6 @@ spav:vr a skos:ConceptScheme ;
     skos:prefLabel "Gruppenart"@de,
         "group type"@en .
 
-spav:ni a skos:ConceptScheme ;
-    skos:hasTopConcept spav:nicsh,
-        spav:nidup,
-        spav:nienp,
-        spav:nifij,
-        spav:nijjo,
-        spav:nikxf,
-        spav:nimdm,
-        spav:nioei,
-        spav:niqkq,
-        spav:nirhb,
-        spav:nirhc,
-        spav:nirkx,
-        spav:niwaj,
-        spav:niwgi,
-        spav:niwgn,
-        spav:niwjl ;
-    skos:prefLabel "Sprache"@de,
-        "language"@en .
-
 spav:df a skos:ConceptScheme ;
     skos:hasTopConcept spav:dfdui,
         spav:dfdzo,
@@ -3277,4 +3666,72 @@ spav:fv a skos:ConceptScheme ;
         spav:fvodj,
         spav:fvzfk ;
     skos:prefLabel "medium"@en .
+
+spav:lg a skos:ConceptScheme ;
+    skos:hasTopConcept spav:lgalb,
+        spav:lgals,
+        spav:lgara,
+        spav:lgarm,
+        spav:lgbam,
+        spav:lgbos,
+        spav:lgbul,
+        spav:lgces,
+        spav:lgcez,
+        spav:lgchi,
+        spav:lgdan,
+        spav:lgdeu,
+        spav:lgdut,
+        spav:lgell,
+        spav:lgeng,
+        spav:lgest,
+        spav:lgfao,
+        spav:lgfas,
+        spav:lgfin,
+        spav:lgfra,
+        spav:lgfur,
+        spav:lggrn,
+        spav:lggsw,
+        spav:lghbo,
+        spav:lgheb,
+        spav:lghin,
+        spav:lghrv,
+        spav:lghun,
+        spav:lgind,
+        spav:lgita,
+        spav:lgjap,
+        spav:lgkor,
+        spav:lgkur,
+        spav:lglat,
+        spav:lglav,
+        spav:lglin,
+        spav:lglit,
+        spav:lgmao,
+        spav:lgmlg,
+        spav:lgmnd,
+        spav:lgmos,
+        spav:lgnou,
+        spav:lgoci,
+        spav:lgpol,
+        spav:lgpor,
+        spav:lgroh,
+        spav:lgrum,
+        spav:lgrus,
+        spav:lgsan,
+        spav:lgsgn,
+        spav:lgspa,
+        spav:lgsrp,
+        spav:lgswa,
+        spav:lgswe,
+        spav:lgtam,
+        spav:lgtha,
+        spav:lgtuk,
+        spav:lgtur,
+        spav:lgukr,
+        spav:lgvie,
+        spav:lgwen,
+        spav:lgxho,
+        spav:lgyid,
+        spav:lgzza ;
+    skos:prefLabel "Sprache"@de,
+        "language"@en .
 
