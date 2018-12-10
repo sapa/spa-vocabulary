@@ -1479,6 +1479,14 @@ spav:lgmos a crm:E55_Type,
         "Moré"@fr ;
     skos:topConceptOf spav:lg .
 
+spav:lgnob a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:nob ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Norwegisch"@de,
+        "Norwegian"@en ;
+    skos:topConceptOf spav:lg .
+
 spav:lgnou a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Noussi"@fr ;
@@ -2018,6 +2026,16 @@ spav:muctj a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "film direction"@en .
 
+spav:mudat a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "œil extérieur"@de,
+        "oeil extérieur"@fr ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "dramaturgische Begleitung"@de,
+        "oeil extérieur"@en,
+        "œil extérieur"@fr ;
+    skos:topConceptOf spav:mu .
+
 spav:mudcw a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is adaptor of"@en ;
@@ -2074,13 +2092,20 @@ spav:mugkn a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "assistant stage direction"@en .
 
+spav:mugup a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "coach"@en ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Trainer"@de,
+        "trainer"@en ;
+    skos:topConceptOf spav:mu .
+
 spav:muhkf a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is puppeteer of"@en ;
-    skos:altLabel "puppet show"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "puppeteery"@en .
+    skos:prefLabel "puppet show"@en .
 
 spav:muiqu a crm:E55_Type,
         skos:Concept ;
@@ -2144,6 +2169,13 @@ spav:mumnc a crm:E55_Type,
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
     skos:prefLabel "moderation"@en .
+
+spav:mumpj a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mugja ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Puppenbau"@de,
+        "puppet design"@en .
 
 spav:munib a crm:E55_Type,
         skos:Concept ;
@@ -3400,20 +3432,6 @@ spav:mnhbj a crm:E55_Type,
         "danse de scène"@fr,
         "teatrodanza"@it .
 
-spav:mugja a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muecs,
-        spav:mufwk,
-        spav:mulnl,
-        spav:muqjb,
-        spav:muqju,
-        spav:murni,
-        spav:muxzh ;
-    skos:prefLabel "design"@en ;
-    skos:topConceptOf spav:mu .
-
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
         spav:nnkde,
@@ -3507,6 +3525,21 @@ spav:muawx a crm:E55_Type,
         spav:munib,
         spav:mupfz ;
     skos:prefLabel "performance"@en ;
+    skos:topConceptOf spav:mu .
+
+spav:mugja a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muecs,
+        spav:mufwk,
+        spav:mulnl,
+        spav:mumpj,
+        spav:muqjb,
+        spav:muqju,
+        spav:murni,
+        spav:muxzh ;
+    skos:prefLabel "design"@en ;
     skos:topConceptOf spav:mu .
 
 spav:go a skos:ConceptScheme ;
@@ -3638,10 +3671,12 @@ spav:mu a skos:ConceptScheme ;
         spav:mubyr,
         spav:mucbq,
         spav:muclm,
+        spav:mudat,
         spav:mudcw,
         spav:mudvs,
         spav:mueeb,
         spav:mugja,
+        spav:mugup,
         spav:muhti,
         spav:muiqu,
         spav:mujpp,
@@ -3709,6 +3744,7 @@ spav:lg a skos:ConceptScheme ;
         spav:lgmlg,
         spav:lgmnd,
         spav:lgmos,
+        spav:lgnob,
         spav:lgnou,
         spav:lgoci,
         spav:lgpol,
