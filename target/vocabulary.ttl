@@ -1363,6 +1363,17 @@ spav:lghun a crm:E55_Type,
         "ungherese"@it ;
     skos:topConceptOf spav:lg .
 
+spav:lgice a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:ice,
+        wd:Q294 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Isländisch"@de,
+        "Icelandic"@en,
+        "Islandais"@fr,
+        "islandese"@it ;
+    skos:topConceptOf spav:lg .
+
 spav:lgind a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch iso639-2:ind ;
@@ -1571,6 +1582,17 @@ spav:lgsgn a crm:E55_Type,
     skos:inScheme spav:lg ;
     skos:prefLabel "Gebärdensprache"@de,
         "Sign Languages"@en ;
+    skos:topConceptOf spav:lg .
+
+spav:lgslv a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:slv,
+        wd:Q9063 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Slowenisch"@de,
+        "Slovene"@en,
+        "Slovène"@fr,
+        "sloveno"@it ;
     skos:topConceptOf spav:lg .
 
 spav:lgspa a crm:E55_Type,
@@ -3731,6 +3753,7 @@ spav:lg a skos:ConceptScheme ;
         spav:lghin,
         spav:lghrv,
         spav:lghun,
+        spav:lgice,
         spav:lgind,
         spav:lgita,
         spav:lgjap,
@@ -3754,6 +3777,7 @@ spav:lg a skos:ConceptScheme ;
         spav:lgrus,
         spav:lgsan,
         spav:lgsgn,
+        spav:lgslv,
         spav:lgspa,
         spav:lgsrp,
         spav:lgswa,
