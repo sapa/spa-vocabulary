@@ -324,6 +324,12 @@ function draw(data) {
                         case 'iso639-2':
                             url = 'https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes';
                             break;
+                        case 'wd':
+                            url = 'http://www.wikidata.org/entity/' + id;
+                            break;
+                        case 'gnd':
+                            url = 'http://d-nb.info/gnd/' + id;
+                            break;
                         default:
                             alert('prefix ' + prefix + ' not found!');
                     }
