@@ -1,5 +1,6 @@
 @prefix aat: <http://vocab.getty.edu/aat/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix gnd: <http://d-nb.info/gnd/> .
 @prefix iso639-2: <http://id.loc.gov/vocabulary/iso639-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdabs: <http://rdaregistry.info/termList/broadcastStand/> .
@@ -1736,7 +1737,7 @@ spav:mnazh a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnmqk ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Kulttanz"@de,
+    skos:prefLabel "Ritueller Tanz"@de,
         "cult dance"@en,
         "danse rituelle"@fr .
 
@@ -1774,13 +1775,29 @@ spav:mnbyg a crm:E55_Type,
     skos:prefLabel "Erzählkunst"@de,
         "storytelling"@en .
 
-spav:mndpx a crm:E55_Type,
+spav:mnddy a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mnajh ;
+    skos:broader spav:mnemr ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Street Dance"@de,
-        "street dance"@en,
-        "street Dance"@fr .
+    skos:prefLabel "Amerikanischer Modern Dance"@de,
+        "American modern dance"@en,
+        "danse moderne américaine"@fr .
+
+spav:mndsg a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnmqk ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Volkstanz international"@de,
+        "international folk dance"@en,
+        "danse folklorique internationale"@fr .
+
+spav:mndug a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnhbj ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Neoklassischer Tanz"@de,
+        "neoclassical dance"@en,
+        "danse néoclassique"@fr .
 
 spav:mneec a crm:E55_Type,
         skos:Concept ;
@@ -1789,30 +1806,30 @@ spav:mneec a crm:E55_Type,
     skos:prefLabel "Zauberkunst"@de,
         "magic"@en .
 
-spav:mnemr a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:mnhbj ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "Modern Dance"@de,
-        "modern dance"@en,
-        "Danse moderne"@fr .
-
-spav:mnfnt a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:mnajh ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "Tanz im Musical"@de,
-        "dance in musical"@en,
-        "comédie musicale"@fr .
-
 spav:mnfwa a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "danse d'expression"@fr ;
-    skos:broader spav:mnhbj ;
+    skos:broader spav:mnemr ;
+    skos:exactMatch wd:Q778382 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Ausdruckstanz"@de,
-        "expression dance"@en,
-        "Danse libre"@fr .
+        "expressionist dance"@en,
+        "danse d'expression"@fr .
+
+spav:mnixv a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnhbj ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Performancekunst"@de,
+        "performance art (dance)"@en,
+        "performance"@fr .
+
+spav:mniyu a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnmqk ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Schweizer Volkstanz"@de,
+        "Swiss folk dance"@en,
+        "danse folklorique suisse"@fr .
 
 spav:mnjzh a crm:E55_Type,
         skos:Concept ;
@@ -1829,21 +1846,30 @@ spav:mnkqm a crm:E55_Type,
     skos:prefLabel "Liederabend"@de,
         "recital"@en .
 
-spav:mnlok a crm:E55_Type,
+spav:mnlhq a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnmqk ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Gesellschaftstanz"@de,
-        "ballroom dancing"@en,
-        "danse de société"@fr .
+    skos:prefLabel "Community Dance"@de,
+        "community dance"@en,
+        "danse communautaire"@fr .
+
+spav:mnlok a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mngvi ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Gesellschaftstänze"@de,
+        "ballroom dances"@en,
+        "danses de société"@fr .
 
 spav:mnlpp a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnhbj ;
+    skos:exactMatch wd:Q186035 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Zeitgenössischer Tanz"@de,
         "contemporary dance"@en,
-        "Danse contemporaine"@fr .
+        "danse contemporaine"@fr .
 
 spav:mnnmd a crm:E55_Type,
         skos:Concept ;
@@ -1868,20 +1894,13 @@ spav:mnols a crm:E55_Type,
         "opérette"@fr,
         "operetta"@it .
 
-spav:mnpbs a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:mnmqk ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "world dance"@en,
-        "danse du monde"@fr .
-
 spav:mnppw a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mnhbj ;
+    skos:broader spav:mnemr ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Tanztheater"@de,
-        "theatre dance"@en,
-        "Danse théâtre"@fr .
+        "dance theater"@en,
+        "danse-théâtre"@fr .
 
 spav:mnpyz a crm:E55_Type,
         skos:Concept ;
@@ -1889,17 +1908,22 @@ spav:mnpyz a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Weihnachtszirkus"@de .
 
-spav:mnsis a crm:E55_Type,
+spav:mnqox a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "danse ethnique"@fr,
-        "danse folkorique"@fr,
-        "danse nationale"@fr,
-        "danse populaire"@fr ;
-    skos:broader spav:mnmqk ;
+    skos:broader spav:mnhbj ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Volkstanz, Welttanz"@de,
-        "folk dance"@en,
-        "Danse traditionnelle"@fr .
+    skos:prefLabel "Cabaret"@de,
+        "cabaret (dance)"@en,
+        "cabaret"@fr .
+
+spav:mnqqk a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mngvi ;
+    skos:exactMatch wd:Q738622 ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Tanzsport"@de,
+        "dance sport"@en,
+        "danse sportive"@fr .
 
 spav:mnslv a crm:E55_Type,
         skos:Concept ;
@@ -1919,27 +1943,30 @@ spav:mntcq a crm:E55_Type,
     skos:prefLabel "Variête"@de,
         "vaudeville"@en .
 
-spav:mntcx a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:mnajh ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "Stepptanz"@de,
-        "tap dance"@en,
-        "claquettes"@fr .
-
 spav:mntin a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mnhbj ;
+    skos:broader spav:mnemr ;
+    skos:exactMatch <http://d-nb.info/gnd/4401016-3>,
+        wd:Q673769 ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Postmodern Dance"@de,
+    skos:prefLabel "Postmoderner Tanz"@de,
         "postmodern dance"@en,
-        "Danse postmoderne"@fr .
+        "danse postmoderne"@fr .
 
 spav:mntrp a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnhz ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Kleinzirkus"@de .
+
+spav:mnunb a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnhbj ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300389782> ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Klassischer Tanz"@de,
+        "classical dance"@en,
+        "danse classique"@fr .
 
 spav:mnuzw a crm:E55_Type,
         skos:Concept ;
@@ -1973,7 +2000,8 @@ spav:mnxbs a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "pantomime"@en .
+    skos:prefLabel "Pantomime"@de,
+        "pantomime"@en .
 
 spav:mnydj a crm:E55_Type,
         skos:Concept ;
@@ -1981,14 +2009,12 @@ spav:mnydj a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Strassenzirkus"@de .
 
-spav:mnygb a crm:E55_Type,
+spav:mnyng a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mnhbj ;
+    skos:broader spav:mnlcp ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Ballett"@de,
-        "ballet"@en,
-        "ballet"@fr,
-        "balletto"@it .
+    skos:prefLabel "dance education and therapy"@en,
+        "danse thérapie et pédagogie"@fr .
 
 spav:mnzgv a crm:E55_Type,
         skos:Concept ;
@@ -2005,14 +2031,6 @@ spav:mnzgw a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Lesung"@de,
         "reading"@en .
-
-spav:mnznu a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:mnajh ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "Jazztanz"@de,
-        "Jazz Dance"@en,
-        "danse jazz"@fr .
 
 spav:muacs a crm:E55_Type,
         skos:Concept ;
@@ -2996,16 +3014,18 @@ spav:mneyg a crm:E55_Type,
         "teatro drammatico"@it ;
     skos:topConceptOf spav:mn .
 
-spav:mnlcp a crm:E55_Type,
+spav:mngvi a crm:E55_Type,
         skos:Concept ;
+    skos:broader spav:mnlcp ;
+    skos:exactMatch <http://d-nb.info/gnd/4020651-8>,
+        <http://vocab.getty.edu/aat/300389784>,
+        wd:Q3209069 ;
     skos:inScheme spav:mn ;
-    skos:narrower spav:mnhbj,
-        spav:mnmqk ;
-    skos:prefLabel "Tanz"@de,
-        "dance"@en,
-        "danse"@fr,
-        "danza"@it ;
-    skos:topConceptOf spav:mn .
+    skos:narrower spav:mnlok,
+        spav:mnqqk ;
+    skos:prefLabel "Gesellschaftstanz"@de,
+        "social dance"@en,
+        "danse de société"@fr .
 
 spav:mucbq a crm:E55_Type,
         skos:Concept ;
@@ -3278,28 +3298,45 @@ spav:fvskn a crm:E55_Type,
     skos:prefLabel "U-matic"@de,
         "U-matic"@en .
 
-spav:mnajh a crm:E55_Type,
+spav:mnemr a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnhbj ;
+    skos:exactMatch wd:Q850130 ;
     skos:inScheme spav:mn ;
-    skos:narrower spav:mndpx,
-        spav:mnfnt,
-        spav:mntcx,
-        spav:mnznu ;
-    skos:prefLabel "andere Formen des Tanz"@de,
-        "other dance genre"@en,
-        "autres"@fr .
+    skos:narrower spav:mnddy,
+        spav:mnfwa,
+        spav:mnppw,
+        spav:mntin ;
+    skos:prefLabel "Modern Dance"@de,
+        "modern dance"@en,
+        "danse moderne"@fr .
+
+spav:mnlcp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mngvi,
+        spav:mnhbj,
+        spav:mnmqk,
+        spav:mnyng ;
+    skos:prefLabel "Tanz"@de,
+        "dance"@en,
+        "danse"@fr,
+        "danza"@it ;
+    skos:topConceptOf spav:mn .
 
 spav:mnmqk a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnlcp ;
+    skos:exactMatch <http://d-nb.info/gnd/4184448-8>,
+        <http://vocab.getty.edu/aat/300389783> ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnazh,
-        spav:mnlok,
-        spav:mnpbs,
-        spav:mnsis ;
-    skos:prefLabel "world dance and culture"@en,
-        "Danses et culture du monde"@fr .
+        spav:mndsg,
+        spav:mniyu,
+        spav:mnlhq ;
+    skos:prefLabel "Tanzkulturen der Welt"@de,
+        "world dance and culture"@en,
+        "culture et danse du monde"@fr .
 
 spav:mnyuk a crm:E55_Type,
         skos:Concept ;
@@ -3428,6 +3465,23 @@ spav:hlamu a crm:E55_Type,
         "première"@fr ;
     skos:topConceptOf spav:hl .
 
+spav:mnhbj a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro-danza"@it ;
+    skos:broader spav:mnlcp ;
+    skos:exactMatch wd:Q1020618 ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mndug,
+        spav:mnemr,
+        spav:mnixv,
+        spav:mnlpp,
+        spav:mnqox,
+        spav:mnunb ;
+    skos:prefLabel "Bühnentanz"@de,
+        "stage dance"@en,
+        "danse de scène"@fr,
+        "teatrodanza"@it .
+
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
         spav:ihrml,
@@ -3435,24 +3489,6 @@ spav:ih a skos:ConceptScheme ;
         spav:ihvhu ;
     skos:prefLabel "Kontakt"@de,
         "contact point"@en .
-
-spav:mnhbj a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "teatro-danza"@it ;
-    skos:broader spav:mnlcp ;
-    skos:exactMatch wd:Q1020618 ;
-    skos:inScheme spav:mn ;
-    skos:narrower spav:mnajh,
-        spav:mnemr,
-        spav:mnfwa,
-        spav:mnlpp,
-        spav:mnppw,
-        spav:mntin,
-        spav:mnygb ;
-    skos:prefLabel "Bühnentanz"@de,
-        "stage dance"@en,
-        "danse de scène"@fr,
-        "teatrodanza"@it .
 
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
