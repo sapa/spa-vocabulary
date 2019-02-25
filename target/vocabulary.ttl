@@ -2272,6 +2272,13 @@ spav:mujpp a crm:E55_Type,
     skos:prefLabel "editing"@en ;
     skos:topConceptOf spav:mu .
 
+spav:mukzi a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Gastauftritt"@de,
+        "guest performance"@en ;
+    skos:topConceptOf spav:mu .
+
 spav:mulcp a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is dancer of"@en ;
@@ -3829,6 +3836,7 @@ spav:mu a skos:ConceptScheme ;
         spav:muhti,
         spav:muiqu,
         spav:mujpp,
+        spav:mukzi,
         spav:mulga,
         spav:munuj,
         spav:mupvk,
