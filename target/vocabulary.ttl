@@ -350,7 +350,8 @@ spav:eoept a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
     skos:prefLabel "Beschreibung"@de,
-        "description"@en ;
+        "description"@en,
+        "description"@fr ;
     skos:topConceptOf spav:eo .
 
 spav:eokdx a crm:E55_Type,
@@ -390,7 +391,8 @@ spav:fragx a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300041393> ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Linolschnitt"@de,
-        "linocut"@en .
+        "linocut"@en,
+        "linogravure"@fr .
 
 spav:frbbo a crm:E55_Type,
         skos:Concept ;
@@ -482,7 +484,8 @@ spav:fvbrm a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300127173> ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Fotonegative"@de,
-        "photo negative"@en .
+        "photo negative"@en,
+        "négatif"@fr .
 
 spav:fvdex a crm:E55_Type,
         skos:Concept ;
@@ -790,7 +793,8 @@ spav:fvukd a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300026816> ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Postkarte"@de,
-        "postcard"@en .
+        "postcard"@en,
+        "carte postale"@fr .
 
 spav:fvulp a crm:E55_Type,
         skos:Concept ;
@@ -897,14 +901,16 @@ spav:gnoda a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:gn ;
     skos:prefLabel "unbekannt"@de,
-        "unknown"@en ;
+        "unknown"@en,
+        "inconnu"@fr ;
     skos:topConceptOf spav:gn .
 
 spav:gnpln a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:gn ;
     skos:prefLabel "Familie"@de,
-        "family"@en ;
+        "family"@en,
+        "famille"@fr ;
     skos:topConceptOf spav:gn .
 
 spav:gnqow a crm:E55_Type,
@@ -912,13 +918,15 @@ spav:gnqow a crm:E55_Type,
     skos:broader spav:gndex ;
     skos:inScheme spav:gn ;
     skos:prefLabel "Institution"@de,
-        "legal body"@en .
+        "legal body"@en,
+        "institution"@fr .
 
 spav:gnvyd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:gn ;
     skos:prefLabel "Person"@de,
-        "person"@en ;
+        "person"@en,
+        "personne"@fr ;
     skos:topConceptOf spav:gn .
 
 spav:goctj a crm:E55_Type,
@@ -978,14 +986,17 @@ spav:hlboj a crm:E55_Type,
     skos:inScheme spav:hl ;
     skos:prefLabel "Französischsprachige Erstaufführung"@de,
         "French language premiere"@en,
-        "première en français"@fr .
+        "première en français"@fr,
+        "prima in lingua francese"@it .
 
 spav:hlchl a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:hlamu ;
     skos:inScheme spav:hl ;
     skos:prefLabel "Italienischsprachige Erstaufführung"@de,
-        "Italian language premiere"@en .
+        "Italian language premiere"@en,
+        "première en italien"@fr,
+        "prima in lingua italiana"@it .
 
 spav:hlepi a crm:E55_Type,
         skos:Concept ;
@@ -1001,7 +1012,8 @@ spav:hlhey a crm:E55_Type,
     skos:inScheme spav:hl ;
     skos:prefLabel "Uraufführung"@de,
         "world premiere"@en,
-        "première mondiale"@fr .
+        "première mondiale"@fr,
+        "prima mondiale"@it .
 
 spav:hlosp a crm:E55_Type,
         skos:Concept ;
@@ -1009,7 +1021,8 @@ spav:hlosp a crm:E55_Type,
     skos:inScheme spav:hl ;
     skos:prefLabel "Deutschsprachige Erstaufführung"@de,
         "German language premiere"@en,
-        "première en allemand"@fr .
+        "première en allemand"@fr,
+        "prima in lingua tedesca"@it .
 
 spav:hlprv a crm:E55_Type,
         skos:Concept ;
@@ -1032,7 +1045,8 @@ spav:hluxz a crm:E55_Type,
     skos:inScheme spav:hl ;
     skos:prefLabel "Schweizerische Erstaufführung"@de,
         "Swiss premiere"@en,
-        "première suisse"@fr .
+        "première suisse"@fr,
+        "prima svizzera"@it .
 
 spav:hlvtx a crm:E55_Type,
         skos:Concept ;
@@ -1048,7 +1062,8 @@ spav:hlwdj a crm:E55_Type,
     skos:inScheme spav:hl ;
     skos:prefLabel "Europäische Erstaufführung"@de,
         "European premiere"@en,
-        "première européenne"@fr .
+        "première européenne"@fr,
+        "prima europera"@it .
 
 spav:hlyjh a crm:E55_Type,
         skos:Concept ;
@@ -1075,7 +1090,8 @@ spav:ihtxc a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:ih ;
     skos:prefLabel "Adresse"@de,
-        "address"@en ;
+        "address"@en,
+        "adresse"@fr ;
     skos:topConceptOf spav:ih .
 
 spav:ihvhu a crm:E55_Type,
@@ -1091,14 +1107,16 @@ spav:knept a crm:E55_Type,
         <http://vocab.getty.edu/aat/300189559> ;
     skos:inScheme spav:kn ;
     skos:prefLabel "männlich"@de,
-        "male"@en ;
+        "male"@en,
+        "masculin"@fr ;
     skos:topConceptOf spav:kn .
 
 spav:knnvd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:kn ;
     skos:prefLabel "anderes"@de,
-        "other"@en ;
+        "other"@en,
+        "autre"@fr ;
     skos:topConceptOf spav:kn .
 
 spav:knsiw a crm:E55_Type,
@@ -1107,7 +1125,8 @@ spav:knsiw a crm:E55_Type,
         <http://vocab.getty.edu/aat/300189557> ;
     skos:inScheme spav:kn ;
     skos:prefLabel "weiblich"@de,
-        "female"@en ;
+        "female"@en,
+        "féminin"@fr ;
     skos:topConceptOf spav:kn .
 
 spav:lgalb a crm:E55_Type,
@@ -1822,7 +1841,9 @@ spav:mnawx a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300121445> ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Performance"@de,
-        "performance"@en .
+        "performance"@en,
+        "performance"@fr,
+        "performance"@it .
 
 spav:mnazh a crm:E55_Type,
         skos:Concept ;
@@ -1830,7 +1851,8 @@ spav:mnazh a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Ritueller Tanz"@de,
         "cult dance"@en,
-        "danse rituelle"@fr .
+        "danse rituelle"@fr,
+        "danza rituale"@it .
 
 spav:mnbfm a crm:E55_Type,
         skos:Concept ;
@@ -1849,7 +1871,9 @@ spav:mnbhp a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Jugend"@de,
-        "youth"@en ;
+        "youth"@en,
+        "jeunesse"@fr,
+        "gioventù"@it ;
     skos:topConceptOf spav:mn .
 
 spav:mnbjn a crm:E55_Type,
@@ -1857,14 +1881,17 @@ spav:mnbjn a crm:E55_Type,
     skos:broader spav:mnztb ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Comedy"@de,
-        "comedy"@en .
+        "comedy"@en,
+        "commedia"@it .
 
 spav:mnbyg a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "contastorie"@it ;
     skos:broader spav:mnztb ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Erzählkunst"@de,
-        "storytelling"@en .
+        "storytelling"@en,
+        "storytelling"@it .
 
 spav:mnddy a crm:E55_Type,
         skos:Concept ;
@@ -1872,7 +1899,8 @@ spav:mnddy a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Amerikanischer Modern Dance"@de,
         "American modern dance"@en,
-        "danse moderne américaine"@fr .
+        "danse moderne américaine"@fr,
+        "danza moderna americana"@it .
 
 spav:mndsg a crm:E55_Type,
         skos:Concept ;
@@ -1880,7 +1908,8 @@ spav:mndsg a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Volkstanz international"@de,
         "international folk dance"@en,
-        "danse folklorique internationale"@fr .
+        "danse folklorique internationale"@fr,
+        "ballo folkloristico internazionale"@it .
 
 spav:mndug a crm:E55_Type,
         skos:Concept ;
@@ -1888,14 +1917,16 @@ spav:mndug a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Neoklassischer Tanz"@de,
         "neoclassical dance"@en,
-        "danse néoclassique"@fr .
+        "danse néoclassique"@fr,
+        "danza neoclassica"@it .
 
 spav:mneec a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnubc ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Zauberkunst"@de,
-        "magic"@en .
+        "magic"@en,
+        "magia"@it .
 
 spav:mnfwa a crm:E55_Type,
         skos:Concept ;
@@ -1904,7 +1935,8 @@ spav:mnfwa a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Ausdruckstanz"@de,
         "expressionist dance"@en,
-        "danse d'expression"@fr .
+        "danse d'expression"@fr,
+        "danza moderna"@it .
 
 spav:mnixv a crm:E55_Type,
         skos:Concept ;
@@ -1912,7 +1944,8 @@ spav:mnixv a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Performancekunst"@de,
         "performance art (dance)"@en,
-        "performance"@fr .
+        "performance"@fr,
+        "performance"@it .
 
 spav:mniyu a crm:E55_Type,
         skos:Concept ;
@@ -1920,14 +1953,16 @@ spav:mniyu a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Schweizer Volkstanz"@de,
         "Swiss folk dance"@en,
-        "danse folklorique suisse"@fr .
+        "danse folklorique suisse"@fr,
+        "ballo folkloristico svizzero"@it .
 
 spav:mnjzh a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnhz ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Kinderzirkusprojekt"@de,
-        "children circus project"@en .
+        "children circus project"@en,
+        "progetto circense per bambini"@it .
 
 spav:mnkqm a crm:E55_Type,
         skos:Concept ;
@@ -1935,7 +1970,8 @@ spav:mnkqm a crm:E55_Type,
     skos:broader spav:mnyuk ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Liederabend"@de,
-        "recital"@en .
+        "recital"@en,
+        "concerto vocale"@it .
 
 spav:mnlhq a crm:E55_Type,
         skos:Concept ;
@@ -1943,7 +1979,8 @@ spav:mnlhq a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Community Dance"@de,
         "community dance"@en,
-        "danse communautaire"@fr .
+        "danse communautaire"@fr,
+        "community dance"@it .
 
 spav:mnlok a crm:E55_Type,
         skos:Concept ;
@@ -1951,7 +1988,8 @@ spav:mnlok a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Gesellschaftstänze"@de,
         "ballroom dances"@en,
-        "danses de société"@fr .
+        "danses de société"@fr,
+        "balli di gruppo"@it .
 
 spav:mnlpp a crm:E55_Type,
         skos:Concept ;
@@ -1960,14 +1998,17 @@ spav:mnlpp a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Zeitgenössischer Tanz"@de,
         "contemporary dance"@en,
-        "danse contemporaine"@fr .
+        "danse contemporaine"@fr,
+        "danza contemporanea"@it .
 
 spav:mnnmd a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnztb ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Chanson"@de,
-        "chanson"@en .
+        "chanson"@en,
+        "chanson"@fr,
+        "chanson"@it .
 
 spav:mnoiw a crm:E55_Type,
         skos:Concept ;
@@ -1991,7 +2032,8 @@ spav:mnppw a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Tanztheater"@de,
         "dance theater"@en,
-        "danse-théâtre"@fr .
+        "danse-théâtre"@fr,
+        "teatrodanza"@it .
 
 spav:mnpyz a crm:E55_Type,
         skos:Concept ;
@@ -2005,7 +2047,8 @@ spav:mnqox a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Cabaret"@de,
         "cabaret (dance)"@en,
-        "cabaret"@fr .
+        "cabaret"@fr,
+        "cabaret"@it .
 
 spav:mnqqk a crm:E55_Type,
         skos:Concept ;
@@ -2014,7 +2057,8 @@ spav:mnqqk a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Tanzsport"@de,
         "dance sport"@en,
-        "danse sportive"@fr .
+        "danse sportive"@fr,
+        "danza sportiva"@it .
 
 spav:mnslv a crm:E55_Type,
         skos:Concept ;
@@ -2022,7 +2066,8 @@ spav:mnslv a crm:E55_Type,
     skos:exactMatch wd:Q39894018 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Schauspiel mit Musik"@de,
-        "drama with music"@en .
+        "drama with music"@en,
+        "teatro con musica"@it .
 
 spav:mntcq a crm:E55_Type,
         skos:Concept ;
@@ -2042,22 +2087,26 @@ spav:mntin a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Postmoderner Tanz"@de,
         "postmodern dance"@en,
-        "danse postmoderne"@fr .
+        "danse postmoderne"@fr,
+        "danza postmoderna"@it .
 
 spav:mntrp a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnhz ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Kleinzirkus"@de .
+    skos:prefLabel "Kleinzirkus"@de,
+        "circo per bambini"@it .
 
 spav:mnunb a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "balletto"@it ;
     skos:broader spav:mnhbj ;
     skos:exactMatch <http://vocab.getty.edu/aat/300389782> ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Klassischer Tanz"@de,
         "classical dance"@en,
-        "danse classique"@fr .
+        "danse classique"@fr,
+        "danza classica"@it .
 
 spav:mnuzw a crm:E55_Type,
         skos:Concept ;
@@ -2089,23 +2138,27 @@ spav:mnwna a crm:E55_Type,
 
 spav:mnxbs a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "mimo"@it ;
     skos:broader spav:mnnvd ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Pantomime"@de,
-        "pantomime"@en .
+        "pantomime"@en,
+        "pantomima"@it .
 
 spav:mnydj a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnhz ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Strassenzirkus"@de .
+    skos:prefLabel "Strassenzirkus"@de,
+        "circo di strada"@it .
 
 spav:mnyng a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnlcp ;
     skos:inScheme spav:mn ;
     skos:prefLabel "dance education and therapy"@en,
-        "danse thérapie et pédagogie"@fr .
+        "danse thérapie et pédagogie"@fr,
+        "danza pedagogica e terapeutica"@it .
 
 spav:mnzgv a crm:E55_Type,
         skos:Concept ;
@@ -2121,7 +2174,8 @@ spav:mnzgw a crm:E55_Type,
     skos:broader spav:mneyg ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Lesung"@de,
-        "reading"@en .
+        "reading"@en,
+        "lettura pubblica"@it .
 
 spav:muacs a crm:E55_Type,
         skos:Concept ;
@@ -2494,7 +2548,8 @@ spav:qeelq a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Dokument"@de,
-        "item"@en ;
+        "item"@en,
+        "documento"@it ;
     skos:topConceptOf spav:qe .
 
 spav:qegrv a crm:E55_Type,
@@ -2502,35 +2557,40 @@ spav:qegrv a crm:E55_Type,
     skos:broader spav:qexvc ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Serie"@de,
-        "series"@en .
+        "series"@en,
+        "serie"@it .
 
 spav:qejki a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Bestand"@de,
-        "fonds"@en .
+        "fonds"@en,
+        "fondo"@it .
 
 spav:qekqz a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Dossier"@de,
-        "file"@en .
+        "file"@en,
+        "dossier"@it .
 
 spav:qeqjk a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qeicn ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Hauptabteilung"@de,
-        "section"@en .
+        "section"@en,
+        "sezione"@it .
 
 spav:qevhn a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qeicn ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Unterabteilung"@de,
-        "sub-section"@en .
+        "sub-section"@en,
+        "sottosezione"@it .
 
 spav:qezip a crm:E55_Type,
         skos:Concept ;
@@ -2588,7 +2648,8 @@ spav:rmoda a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:rm ;
     skos:prefLabel "unbekannt"@de,
-        "unknown"@en ;
+        "unknown"@en,
+        "inconnu"@fr ;
     skos:topConceptOf spav:rm .
 
 spav:tjeev a crm:E55_Type,
@@ -2620,21 +2681,24 @@ spav:vrctx a crm:E55_Type,
     skos:broader spav:vrjhq ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Fördergesellschaft"@de,
-        "promoter"@en .
+        "promoter"@en,
+        "associazione degli amici del teatro"@it .
 
 spav:vrdat a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:vrxbs ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Amateurproduzent"@de,
-        "amateur producer"@en .
+        "amateur producer"@en,
+        "produttore teatrale amatoriale"@it .
 
 spav:vrggs a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Archive"@de,
         "archive"@en,
-        "archives"@fr ;
+        "archives"@fr,
+        "archivio"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrgvx a crm:E55_Type,
@@ -2649,7 +2713,8 @@ spav:vriqe a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Bibliothek"@de,
         "library"@en,
-        "bibliothèque"@fr ;
+        "bibliothèque"@fr,
+        "biblioteca"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vriuw a crm:E55_Type,
@@ -2657,7 +2722,8 @@ spav:vriuw a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Agentur"@de,
         "agency"@en,
-        "agence"@fr ;
+        "agence"@fr,
+        "agenzia"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrivu a crm:E55_Type,
@@ -2665,14 +2731,16 @@ spav:vrivu a crm:E55_Type,
     skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
     skos:prefLabel "professioneller Produzent mit eigener Spielstätte"@de,
-        "professional producer with own venue"@en .
+        "professional producer with own venue"@en,
+        "produttore teatrale professionista con sede propria"@it .
 
 spav:vrjiw a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Trägerschaft"@de,
         "responsible body"@en,
-        "organisme responsable"@fr ;
+        "organisme responsable"@fr,
+        "ente responsabile"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrjva a crm:E55_Type,
@@ -2682,14 +2750,16 @@ spav:vrjva a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Teilensemble"@de,
         "subcompany"@en,
-        "sous-ensemble"@fr .
+        "sous-ensemble"@fr,
+        "sottocompagnia"@it .
 
 spav:vrmjk a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Bildungsinstitution"@de,
         "education"@en,
-        "institution de formation"@fr ;
+        "institution de formation"@fr,
+        "istituzioni di formazione"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrorh a crm:E55_Type,
@@ -2697,7 +2767,8 @@ spav:vrorh a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Verlag"@de,
         "publisher"@en,
-        "maison d'édition"@fr ;
+        "maison d'édition"@fr,
+        "casa editrice"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrrml a crm:E55_Type,
@@ -2706,21 +2777,24 @@ spav:vrrml a crm:E55_Type,
     skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
     skos:prefLabel "professioneller Produzent mit mobiler Spielstätte"@de,
-        "professional producer with mobile venue"@en .
+        "professional producer with mobile venue"@en,
+        "produttore teatrale professionista con sede mobile"@it .
 
 spav:vrsiw a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:vrjhq ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Besucherorganisation"@de,
-        "visitor care"@en .
+        "visitor care"@en,
+        "associazione degli spettatori"@it .
 
 spav:vrsjj a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Museum"@de,
         "museum"@en,
-        "musée"@fr ;
+        "musée"@fr,
+        "museo"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrtxc a crm:E55_Type,
@@ -2728,7 +2802,8 @@ spav:vrtxc a crm:E55_Type,
     skos:broader spav:vrmpj ;
     skos:inScheme spav:vr ;
     skos:prefLabel "professioneller Produzent ohne eigene Spielstätte"@de,
-        "professional producer without own venue"@en .
+        "professional producer without own venue"@en,
+        "produttore teatrale professionista senza sede propria"@it .
 
 spav:wajzb a crm:E55_Type,
         skos:Concept ;
@@ -2916,7 +2991,8 @@ spav:fvajf a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:narrower spav:fvukd ;
     skos:prefLabel "Papier"@de,
-        "paper"@en ;
+        "paper"@en,
+        "papier"@fr ;
     skos:topConceptOf spav:fv .
 
 spav:fvlkh a crm:E55_Type,
@@ -2940,7 +3016,8 @@ spav:gndex a crm:E55_Type,
     skos:inScheme spav:gn ;
     skos:narrower spav:gnqow ;
     skos:prefLabel "Gruppe"@de,
-        "group"@en ;
+        "group"@en,
+        "groupe"@fr ;
     skos:topConceptOf spav:gn .
 
 spav:mueeb a crm:E55_Type,
@@ -2991,7 +3068,8 @@ spav:vrkzi a crm:E55_Type,
     skos:narrower spav:vrjva ;
     skos:prefLabel "Ensemble"@de,
         "company"@en,
-        "ensemble"@fr .
+        "ensemble"@fr,
+        "compagnia"@it .
 
 spav:vrxrs a crm:E55_Type,
         skos:Concept ;
@@ -2999,7 +3077,8 @@ spav:vrxrs a crm:E55_Type,
     skos:narrower spav:vrfcm ;
     skos:prefLabel "Veranstalter"@de,
         "organizer"@en,
-        "organisateur"@fr ;
+        "organisateur"@fr,
+        "organizzatore"@it ;
     skos:topConceptOf spav:vr .
 
 spav:zjajf a crm:E55_Type,
@@ -3049,7 +3128,8 @@ spav:fvese a crm:E55_Type,
     skos:narrower spav:fvbrm,
         spav:fvuut ;
     skos:prefLabel "Fotografie"@de,
-        "photographic image"@en ;
+        "photographic image"@en,
+        "photographie"@fr ;
     skos:topConceptOf spav:fv .
 
 spav:fvhcu a crm:E55_Type,
@@ -3100,7 +3180,7 @@ spav:mneyg a crm:E55_Type,
     skos:altLabel "Drama"@de,
         "Schaupiel"@de,
         "drama"@en,
-        "teatro di prosa"@it ;
+        "teatro di prosa, arte drammatica"@it ;
     skos:exactMatch <http://vocab.getty.edu/aat/300054148>,
         wd:Q39892385 ;
     skos:inScheme spav:mn ;
@@ -3123,7 +3203,8 @@ spav:mngvi a crm:E55_Type,
         spav:mnqqk ;
     skos:prefLabel "Gesellschaftstanz"@de,
         "social dance"@en,
-        "danse de société"@fr .
+        "danse de société"@fr,
+        "ballo di gruppo"@it .
 
 spav:mucbq a crm:E55_Type,
         skos:Concept ;
@@ -3149,7 +3230,8 @@ spav:qeicn a crm:E55_Type,
     skos:narrower spav:qeqjk,
         spav:qevhn ;
     skos:prefLabel "Sammlung"@de,
-        "collection"@en ;
+        "collection"@en,
+        "collezione"@it ;
     skos:topConceptOf spav:qe .
 
 spav:vrjhq a crm:E55_Type,
@@ -3159,7 +3241,8 @@ spav:vrjhq a crm:E55_Type,
         spav:vrsiw ;
     skos:prefLabel "Verband"@de,
         "association"@en,
-        "association"@fr ;
+        "association"@fr,
+        "associazione"@it ;
     skos:topConceptOf spav:vr .
 
 spav:bp a skos:ConceptScheme ;
@@ -3243,7 +3326,8 @@ spav:fvuut a crm:E55_Type,
         spav:fvmoi,
         spav:fvwry ;
     skos:prefLabel "Fotopositiv"@de,
-        "photo positive"@en .
+        "photo positive"@en,
+        "positif"@fr .
 
 spav:fvzfk a crm:E55_Type,
         skos:Concept ;
@@ -3278,7 +3362,7 @@ spav:mnubc a crm:E55_Type,
         "circus"@en,
         "vaudeville"@en,
         "music-hall"@fr,
-        "varietà"@it .
+        "varietà, circo"@it .
 
 spav:muiuk a crm:E55_Type,
         skos:Concept ;
@@ -3324,7 +3408,8 @@ spav:vrmpj a crm:E55_Type,
         spav:vrrml,
         spav:vrtxc ;
     skos:prefLabel "professioneller Produzent"@de,
-        "professional producer"@en .
+        "professional producer"@en,
+        "produttore teatrale professionista"@it .
 
 spav:vrxbs a crm:E55_Type,
         skos:Concept ;
@@ -3334,7 +3419,8 @@ spav:vrxbs a crm:E55_Type,
         spav:vrmpj ;
     skos:prefLabel "Produzent"@de,
         "producer"@en,
-        "producteur"@fr ;
+        "producteur"@fr,
+        "produttore teatrale"@it ;
     skos:topConceptOf spav:vr .
 
 spav:zjyky a crm:E55_Type,
@@ -3407,10 +3493,12 @@ spav:mnemr a crm:E55_Type,
         spav:mntin ;
     skos:prefLabel "Modern Dance"@de,
         "modern dance"@en,
-        "danse moderne"@fr .
+        "danse moderne"@fr,
+        "danza moderna"@it .
 
 spav:mnlcp a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "ballo"@it ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mngvi,
         spav:mnhbj,
@@ -3525,7 +3613,8 @@ spav:mnnhz a crm:E55_Type,
         spav:mntrp,
         spav:mnydj ;
     skos:prefLabel "Zirkus"@de,
-        "circus"@en .
+        "circus"@en,
+        "circo"@it .
 
 spav:mnnvd a crm:E55_Type,
         skos:Concept ;
@@ -3536,7 +3625,8 @@ spav:mnnvd a crm:E55_Type,
         spav:mnxbs,
         spav:mnztb ;
     skos:prefLabel "andere"@de,
-        "other"@en ;
+        "other"@en,
+        "altro"@it ;
     skos:topConceptOf spav:mn .
 
 spav:wa a skos:ConceptScheme ;
@@ -3560,7 +3650,8 @@ spav:hlamu a crm:E55_Type,
         spav:hlwdj ;
     skos:prefLabel "Erstaufführung"@de,
         "premiere"@en,
-        "première"@fr ;
+        "première"@fr,
+        "prima"@it ;
     skos:topConceptOf spav:hl .
 
 spav:mnhbj a crm:E55_Type,
@@ -3586,7 +3677,8 @@ spav:ih a skos:ConceptScheme ;
         spav:ihtxc,
         spav:ihvhu ;
     skos:prefLabel "Kontakt"@de,
-        "contact point"@en .
+        "contact point"@en,
+        "contact"@fr .
 
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
