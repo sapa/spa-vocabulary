@@ -2173,22 +2173,26 @@ spav:muacs a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is narrator of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "narration"@en,
+    skos:prefLabel "Erzählung"@de,
+        "narration"@en,
         "conte"@fr .
 
 spav:mubbv a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is choreographer of"@en ;
+    skos:altLabel "Cho­reo­gra­phie"@de ;
     skos:broader spav:muyql ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "choreography"@en,
+    skos:prefLabel "Cho­reo­gra­fie"@de,
+        "choreography"@en,
         "chorégraphie"@fr .
 
 spav:mubyr a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is photographer of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "photography"@en,
+    skos:prefLabel "Fotografie"@de,
+        "photography"@en,
         "photographie"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2196,7 +2200,8 @@ spav:muclm a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is technical director of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "technical direction"@en,
+    skos:prefLabel "Technische Regie"@de,
+        "technical direction"@en,
         "direction technique"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2204,7 +2209,8 @@ spav:muctj a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mucbq ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "film direction"@en,
+    skos:prefLabel "Filmregie"@de,
+        "film direction"@en,
         "réalisation"@fr .
 
 spav:mudat a crm:E55_Type,
@@ -2221,7 +2227,8 @@ spav:mudcw a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is adaptor of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "adaption"@en,
+    skos:prefLabel "Adaption"@de,
+        "adaption"@en,
         "adaptation"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2229,7 +2236,8 @@ spav:mudvs a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is director of photography of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "direction of photography"@en,
+    skos:prefLabel "Kamera"@de,
+        "direction of photography"@en,
         "direction de la photographie"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2238,7 +2246,8 @@ spav:muecs a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is costume designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "costume design"@en,
+    skos:prefLabel "Kostümdesign"@de,
+        "costume design"@en,
         "conception de costume"@fr .
 
 spav:mufbo a crm:E55_Type,
@@ -2246,7 +2255,8 @@ spav:mufbo a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is composer of"@en ;
     skos:broader spav:muyql ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "composition"@en,
+    skos:prefLabel "Komposition"@de,
+        "composition"@en,
         "composition"@fr .
 
 spav:mufcc a crm:E55_Type,
@@ -2254,7 +2264,8 @@ spav:mufcc a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is choral conductor of"@en ;
     skos:broader spav:muqfg ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "choral conductor"@en,
+    skos:prefLabel "Chorleitung"@de,
+        "choral conductor"@en,
         "chef de choeur"@fr .
 
 spav:mufif a crm:E55_Type,
@@ -2262,7 +2273,8 @@ spav:mufif a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is audio engineer of"@en ;
     skos:broader spav:muhti ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "audio engineering"@en,
+    skos:prefLabel "Tontechnik"@de,
+        "audio engineering"@en,
         "technique audio"@fr .
 
 spav:mufwk a crm:E55_Type,
@@ -2270,7 +2282,8 @@ spav:mufwk a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is projection designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "projection design"@en,
+    skos:prefLabel "Projektionsgestaltung"@de,
+        "projection design"@en,
         "conception projection"@fr .
 
 spav:mugkn a crm:E55_Type,
@@ -2278,7 +2291,8 @@ spav:mugkn a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is assistant stage director of"@en ;
     skos:broader spav:mutnt ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "assistant stage direction"@en,
+    skos:prefLabel "Bühnenregieassistenz"@de,
+        "assistant stage direction"@en,
         "assistant mise en scène"@fr .
 
 spav:mugup a crm:E55_Type,
@@ -2294,21 +2308,25 @@ spav:muhkf a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is puppeteer of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "puppet show"@en,
+    skos:prefLabel "Puppenspiel"@de,
+        "puppet show"@en,
         "spectacle de marionnettes"@fr .
 
 spav:muiqu a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is editor of moving image work of"@en ;
+    skos:altLabel "Bildschnitt"@de ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "editing of moving image work"@en ;
+    skos:prefLabel "Schnitt"@de,
+        "editing of moving image work"@en ;
     skos:topConceptOf spav:mu .
 
 spav:mujhq a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "pantomime"@en,
+    skos:prefLabel "Pantomime"@de,
+        "pantomime"@en,
         "pantonine"@fr .
 
 spav:mujig a crm:E55_Type,
@@ -2316,21 +2334,24 @@ spav:mujig a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is camera operator of"@en ;
     skos:broader spav:mueeb ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "camera operation"@en .
+    skos:prefLabel "Kameraführung"@de,
+        "camera operation"@en .
 
 spav:mujmh a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is librettist of"@en ;
     skos:broader spav:muiuk ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "libretto"@en,
+    skos:prefLabel "Libretto"@de,
+        "libretto"@en,
         "livret"@fr .
 
 spav:mujpp a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is editor of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "editing"@en,
+    skos:prefLabel "Bearbeitung"@de,
+        "editing"@en,
         "édition"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2346,7 +2367,8 @@ spav:mulcp a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is dancer of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "dance"@en,
+    skos:prefLabel "Tanz"@de,
+        "dance"@en,
         "danse"@fr .
 
 spav:mulga a crm:E55_Type,
@@ -2354,7 +2376,8 @@ spav:mulga a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
     skos:altLabel "scenographery"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "art direction"@en,
+    skos:prefLabel "Ausstattung"@de,
+        "art direction"@en,
         "direction artistique"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2363,7 +2386,8 @@ spav:mulnl a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is production designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "production design"@en,
+    skos:prefLabel "Produktionsdesign"@de,
+        "production design"@en,
         "conception de production"@fr .
 
 spav:mumnc a crm:E55_Type,
@@ -2371,7 +2395,8 @@ spav:mumnc a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is moderator of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "moderation"@en,
+    skos:prefLabel "Moderation"@de,
+        "moderation"@en,
         "modération"@fr .
 
 spav:mumpj a crm:E55_Type,
@@ -2387,14 +2412,16 @@ spav:munib a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is actor of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "acting"@en,
+    skos:prefLabel "Schauspiel"@de,
+        "acting"@en,
         "jeu d'acteur"@fr .
 
 spav:munuj a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is contributer of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "contribution"@en ;
+    skos:prefLabel "Beitrag"@de,
+        "contribution"@en ;
     skos:topConceptOf spav:mu .
 
 spav:mupah a crm:E55_Type,
@@ -2402,7 +2429,8 @@ spav:mupah a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is instrumentalist of"@en ;
     skos:broader spav:muiim ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "instrumental perfomance"@en,
+    skos:prefLabel "Instrumentale Aufführung"@de,
+        "instrumental perfomance"@en,
         "performance instrumentale"@fr .
 
 spav:mupfz a crm:E55_Type,
@@ -2410,7 +2438,8 @@ spav:mupfz a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is host of"@en ;
     skos:broader spav:muawx ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "host"@en,
+    skos:prefLabel "Gastgeber"@de,
+        "host"@en,
         "invité"@fr .
 
 spav:mupot a crm:E55_Type,
@@ -2418,14 +2447,16 @@ spav:mupot a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is screenwriter of"@en ;
     skos:broader spav:muiuk ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "screenplay"@en,
+    skos:prefLabel "Drehbuch"@de,
+        "screenplay"@en,
         "scénario"@fr .
 
 spav:mupvk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is writer of added text of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "added text"@en,
+    skos:prefLabel "Zusätzlicher Text"@de,
+        "added text"@en,
         "texte ajouté"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2434,7 +2465,8 @@ spav:muqjb a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is set designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "set design"@en,
+    skos:prefLabel "Bühnenbild"@de,
+        "set design"@en,
         "scénographie"@fr .
 
 spav:muqju a crm:E55_Type,
@@ -2442,14 +2474,16 @@ spav:muqju a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is video designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "video design"@en,
+    skos:prefLabel "Videodesign"@de,
+        "video design"@en,
         "conception vidéo"@fr .
 
 spav:muqtj a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is arranger of music of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "musical arrangement"@en,
+    skos:prefLabel "Musikalisches Arrangement"@de,
+        "musical arrangement"@en,
         "arrangement musical"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2458,14 +2492,16 @@ spav:murni a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is lighting designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "lighting design"@en,
+    skos:prefLabel "Lichtgestaltung"@de,
+        "lighting design"@en,
         "conception lumière"@fr .
 
 spav:musim a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is dramaturge of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "dramaturgy"@en,
+    skos:prefLabel "Dramaturgie"@de,
+        "dramaturgy"@en,
         "dramaturgie"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2474,14 +2510,16 @@ spav:muvhj a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is lyricist of"@en ;
     skos:broader spav:muiuk ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "lyrics"@en,
+    skos:prefLabel "Liedtexte"@de,
+        "lyrics"@en,
         "paroles"@fr .
 
 spav:muwgo a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is producer of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "production"@en,
+    skos:prefLabel "Produktion"@de,
+        "production"@en,
         "production"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2489,7 +2527,8 @@ spav:muwyo a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is translator of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "translation"@en,
+    skos:prefLabel "Übersetzung"@de,
+        "translation"@en,
         "traduction"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -2498,7 +2537,8 @@ spav:muxzh a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is sound designer of"@en ;
     skos:broader spav:mugja ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "sound design"@en,
+    skos:prefLabel "Tongestaltung"@de,
+        "sound design"@en,
         "conception sonore"@fr .
 
 spav:muygg a crm:E55_Type,
@@ -2506,14 +2546,16 @@ spav:muygg a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is singer of"@en ;
     skos:broader spav:muiim ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "singing"@en,
+    skos:prefLabel "Gesang"@de,
+        "singing"@en,
         "chant"@fr .
 
 spav:muzua a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is writer of added lyrics of"@en ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "added lyrics"@en,
+    skos:prefLabel "Zusätzliche Liedtexte"@de,
+        "added lyrics"@en,
         "paroles ajoutées"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3080,7 +3122,8 @@ spav:mueeb a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is recordist of"@en ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mujig ;
-    skos:prefLabel "recording"@en,
+    skos:prefLabel "Aufnahme"@de,
+        "recording"@en,
         "enregitrement"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3089,7 +3132,8 @@ spav:muhti a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is recording engineer of"@en ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mufif ;
-    skos:prefLabel "recording engineering"@en,
+    skos:prefLabel "Aufnahmetechnik"@de,
+        "recording engineering"@en,
         "technique enregistrement"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3098,7 +3142,8 @@ spav:muqfg a crm:E55_Type,
     rdfs:comment "equivalent in SPA Data Model: is conductor of"@en ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mufcc ;
-    skos:prefLabel "conductor"@en,
+    skos:prefLabel "Dirigent"@de,
+        "conductor"@en,
         "chef d'ochestre"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3109,7 +3154,8 @@ spav:mutnt a crm:E55_Type,
     skos:broader spav:mucbq ;
     skos:inScheme spav:mu ;
     skos:narrower spav:mugkn ;
-    skos:prefLabel "stage direction"@en,
+    skos:prefLabel "Bühnenregie"@de,
+        "stage direction"@en,
         "mise en scène"@fr .
 
 spav:vrfcm a crm:E55_Type,
@@ -3262,7 +3308,8 @@ spav:mucbq a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:narrower spav:muctj,
         spav:mutnt ;
-    skos:prefLabel "direction"@en,
+    skos:prefLabel "Regie"@de,
+        "direction"@en,
         "direction"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3273,7 +3320,8 @@ spav:muiim a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:narrower spav:mupah,
         spav:muygg ;
-    skos:prefLabel "music performance"@en,
+    skos:prefLabel "Musikalische Aufführung"@de,
+        "music performance"@en,
         "performance musicale"@fr .
 
 spav:qeicn a crm:E55_Type,
@@ -3426,7 +3474,8 @@ spav:muiuk a crm:E55_Type,
     skos:narrower spav:mujmh,
         spav:mupot,
         spav:muvhj ;
-    skos:prefLabel "authorship"@en,
+    skos:prefLabel "Autorschaft"@de,
+        "authorship"@en,
         "paternité"@fr .
 
 spav:muyql a crm:E55_Type,
@@ -3807,7 +3856,8 @@ spav:muawx a crm:E55_Type,
         spav:mumnc,
         spav:munib,
         spav:mupfz ;
-    skos:prefLabel "performance"@en,
+    skos:prefLabel "Performance"@de,
+        "performance"@en,
         "performance"@fr ;
     skos:topConceptOf spav:mu .
 
@@ -3823,7 +3873,8 @@ spav:mugja a crm:E55_Type,
         spav:muqju,
         spav:murni,
         spav:muxzh ;
-    skos:prefLabel "design"@en,
+    skos:prefLabel "Design"@de,
+        "design"@en,
         "conception"@fr ;
     skos:topConceptOf spav:mu .
 
