@@ -55,7 +55,8 @@ spav:dfblx a crm:E55_Type,
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300249572> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "promotional material"@en,
+    skos:prefLabel "Promotionsmaterial"@de,
+        "promotional material"@en,
         "matériel promotionnel"@fr,
         "materiale promozionale"@it .
 
@@ -70,7 +71,8 @@ spav:dfdzo a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300015617> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "sketch"@en,
+    skos:prefLabel "Skizze"@de,
+        "sketch"@en,
         "esquisse"@fr,
         "sketch"@it ;
     skos:topConceptOf spav:df .
@@ -128,7 +130,8 @@ spav:dfgei a crm:E55_Type,
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300033799> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "oil painting"@en,
+    skos:prefLabel "Ölgemälde"@de,
+        "oil painting"@en,
         "peinture à l'huile"@fr,
         "pittura a olio"@it .
 
@@ -179,7 +182,8 @@ spav:dfmyd a crm:E55_Type,
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300028037> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "personal paper"@en,
+    skos:prefLabel "persönliche Dokumente ?"@de,
+        "personal paper"@en,
         "document personnel"@fr,
         "documento personale"@it .
 
@@ -204,7 +208,8 @@ spav:dfoff a crm:E55_Type,
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300078925> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "watercolor"@en,
+    skos:prefLabel "Aquarell"@de,
+        "watercolor"@en,
         "aquarelle"@fr,
         "acquarello"@it .
 
@@ -223,7 +228,8 @@ spav:dfpwk a crm:E55_Type,
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300181918> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "acrylic painting"@en,
+    skos:prefLabel "Acrylgemälde"@de,
+        "acrylic painting"@en,
         "peinture acrylique"@fr,
         "pittura acrilica"@it .
 
@@ -232,7 +238,8 @@ spav:dfqrl a crm:E55_Type,
     skos:broader spav:dfdui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "positive"@en,
+    skos:prefLabel "Positiv (Foto-Positiv)"@de,
+        "positive"@en,
         "positif"@fr,
         "positivo"@it .
 
@@ -241,7 +248,8 @@ spav:dfrsp a crm:E55_Type,
     skos:broader spav:dfdui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300127173> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "negative"@en,
+    skos:prefLabel "Negativ (Foto-Negativ)"@de,
+        "negative"@en,
         "négatif"@fr,
         "negativo"@it .
 
@@ -303,7 +311,8 @@ spav:dfvjf a crm:E55_Type,
     skos:broader spav:dfrwd ;
     skos:exactMatch <http://vocab.getty.edu/aat/300251645> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "stage accessorie"@en,
+    skos:prefLabel "Requisiten (Bühnenzubehör?)"@de,
+        "stage accessorie"@en,
         "accessoire de scène"@fr,
         "accessorio di scena"@it .
 
@@ -1275,16 +1284,6 @@ spav:lgces a crm:E55_Type,
         "ceco"@it ;
     skos:topConceptOf spav:lg .
 
-spav:lgcez a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch iso639-2:cez ;
-    skos:inScheme spav:lg ;
-    skos:prefLabel "Tschechisch"@de,
-        "Czech"@en,
-        "tchèque"@fr,
-        "ceco"@it ;
-    skos:topConceptOf spav:lg .
-
 spav:lgchi a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Kantonesisch"@de,
@@ -1395,16 +1394,15 @@ spav:lgfin a crm:E55_Type,
         "finlandese"@it ;
     skos:topConceptOf spav:lg .
 
-spav:lgfra a crm:E55_Type,
+spav:lgfrc a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:fra,
-        wd:Q150 ;
+    skos:broader spav:lgfra ;
+    skos:exactMatch wd:Q1480152 ;
     skos:inScheme spav:lg ;
-    skos:prefLabel "Französisch"@de,
-        "French"@en,
-        "français"@fr,
-        "francese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:prefLabel "Schweizer Französisch"@de,
+        "Swiss French"@en,
+        "français suisse"@fr,
+        "lingua francese in Svizzera"@it .
 
 spav:lgfur a crm:E55_Type,
         skos:Concept ;
@@ -1513,8 +1511,12 @@ spav:lgind a crm:E55_Type,
 spav:lgitt a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:lgita ;
+    skos:exactMatch wd:Q672147 ;
     skos:inScheme spav:lg ;
-    skos:prefLabel "italienische Mundart"@de .
+    skos:prefLabel "Schweizer Italienisch"@de,
+        "Swiss Italian"@en,
+        "italien suisse"@fr,
+        "lingua italiana in Svizzera"@it .
 
 spav:lgjap a crm:E55_Type,
         skos:Concept ;
@@ -1631,15 +1633,31 @@ spav:lgmos a crm:E55_Type,
         "mossi"@it ;
     skos:topConceptOf spav:lg .
 
+spav:lgnno a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Neunorwegisch"@de,
+        "New Norwegian"@en,
+        "néo-norvégien"@fr,
+        "neonorvegese"@it ;
+    skos:broader spav:lgnor ;
+    skos:exactMatch iso639-2:nno,
+        wd:Q25164 ;
+    skos:inScheme spav:lg ;
+    skos:prefLabel "Norwegisch (Nynorsk)"@de,
+        "Norwegian Nynorsk"@en,
+        "norvégien nynorsk"@fr,
+        "norvegese nynorsk"@it .
+
 spav:lgnob a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:nob ;
+    skos:broader spav:lgnor ;
+    skos:exactMatch iso639-2:nob,
+        wd:Q25167 ;
     skos:inScheme spav:lg ;
-    skos:prefLabel "Norwegisch"@de,
-        "Norwegian"@en,
+    skos:prefLabel "Norwegisch (Bokmål)"@de,
+        "Norwegian Bokmål"@en,
         "norvégien bokmål"@fr,
-        "norvegese bokmål"@it ;
-    skos:topConceptOf spav:lg .
+        "norvegese bokmål"@it .
 
 spav:lgnou a crm:E55_Type,
         skos:Concept ;
@@ -1980,6 +1998,17 @@ spav:mnbhp a crm:E55_Type,
         "gioventù"@it ;
     skos:topConceptOf spav:mn .
 
+spav:mnbiq a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro dei burattini a stecca"@it,
+        "teatro dei pupazzi a bacchetta"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Stabpuppentheater"@de,
+        "[Stabpuppentheater]"@en,
+        "théâtre de marionettes à tige"@fr,
+        "teatro dei pupazzi a stecca"@it .
+
 spav:mnbjn a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
@@ -2089,6 +2118,19 @@ spav:mneoj a crm:E55_Type,
         "playback théâtre"@fr,
         "playback theatre"@it .
 
+spav:mnfey a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro dei burattini a bastone"@it,
+        "teatro delle marotte"@it,
+        "teatro di burattini a bastone"@it,
+        "teatro di pupazzi a bastone"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Stockpuppentheater"@de,
+        "[Stockpuppentheater]"@en,
+        "théâtre de marionnettes de marotte"@fr,
+        "teatro dei pupazzi a bastone"@it .
+
 spav:mnfwa a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnemr ;
@@ -2098,6 +2140,47 @@ spav:mnfwa a crm:E55_Type,
         "expressionist dance"@en,
         "danse d'expression"@fr,
         "danza moderna"@it .
+
+spav:mnhaf a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Schwarzes Theater"@de,
+        "black theatre"@en ;
+    skos:broader spav:mndvh ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Schwarzlichttheater"@de,
+        "black light theatre"@en,
+        "théâtre noire"@fr,
+        "teatro nero"@it .
+
+spav:mnhgz a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Kasperlitheater"@de,
+        "Kasperltheater"@de ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Kaspertheater"@de,
+        "Punch and Judy show"@en,
+        "théâtre de guignol"@fr,
+        "teatro dei burattini di pulcinella"@it .
+
+spav:mnhnw a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Stangenmarionettentheater"@de,
+        "[Stangenmarionettentheater]"@en,
+        "théâtre de marionettes à tringle"@fr,
+        "teatro dei pupi"@it .
+
+spav:mniem a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro delle figure da tavola"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Tischfigurentheater"@de,
+        "[Tischfigurentheater]"@en,
+        "théâtre de marionettes à table"@fr,
+        "teatro dei pupazzi da tavola"@it .
 
 spav:mniqe a crm:E55_Type,
         skos:Concept ;
@@ -2146,6 +2229,17 @@ spav:mniyu a crm:E55_Type,
         "danse folklorique suisse"@fr,
         "ballo folkloristico svizzero"@it .
 
+spav:mnjar a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "spectacle de guginols"@fr,
+        "teatro di burattini a guanto"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Handpuppentheater"@de,
+        "hand puppet theatre"@en,
+        "théâtre de marionnettes à gaine"@fr,
+        "teatro dei burattini a guanto"@it .
+
 spav:mnjiw a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnxrs ;
@@ -2189,6 +2283,17 @@ spav:mnjzh a crm:E55_Type,
         "nouveau cirque"@fr,
         "nouveau cirque"@it .
 
+spav:mnkht a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "model theatre"@en,
+        "paper theatre"@en ;
+    skos:broader spav:mndvh ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Papiertheater"@de,
+        "toy theatre"@en,
+        "théâtre de papier"@fr,
+        "teatro di carta"@it .
+
 spav:mnkqm a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Rezital"@de ;
@@ -2208,6 +2313,15 @@ spav:mnktz a crm:E55_Type,
         "Site-specific theatre"@en,
         "Site-specific theatre"@fr,
         "Site-specific theatre"@it .
+
+spav:mnlep a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnjtg ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Therapeutisches Puppenspiel"@de,
+        "therapeutic puppetry"@en,
+        "thérapie de théâtre de marionnettes"@fr,
+        "teatroterapia con le marionette"@it .
 
 spav:mnlhq a crm:E55_Type,
         skos:Concept ;
@@ -2390,6 +2504,17 @@ spav:mntin a crm:E55_Type,
         "danse postmoderne"@fr,
         "danza postmoderna"@it .
 
+spav:mntjx a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro dei pupi"@it,
+        "teatro di marionette"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Marionettentheater"@de,
+        "marionette theatre"@en,
+        "théâtre de marionnettes à fils"@fr,
+        "teatro delle marionette (a fili)"@it .
+
 spav:mnunb a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "balletto"@it ;
@@ -2401,15 +2526,36 @@ spav:mnunb a crm:E55_Type,
         "danse classique"@fr,
         "danza classica"@it .
 
-spav:mnuzw a crm:E55_Type,
+spav:mnusm a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "teatro di burattini"@it ;
+    skos:broader spav:mnjtg ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Pädagogisches Puppenspiel"@de,
+        "pedagogical puppetry"@en,
+        "teatro pedagogico con le marionette"@it .
+
+spav:mnuyk a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "teatro dei burattini a dita"@it,
+        "teatro di burattini a dita"@it,
+        "teatro di burattini a ditto"@it ;
+    skos:broader spav:mnuzw ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Fingerpuppentheater"@de,
+        "finger puppet theatre"@en,
+        "théâtre de marionnettes à doigt"@fr,
+        "teatro dei burattini a dito"@it .
+
+spav:mnvfa a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "shadow play"@en,
+        "théâtre d’ombres"@fr ;
     skos:broader spav:mndvh ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Marionettentheater"@de,
-        "puppetry (Marionettentheater)"@en,
-        "théâtre de marionnettes"@fr,
-        "teatro delle marionette"@it .
+    skos:prefLabel "Schattentheater"@de,
+        "shadow theatre"@en,
+        "ombres chinoises"@fr,
+        "ombre cinesi"@it .
 
 spav:mnvlp a crm:E55_Type,
         skos:Concept ;
@@ -2485,11 +2631,12 @@ spav:mnyng a crm:E55_Type,
 
 spav:mnzgv a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "object puppetry"@en ;
     skos:broader spav:mndvh ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Objekttheater"@de,
         "object theatre"@en,
-        "théâtre d'objets"@fr,
+        "théâtre d'objet"@fr,
         "teatro d'oggetti"@it .
 
 spav:mnzgw a crm:E55_Type,
@@ -2538,10 +2685,10 @@ spav:muacs a crm:E55_Type,
 spav:mubbv a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is choreographer of"@en ;
-    skos:altLabel "Cho­reo­gra­phie"@de ;
+    skos:altLabel "Choreographie"@de ;
     skos:broader spav:muyql ;
     skos:inScheme spav:mu ;
-    skos:prefLabel "Cho­reo­gra­fie"@de,
+    skos:prefLabel "Choreografie"@de,
         "choreography"@en,
         "chorégraphie"@fr,
         "coreografia"@it .
@@ -3160,6 +3307,8 @@ spav:vrdat a crm:E55_Type,
 
 spav:vrggs a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch <http://d-nb.info/gnd/4002859-8>,
+        wd:Q166118 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Archive"@de,
         "archive"@en,
@@ -3178,6 +3327,7 @@ spav:vrgvx a crm:E55_Type,
 
 spav:vriqe a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch wd:Q7075 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Bibliothek"@de,
         "library"@en,
@@ -3233,6 +3383,7 @@ spav:vrmjk a crm:E55_Type,
 
 spav:vrorh a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch wd:Q2085381 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Verlag"@de,
         "publisher"@en,
@@ -3262,6 +3413,7 @@ spav:vrsiw a crm:E55_Type,
 
 spav:vrsjj a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch wd:Q33506 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Museum"@de,
         "museum"@en,
@@ -3512,6 +3664,18 @@ spav:gndex a crm:E55_Type,
         "gruppo"@it ;
     skos:topConceptOf spav:gn .
 
+spav:lgfra a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch iso639-2:fra,
+        wd:Q150 ;
+    skos:inScheme spav:lg ;
+    skos:narrower spav:lgfrc ;
+    skos:prefLabel "Französisch"@de,
+        "French"@en,
+        "français"@fr,
+        "francese"@it ;
+    skos:topConceptOf spav:lg .
+
 spav:lgita a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch iso639-2:ita,
@@ -3575,7 +3739,7 @@ spav:muqfg a crm:E55_Type,
     skos:narrower spav:mufcc ;
     skos:prefLabel "Dirigent"@de,
         "conductor"@en,
-        "chef d'ochestre"@fr ;
+        "chef d'orchestre"@fr ;
     skos:topConceptOf spav:mu .
 
 spav:mutnt a crm:E55_Type,
@@ -3701,18 +3865,18 @@ spav:fvzuj a crm:E55_Type,
     skos:prefLabel "DVD"@en,
         "DVD"@it .
 
-spav:mndvh a crm:E55_Type,
+spav:lgnor a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mnnvd ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300248147>,
-        wd:Q588750 ;
-    skos:inScheme spav:mn ;
-    skos:narrower spav:mnuzw,
-        spav:mnzgv ;
-    skos:prefLabel "Figurentheater"@de,
-        "puppetry (Figurentheater)"@en,
-        "théâtre avec des figurines"@fr,
-        "teatro di figura"@it .
+    skos:exactMatch iso639-2:nor,
+        wd:Q9043 ;
+    skos:inScheme spav:lg ;
+    skos:narrower spav:lgnno,
+        spav:lgnob ;
+    skos:prefLabel "Norwegisch"@de,
+        "Norwegian"@en,
+        "norvégien"@fr,
+        "norvegese"@it ;
+    skos:topConceptOf spav:lg .
 
 spav:mngvi a crm:E55_Type,
         skos:Concept ;
@@ -3727,6 +3891,15 @@ spav:mngvi a crm:E55_Type,
         "social dance"@en,
         "danse de société"@fr,
         "ballo di gruppo"@it .
+
+spav:mnjtg a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnhzn ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnlep,
+        spav:mnusm ;
+    skos:prefLabel "Puppenspiel"@de,
+        "Puppenspiel (puppetry)"@en .
 
 spav:mucbq a crm:E55_Type,
         skos:Concept ;
@@ -3764,6 +3937,7 @@ spav:qeicn a crm:E55_Type,
 
 spav:vrjhq a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch wd:Q15911314 ;
     skos:inScheme spav:vr ;
     skos:narrower spav:vrctx,
         spav:vrsiw ;
@@ -3785,7 +3959,8 @@ spav:dfkoy a crm:E55_Type,
     skos:narrower spav:dfgei,
         spav:dfoff,
         spav:dfpwk ;
-    skos:prefLabel "painting"@en,
+    skos:prefLabel "Gemälde"@de,
+        "painting"@en,
         "peinture"@fr,
         "pittura"@it ;
     skos:topConceptOf spav:df .
@@ -3802,7 +3977,10 @@ spav:fvgye a crm:E55_Type,
     skos:narrower spav:fvmql,
         spav:fvrpy,
         spav:fvyxa ;
-    skos:prefLabel "phonograph record"@en ;
+    skos:prefLabel "Schallplatte"@de,
+        "phonograph record"@en,
+        "disque (phonographique)"@fr,
+        "disco fonografico"@it ;
     skos:topConceptOf spav:fv .
 
 spav:fvjtf a crm:E55_Type,
@@ -3867,7 +4045,8 @@ spav:fvzfk a crm:E55_Type,
     skos:narrower spav:fvhcu,
         spav:fvmdu,
         spav:fvpso ;
-    skos:prefLabel "film"@en ;
+    skos:prefLabel "Film"@de,
+        "film"@en ;
     skos:topConceptOf spav:fv .
 
 spav:fvzxp a crm:E55_Type,
@@ -3882,6 +4061,16 @@ spav:fvzxp a crm:E55_Type,
     skos:prefLabel "Audiokassette"@de,
         "audio cassette"@en,
         "musicassetta"@it .
+
+spav:mnhzn a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mndvh,
+        spav:mnjtg,
+        spav:mnuzw ;
+    skos:prefLabel "Puppen- und Figurentheater"@de,
+        "[Puppen- und Figurentheater]"@en ;
+    skos:topConceptOf spav:mn .
 
 spav:mnubc a crm:E55_Type,
         skos:Concept ;
@@ -3938,7 +4127,8 @@ spav:muyql a crm:E55_Type,
     skos:narrower spav:mubbv,
         spav:mufbo,
         spav:muiuk ;
-    skos:prefLabel "creation"@en,
+    skos:prefLabel "geistige Schöpfung"@de,
+        "creation"@en,
         "création"@fr,
         "creazione"@it ;
     skos:topConceptOf spav:mu .
@@ -4045,6 +4235,21 @@ spav:fvskn a crm:E55_Type,
         spav:fvxpt ;
     skos:prefLabel "U-matic"@de,
         "U-matic"@en .
+
+spav:mndvh a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnhzn ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300248147>,
+        wd:Q588750 ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnhaf,
+        spav:mnkht,
+        spav:mnvfa,
+        spav:mnzgv ;
+    skos:prefLabel "Figurentheater"@de,
+        "Figurentheater (contemporary puppet theatre)"@en,
+        "théâtre de figures"@fr,
+        "teatro di figura"@it .
 
 spav:mnemr a crm:E55_Type,
         skos:Concept ;
@@ -4303,6 +4508,27 @@ spav:gn a skos:ConceptScheme ;
         spav:gnvyd ;
     skos:prefLabel "agent type"@en .
 
+spav:mnuzw a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "puppet theatre"@en,
+        "teatro dei burattini"@it,
+        "teatro di burattini"@it,
+        "teatro di marionette"@it ;
+    skos:broader spav:mnhzn ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnbiq,
+        spav:mnfey,
+        spav:mnhgz,
+        spav:mnhnw,
+        spav:mniem,
+        spav:mnjar,
+        spav:mntjx,
+        spav:mnuyk ;
+    skos:prefLabel "Puppentheater"@de,
+        "Puppentheater (puppetry)"@en,
+        "théâtre de marionnettes"@fr,
+        "teatro delle marionette"@it .
+
 spav:muawx a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is performer of"@en ;
@@ -4455,7 +4681,6 @@ spav:mnnvd a crm:E55_Type,
         spav:mnbxj,
         spav:mnbyg,
         spav:mnddp,
-        spav:mndvh,
         spav:mneoj,
         spav:mniww,
         spav:mnjzg,
@@ -4516,16 +4741,6 @@ spav:df a skos:ConceptScheme ;
         "documentary form"@en,
         "forma documentaria"@it .
 
-spav:mn a skos:ConceptScheme ;
-    skos:hasTopConcept spav:mnbhp,
-        spav:mneyg,
-        spav:mnlcp,
-        spav:mnnvd,
-        spav:mnyuk ;
-    skos:prefLabel "Genre"@de,
-        "genre"@en,
-        "genre"@fr .
-
 spav:mu a skos:ConceptScheme ;
     skos:hasTopConcept spav:muawx,
         spav:mubyr,
@@ -4564,6 +4779,17 @@ spav:fv a skos:ConceptScheme ;
         spav:fvzfk ;
     skos:prefLabel "medium"@en .
 
+spav:mn a skos:ConceptScheme ;
+    skos:hasTopConcept spav:mnbhp,
+        spav:mneyg,
+        spav:mnhzn,
+        spav:mnlcp,
+        spav:mnnvd,
+        spav:mnyuk ;
+    skos:prefLabel "Genre"@de,
+        "genre"@en,
+        "genre"@fr .
+
 spav:lg a skos:ConceptScheme ;
     skos:hasTopConcept spav:lgalb,
         spav:lgals,
@@ -4573,7 +4799,6 @@ spav:lg a skos:ConceptScheme ;
         spav:lgbos,
         spav:lgbul,
         spav:lgces,
-        spav:lgcez,
         spav:lgchi,
         spav:lgdan,
         spav:lgdeu,
@@ -4607,7 +4832,7 @@ spav:lg a skos:ConceptScheme ;
         spav:lgmlg,
         spav:lgmnd,
         spav:lgmos,
-        spav:lgnob,
+        spav:lgnor,
         spav:lgnou,
         spav:lgoci,
         spav:lgpol,
