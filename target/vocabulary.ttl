@@ -3459,8 +3459,6 @@ spav:wayst a crm:E55_Type,
 
 spav:yaajh a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "Künstlername"@de,
-        "nome d'arte"@it ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404657> ;
     skos:inScheme spav:ya ;
@@ -3469,8 +3467,25 @@ spav:yaajh a crm:E55_Type,
         "pseudonyme"@fr,
         "pseudonimo"@it .
 
+spav:yadpx a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:yakdx ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404681> ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Geburtsname"@de,
+        "birth name"@en .
+
+spav:yallb a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:yakdx ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404683> ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Ehename"@de,
+        "married name"@en .
+
 spav:yamqk a crm:E55_Type,
         skos:Concept ;
+    rdfs:comment "acronym for the name of a group or institution"@en ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404659> ;
     skos:inScheme spav:ya ;
@@ -3481,6 +3496,7 @@ spav:yamqk a crm:E55_Type,
 
 spav:yanuj a crm:E55_Type,
         skos:Concept ;
+    rdfs:comment "official name of a group or institution"@en ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404686> ;
     skos:inScheme spav:ya ;
@@ -3489,8 +3505,30 @@ spav:yanuj a crm:E55_Type,
         "nom officiel"@fr,
         "nome ufficiale"@it .
 
+spav:yapvc a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Künstlername"@de,
+        "nome d'arte"@it ;
+    skos:broader spav:yakdx ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404679> ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Bühnenname"@de,
+        "stage name"@en .
+
+spav:yatcx a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "commonly used name of a person"@en ;
+    skos:altLabel "Bevorzugter Name"@de,
+        "preferred name"@en ;
+    skos:broader spav:yakdx ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404687> ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Gebräuchlicher Name"@de,
+        "common name"@en .
+
 spav:yavtx a crm:E55_Type,
         skos:Concept ;
+    rdfs:comment "alternative name of a group or institution"@en ;
     skos:altLabel "alias"@en ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404664> ;
@@ -4321,21 +4359,6 @@ spav:qexvc a crm:E55_Type,
         "?"@fr ;
     skos:topConceptOf spav:qe .
 
-spav:yakdx a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "name of an actor"@en ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
-    skos:inScheme spav:ya ;
-    skos:narrower spav:yaajh,
-        spav:yamqk,
-        spav:yanuj,
-        spav:yavtx ;
-    skos:prefLabel "Name"@de,
-        "name"@en,
-        "nom"@fr,
-        "nome"@it ;
-    skos:topConceptOf spav:ya .
-
 spav:eo a skos:ConceptScheme ;
     skos:hasTopConcept spav:eoept,
         spav:eokdx,
@@ -4397,10 +4420,6 @@ spav:wa a skos:ConceptScheme ;
         spav:wamim,
         spav:wayst ;
     skos:prefLabel "identifier"@en .
-
-spav:ya a skos:ConceptScheme ;
-    skos:hasTopConcept spav:yakdx ;
-    skos:prefLabel "appellation"@en .
 
 spav:hlamu a crm:E55_Type,
         skos:Concept ;
@@ -4563,6 +4582,25 @@ spav:mugja a crm:E55_Type,
         "conception"@fr ;
     skos:topConceptOf spav:mu .
 
+spav:yakdx a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "name of an actor"@en ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
+    skos:inScheme spav:ya ;
+    skos:narrower spav:yaajh,
+        spav:yadpx,
+        spav:yallb,
+        spav:yamqk,
+        spav:yanuj,
+        spav:yapvc,
+        spav:yatcx,
+        spav:yavtx ;
+    skos:prefLabel "Name"@de,
+        "name"@en,
+        "nom"@fr,
+        "nome"@it ;
+    skos:topConceptOf spav:ya .
+
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
         spav:goctm,
@@ -4573,6 +4611,10 @@ spav:go a skos:ConceptScheme ;
         "title type"@en,
         "titre"@fr,
         "titolo"@it .
+
+spav:ya a skos:ConceptScheme ;
+    skos:hasTopConcept spav:yakdx ;
+    skos:prefLabel "appellation"@en .
 
 spav:fverx a crm:E55_Type,
         skos:Concept ;
