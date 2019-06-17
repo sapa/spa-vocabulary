@@ -2309,10 +2309,10 @@ spav:mnktz a crm:E55_Type,
     skos:altLabel "environmental theatre"@en ;
     skos:broader spav:mnnvd ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Site-specific theatre"@de,
-        "Site-specific theatre"@en,
-        "Site-specific theatre"@fr,
-        "Site-specific theatre"@it .
+    skos:prefLabel "site-specific peformance"@de,
+        "site-specific peformance"@en,
+        "site-specific peformance"@fr,
+        "site-specific peformance"@it .
 
 spav:mnlep a crm:E55_Type,
         skos:Concept ;

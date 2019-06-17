@@ -140,7 +140,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 138,http://vocab.performing-arts.ch/mneoj,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,playback theatre,,,Playbacktheater,,playback théâtre,,playback theatre,
 139,http://vocab.performing-arts.ch/mnjzg,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,street theatre,,,Strassentheater,,théâtre de rue,,teatro di strada,
 140,http://vocab.performing-arts.ch/mnmeq,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,invisible theatre,,,Unsichtbares Theater,,théâtre invisible,,teatro invisibile,
-141,http://vocab.performing-arts.ch/mnktz,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,Site-specific theatre,environmental theatre,,Site-specific theatre,,Site-specific theatre,,Site-specific theatre,
+141,http://vocab.performing-arts.ch/mnktz,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,site-specific peformance,environmental theatre,,site-specific peformance,,site-specific peformance,,site-specific peformance,
 142,http://vocab.performing-arts.ch/mnyhs,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,open-air theatre,,,Freilichttheater,,théâtre en plein air,,teatro all'aperto,
 143,http://vocab.performing-arts.ch/mnzin,http://vocab.performing-arts.ch/mnnvd,False,Work,,,,,therapeutic theatre,drama therapy,,Therapeutisches Theater,Dramatherapie,théâtre thérapeutique,dramathérapie,teatroterapia,drammaterapia
 144,http://vocab.performing-arts.ch/mnbhp,http://vocab.performing-arts.ch/mn,False,Work,,,,,youth,,,Jugend,,jeunesse,,gioventù,
