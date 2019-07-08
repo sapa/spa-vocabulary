@@ -1750,10 +1750,11 @@ spav:lgsan a crm:E55_Type,
 
 spav:lgsgn a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch iso639-2:sgn ;
+    skos:exactMatch iso639-2:sgn,
+        wd:Q34228 ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Gebärdensprache"@de,
-        "Sign Languages"@en,
+        "sign language"@en,
         "langue des signes"@fr,
         "lingua dei segni"@it ;
     skos:topConceptOf spav:lg .
@@ -3459,6 +3460,10 @@ spav:wayst a crm:E55_Type,
 
 spav:yaajh a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "Bühnenname"@de,
+        "Künstlername"@de,
+        "stage name"@en,
+        "nome d'arte"@it ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404657> ;
     skos:inScheme spav:ya ;
@@ -3504,16 +3509,6 @@ spav:yanuj a crm:E55_Type,
         "official name"@en,
         "nom officiel"@fr,
         "nome ufficiale"@it .
-
-spav:yapvc a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "Künstlername"@de,
-        "nome d'arte"@it ;
-    skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404679> ;
-    skos:inScheme spav:ya ;
-    skos:prefLabel "Bühnenname"@de,
-        "stage name"@en .
 
 spav:yatcx a crm:E55_Type,
         skos:Concept ;
@@ -4467,6 +4462,24 @@ spav:rm a skos:ConceptScheme ;
         spav:rmoda ;
     skos:prefLabel "identity type"@en .
 
+spav:yakdx a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "name of an actor"@en ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
+    skos:inScheme spav:ya ;
+    skos:narrower spav:yaajh,
+        spav:yadpx,
+        spav:yallb,
+        spav:yamqk,
+        spav:yanuj,
+        spav:yatcx,
+        spav:yavtx ;
+    skos:prefLabel "Name"@de,
+        "name"@en,
+        "nom"@fr,
+        "nome"@it ;
+    skos:topConceptOf spav:ya .
+
 spav:dflvv a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
@@ -4582,24 +4595,9 @@ spav:mugja a crm:E55_Type,
         "conception"@fr ;
     skos:topConceptOf spav:mu .
 
-spav:yakdx a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "name of an actor"@en ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
-    skos:inScheme spav:ya ;
-    skos:narrower spav:yaajh,
-        spav:yadpx,
-        spav:yallb,
-        spav:yamqk,
-        spav:yanuj,
-        spav:yapvc,
-        spav:yatcx,
-        spav:yavtx ;
-    skos:prefLabel "Name"@de,
-        "name"@en,
-        "nom"@fr,
-        "nome"@it ;
-    skos:topConceptOf spav:ya .
+spav:ya a skos:ConceptScheme ;
+    skos:hasTopConcept spav:yakdx ;
+    skos:prefLabel "appellation"@en .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
@@ -4611,10 +4609,6 @@ spav:go a skos:ConceptScheme ;
         "title type"@en,
         "titre"@fr,
         "titolo"@it .
-
-spav:ya a skos:ConceptScheme ;
-    skos:hasTopConcept spav:yakdx ;
-    skos:prefLabel "appellation"@en .
 
 spav:fverx a crm:E55_Type,
         skos:Concept ;
