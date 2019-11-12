@@ -15,6 +15,7 @@ for ns in ['skos']:
     for p in ['prefLabel', 'altLabel', 'hiddenLabel']:
         for l in ['en', 'de', 'fr', 'it']:
             label_columns.append('skos_' + p + '_' + l)
+label_columns.append('skos_definition_en')
 
 vocabs = dict()
 vocabs['aat'] = Namespace('http://vocab.getty.edu/aat/')

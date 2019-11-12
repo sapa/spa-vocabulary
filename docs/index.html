@@ -205,6 +205,9 @@ function tooltip(data) {
             tt.push(pref + alt);
         }        
     }
+    if (data.skos_definition_en) {
+        tt.push((tt.length > 0)? '<hr />' + data.skos_definition_en : data.skos_definition_en);
+    }
     if (data.rdfs_comment_en) {
         tt.push((tt.length > 0)? '<hr />' + data.rdfs_comment_en : data.rdfs_comment_en);
     }

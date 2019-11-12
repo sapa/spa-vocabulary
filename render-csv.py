@@ -25,7 +25,8 @@ df['skos_exactMatch'].replace('-', '', inplace=True)
 df.drop(['skos_ConceptScheme', 'skos_Concept', 'broader'], axis=1, inplace=True)
 
 df = df[['id', 'parent', 'scheme', 'context', 'domain', 'property', 'skos_exactMatch', 'rdfs_comment_en', 'skos_prefLabel_en', 'skos_altLabel_en',
-         'skos_hiddenLabel_en', 'skos_prefLabel_de', 'skos_altLabel_de', 'skos_prefLabel_fr', 'skos_altLabel_fr', 'skos_prefLabel_it', 'skos_altLabel_it']]
+         'skos_hiddenLabel_en', 'skos_prefLabel_de', 'skos_altLabel_de', 'skos_prefLabel_fr', 'skos_altLabel_fr', 'skos_prefLabel_it', 'skos_altLabel_it', 
+         'skos_definition_en']]
 
 df.index.name = 'sort'
 df.to_csv('docs/vocabulary.csv', index=True, header=True)
