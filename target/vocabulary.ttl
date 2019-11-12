@@ -2756,7 +2756,7 @@ spav:mudvs a crm:E55_Type,
 spav:muecs a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is costume designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Kostümentwurf"@de,
         "costume design"@en,
@@ -2793,7 +2793,7 @@ spav:mufif a crm:E55_Type,
 spav:mufwk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is projection designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Projektionsgestaltung"@de,
         "projection design"@en,
@@ -2886,21 +2886,11 @@ spav:mulcp a crm:E55_Type,
         "dance"@en,
         "danse"@fr .
 
-spav:mulga a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
-    skos:altLabel "scenographery"@en ;
-    skos:inScheme spav:mu ;
-    skos:prefLabel "Ausstattung"@de,
-        "art direction"@en,
-        "direction artistique"@fr,
-        "direzione artistica"@it ;
-    skos:topConceptOf spav:mu .
-
 spav:mulnl a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is production designer of"@en ;
     skos:broader spav:mugja ;
+    skos:definition "\"designing the overall visual appearance of a moving image production\" (RDAA)"@en ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Produktionsdesign"@de,
         "production design"@en,
@@ -2917,7 +2907,7 @@ spav:mumnc a crm:E55_Type,
 
 spav:mumpj a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Puppenbau"@de,
         "puppet design"@en,
@@ -2981,17 +2971,18 @@ spav:mupvk a crm:E55_Type,
 spav:muqjb a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is set designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:altLabel "set design"@en ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Bühnenbild"@de,
-        "set design"@en,
+        "scenographery"@en,
         "scénographie"@fr,
         "scenografia"@it .
 
 spav:muqju a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is video designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Videodesign"@de,
         "video design"@en,
@@ -3010,7 +3001,7 @@ spav:muqtj a crm:E55_Type,
 spav:murni a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is lighting designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Lichtgestaltung"@de,
         "lighting design"@en,
@@ -3060,7 +3051,7 @@ spav:muwyo a crm:E55_Type,
 spav:muxzh a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is sound designer of"@en ;
-    skos:broader spav:mugja ;
+    skos:broader spav:mulga ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Tongestaltung"@de,
         "sound design"@en,
@@ -3146,6 +3137,7 @@ spav:oemfb a crm:E55_Type,
 
 spav:qeelq a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch wd:Q11723795 ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Dokument"@de,
         "item"@en,
@@ -3156,6 +3148,7 @@ spav:qeelq a crm:E55_Type,
 spav:qegrv a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
+    skos:exactMatch wd:Q3511132 ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Serie"@de,
         "series"@en,
@@ -3165,6 +3158,7 @@ spav:qegrv a crm:E55_Type,
 spav:qejki a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
+    skos:exactMatch wd:Q3052382 ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Bestand"@de,
         "fonds"@en,
@@ -3173,7 +3167,9 @@ spav:qejki a crm:E55_Type,
 
 spav:qekqz a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "dossier"@en ;
     skos:broader spav:qexvc ;
+    skos:exactMatch wd:Q19515368 ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Dossier"@de,
         "file"@en,
@@ -3311,7 +3307,7 @@ spav:vrggs a crm:E55_Type,
     skos:exactMatch <http://d-nb.info/gnd/4002859-8>,
         wd:Q166118 ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "Archive"@de,
+    skos:prefLabel "Archiv"@de,
         "archive"@en,
         "archives"@fr,
         "archivio"@it ;
@@ -3946,6 +3942,17 @@ spav:mucbq a crm:E55_Type,
         "regia"@it ;
     skos:topConceptOf spav:mu .
 
+spav:mugja a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:mulga,
+        spav:mulnl ;
+    skos:prefLabel "Design"@de,
+        "design"@en,
+        "conception"@fr ;
+    skos:topConceptOf spav:mu .
+
 spav:muiim a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is music performer of"@en ;
@@ -4441,6 +4448,23 @@ spav:ih a skos:ConceptScheme ;
         "contact"@fr,
         "contatto"@it .
 
+spav:mulga a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
+    skos:broader spav:mugja ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muecs,
+        spav:mufwk,
+        spav:mumpj,
+        spav:muqjb,
+        spav:muqju,
+        spav:murni,
+        spav:muxzh ;
+    skos:prefLabel "Ausstattung"@de,
+        "art direction"@en,
+        "direction artistique"@fr,
+        "direzione artistica"@it .
+
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
         spav:nnkde,
@@ -4576,23 +4600,6 @@ spav:muawx a crm:E55_Type,
     skos:prefLabel "Performance"@de,
         "performance"@en,
         "performance"@fr ;
-    skos:topConceptOf spav:mu .
-
-spav:mugja a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is designer of"@en ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muecs,
-        spav:mufwk,
-        spav:mulnl,
-        spav:mumpj,
-        spav:muqjb,
-        spav:muqju,
-        spav:murni,
-        spav:muxzh ;
-    skos:prefLabel "Design"@de,
-        "design"@en,
-        "conception"@fr ;
     skos:topConceptOf spav:mu .
 
 spav:ya a skos:ConceptScheme ;
@@ -4792,7 +4799,6 @@ spav:mu a skos:ConceptScheme ;
         spav:muiqu,
         spav:mujpp,
         spav:mukzi,
-        spav:mulga,
         spav:munuj,
         spav:mupvk,
         spav:muqfg,
