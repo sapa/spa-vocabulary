@@ -29,6 +29,7 @@ vocabs['rdagd'] = Namespace('http://rdaregistry.info/termList/gender/')
 vocabs['iso639-2'] = Namespace('http://id.loc.gov/vocabulary/iso639-2/')
 vocabs['wd'] = Namespace('http://www.wikidata.org/entity/')
 vocabs['gnd'] = Namespace('http://d-nb.info/gnd/')
+vocabs['ric-rst'] = Namespace('https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#')
 
 graph = Graph()
 graph.bind('rdfs', RDFS)

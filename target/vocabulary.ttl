@@ -11,6 +11,7 @@
 @prefix rdavf: <http://rdaregistry.info/termList/videoFormat/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ric-rst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix spav: <http://vocab.performing-arts.ch/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
@@ -223,6 +224,13 @@ spav:dfowt a crm:E55_Type,
         "facture"@fr,
         "fattura"@it .
 
+spav:dfppw a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:dflvv ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "Theaterkartei"@de,
+        "Theaterkartei"@en .
+
 spav:dfpwk a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:dfkoy ;
@@ -367,6 +375,7 @@ spav:dwelq a crm:E55_Type,
     skos:inScheme spav:dw ;
     skos:prefLabel "Objekt"@de,
         "item"@en,
+        "objet"@fr,
         "oggetto"@it ;
     skos:topConceptOf spav:dw .
 
@@ -376,6 +385,7 @@ spav:dwmkn a crm:E55_Type,
     skos:inScheme spav:dw ;
     skos:prefLabel "Bühne"@de,
         "venue"@en,
+        "étape"@fr,
         "palco"@it ;
     skos:topConceptOf spav:dw .
 
@@ -3148,7 +3158,8 @@ spav:qeelq a crm:E55_Type,
 spav:qegrv a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
-    skos:exactMatch wd:Q3511132 ;
+    skos:exactMatch wd:Q3511132,
+        ric-rst:Series ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Serie"@de,
         "series"@en,
@@ -3158,7 +3169,8 @@ spav:qegrv a crm:E55_Type,
 spav:qejki a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:qexvc ;
-    skos:exactMatch wd:Q3052382 ;
+    skos:exactMatch wd:Q3052382,
+        ric-rst:Fonds ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Bestand"@de,
         "fonds"@en,
@@ -3169,7 +3181,8 @@ spav:qekqz a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "dossier"@en ;
     skos:broader spav:qexvc ;
-    skos:exactMatch wd:Q19515368 ;
+    skos:exactMatch wd:Q19515368,
+        ric-rst:File ;
     skos:inScheme spav:qe ;
     skos:prefLabel "Dossier"@de,
         "file"@en,
@@ -3474,7 +3487,9 @@ spav:yadpx a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300404681> ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Geburtsname"@de,
-        "birth name"@en .
+        "birth name"@en,
+        "nom de naissance"@fr,
+        "nome di nascita"@it .
 
 spav:yallb a crm:E55_Type,
         skos:Concept ;
@@ -3482,7 +3497,9 @@ spav:yallb a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300404683> ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Ehename"@de,
-        "married name"@en .
+        "married name"@en,
+        "nom marital"@fr,
+        "nome da sposato"@it .
 
 spav:yamqk a crm:E55_Type,
         skos:Concept ;
@@ -3515,7 +3532,9 @@ spav:yatcx a crm:E55_Type,
     skos:exactMatch <http://vocab.getty.edu/aat/300404687> ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Gebräuchlicher Name"@de,
-        "common name"@en .
+        "common name"@en,
+        "nom commun"@fr,
+        "nome comune"@it .
 
 spav:yavtx a crm:E55_Type,
         skos:Concept ;
@@ -3966,6 +3985,7 @@ spav:muiim a crm:E55_Type,
 
 spav:qeicn a crm:E55_Type,
         skos:Concept ;
+    skos:exactMatch ric-rst:Collection ;
     skos:inScheme spav:qe ;
     skos:narrower spav:qeqjk,
         spav:qevhn ;
@@ -4504,24 +4524,6 @@ spav:yakdx a crm:E55_Type,
         "nome"@it ;
     skos:topConceptOf spav:ya .
 
-spav:dflvv a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
-    skos:inScheme spav:df ;
-    skos:narrower spav:dfblx,
-        spav:dffop,
-        spav:dfhdo,
-        spav:dfmyd,
-        spav:dfowt,
-        spav:dfwox,
-        spav:dfyfs,
-        spav:dfzpy ;
-    skos:prefLabel "Dokumentgattungen"@de,
-        "document genre"@en,
-        "genre de document"@fr,
-        "tipo di documento"@it ;
-    skos:topConceptOf spav:df .
-
 spav:frgzf a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "estampe"@fr,
@@ -4605,6 +4607,25 @@ spav:muawx a crm:E55_Type,
 spav:ya a skos:ConceptScheme ;
     skos:hasTopConcept spav:yakdx ;
     skos:prefLabel "appellation"@en .
+
+spav:dflvv a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfblx,
+        spav:dffop,
+        spav:dfhdo,
+        spav:dfmyd,
+        spav:dfowt,
+        spav:dfppw,
+        spav:dfwox,
+        spav:dfyfs,
+        spav:dfzpy ;
+    skos:prefLabel "Dokumentgattungen"@de,
+        "document genre"@en,
+        "genre de document"@fr,
+        "tipo di documento"@it ;
+    skos:topConceptOf spav:df .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
