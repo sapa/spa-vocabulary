@@ -3523,6 +3523,15 @@ spav:yanuj a crm:E55_Type,
         "nom officiel"@fr,
         "nome ufficiale"@it .
 
+spav:yasis a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:yakdx ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Generische Bezeichnung"@de,
+        "generic name"@en,
+        "nom générique"@fr,
+        "nome generico"@it .
+
 spav:yatcx a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "commonly used name of a person"@en ;
@@ -4506,24 +4515,6 @@ spav:rm a skos:ConceptScheme ;
         spav:rmoda ;
     skos:prefLabel "identity type"@en .
 
-spav:yakdx a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "name of an actor"@en ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
-    skos:inScheme spav:ya ;
-    skos:narrower spav:yaajh,
-        spav:yadpx,
-        spav:yallb,
-        spav:yamqk,
-        spav:yanuj,
-        spav:yatcx,
-        spav:yavtx ;
-    skos:prefLabel "Name"@de,
-        "name"@en,
-        "nom"@fr,
-        "nome"@it ;
-    skos:topConceptOf spav:ya .
-
 spav:frgzf a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "estampe"@fr,
@@ -4604,9 +4595,24 @@ spav:muawx a crm:E55_Type,
         "performance"@fr ;
     skos:topConceptOf spav:mu .
 
-spav:ya a skos:ConceptScheme ;
-    skos:hasTopConcept spav:yakdx ;
-    skos:prefLabel "appellation"@en .
+spav:yakdx a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "name of an actor"@en ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
+    skos:inScheme spav:ya ;
+    skos:narrower spav:yaajh,
+        spav:yadpx,
+        spav:yallb,
+        spav:yamqk,
+        spav:yanuj,
+        spav:yasis,
+        spav:yatcx,
+        spav:yavtx ;
+    skos:prefLabel "Name"@de,
+        "name"@en,
+        "nom"@fr,
+        "nome"@it ;
+    skos:topConceptOf spav:ya .
 
 spav:dflvv a crm:E55_Type,
         skos:Concept ;
@@ -4637,6 +4643,10 @@ spav:go a skos:ConceptScheme ;
         "title type"@en,
         "titre"@fr,
         "titolo"@it .
+
+spav:ya a skos:ConceptScheme ;
+    skos:hasTopConcept spav:yakdx ;
+    skos:prefLabel "appellation"@en .
 
 spav:fverx a crm:E55_Type,
         skos:Concept ;
