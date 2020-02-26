@@ -2845,6 +2845,13 @@ spav:muiqu a crm:E55_Type,
         "editing of moving image work"@en ;
     skos:topConceptOf spav:mu .
 
+spav:mujfv a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Management"@de,
+        "management"@en ;
+    skos:topConceptOf spav:mu .
+
 spav:mujhq a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:muawx ;
@@ -4844,6 +4851,7 @@ spav:mu a skos:ConceptScheme ;
         spav:mugup,
         spav:muhti,
         spav:muiqu,
+        spav:mujfv,
         spav:mujpp,
         spav:mukzi,
         spav:munuj,
