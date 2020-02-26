@@ -3315,6 +3315,15 @@ spav:vrdat a crm:E55_Type,
         "producteur artistique amateur"@fr,
         "produttore artistico amatoriale"@it .
 
+spav:vrfcm a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:vrxrs ;
+    skos:inScheme spav:vr ;
+    skos:prefLabel "Gastspielhaus"@de,
+        "guest performance host"@en,
+        "Théâtre d'accueil"@fr,
+        "teatro ospitante"@it .
+
 spav:vrggs a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/4002859-8>,
@@ -3326,14 +3335,20 @@ spav:vrggs a crm:E55_Type,
         "archivio"@it ;
     skos:topConceptOf spav:vr .
 
-spav:vrgvx a crm:E55_Type,
+spav:vripy a crm:E55_Type,
         skos:Concept ;
-    skos:broader spav:vrfcm ;
+    skos:altLabel "Theaterfestival"@de,
+        "theatre festival"@en,
+        "festival de théâtre"@fr,
+        "festival del teatro"@it ;
+    skos:exactMatch <http://d-nb.info/gnd/4501725-6>,
+        wd:Q1751626 ;
     skos:inScheme spav:vr ;
-    skos:prefLabel "regionales Kleintheater"@de,
-        "regional cultural center"@en,
-        "centre culturel régional"@fr,
-        "centro culturale regionale"@it .
+    skos:prefLabel "Festival"@de,
+        "festival"@en,
+        "festival"@fr,
+        "festival"@it ;
+    skos:topConceptOf spav:vr .
 
 spav:vriqe a crm:E55_Type,
         skos:Concept ;
@@ -3389,6 +3404,15 @@ spav:vrmjk a crm:E55_Type,
         "education"@en,
         "institution de formation"@fr,
         "istituzione di formazione"@it ;
+    skos:topConceptOf spav:vr .
+
+spav:vrnkf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:prefLabel "Freilichtspiel"@de,
+        "open air play"@en,
+        "jeu en plein air"@fr,
+        "gioco all'aperto"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrorh a crm:E55_Type,
@@ -3810,16 +3834,6 @@ spav:mutnt a crm:E55_Type,
         "stage direction"@en,
         "mise en scène"@fr,
         "direzione di scena"@it .
-
-spav:vrfcm a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:vrxrs ;
-    skos:inScheme spav:vr ;
-    skos:narrower spav:vrgvx ;
-    skos:prefLabel "Gastspielhaus"@de,
-        "guest performance host"@en,
-        "Théâtre d'accueil"@fr,
-        "teatro ospitante"@it .
 
 spav:vrxrs a crm:E55_Type,
         skos:Concept ;
@@ -4788,11 +4802,13 @@ spav:zj a skos:ConceptScheme ;
 spav:vr a skos:ConceptScheme ;
     rdfs:comment "form of organisation and general purpose"@en ;
     skos:hasTopConcept spav:vrggs,
+        spav:vripy,
         spav:vriqe,
         spav:vriuw,
         spav:vrjhq,
         spav:vrjiw,
         spav:vrmjk,
+        spav:vrnkf,
         spav:vrorh,
         spav:vrsjj,
         spav:vrxbs,
