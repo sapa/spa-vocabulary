@@ -2800,6 +2800,16 @@ spav:mufif a crm:E55_Type,
         "audio engineering"@en,
         "technique audio"@fr .
 
+spav:mufnt a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mulga ;
+    skos:exactMatch wd:Q541892 ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Make-up"@de,
+        "makeup"@en,
+        "maquillage"@fr,
+        "trucco"@it .
+
 spav:mufwk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is projection designer of"@en ;
@@ -2826,6 +2836,15 @@ spav:mugup a crm:E55_Type,
     skos:prefLabel "Trainer"@de,
         "trainer"@en ;
     skos:topConceptOf spav:mu .
+
+spav:muhas a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mulga ;
+    skos:inScheme spav:mu ;
+    skos:prefLabel "Maskenentwurf"@de,
+        "mask design"@en,
+        "dessin du masque"@fr,
+        "design della maschera"@it .
 
 spav:muhkf a crm:E55_Type,
         skos:Concept ;
@@ -4498,23 +4517,6 @@ spav:ih a skos:ConceptScheme ;
         "contact"@fr,
         "contatto"@it .
 
-spav:mulga a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
-    skos:broader spav:mugja ;
-    skos:inScheme spav:mu ;
-    skos:narrower spav:muecs,
-        spav:mufwk,
-        spav:mumpj,
-        spav:muqjb,
-        spav:muqju,
-        spav:murni,
-        spav:muxzh ;
-    skos:prefLabel "Ausstattung"@de,
-        "art direction"@en,
-        "direction artistique"@fr,
-        "direzione artistica"@it .
-
 spav:nn a skos:ConceptScheme ;
     skos:hasTopConcept spav:nnhwm,
         spav:nnkde,
@@ -4664,6 +4666,25 @@ spav:go a skos:ConceptScheme ;
         "title type"@en,
         "titre"@fr,
         "titolo"@it .
+
+spav:mulga a crm:E55_Type,
+        skos:Concept ;
+    rdfs:comment "equivalent in SPA Data Model: is art director of"@en ;
+    skos:broader spav:mugja ;
+    skos:inScheme spav:mu ;
+    skos:narrower spav:muecs,
+        spav:mufnt,
+        spav:mufwk,
+        spav:muhas,
+        spav:mumpj,
+        spav:muqjb,
+        spav:muqju,
+        spav:murni,
+        spav:muxzh ;
+    skos:prefLabel "Ausstattung"@de,
+        "art direction"@en,
+        "direction artistique"@fr,
+        "direzione artistica"@it .
 
 spav:ya a skos:ConceptScheme ;
     skos:hasTopConcept spav:yakdx ;
