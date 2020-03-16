@@ -3423,6 +3423,15 @@ spav:vrjva a crm:E55_Type,
         "sous-ensemble"@fr,
         "sottocompagnia"@it .
 
+spav:vrlpp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vr ;
+    skos:prefLabel "Preis, Wettbewerb"@de,
+        "award, competition"@en,
+        "prix, concurrence"@fr,
+        "prezzo, concorrenza"@it ;
+    skos:topConceptOf spav:vr .
+
 spav:vrmjk a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vr ;
@@ -4835,6 +4844,7 @@ spav:vr a skos:ConceptScheme ;
         spav:vriuw,
         spav:vrjhq,
         spav:vrjiw,
+        spav:vrlpp,
         spav:vrmjk,
         spav:vrnkf,
         spav:vrorh,
