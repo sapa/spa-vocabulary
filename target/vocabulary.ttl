@@ -69,6 +69,15 @@ spav:dfcbi a crm:E55_Type,
         "circus poster"@en,
         "Poster del circo"@it .
 
+spav:dfdvh a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "Diverses"@de,
+        "miscellaneous"@en,
+        "diverses"@fr,
+        "varie"@it ;
+    skos:topConceptOf spav:df .
+
 spav:dfdzo a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "bozzetto"@it ;
@@ -233,13 +242,6 @@ spav:dfowt a crm:E55_Type,
         "invoice"@en,
         "facture"@fr,
         "fattura"@it .
-
-spav:dfppw a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:dflvv ;
-    skos:inScheme spav:df ;
-    skos:prefLabel "Theaterkartei"@de,
-        "Theaterkartei"@en .
 
 spav:dfpwk a crm:E55_Type,
         skos:Concept ;
@@ -824,7 +826,9 @@ spav:fvpln a crm:E55_Type,
     skos:broader spav:fvzxp ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Kompaktkassette"@de,
-        "Compact Cassette"@en .
+        "Compact Cassette"@en,
+        "cassette audio"@fr,
+        "musicassetta"@it .
 
 spav:fvpro a crm:E55_Type,
         skos:Concept ;
@@ -866,9 +870,11 @@ spav:fvrpy a crm:E55_Type,
 spav:fvrtb a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:fvlvi ;
+    skos:exactMatch wd:Q209020 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "1\" Type C"@de,
-        "1\" Type C"@en .
+        "1\" Type C"@en,
+        "1 pollice standard C"@it .
 
 spav:fvruf a crm:E55_Type,
         skos:Concept ;
@@ -2221,7 +2227,7 @@ spav:mnfey a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Stockpuppentheater"@de,
         "[Stockpuppentheater]"@en,
-        "théâtre de marionnettes de marotte"@fr,
+        "théâtre de marottes"@fr,
         "teatro dei pupazzi a bastone"@it .
 
 spav:mnfwa a crm:E55_Type,
@@ -2413,7 +2419,7 @@ spav:mnlep a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Therapeutisches Puppenspiel"@de,
         "therapeutic puppetry"@en,
-        "thérapie de théâtre de marionnettes"@fr,
+        "spectacle de marionnettes à but thérapeutique"@fr,
         "teatroterapia con le marionette"@it .
 
 spav:mnlhq a crm:E55_Type,
@@ -2526,7 +2532,7 @@ spav:mnqox a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Cabaret"@de,
         "cabaret (dance)"@en,
-        "cabaret"@fr,
+        "danse de cabaret"@fr,
         "cabaret"@it .
 
 spav:mnqqk a crm:E55_Type,
@@ -2626,6 +2632,7 @@ spav:mnusm a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Pädagogisches Puppenspiel"@de,
         "pedagogical puppetry"@en,
+        "spectacle de marionnettes à but pédagogique"@fr,
         "teatro pedagogico con le marionette"@it .
 
 spav:mnuyk a crm:E55_Type,
@@ -2924,6 +2931,7 @@ spav:mugup a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Trainer"@de,
         "trainer"@en,
+        "entraîneur"@fr,
         "preparatore"@it ;
     skos:topConceptOf spav:mu .
 
@@ -2953,6 +2961,7 @@ spav:muiqu a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Schnitt"@de,
         "editing of moving image work"@en,
+        "montage"@fr,
         "montaggio"@it ;
     skos:topConceptOf spav:mu .
 
@@ -2963,6 +2972,7 @@ spav:mujfv a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Management"@de,
         "management"@en,
+        "management"@fr,
         "management"@it ;
     skos:topConceptOf spav:mu .
 
@@ -2982,6 +2992,7 @@ spav:mujig a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Kameraführung"@de,
         "camera operation"@en,
+        "guidage caméra"@fr,
         "gestione della macchina da presa"@it .
 
 spav:mujmh a crm:E55_Type,
@@ -3009,6 +3020,7 @@ spav:mukzi a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Gastauftritt"@de,
         "guest performance"@en,
+        "artiste invité"@fr,
         "spettacolo ospite"@it ;
     skos:topConceptOf spav:mu .
 
@@ -3068,6 +3080,7 @@ spav:munuj a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Beitrag"@de,
         "contribution"@en,
+        "contribution"@fr,
         "contributo"@it ;
     skos:topConceptOf spav:mu .
 
@@ -3574,12 +3587,11 @@ spav:vrmpj a crm:E55_Type,
 
 spav:vrnkf a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "Freilichtspiel"@it ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Freilichtspiel"@de,
         "open air play"@en,
         "jeu en plein air"@fr,
-        "spettacolo open air"@it ;
+        "Freilichtspiel (spettacolo open air)"@it ;
     skos:topConceptOf spav:vr .
 
 spav:vrnmd a crm:E55_Type,
@@ -3738,7 +3750,7 @@ spav:yatcx a crm:E55_Type,
     skos:inScheme spav:ya ;
     skos:prefLabel "Gebräuchlicher Name"@de,
         "common name"@en,
-        "nom commun"@fr,
+        "nom d'usage"@fr,
         "nome comunemente usato"@it .
 
 spav:yavtx a crm:E55_Type,
@@ -4162,6 +4174,7 @@ spav:mnjtg a crm:E55_Type,
         spav:mnusm ;
     skos:prefLabel "Puppenspiel"@de,
         "Puppenspiel (puppetry)"@en,
+        "spectacle de marionnettes"@fr,
         "spettacolo di marionette"@it .
 
 spav:mucbq a crm:E55_Type,
@@ -4353,6 +4366,7 @@ spav:mnhzn a crm:E55_Type,
         spav:mnuzw ;
     skos:prefLabel "Puppen- und Figurentheater"@de,
         "[Puppen- und Figurentheater]"@en,
+        "théâtre de marionnettes et de figures"@fr,
         "teatro delle marionette e dei burattini"@it ;
     skos:topConceptOf spav:mn .
 
@@ -4605,7 +4619,7 @@ spav:qexvc a crm:E55_Type,
         spav:qezip ;
     skos:prefLabel "Record-Set-Typ"@de,
         "record set type"@en,
-        "?"@fr,
+        "record set type"@fr,
         "record set type"@it ;
     skos:topConceptOf spav:qe .
 
@@ -4717,6 +4731,24 @@ spav:rm a skos:ConceptScheme ;
         spav:rmoda ;
     skos:prefLabel "identity type"@en .
 
+spav:dflvv a crm:E55_Type,
+        skos:Concept ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfblx,
+        spav:dffop,
+        spav:dfhdo,
+        spav:dfmyd,
+        spav:dfowt,
+        spav:dfwox,
+        spav:dfyfs,
+        spav:dfzpy ;
+    skos:prefLabel "Dokumentgattungen"@de,
+        "document genre"@en,
+        "genre de document"@fr,
+        "tipo di documento"@it ;
+    skos:topConceptOf spav:df .
+
 spav:frgzf a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "estampe"@fr,
@@ -4799,25 +4831,6 @@ spav:muawx a crm:E55_Type,
         "performance"@fr,
         "perfomance"@it ;
     skos:topConceptOf spav:mu .
-
-spav:dflvv a crm:E55_Type,
-        skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
-    skos:inScheme spav:df ;
-    skos:narrower spav:dfblx,
-        spav:dffop,
-        spav:dfhdo,
-        spav:dfmyd,
-        spav:dfowt,
-        spav:dfppw,
-        spav:dfwox,
-        spav:dfyfs,
-        spav:dfzpy ;
-    skos:prefLabel "Dokumentgattungen"@de,
-        "document genre"@en,
-        "genre de document"@fr,
-        "tipo di documento"@it ;
-    skos:topConceptOf spav:df .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
@@ -5032,6 +5045,7 @@ spav:vr a skos:ConceptScheme ;
 
 spav:df a skos:ConceptScheme ;
     skos:hasTopConcept spav:dfdui,
+        spav:dfdvh,
         spav:dfdzo,
         spav:dfeip,
         spav:dfjdc,
