@@ -415,17 +415,19 @@ spav:eoept a crm:E55_Type,
 spav:eokdx a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
-    skos:prefLabel "interner Kommentar"@de,
+    skos:prefLabel "interner Anmerkung"@de,
         "internal note"@en,
-        "commento interno"@it ;
+        "note interne"@fr,
+        "nota interna"@it ;
     skos:topConceptOf spav:eo .
 
 spav:eonvd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
-    skos:prefLabel "öffentlicher Kommentar"@de,
+    skos:prefLabel "öffentliche Anmerkung"@de,
         "public note"@en,
-        "commento pubblico"@it ;
+        "note publique"@fr,
+        "nota pubblica"@it ;
     skos:topConceptOf spav:eo .
 
 spav:frabo a crm:E55_Type,
@@ -594,7 +596,8 @@ spav:fvevf a crm:E55_Type,
     skos:broader spav:fvlvi ;
     skos:inScheme spav:fv ;
     skos:prefLabel "2\" Quad"@de,
-        "2\" Quad"@en .
+        "2\" Quad"@en,
+        "2 pollici Quad"@it .
 
 spav:fvfac a crm:E55_Type,
         skos:Concept ;
@@ -730,7 +733,8 @@ spav:fvkyo a crm:E55_Type,
     skos:broader spav:fvlvi ;
     skos:inScheme spav:fv ;
     skos:prefLabel "1/2\" Open Reel"@de,
-        "1/2\" open reel"@en .
+        "1/2\" open reel"@en,
+        "1/2 pollice bobina aperta"@it .
 
 spav:fvlxb a crm:E55_Type,
         skos:Concept ;
@@ -2533,7 +2537,7 @@ spav:mnqox a crm:E55_Type,
     skos:prefLabel "Cabaret"@de,
         "cabaret (dance)"@en,
         "danse de cabaret"@fr,
-        "cabaret"@it .
+        "danza cabaret"@it .
 
 spav:mnqqk a crm:E55_Type,
         skos:Concept ;
@@ -3753,6 +3757,15 @@ spav:yatcx a crm:E55_Type,
         "nom d'usage"@fr,
         "nome comunemente usato"@it .
 
+spav:yauzw a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:yakdx ;
+    skos:inScheme spav:ya ;
+    skos:prefLabel "Byline"@de,
+        "byline"@en,
+        "byline"@fr,
+        "byline"@it .
+
 spav:yavtx a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "alternative name of a group or institution"@en ;
@@ -3764,16 +3777,6 @@ spav:yavtx a crm:E55_Type,
         "alternative name"@en,
         "nom alternatif"@fr,
         "nome alternativo"@it .
-
-spav:yaztb a crm:E55_Type,
-        skos:Concept ;
-    rdfs:comment "additional information useful to identify an entity with an ambiguous name"@en ;
-    skos:broader spav:yakdx ;
-    skos:inScheme spav:ya ;
-    skos:prefLabel "Addendum"@de,
-        "addendum"@en,
-        "addendum"@fr,
-        "addendum"@it .
 
 spav:zjagy a crm:E55_Type,
         skos:Concept ;
@@ -4874,8 +4877,8 @@ spav:yakdx a crm:E55_Type,
         spav:yanuj,
         spav:yasis,
         spav:yatcx,
-        spav:yavtx,
-        spav:yaztb ;
+        spav:yauzw,
+        spav:yavtx ;
     skos:prefLabel "Name"@de,
         "name"@en,
         "nom"@fr,
