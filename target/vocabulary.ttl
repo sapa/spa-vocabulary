@@ -51,6 +51,42 @@ spav:bpycy a crm:E55_Type,
     skos:prefLabel "top"@en ;
     skos:topConceptOf spav:bp .
 
+spav:ctcrt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ct ;
+    skos:prefLabel "sicher"@de,
+        "certain"@en,
+        "certain"@fr,
+        "sicuro"@it ;
+    skos:topConceptOf spav:ct .
+
+spav:ctddd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ct ;
+    skos:prefLabel "abgeleitetes Datum"@de,
+        "deduced date"@en,
+        "date déduite"@fr,
+        "data dedotta"@it ;
+    skos:topConceptOf spav:ct .
+
+spav:ctprb a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ct ;
+    skos:prefLabel "wahrscheinlich"@de,
+        "probable"@en,
+        "probablement"@fr,
+        "probabilmente"@it ;
+    skos:topConceptOf spav:ct .
+
+spav:ctuct a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ct ;
+    skos:prefLabel "unsicher"@de,
+        "uncertain"@en,
+        "incertain"@fr,
+        "incerto"@it ;
+    skos:topConceptOf spav:ct .
+
 spav:dfblx a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:dflvv ;
@@ -68,6 +104,14 @@ spav:dfcbi a crm:E55_Type,
     skos:prefLabel "Zirkusplakat"@de,
         "circus poster"@en,
         "Poster del circo"@it .
+
+spav:dfctp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:dfqrl ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300127183> ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "Kontaktabzug"@de,
+        "contact sheet"@en .
 
 spav:dfdvh a crm:E55_Type,
         skos:Concept ;
@@ -253,16 +297,6 @@ spav:dfpwk a crm:E55_Type,
         "peinture acrylique"@fr,
         "pittura acrilica"@it .
 
-spav:dfqrl a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:dfdui ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
-    skos:inScheme spav:df ;
-    skos:prefLabel "Positiv (Foto-Positiv)"@de,
-        "positive"@en,
-        "positif"@fr,
-        "positivo"@it .
-
 spav:dfrsp a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:dfdui ;
@@ -383,6 +417,33 @@ spav:dfzpy a crm:E55_Type,
         "note"@en,
         "note"@fr,
         "annotazione"@it .
+
+spav:dqcrc a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:dq ;
+    skos:prefLabel "circa"@de,
+        "circa"@en,
+        "circa"@fr,
+        "circa"@it ;
+    skos:topConceptOf spav:dq .
+
+spav:dqdrg a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:dq ;
+    skos:prefLabel "während"@de,
+        "during"@en,
+        "pendant"@fr,
+        "durante"@it ;
+    skos:topConceptOf spav:dq .
+
+spav:dqext a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:dq ;
+    skos:prefLabel "exakt"@de,
+        "exact"@en,
+        "exact"@fr,
+        "esatto"@it ;
+    skos:topConceptOf spav:dq .
 
 spav:dwelq a crm:E55_Type,
         skos:Concept ;
@@ -3885,6 +3946,17 @@ spav:zjwcj a crm:E55_Type,
         "metallo"@it ;
     skos:topConceptOf spav:zj .
 
+spav:dfqrl a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:dfdui ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfctp ;
+    skos:prefLabel "Positiv (Foto-Positiv)"@de,
+        "positive"@en,
+        "positif"@fr,
+        "positivo"@it .
+
 spav:frbyr a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:fr ;
@@ -4626,6 +4698,15 @@ spav:qexvc a crm:E55_Type,
         "record set type"@it ;
     skos:topConceptOf spav:qe .
 
+spav:dq a skos:ConceptScheme ;
+    skos:hasTopConcept spav:dqcrc,
+        spav:dqdrg,
+        spav:dqext ;
+    skos:prefLabel "Datumskennzeichen"@de,
+        "date qualifier"@en,
+        "qualificatif de date"@fr,
+        "data qualificatore"@it .
+
 spav:eo a skos:ConceptScheme ;
     skos:hasTopConcept spav:eoept,
         spav:eokdx,
@@ -4702,6 +4783,16 @@ spav:hlamu a crm:E55_Type,
         "première"@fr,
         "prima"@it ;
     skos:topConceptOf spav:hl .
+
+spav:ct a skos:ConceptScheme ;
+    skos:hasTopConcept spav:ctcrt,
+        spav:ctddd,
+        spav:ctprb,
+        spav:ctuct ;
+    skos:prefLabel "Sicherheit"@de,
+        "certainty"@en,
+        "certitude"@fr,
+        "certezza"@it .
 
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
