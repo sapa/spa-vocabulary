@@ -22,6 +22,7 @@ df['broader'].replace('-', '', inplace=True)
 df['parent'] = df.apply(lambda x: '' if x['scheme'] else 'http://vocab.performing-arts.ch/' +
                         x['skos_ConceptScheme'].strip() + x['broader'].strip(), axis=1)
 df['skos_exactMatch'].replace('-', '', inplace=True)
+df['skos_exactMatch'].replace(' ', '', inplace=True)
 df.drop(['skos_ConceptScheme', 'skos_Concept', 'broader'], axis=1, inplace=True)
 
 df = df[['id', 'parent', 'scheme', 'context', 'domain', 'property', 'skos_exactMatch', 'rdfs_comment_en', 'skos_prefLabel_en', 'skos_altLabel_en',

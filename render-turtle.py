@@ -29,7 +29,10 @@ vocabs['rdagd'] = Namespace('http://rdaregistry.info/termList/gender/')
 vocabs['iso639-2'] = Namespace('http://id.loc.gov/vocabulary/iso639-2/')
 vocabs['wd'] = Namespace('http://www.wikidata.org/entity/')
 vocabs['gnd'] = Namespace('http://d-nb.info/gnd/')
+vocabs['rico'] = Namespace('https://www.ica.org/standards/RiC/ontology#')
 vocabs['ric-rst'] = Namespace('https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#')
+vocabs['ebucore'] = Namespace('https://www.ebu.ch/metadata/ontologies/ebucore#')
+vocabs['eclap'] = Namespace('http://www.eclap.eu/schema/eclap/')
 
 graph = Graph()
 graph.bind('rdfs', RDFS)
@@ -58,7 +61,6 @@ for idx, row in df.iterrows():
         scheme_ns = Namespace(scheme_uri + '/')
     # concept
     elif not pd.isnull(row['skos_Concept']) and scheme_ns:
-        # uri = URIRef(scheme_ns[row['skos_Concept'].strip()])
         uri = URIRef(vocab_ns[f'{scheme}{row["skos_Concept"].strip()}'])
         try:
             assert uri not in uris
@@ -67,6 +69,12 @@ for idx, row in df.iterrows():
         uris.append(uri)
         graph.add((uri, RDF.type, SKOS.Concept))
         graph.add((uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
+        if not pd.isnull(row['additional_class']):
+            p = row['additional_class'].strip().split(':')[0]
+            q = row['additional_class'].strip().split(':')[1]
+            if p in vocabs:
+                graph.add((uri, RDF.type, URIRef(vocabs[p] + q)))
+
         graph.add((uri, SKOS.inScheme, scheme_uri))
         # broader, narrower
         if not pd.isnull(row['broader']):
@@ -90,10 +98,13 @@ for idx, row in df.iterrows():
     # same as
     if not pd.isnull(row['skos_exactMatch']) and row['skos_exactMatch'].strip() != '-':
         for s in row['skos_exactMatch'].split(';'):
-            p = s.strip().split(':')[0]
-            q = s.strip().split(':')[1]
-            if p in vocabs:
-                graph.add((uri, SKOS.exactMatch, URIRef(vocabs[p] + q)))
+            if s.strip()[:4] == 'http':
+                graph.add((uri, SKOS.exactMatch, URIRef(s.strip())))
+            else:
+                p = s.strip().split(':')[0]
+                q = s.strip().split(':')[1]
+                if p in vocabs:
+                    graph.add((uri, SKOS.exactMatch, URIRef(vocabs[p] + q)))
 
 with open('target/vocabulary.ttl', 'wb') as f:
     f.write(graph.serialize(format='turtle'))
