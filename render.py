@@ -1,9 +1,11 @@
 # coding: utf-8
 import pandas as pd
-from rdflib import Graph, Literal, Namespace, URIRef, plugin
+from rdflib import Graph, Dataset, Literal, Namespace, URIRef, plugin
 from rdflib.serializer import Serializer
-from rdflib.namespace import RDF, RDFS, SKOS, OWL
+from rdflib.namespace import RDF, RDFS, SKOS, OWL, XSD
 from rdflib.plugins.serializers.nt import NTSerializer
+import datetime
+import pytz
 
 
 df = pd.read_excel('source/ControlledTerms.xlsx', 'skos')
@@ -18,6 +20,8 @@ for ns in ['skos']:
 label_columns.append('skos_definition_en')
 
 vocabs = dict()
+vocabs['prov'] = Namespace('http://www.w3.org/ns/prov#')
+vocabs['ldp'] = Namespace('http://www.w3.org/ns/ldp#')
 vocabs['aat'] = Namespace('http://vocab.getty.edu/aat/')
 vocabs['crm'] = Namespace('http://www.cidoc-crm.org/cidoc-crm/')
 vocabs['rdabs'] = Namespace('http://rdaregistry.info/termList/broadcastStand/')
@@ -34,13 +38,21 @@ vocabs['ric-rst'] = Namespace('https://www.ica.org/standards/RiC/vocabularies/re
 vocabs['ebucore'] = Namespace('https://www.ebu.ch/metadata/ontologies/ebucore#')
 vocabs['eclap'] = Namespace('http://www.eclap.eu/schema/eclap/')
 
-graph = Graph()
+
+ds = Dataset()
+graph = ds.graph(URIRef('http://vocab.performing-arts.ch/container/context'))
 graph.bind('rdfs', RDFS)
 graph.bind('skos', SKOS)
 graph.bind('owl', OWL)
 graph.bind('spav', vocab_ns)
 for k, v in vocabs.items():
     graph.bind(k, v)
+
+ldp = URIRef('http://vocab.performing-arts.ch/container')
+graph.add((ldp, RDF.type, vocabs['prov'].Entity))
+graph.add((ldp, RDF.type, vocabs['ldp'].Resource))
+graph.add((ldp, vocabs['prov'].generatedAtTime, Literal(
+    datetime.datetime.now(pytz.timezone('Europe/Zurich')).isoformat(), datatype=XSD.dateTime)))
 
 uris = []
 
@@ -108,3 +120,6 @@ for idx, row in df.iterrows():
 
 with open('target/vocabulary.ttl', 'wb') as f:
     f.write(graph.serialize(format='turtle'))
+
+with open('target/vocabulary.nq', 'wb') as f:
+    f.write(ds.serialize(format='nquads'))

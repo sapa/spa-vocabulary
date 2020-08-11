@@ -4,7 +4,9 @@
 @prefix eclap: <http://www.eclap.eu/schema/eclap/> .
 @prefix gnd: <http://d-nb.info/gnd/> .
 @prefix iso639-2: <http://id.loc.gov/vocabulary/iso639-2/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdabs: <http://rdaregistry.info/termList/broadcastStand/> .
 @prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
 @prefix rdagd: <http://rdaregistry.info/termList/gender/> .
@@ -20,6 +22,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+spav:container a ldp:Resource,
+        prov:Entity ;
+    prov:generatedAtTime "2020-08-11T12:53:43.129199+02:00"^^xsd:dateTime .
 
 spav:en a skos:ConceptScheme ;
     rdfs:comment "mime types"@en ;
@@ -1337,42 +1343,6 @@ spav:fvzrb a crm:E55_Type,
     skos:prefLabel "D2"@de,
         "D2"@en,
         "D2"@it .
-
-spav:gnoda a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:gn ;
-    skos:prefLabel "unbekannt"@de,
-        "unknown"@en,
-        "inconnu"@fr,
-        "sconosciuto"@it ;
-    skos:topConceptOf spav:gn .
-
-spav:gnpln a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:gn ;
-    skos:prefLabel "Familie"@de,
-        "family"@en,
-        "famille"@fr,
-        "famiglia"@it ;
-    skos:topConceptOf spav:gn .
-
-spav:gnqow a crm:E55_Type,
-        skos:Concept ;
-    skos:broader spav:gndex ;
-    skos:inScheme spav:gn ;
-    skos:prefLabel "Institution"@de,
-        "legal body"@en,
-        "institution"@fr,
-        "istituzione"@it .
-
-spav:gnvyd a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:gn ;
-    skos:prefLabel "Person"@de,
-        "person"@en,
-        "personne"@fr,
-        "persona"@it ;
-    skos:topConceptOf spav:gn .
 
 spav:goctj a crm:E55_Type,
         skos:Concept ;
@@ -3547,40 +3517,6 @@ spav:muzua a crm:E55_Type,
         "testo aggiunto"@it ;
     skos:topConceptOf spav:mu .
 
-spav:rmfcm a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "certo"@it ;
-    skos:inScheme spav:rm ;
-    skos:prefLabel "gegeben"@de,
-        "given"@en,
-        "dato"@it ;
-    skos:topConceptOf spav:rm .
-
-spav:rmgvx a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:rm ;
-    skos:prefLabel "individuell vermutet"@de,
-        "individual assumed"@en,
-        "presunto individualmente"@it ;
-    skos:topConceptOf spav:rm .
-
-spav:rmivu a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:rm ;
-    skos:prefLabel "allgemein angenommen"@de,
-        "joint assumed"@en,
-        "comunemente accettato"@it ;
-    skos:topConceptOf spav:rm .
-
-spav:rmoda a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:rm ;
-    skos:prefLabel "unbekannt"@de,
-        "unknown"@en,
-        "inconnu"@fr,
-        "sconosciuto"@it ;
-    skos:topConceptOf spav:rm .
-
 spav:rsclt a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "\"An artificial assemblage of documents accumulated on the basis of some common characteristic without regard to the provenance of those documents. Not to be confused with an archival fonds.\" (ISAD-G, 2nd end.)"@en ;
@@ -4180,16 +4116,6 @@ spav:fvqpw a crm:E55_Type,
     skos:prefLabel "VCD"@de,
         "VCD"@en,
         "VCD"@it .
-
-spav:gndex a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:gn ;
-    skos:narrower spav:gnqow ;
-    skos:prefLabel "Gruppe"@de,
-        "group"@en,
-        "groupe"@fr,
-        "gruppo"@it ;
-    skos:topConceptOf spav:gn .
 
 spav:lgfra a crm:E55_Type,
         skos:Concept ;
@@ -5031,13 +4957,6 @@ spav:ih a skos:ConceptScheme ;
         "contact"@fr,
         "contatto"@it .
 
-spav:rm a skos:ConceptScheme ;
-    skos:hasTopConcept spav:rmfcm,
-        spav:rmgvx,
-        spav:rmivu,
-        spav:rmoda ;
-    skos:prefLabel "identity type"@en .
-
 spav:dflvv a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
@@ -5094,13 +5013,6 @@ spav:fvaha a crm:E55_Type,
         "disco ottico"@it ;
     skos:topConceptOf spav:fv .
 
-spav:gn a skos:ConceptScheme ;
-    skos:hasTopConcept spav:gndex,
-        spav:gnoda,
-        spav:gnpln,
-        spav:gnvyd ;
-    skos:prefLabel "agent type"@en .
-
 spav:mnuzw a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "puppet theatre"@en,
@@ -5145,7 +5057,8 @@ spav:ar a skos:ConceptScheme ;
         spav:arfsc,
         spav:arltb,
         spav:arplb,
-        spav:arwsc .
+        spav:arwsc ;
+    skos:prefLabel "aspect ratio"@en .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
