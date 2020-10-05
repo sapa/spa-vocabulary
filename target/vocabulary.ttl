@@ -25,7 +25,7 @@
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-09-30T12:19:22.780058+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-10-05T17:20:40.692621+02:00"^^xsd:dateTime .
 
 spav:en a skos:ConceptScheme ;
     rdfs:comment "mime types"@en ;
@@ -80,6 +80,45 @@ spav:arwsc a crm:E55_Type,
     skos:prefLabel "wide screen"@en ;
     skos:topConceptOf spav:ar .
 
+spav:asarm a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:as ;
+    skos:prefLabel "Archivmaster"@de,
+        "archival master"@en ;
+    skos:topConceptOf spav:as .
+
+spav:asdcd a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:asdsp ;
+    skos:inScheme spav:as ;
+    skos:prefLabel "Sichtungskopie digital"@de,
+        "dissemination copy digital"@en,
+        "copie de diffusion numérique"@fr .
+
+spav:asdcp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:asdsp ;
+    skos:inScheme spav:as ;
+    skos:prefLabel "Sichtungskopie physisch"@de,
+        "dissemination copy physical"@en,
+        "copie de diffusion physique"@fr .
+
+spav:aspcd a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:asprc ;
+    skos:inScheme spav:as ;
+    skos:prefLabel "Sicherungskopie digital"@de,
+        "preservation copy digital"@en,
+        "copie de sauvegarde numérique"@fr .
+
+spav:aspcp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:asprc ;
+    skos:inScheme spav:as ;
+    skos:prefLabel "Sicherungskopie physisch"@de,
+        "preservation copy physical"@en,
+        "copie de sauvegarde physique"@fr .
+
 spav:bshdt a crm:E55_Type,
         skos:Concept,
         ebucore:Standard ;
@@ -127,6 +166,38 @@ spav:bsscm a crm:E55_Type,
         "SECAM"@fr,
         "SECAM"@it ;
     skos:topConceptOf spav:bs .
+
+spav:cdict a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cd ;
+    skos:prefLabel "intakt"@de,
+        "intact"@en,
+        "intact"@fr ;
+    skos:topConceptOf spav:cd .
+
+spav:cdldg a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cd ;
+    skos:prefLabel "leicht beschädigt"@de,
+        "lightly damaged"@en,
+        "légèrement endommagé"@fr ;
+    skos:topConceptOf spav:cd .
+
+spav:cdsdg a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cd ;
+    skos:prefLabel "stark beschädigt"@de,
+        "strongly damaged"@en,
+        "très dégradé"@fr ;
+    skos:topConceptOf spav:cd .
+
+spav:cdunk a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cd ;
+    skos:prefLabel "unbekannt"@de,
+        "unknown"@en,
+        "inconnu"@fr ;
+    skos:topConceptOf spav:cd .
 
 spav:clblw a crm:E55_Type,
         skos:Concept ;
@@ -4215,6 +4286,26 @@ spav:zjajf a crm:E55_Type,
         "carta"@it ;
     skos:topConceptOf spav:zj .
 
+spav:asdsp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:as ;
+    skos:narrower spav:asdcd,
+        spav:asdcp ;
+    skos:prefLabel "Sichtungskopie"@de,
+        "dissemination copy"@en,
+        "copie de diffusion"@fr ;
+    skos:topConceptOf spav:as .
+
+spav:asprc a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:as ;
+    skos:narrower spav:aspcd,
+        spav:aspcp ;
+    skos:prefLabel "Sicherungskopie"@de,
+        "preservation copy"@en,
+        "copie de sauvegarde"@fr ;
+    skos:topConceptOf spav:as .
+
 spav:dfdui a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://vocab.getty.edu/aat/300046300> ;
@@ -4875,6 +4966,14 @@ spav:bs a skos:ConceptScheme ;
         spav:bsscm ;
     skos:prefLabel "broadcast standard"@en .
 
+spav:cd a skos:ConceptScheme ;
+    skos:hasTopConcept spav:cdict,
+        spav:cdldg,
+        spav:cdsdg,
+        spav:cdunk ;
+    skos:prefLabel "Zustand"@de,
+        "condition"@en .
+
 spav:ct a skos:ConceptScheme ;
     skos:hasTopConcept spav:ctcrt,
         spav:ctddd,
@@ -5001,6 +5100,13 @@ spav:ar a skos:ConceptScheme ;
         spav:arplb,
         spav:arwsc ;
     skos:prefLabel "aspect ratio"@en .
+
+spav:as a skos:ConceptScheme ;
+    skos:hasTopConcept spav:asarm,
+        spav:asdsp,
+        spav:asprc ;
+    skos:prefLabel "Archivstatus"@de,
+        "archival status"@en .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
