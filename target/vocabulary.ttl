@@ -25,7 +25,7 @@
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-10-05T17:20:40.692621+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-10-05T18:52:01.517909+02:00"^^xsd:dateTime .
 
 spav:en a skos:ConceptScheme ;
     rdfs:comment "mime types"@en ;
@@ -873,6 +873,14 @@ spav:fvdex a crm:E55_Type,
     skos:prefLabel "Abzug (Fotografie)"@de,
         "photographic print"@en,
         "stampa fotografica"@it .
+
+spav:fvdgf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "digitale Datei"@de,
+        "digital file"@en,
+        "fichier numérique"@fr ;
+    skos:topConceptOf spav:fv .
 
 spav:fvecx a crm:E55_Type,
         skos:Concept ;
@@ -5374,6 +5382,7 @@ spav:mu a skos:ConceptScheme ;
 spav:fv a skos:ConceptScheme ;
     skos:hasTopConcept spav:fvaha,
         spav:fvajf,
+        spav:fvdgf,
         spav:fvdie,
         spav:fvese,
         spav:fvgye,
