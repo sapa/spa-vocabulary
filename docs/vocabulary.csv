@@ -288,7 +288,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 287,http://vocab.performing-arts.ch/fvkyo,http://vocab.performing-arts.ch/fvlvi,False,Object,,,,,"1/2"" open reel",,,"1/2"" Open Reel",,,,1/2 pollice bobina aperta,,
 288,http://vocab.performing-arts.ch/fvevf,http://vocab.performing-arts.ch/fvlvi,False,Object,,,,,"2"" Quad",,,"2"" Quad",,,,2 pollici Quad,,
 289,http://vocab.performing-arts.ch/fverx,http://vocab.performing-arts.ch/fvodj,False,Object,,,aat:300028692,,video cassette,,,Videokassette,,,,videocassetta,,
-290,http://vocab.performing-arts.ch/fvzgv,http://vocab.performing-arts.ch/fverx,False,Object,,,wd:Q1928913,,video cassette,,,Video Cassette Recording,VCR,Video Cassette Recording,VCR,Video Cassette Recording,VCR,
+290,http://vocab.performing-arts.ch/fvzgv,http://vocab.performing-arts.ch/fverx,False,Object,,,wd:Q1928913,,VCR,Video Cassette Recording,,VCR,Video Cassette Recording,VCR,Video Cassette Recording,VCR,Video Cassette Recording,
 291,http://vocab.performing-arts.ch/fvskn,http://vocab.performing-arts.ch/fverx,False,Object,,,rdavf:1014,,U-matic,,,U-matic,,,,U-matic,,
 292,http://vocab.performing-arts.ch/fvxpt,http://vocab.performing-arts.ch/fvskn,False,Object,,,,,"U-matic 1/2""",,,"U-matic 1/2""",,,,"U-matic 1/2""",,
 293,http://vocab.performing-arts.ch/fvfws,http://vocab.performing-arts.ch/fvskn,False,Object,,,,,"U-matic 3/4""",,,"U-matic 3/4""",,,,"U-matic 3/4""",,

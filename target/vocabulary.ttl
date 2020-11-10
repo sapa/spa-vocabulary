@@ -28,7 +28,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-11-10T22:11:21.798983+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-11-10T22:15:43.747280+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -1538,16 +1538,17 @@ spav:fvyxa a crm:E55_Type,
 spav:fvzgv a crm:E55_Type,
         skos:Concept,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
-    skos:altLabel "VCR"@de,
-        "VCR"@fr,
-        "VCR"@it ;
+    skos:altLabel "Video Cassette Recording"@de,
+        "Video Cassette Recording"@en,
+        "Video Cassette Recording"@fr,
+        "Video Cassette Recording"@it ;
     skos:broader spav:fverx ;
     skos:exactMatch wd:Q1928913 ;
     skos:inScheme spav:fv ;
-    skos:prefLabel "Video Cassette Recording"@de,
-        "video cassette"@en,
-        "Video Cassette Recording"@fr,
-        "Video Cassette Recording"@it .
+    skos:prefLabel "VCR"@de,
+        "VCR"@en,
+        "VCR"@fr,
+        "VCR"@it .
 
 spav:fvzrb a crm:E55_Type,
         skos:Concept,
