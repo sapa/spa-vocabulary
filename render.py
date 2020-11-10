@@ -110,11 +110,12 @@ for idx, row in df.iterrows():
     # same as
     if not pd.isnull(row['skos_exactMatch']) and row['skos_exactMatch'].strip() != '-':
         for s in row['skos_exactMatch'].split(';'):
-            if s.strip()[:4] == 'http':
-                graph.add((uri, SKOS.exactMatch, URIRef(s.strip())))
-            else:
-                p = s.strip().split(':')[0]
-                q = s.strip().split(':')[1]
+            s = s.strip()
+            if s[:4] == 'http':
+                graph.add((uri, SKOS.exactMatch, URIRef(s)))
+            elif len(s.split(':'))==2:
+                p = s.split(':')[0]
+                q = s.split(':')[1]
                 if p in vocabs:
                     graph.add((uri, SKOS.exactMatch, URIRef(vocabs[p] + q)))
 
