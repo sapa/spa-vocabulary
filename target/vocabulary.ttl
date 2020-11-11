@@ -28,7 +28,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-11-10T22:15:43.747280+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-11-11T17:32:38.132955+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -1003,10 +1003,15 @@ spav:fvefk a crm:E55_Type,
 spav:fveny a crm:E55_Type,
         skos:Concept,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
+    skos:altLabel "U-matic high-band"@de,
+        "U-matic high-band"@en,
+        "U-matic high-band"@fr,
+        "U-matic high-band"@it ;
     skos:broader spav:fvskn ;
     skos:inScheme spav:fv ;
     skos:prefLabel "U-matic HB"@de,
         "U-matic HB"@en,
+        "U-matic HB"@fr,
         "U-matic HB"@it .
 
 spav:fvevf a crm:E55_Type,
@@ -1048,11 +1053,16 @@ spav:fvfce a crm:E55_Type,
 spav:fvfws a crm:E55_Type,
         skos:Concept,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
+    skos:altLabel "U-matic low-band"@de,
+        "U-matic low-band"@en,
+        "U-matic low-band"@fr,
+        "U-matic low-band"@it ;
     skos:broader spav:fvskn ;
     skos:inScheme spav:fv ;
-    skos:prefLabel "U-matic 3/4\""@de,
-        "U-matic 3/4\""@en,
-        "U-matic 3/4\""@it .
+    skos:prefLabel "U-matic LB"@de,
+        "U-matic LB"@en,
+        "U-matic LB"@fr,
+        "U-matic LB"@it .
 
 spav:fvgbf a crm:E55_Type,
         skos:Concept,
@@ -1393,9 +1403,10 @@ spav:fvuhk a crm:E55_Type,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
     skos:broader spav:fvskn ;
     skos:inScheme spav:fv ;
-    skos:prefLabel "U-matic 3/4\" SP"@de,
-        "U-matic 3/4\" SP"@en,
-        "U-matic 3/4\" SP"@it .
+    skos:prefLabel "U-matic SP"@de,
+        "U-matic SP"@en,
+        "U-matic SP"@fr,
+        "U-matic SP"@it .
 
 spav:fvukd a crm:E55_Type,
         skos:Concept,
@@ -1500,9 +1511,10 @@ spav:fvxpt a crm:E55_Type,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
     skos:broader spav:fvskn ;
     skos:inScheme spav:fv ;
-    skos:prefLabel "U-matic 1/2\""@de,
-        "U-matic 1/2\""@en,
-        "U-matic 1/2\""@it .
+    skos:prefLabel "U-matic S"@de,
+        "U-matic S"@en,
+        "U-matic S"@fr,
+        "U-matic S"@it .
 
 spav:fvxzi a crm:E55_Type,
         skos:Concept,
@@ -5106,7 +5118,8 @@ spav:fvskn a crm:E55_Type,
         skos:Concept,
         <https://www.ica.org/standards/RiC/ontology#CarrierType;premis> ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1014> ;
+    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1014>,
+        wd:Q278080 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fveny,
         spav:fvfws,
