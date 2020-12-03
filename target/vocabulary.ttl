@@ -30,19 +30,13 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-11-26T15:36:16.226199+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-12-03T20:00:30.559491+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en .
-
-spav:vfmpeg1 a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:exactMatch wd:Q336284 ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "MPEG-1"@en .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -55,6 +49,7 @@ spav:zb a skos:ConceptScheme ;
 
 spav:afaac a skos:Concept,
         ebucore:AudioFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000114.shtml> ;
     skos:inScheme spav:af ;
     skos:prefLabel "AAC"@en ;
     skos:topConceptOf spav:af .
@@ -62,24 +57,29 @@ spav:afaac a skos:Concept,
 spav:afac3 a skos:Concept,
         ebucore:AudioFormat ;
     skos:altLabel "AC-3"@en ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000209.shtml> ;
     skos:inScheme spav:af ;
     skos:prefLabel "AC3"@en ;
     skos:topConceptOf spav:af .
 
 spav:afflac a skos:Concept,
         ebucore:AudioFormat ;
+    skos:exactMatch wd:Q219848 ;
     skos:inScheme spav:af ;
     skos:prefLabel "FLAC"@en ;
     skos:topConceptOf spav:af .
 
 spav:afmp3 a skos:Concept,
         ebucore:AudioFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000012.shtml> ;
     skos:inScheme spav:af ;
     skos:prefLabel "MP3"@en ;
     skos:topConceptOf spav:af .
 
 spav:afpcm a skos:Concept,
         ebucore:AudioFormat ;
+    skos:exactMatch wd:Q209934,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000016.shtml> ;
     skos:inScheme spav:af ;
     skos:prefLabel "PCM"@en ;
     skos:topConceptOf spav:af .
@@ -240,6 +240,9 @@ spav:cdunk a crm:E55_Type,
 spav:cfaif a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:altLabel "AIF"@en ;
+    skos:exactMatch wd:Q758853,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000005.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "AIFF"@en ;
     skos:topConceptOf spav:cf ;
@@ -248,6 +251,7 @@ spav:cfaif a dct:FileFormat,
 spav:cfavi a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000059.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "AVI"@en ;
     skos:topConceptOf spav:cf ;
@@ -256,14 +260,30 @@ spav:cfavi a dct:FileFormat,
 spav:cfdvf a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000173.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "DV"@en ;
     skos:topConceptOf spav:cf ;
-    ebucore:hasMimeType "video/x-dv" .
+    ebucore:hasMimeType "video/dv" .
+
+spav:cfiso9660 a dct:FileFormat,
+        skos:Concept,
+        ebucore:ContainerFormat ;
+    skos:altLabel "ISO 9660"@en ;
+    skos:exactMatch wd:Q877050,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000348.shtml>,
+        <https://www.nationalarchives.gov.uk/pronom/fmt/468> ;
+    skos:inScheme spav:cf ;
+    skos:prefLabel "ISO"@en ;
+    skos:topConceptOf spav:cf ;
+    ebucore:hasMimeType "application/x-iso9660-image" .
 
 spav:cfjpg a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:altLabel "JPEG"@en ;
+    skos:exactMatch wd:Q2195,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000017.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "JPG"@en ;
     skos:topConceptOf spav:cf ;
@@ -272,7 +292,9 @@ spav:cfjpg a dct:FileFormat,
 spav:cfmkv a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
-    skos:exactMatch <https://www.nationalarchives.gov.uk/PRONOM/fmt/569> ;
+    skos:altLabel "MKV"@en ;
+    skos:exactMatch wd:Q223535,
+        <https://www.nationalarchives.gov.uk/PRONOM/fmt/569> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "Matroska"@en ;
     skos:topConceptOf spav:cf ;
@@ -281,6 +303,8 @@ spav:cfmkv a dct:FileFormat,
 spav:cfmov a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q942350,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000052.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "QuickTime"@en ;
     skos:topConceptOf spav:cf ;
@@ -289,6 +313,8 @@ spav:cfmov a dct:FileFormat,
 spav:cfmp4 a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q336316,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000155.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "MPEG-4"@en ;
     skos:topConceptOf spav:cf ;
@@ -297,6 +323,7 @@ spav:cfmp4 a dct:FileFormat,
 spav:cfmpps a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q1363415 ;
     skos:inScheme spav:cf ;
     skos:prefLabel "MPEG-PS"@en ;
     skos:topConceptOf spav:cf ;
@@ -305,6 +332,8 @@ spav:cfmpps a dct:FileFormat,
 spav:cfmxf a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q1893311,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000013.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "MXF"@en ;
     skos:topConceptOf spav:cf ;
@@ -313,6 +342,7 @@ spav:cfmxf a dct:FileFormat,
 spav:cfpdf a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "PDF"@en ;
     skos:topConceptOf spav:cf ;
@@ -321,6 +351,8 @@ spav:cfpdf a dct:FileFormat,
 spav:cfpng a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q178051,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000153.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "PNG"@en ;
     skos:topConceptOf spav:cf ;
@@ -329,6 +361,9 @@ spav:cfpng a dct:FileFormat,
 spav:cftif a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:altLabel "TIF"@en ;
+    skos:exactMatch <http://www.nationalarchives.gov.uk/PRONOM/fmt/353>,
+        wd:Q215106 ;
     skos:inScheme spav:cf ;
     skos:prefLabel "TIFF"@en ;
     skos:topConceptOf spav:cf ;
@@ -337,14 +372,19 @@ spav:cftif a dct:FileFormat,
 spav:cfwav a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:altLabel "Wave"@en ;
+    skos:exactMatch wd:Q217570,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000001.shtml> ;
     skos:inScheme spav:cf ;
-    skos:prefLabel "Wave"@en ;
+    skos:prefLabel "WAV"@en ;
     skos:topConceptOf spav:cf ;
     ebucore:hasMimeType "audio/x-wav" .
 
 spav:cfzip a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:exactMatch wd:Q136218,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000354.shtml> ;
     skos:inScheme spav:cf ;
     skos:prefLabel "ZIP"@en ;
     skos:topConceptOf spav:cf ;
@@ -4047,10 +4087,12 @@ spav:tjzns a crm:E55_Type,
     skos:prefLabel "public"@en ;
     skos:topConceptOf spav:tj .
 
-spav:vfai55 a skos:Concept,
+spav:vfai a skos:Concept,
         ebucore:VideoFormat ;
+    skos:altLabel "AVC-Ultra"@en ;
+    skos:exactMatch wd:Q300132 ;
     skos:inScheme spav:vf ;
-    skos:prefLabel "AVC-Intra 50"@en ;
+    skos:prefLabel "AVC-Intra"@en ;
     skos:topConceptOf spav:vf .
 
 spav:vfap4h a skos:Concept,
@@ -4068,24 +4110,28 @@ spav:vfap4x a skos:Concept,
 spav:vfapch a skos:Concept,
         ebucore:VideoFormat ;
     skos:broader spav:vfap ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000403.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "ProRes 422 HQ"@en .
 
 spav:vfapcn a skos:Concept,
         ebucore:VideoFormat ;
     skos:broader spav:vfap ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000390.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "ProRes 422"@en .
 
 spav:vfapco a skos:Concept,
         ebucore:VideoFormat ;
     skos:broader spav:vfap ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000405.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "ProRes 422 Proxy"@en .
 
 spav:vfapcs a skos:Concept,
         ebucore:VideoFormat ;
     skos:broader spav:vfap ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000404.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "ProRes 422 LT"@en .
 
@@ -4098,58 +4144,17 @@ spav:vfavc1 a skos:Concept,
     skos:prefLabel "AVC"@en ;
     skos:topConceptOf spav:vf .
 
-spav:vfdv5p a skos:Concept,
+spav:vfdv a skos:Concept,
         ebucore:VideoFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000183.shtml> ;
     skos:inScheme spav:vf ;
-    skos:prefLabel "DCVPro50PAL"@en ;
+    skos:prefLabel "DV, DVCAM, DVCPRO"@en ;
     skos:topConceptOf spav:vf .
 
-spav:vfdvcam a skos:Concept,
+spav:vfdvh a skos:Concept,
         ebucore:VideoFormat ;
     skos:inScheme spav:vf ;
-    skos:prefLabel "DVCAM"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvcp a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DVCPAL"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvcpp a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DVCPRO Progressive"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvh2 a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DVCPRO HD (1080p25)"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvh5 a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DVCPRO HD (1080i50)"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvhq a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DVCPRO HD (720p50)"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvpp a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "DCVProPAL"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfdvsd a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "25Mbps Consumer DV"@en ;
+    skos:prefLabel "DVCPRO HD"@en ;
     skos:topConceptOf spav:vf .
 
 spav:vfffv1v34 a skos:Concept,
@@ -4166,23 +4171,11 @@ spav:vfh263 a skos:Concept,
     skos:prefLabel "H.263"@en ;
     skos:topConceptOf spav:vf .
 
-spav:vfhdv3 a skos:Concept,
+spav:vfhdv a skos:Concept,
         ebucore:VideoFormat ;
-    skos:broader spav:vfhdv ;
     skos:inScheme spav:vf ;
-    skos:prefLabel "HDV 1080i50"@en .
-
-spav:vfhdv5 a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:broader spav:vfhdv ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "HDV  720p25"@en .
-
-spav:vfhdv7 a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:broader spav:vfhdv ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "HDV 1080p25"@en .
+    skos:prefLabel "HDV"@en ;
+    skos:topConceptOf spav:vf .
 
 spav:vficod a skos:Concept,
         ebucore:VideoFormat ;
@@ -4195,9 +4188,17 @@ spav:vfmjpa a skos:Concept,
         ebucore:VideoFormat ;
     skos:altLabel "M-JPEG"@en,
         "MJPEG"@en ;
-    skos:exactMatch wd:Q850954 ;
+    skos:exactMatch wd:Q850954,
+        <https://www.loc.gov/preservation/digital/formats/fdd/fdd000063.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "Motion JPEG"@en ;
+    skos:topConceptOf spav:vf .
+
+spav:vfmpeg1 a skos:Concept,
+        ebucore:VideoFormat ;
+    skos:exactMatch wd:Q336284 ;
+    skos:inScheme spav:vf ;
+    skos:prefLabel "MPEG-1"@en ;
     skos:topConceptOf spav:vf .
 
 spav:vfmpeg2 a skos:Concept,
@@ -4209,21 +4210,16 @@ spav:vfmpeg2 a skos:Concept,
 
 spav:vfv210 a skos:Concept,
         ebucore:VideoFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000352.shtml> ;
     skos:inScheme spav:vf ;
     skos:prefLabel "Component Y'CbCr 10-bit 4:2:2"@en ;
     skos:topConceptOf spav:vf .
 
-spav:vfxdvc a skos:Concept,
+spav:vfxd a skos:Concept,
         ebucore:VideoFormat ;
-    skos:broader spav:vfxdex ;
     skos:inScheme spav:vf ;
-    skos:prefLabel "XDCAM EX 1080i50 VBR"@en .
-
-spav:vfxdve a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:broader spav:vfxdex ;
-    skos:inScheme spav:vf ;
-    skos:prefLabel "XDCAM EX 1080p25 VBR"@en .
+    skos:prefLabel "XDCAM"@en ;
+    skos:topConceptOf spav:vf .
 
 spav:vrbjn a crm:E55_Type,
         skos:Concept ;
@@ -4877,16 +4873,10 @@ spav:rssrs a crm:E55_Type,
 
 spav:vfffv1 a skos:Concept,
         ebucore:VideoFormat ;
+    skos:exactMatch <https://www.loc.gov/preservation/digital/formats/fdd/fdd000341.shtml> ;
     skos:inScheme spav:vf ;
     skos:narrower spav:vfffv1v34 ;
     skos:prefLabel "FFV1"@en ;
-    skos:topConceptOf spav:vf .
-
-spav:vfxd a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:narrower spav:vfxdex ;
-    skos:prefLabel "XDCAM"@en ;
     skos:topConceptOf spav:vf .
 
 spav:vrxrs a crm:E55_Type,
@@ -5140,14 +5130,6 @@ spav:muiim a crm:E55_Type,
         "performance musicale"@fr,
         "perfomance musicale"@it .
 
-spav:vfxdex a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:broader spav:vfxd ;
-    skos:inScheme spav:vf ;
-    skos:narrower spav:vfxdvc,
-        spav:vfxdve ;
-    skos:prefLabel "XDCAM EX"@en .
-
 spav:vrjhq a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch wd:Q15911314 ;
@@ -5379,15 +5361,6 @@ spav:tj a skos:ConceptScheme ;
     skos:hasTopConcept spav:tjeev,
         spav:tjzns ;
     skos:prefLabel "access category"@en .
-
-spav:vfhdv a skos:Concept,
-        ebucore:VideoFormat ;
-    skos:inScheme spav:vf ;
-    skos:narrower spav:vfhdv3,
-        spav:vfhdv5,
-        spav:vfhdv7 ;
-    skos:prefLabel "HDV"@en ;
-    skos:topConceptOf spav:vf .
 
 spav:vriuw a crm:E55_Type,
         skos:Concept ;
@@ -6073,6 +6046,7 @@ spav:cf a skos:ConceptScheme ;
     skos:hasTopConcept spav:cfaif,
         spav:cfavi,
         spav:cfdvf,
+        spav:cfiso9660,
         spav:cfjpg,
         spav:cfmkv,
         spav:cfmov,
@@ -6085,6 +6059,24 @@ spav:cf a skos:ConceptScheme ;
         spav:cfwav,
         spav:cfzip ;
     skos:prefLabel "container format"@en .
+
+spav:vf a skos:ConceptScheme ;
+    rdfs:comment ""@en ;
+    skos:hasTopConcept spav:vfai,
+        spav:vfap,
+        spav:vfavc1,
+        spav:vfdv,
+        spav:vfdvh,
+        spav:vfffv1,
+        spav:vfh263,
+        spav:vfhdv,
+        spav:vficod,
+        spav:vfmjpa,
+        spav:vfmpeg1,
+        spav:vfmpeg2,
+        spav:vfv210,
+        spav:vfxd ;
+    skos:prefLabel "video format"@en .
 
 spav:vr a skos:ConceptScheme ;
     rdfs:comment "form of organisation and general purpose"@en ;
@@ -6121,30 +6113,6 @@ spav:df a skos:ConceptScheme ;
     skos:prefLabel "Formen der Dokumentation"@de,
         "documentary form"@en,
         "forma documentaria"@it .
-
-spav:vf a skos:ConceptScheme ;
-    rdfs:comment ""@en ;
-    skos:hasTopConcept spav:vfai55,
-        spav:vfap,
-        spav:vfavc1,
-        spav:vfdv5p,
-        spav:vfdvcam,
-        spav:vfdvcp,
-        spav:vfdvcpp,
-        spav:vfdvh2,
-        spav:vfdvh5,
-        spav:vfdvhq,
-        spav:vfdvpp,
-        spav:vfdvsd,
-        spav:vfffv1,
-        spav:vfh263,
-        spav:vfhdv,
-        spav:vficod,
-        spav:vfmjpa,
-        spav:vfmpeg2,
-        spav:vfv210,
-        spav:vfxd ;
-    skos:prefLabel "video format"@en .
 
 spav:mu a skos:ConceptScheme ;
     skos:hasTopConcept spav:muawx,
