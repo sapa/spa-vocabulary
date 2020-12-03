@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-12-03T20:00:30.559491+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2020-12-03T20:24:35.624605+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -323,11 +323,22 @@ spav:cfmp4 a dct:FileFormat,
 spav:cfmpps a dct:FileFormat,
         skos:Concept,
         ebucore:ContainerFormat ;
+    skos:altLabel "MPEG program stream"@en ;
     skos:exactMatch wd:Q1363415 ;
     skos:inScheme spav:cf ;
     skos:prefLabel "MPEG-PS"@en ;
     skos:topConceptOf spav:cf ;
     ebucore:hasMimeType "video/MP2P" .
+
+spav:cfmpts a dct:FileFormat,
+        skos:Concept,
+        ebucore:ContainerFormat ;
+    skos:altLabel "MPEG transport stream"@en ;
+    skos:exactMatch wd:Q1194435 ;
+    skos:inScheme spav:cf ;
+    skos:prefLabel "MPEG-TS"@en ;
+    skos:topConceptOf spav:cf ;
+    ebucore:hasMimeType "video/MP2T" .
 
 spav:cfmxf a dct:FileFormat,
         skos:Concept,
@@ -6052,6 +6063,7 @@ spav:cf a skos:ConceptScheme ;
         spav:cfmov,
         spav:cfmp4,
         spav:cfmpps,
+        spav:cfmpts,
         spav:cfmxf,
         spav:cfpdf,
         spav:cfpng,
