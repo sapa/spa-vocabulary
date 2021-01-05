@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2020-12-21T14:04:14.644315+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-05T12:17:00.463844+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -157,6 +157,30 @@ spav:aspcp a crm:E55_Type,
     skos:prefLabel "Sicherungskopie physisch"@de,
         "preservation copy physical"@en,
         "copie de sauvegarde physique"@fr .
+
+spav:blno a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:bl ;
+    skos:prefLabel "nein"@de,
+        "no"@en,
+        "non"@fr ;
+    skos:topConceptOf spav:bl .
+
+spav:blukn a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:bl ;
+    skos:prefLabel "unbekannt"@de,
+        "unknown"@en,
+        "inconnu"@fr ;
+    skos:topConceptOf spav:bl .
+
+spav:blyes a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:bl ;
+    skos:prefLabel "ja"@de,
+        "yes"@en,
+        "oui"@fr ;
+    skos:topConceptOf spav:bl .
 
 spav:bshdt a crm:E55_Type,
         skos:Concept,
@@ -443,6 +467,46 @@ spav:clone a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "one color"@en ;
     skos:topConceptOf spav:cl .
+
+spav:cpno a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cp ;
+    skos:prefLabel "nein"@de,
+        "no"@en,
+        "non"@fr ;
+    skos:topConceptOf spav:cp .
+
+spav:cppnd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cp ;
+    skos:prefLabel "pendent"@de,
+        "pending"@en,
+        "en cours"@fr ;
+    skos:topConceptOf spav:cp .
+
+spav:cpprs a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cp ;
+    skos:prefLabel "Ankauf"@de,
+        "purchase"@en,
+        "achat"@fr ;
+    skos:topConceptOf spav:cp .
+
+spav:cpprt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cp ;
+    skos:prefLabel "partiell"@de,
+        "partial"@en,
+        "partiel"@fr ;
+    skos:topConceptOf spav:cp .
+
+spav:cpyes a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:cp ;
+    skos:prefLabel "ja"@de,
+        "yes"@en,
+        "oui"@fr ;
+    skos:topConceptOf spav:cp .
 
 spav:ctcrt a crm:E55_Type,
         skos:Concept ;
@@ -5811,6 +5875,12 @@ spav:mnyuk a crm:E55_Type,
         "teatro musicale"@it ;
     skos:topConceptOf spav:mn .
 
+spav:bl a skos:ConceptScheme ;
+    skos:hasTopConcept spav:blno,
+        spav:blukn,
+        spav:blyes ;
+    skos:prefLabel "extended boolean"@en .
+
 spav:dq a skos:ConceptScheme ;
     skos:hasTopConcept spav:dqcrc,
         spav:dqdrg,
@@ -6091,6 +6161,16 @@ spav:as a skos:ConceptScheme ;
         spav:asprc ;
     skos:prefLabel "preservation state"@en,
         "Statut de l'archive"@fr .
+
+spav:cp a skos:ConceptScheme ;
+    skos:hasTopConcept spav:cpno,
+        spav:cppnd,
+        spav:cpprs,
+        spav:cpprt,
+        spav:cpyes ;
+    skos:prefLabel "Urheberrechtserklärung"@de,
+        "copyright declaration"@en,
+        "déclaration d'accord"@fr .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
