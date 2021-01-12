@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-05T12:17:00.463844+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-12T19:25:40.513509+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -46,6 +46,22 @@ spav:yy a skos:ConceptScheme ;
 
 spav:zb a skos:ConceptScheme ;
     skos:prefLabel "accrual status"@en .
+
+spav:acpbc a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ac ;
+    skos:prefLabel "öffentlich"@de,
+        "public"@en,
+        "publique"@fr ;
+    skos:topConceptOf spav:ac .
+
+spav:acstf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:ac ;
+    skos:prefLabel "Mitarbeitende"@de,
+        "staff"@en,
+        "collaborateurs"@fr ;
+    skos:topConceptOf spav:ac .
 
 spav:afaac a skos:Concept,
         ebucore:AudioFormat ;
@@ -4146,6 +4162,54 @@ spav:muzua a crm:E55_Type,
         "testo aggiunto"@it ;
     skos:topConceptOf spav:mu .
 
+spav:pmarc a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pm ;
+    skos:prefLabel "Archivar"@de,
+        "archivist"@en,
+        "archiviste"@fr ;
+    skos:topConceptOf spav:pm .
+
+spav:pmnon a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pm ;
+    skos:prefLabel "keine"@de,
+        "none"@en,
+        "aucune"@fr ;
+    skos:topConceptOf spav:pm .
+
+spav:pmprv a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pm ;
+    skos:prefLabel "Provenienz"@de,
+        "provenance"@en,
+        "provenance"@fr ;
+    skos:topConceptOf spav:pm .
+
+spav:punps a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pu ;
+    skos:prefLabel "nicht möglich"@de,
+        "not possible"@en,
+        "impossible"@fr ;
+    skos:topConceptOf spav:pu .
+
+spav:pures a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pu ;
+    skos:prefLabel "eingeschränkt"@de,
+        "restricted"@en,
+        "restreinte"@fr ;
+    skos:topConceptOf spav:pu .
+
+spav:puurs a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pu ;
+    skos:prefLabel "uneingeschränkt"@de,
+        "unrestricted"@en,
+        "sans restriction"@fr ;
+    skos:topConceptOf spav:pu .
+
 spav:rsarc a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:rstyp ;
@@ -4322,6 +4386,20 @@ spav:tjzns a crm:E55_Type,
     skos:inScheme spav:tj ;
     skos:prefLabel "public"@en ;
     skos:topConceptOf spav:tj .
+
+spav:tpeop a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:tp ;
+    skos:prefLabel "Zeitraumende"@de,
+        "end of period"@en ;
+    skos:topConceptOf spav:tp .
+
+spav:tpunk a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:tp ;
+    skos:prefLabel "unbekannt"@de,
+        "unknown"@en ;
+    skos:topConceptOf spav:tp .
 
 spav:vfai a skos:Concept,
         ebucore:VideoFormat ;
@@ -5449,6 +5527,12 @@ spav:vrjhq a crm:E55_Type,
         "associazione"@it ;
     skos:topConceptOf spav:vr .
 
+spav:ac a skos:ConceptScheme ;
+    skos:hasTopConcept spav:acpbc,
+        spav:acstf ;
+    skos:prefLabel "Zugänglichkeit"@de,
+        "accessability"@en .
+
 spav:dfdui a crm:E55_Type,
         skos:Concept,
         rico:DocumentaryFormType ;
@@ -5699,6 +5783,12 @@ spav:tj a skos:ConceptScheme ;
         spav:tjzns ;
     skos:prefLabel "access category"@en .
 
+spav:tp a skos:ConceptScheme ;
+    skos:hasTopConcept spav:tpeop,
+        spav:tpunk ;
+    skos:prefLabel "Schutzfristkategorie"@de,
+        "term of protection"@en .
+
 spav:vriuw a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/4480144-0>,
@@ -5948,6 +6038,20 @@ spav:mnhbj a crm:E55_Type,
         "stage dance"@en,
         "danse de scène"@fr,
         "danza di scena"@it .
+
+spav:pm a skos:ConceptScheme ;
+    skos:hasTopConcept spav:pmarc,
+        spav:pmnon,
+        spav:pmprv ;
+    skos:prefLabel "Bewilligung"@de,
+        "permission"@en .
+
+spav:pu a skos:ConceptScheme ;
+    skos:hasTopConcept spav:punps,
+        spav:pures,
+        spav:puurs ;
+    skos:prefLabel "Physische Benutzbarkeit"@de,
+        "physical usability"@en .
 
 spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
