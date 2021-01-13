@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-12T19:25:40.513509+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-13T19:17:58.968926+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -4210,6 +4210,93 @@ spav:puurs a crm:E55_Type,
         "sans restriction"@fr ;
     skos:topConceptOf spav:pu .
 
+spav:rgcmp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Sammelband"@de,
+        "compilation"@en,
+        "recueil"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgcmt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Werbetrailer"@de,
+        "commercial trailer"@en,
+        "film publicitaire"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgdcf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Dokumentarfilm"@de,
+        "documentary film"@en,
+        "film documentaire"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgdnf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Tanzfilm"@de,
+        "dance film"@en,
+        "film de danse"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgedu a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Lehrfilm"@de,
+        "educational film"@en,
+        "film pédagogique"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgint a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Interview"@de,
+        "interview"@en,
+        "interview"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgprt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Porträt"@de,
+        "portrait"@en,
+        "portrait"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgprv a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Aufnahme aus privatem Umfeld"@de,
+        "private recording"@en ;
+    skos:topConceptOf spav:rg .
+
+spav:rgrhr a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Aufzeichnung Probe"@de,
+        "rehearsal recording"@en,
+        "enregistrement de répétition"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgssr a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Bühnen- und Studioaufzeichnung"@de,
+        "stage or studio recording"@en,
+        "enregistrement sur scène et en studio"@fr ;
+    skos:topConceptOf spav:rg .
+
+spav:rgvdd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Videotanz"@de,
+        "video dance"@en,
+        "vidéo de danse"@fr ;
+    skos:topConceptOf spav:rg .
+
 spav:rsarc a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:rstyp ;
@@ -6497,6 +6584,20 @@ spav:mnnvd a crm:E55_Type,
         "autre"@fr,
         "altro"@it ;
     skos:topConceptOf spav:mn .
+
+spav:rg a skos:ConceptScheme ;
+    skos:hasTopConcept spav:rgcmp,
+        spav:rgcmt,
+        spav:rgdcf,
+        spav:rgdnf,
+        spav:rgedu,
+        spav:rgint,
+        spav:rgprt,
+        spav:rgprv,
+        spav:rgrhr,
+        spav:rgssr,
+        spav:rgvdd ;
+    skos:prefLabel "recording genre"@en .
 
 spav:zj a skos:ConceptScheme ;
     skos:hasTopConcept spav:zjajf,
