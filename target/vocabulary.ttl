@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-13T19:17:58.968926+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-19T17:11:59.169327+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -4289,6 +4289,13 @@ spav:rgssr a crm:E55_Type,
         "enregistrement sur scène et en studio"@fr ;
     skos:topConceptOf spav:rg .
 
+spav:rgtvr a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Fernsehaufzeichnung"@de,
+        "tv recording"@en ;
+    skos:topConceptOf spav:rg .
+
 spav:rgvdd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:rg ;
@@ -6585,20 +6592,6 @@ spav:mnnvd a crm:E55_Type,
         "altro"@it ;
     skos:topConceptOf spav:mn .
 
-spav:rg a skos:ConceptScheme ;
-    skos:hasTopConcept spav:rgcmp,
-        spav:rgcmt,
-        spav:rgdcf,
-        spav:rgdnf,
-        spav:rgedu,
-        spav:rgint,
-        spav:rgprt,
-        spav:rgprv,
-        spav:rgrhr,
-        spav:rgssr,
-        spav:rgvdd ;
-    skos:prefLabel "recording genre"@en .
-
 spav:zj a skos:ConceptScheme ;
     skos:hasTopConcept spav:zjajf,
         spav:zjjoe,
@@ -6610,6 +6603,21 @@ spav:zj a skos:ConceptScheme ;
         spav:zjwcj,
         spav:zjyky ;
     skos:prefLabel "material"@en .
+
+spav:rg a skos:ConceptScheme ;
+    skos:hasTopConcept spav:rgcmp,
+        spav:rgcmt,
+        spav:rgdcf,
+        spav:rgdnf,
+        spav:rgedu,
+        spav:rgint,
+        spav:rgprt,
+        spav:rgprv,
+        spav:rgrhr,
+        spav:rgssr,
+        spav:rgtvr,
+        spav:rgvdd ;
+    skos:prefLabel "recording genre"@en .
 
 spav:cf a skos:ConceptScheme ;
     rdfs:comment ""@en ;
