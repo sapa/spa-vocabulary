@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-19T17:11:59.169327+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-25T21:03:20.334219+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -4162,6 +4162,62 @@ spav:muzua a crm:E55_Type,
         "testo aggiunto"@it ;
     skos:topConceptOf spav:mu .
 
+spav:pkba4 a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Karton A4"@de,
+        "box A4"@en,
+        "carton A4"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkba5 a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Karton A5"@de,
+        "box A5"@en,
+        "carton A5"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkbag a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Karton GF"@de,
+        "box GF"@en,
+        "carton GF"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkbco a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Karton Kostüm und Objekt"@de,
+        "box costume and object"@en,
+        "Carton costume et objet"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkdgf a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Digital Datei"@de,
+        "digital file"@en,
+        "fichier"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkpnt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Gemälde"@de,
+        "painting"@en,
+        "tableau"@fr ;
+    skos:topConceptOf spav:pk .
+
+spav:pkpst a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:pk ;
+    skos:prefLabel "Plakat"@de,
+        "poster"@en,
+        "affiche"@fr ;
+    skos:topConceptOf spav:pk .
+
 spav:pmarc a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:pm ;
@@ -6537,6 +6593,16 @@ spav:dfqot a crm:E55_Type,
         "affiche"@fr,
         "manifesto"@it ;
     skos:topConceptOf spav:df .
+
+spav:pk a skos:ConceptScheme ;
+    skos:hasTopConcept spav:pkba4,
+        spav:pkba5,
+        spav:pkbag,
+        spav:pkbco,
+        spav:pkdgf,
+        spav:pkpnt,
+        spav:pkpst ;
+    skos:prefLabel "packing"@en .
 
 spav:rs a skos:ConceptScheme ;
     skos:hasTopConcept spav:rsitm,
