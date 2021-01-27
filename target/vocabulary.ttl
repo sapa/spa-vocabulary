@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-27T15:44:07.973073+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-27T19:33:58.184079+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -164,7 +164,7 @@ spav:aspcd a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sicherungskopie digital"@de,
         "preservation copy digital"@en,
-        "copie de sauvegarde numérique"@fr .
+        "copie de conservation numérique"@fr .
 
 spav:aspcp a crm:E55_Type,
         skos:Concept ;
@@ -172,7 +172,7 @@ spav:aspcp a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sicherungskopie physisch"@de,
         "preservation copy physical"@en,
-        "copie de sauvegarde physique"@fr .
+        "copie de conservation physique"@fr .
 
 spav:blno a crm:E55_Type,
         skos:Concept ;
@@ -4580,7 +4580,8 @@ spav:tpunk a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tp ;
     skos:prefLabel "unbekannt"@de,
-        "unknown"@en ;
+        "unknown"@en,
+        "inconnu"@fr ;
     skos:topConceptOf spav:tp .
 
 spav:vfai a skos:Concept,
@@ -5465,7 +5466,7 @@ spav:asprc a crm:E55_Type,
         spav:aspcp ;
     skos:prefLabel "Sicherungskopie"@de,
         "preservation copy"@en,
-        "copie de sauvegarde"@fr ;
+        "copie de conservation"@fr ;
     skos:topConceptOf spav:as .
 
 spav:dfeip a crm:E55_Type,
