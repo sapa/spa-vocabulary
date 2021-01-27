@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-25T21:03:20.334219+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-27T11:44:43.350372+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -4306,6 +4306,14 @@ spav:rgedu a crm:E55_Type,
         "film pédagogique"@fr ;
     skos:topConceptOf spav:rg .
 
+spav:rgexp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:rg ;
+    skos:prefLabel "Ausschnitt"@de,
+        "excerpt"@en,
+        "extrait"@fr ;
+    skos:topConceptOf spav:rg .
+
 spav:rgint a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:rg ;
@@ -6676,6 +6684,7 @@ spav:rg a skos:ConceptScheme ;
         spav:rgdcf,
         spav:rgdnf,
         spav:rgedu,
+        spav:rgexp,
         spav:rgint,
         spav:rgprt,
         spav:rgprv,
