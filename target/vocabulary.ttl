@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-27T11:44:43.350372+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-01-27T15:44:07.973073+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
     skos:prefLabel "conditions of use"@en .
@@ -1037,6 +1037,8 @@ spav:dwmkn a crm:E55_Type,
         "palco"@it ;
     skos:topConceptOf spav:dw .
 
+<http://vocab.performing-arts.ch/eo.> skos:narrower spav:eonct .
+
 spav:eoept a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
@@ -1053,6 +1055,28 @@ spav:eokdx a crm:E55_Type,
         "internal note"@en,
         "note interne"@fr,
         "nota interna"@it ;
+    skos:topConceptOf spav:eo .
+
+spav:eonct a crm:E55_Type,
+        skos:Concept ;
+    skos:broader <http://vocab.performing-arts.ch/eo.> ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "Anmerkung zum Kontext"@de,
+        "note on context"@en .
+
+spav:eonms a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "Anmerkung zur Musik"@de,
+        "note on music"@en,
+        "note sur la musique"@fr ;
+    skos:topConceptOf spav:eo .
+
+spav:eonsw a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eo ;
+    skos:prefLabel "Anmerkung zum Bühnenwerk"@de,
+        "note on stage work"@en ;
     skos:topConceptOf spav:eo .
 
 spav:eonvd a crm:E55_Type,
@@ -6138,12 +6162,6 @@ spav:dq a skos:ConceptScheme ;
         "qualificatif de date"@fr,
         "data qualificatore"@it .
 
-spav:eo a skos:ConceptScheme ;
-    skos:hasTopConcept spav:eoept,
-        spav:eokdx,
-        spav:eonvd ;
-    skos:prefLabel "note type"@en .
-
 spav:fvoda a crm:E55_Type,
         premis:StorageMedium,
         skos:Concept,
@@ -6512,6 +6530,14 @@ spav:dflvv a crm:E55_Type,
         "genre de document"@fr,
         "tipo di documento"@it ;
     skos:topConceptOf spav:df .
+
+spav:eo a skos:ConceptScheme ;
+    skos:hasTopConcept spav:eoept,
+        spav:eokdx,
+        spav:eonms,
+        spav:eonsw,
+        spav:eonvd ;
+    skos:prefLabel "note type"@en .
 
 spav:mneyg a crm:E55_Type,
         skos:Concept ;
