@@ -30,13 +30,15 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-01-27T19:33:58.184079+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-02-15T09:58:23.073657+01:00"^^xsd:dateTime .
 
 spav:ha a skos:ConceptScheme ;
-    skos:prefLabel "conditions of use"@en .
+    skos:prefLabel "conditions of use"@en,
+        "condition d'utiisation"@fr .
 
 spav:sz a skos:ConceptScheme ;
-    skos:prefLabel "conditions of access"@en .
+    skos:prefLabel "conditions of access"@en,
+        "condition d'accès"@fr .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -446,14 +448,16 @@ spav:clblw a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/blw> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "black and white"@en ;
+    skos:prefLabel "black and white"@en,
+        "noir et blanc"@fr ;
     skos:topConceptOf spav:cl .
 
 spav:clgry a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/gry> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "gray scale"@en ;
+    skos:prefLabel "gray scale"@en,
+        "niveau de gris"@fr ;
     skos:topConceptOf spav:cl .
 
 spav:clhnd a crm:E55_Type,
@@ -474,7 +478,8 @@ spav:clmul a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/mul> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "color"@en ;
+    skos:prefLabel "color"@en,
+        "couleur"@fr ;
     skos:topConceptOf spav:cl .
 
 spav:clone a crm:E55_Type,
@@ -1033,7 +1038,7 @@ spav:dwmkn a crm:E55_Type,
     skos:inScheme spav:dw ;
     skos:prefLabel "Bühne"@de,
         "venue"@en,
-        "étape"@fr,
+        "lieu de représentation"@fr,
         "palco"@it ;
     skos:topConceptOf spav:dw .
 
@@ -1062,7 +1067,8 @@ spav:eonct a crm:E55_Type,
     skos:broader <http://vocab.performing-arts.ch/eo.> ;
     skos:inScheme spav:eo ;
     skos:prefLabel "Anmerkung zum Kontext"@de,
-        "note on context"@en .
+        "note on context"@en,
+        "note sur le contexte"@fr .
 
 spav:eonms a crm:E55_Type,
         skos:Concept ;
@@ -1076,7 +1082,8 @@ spav:eonsw a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
     skos:prefLabel "Anmerkung zum Bühnenwerk"@de,
-        "note on stage work"@en ;
+        "note on stage work"@en,
+        "note sur le travail scénique"@fr ;
     skos:topConceptOf spav:eo .
 
 spav:eonvd a crm:E55_Type,
@@ -1145,6 +1152,42 @@ spav:etpur a crm:E55_Type,
     skos:prefLabel "Ankauf"@de,
         "purchase"@en,
         "achat"@fr .
+
+spav:eubox a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "boxes"@en ;
+    skos:topConceptOf spav:eu .
+
+spav:euenv a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "envelopes"@en ;
+    skos:topConceptOf spav:eu .
+
+spav:eugen a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "generic"@en ;
+    skos:topConceptOf spav:eu .
+
+spav:eulnm a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "linear meters"@en ;
+    skos:topConceptOf spav:eu .
+
+spav:eupcs a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "pieces"@en ;
+    skos:topConceptOf spav:eu .
+
+spav:euwgt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "weight"@en ;
+    skos:topConceptOf spav:eu .
 
 spav:frabo a crm:E55_Type,
         skos:Concept,
@@ -1695,17 +1738,6 @@ spav:fvodg a crm:E55_Type,
         "DVD-Audio"@fr,
         "DVD-Audio"@it .
 
-spav:fvonl a crm:E55_Type,
-        premis:StorageMedium,
-        skos:Concept,
-        rico:CarrierType ;
-    skos:broader spav:fvdgf ;
-    skos:inScheme spav:fv ;
-    skos:prefLabel "online"@de,
-        "online"@en,
-        "online"@fr,
-        "online"@it .
-
 spav:fvpco a crm:E55_Type,
         premis:StorageMedium,
         skos:Concept,
@@ -1816,6 +1848,17 @@ spav:fvtfa a crm:E55_Type,
         "open reel audiotape"@en,
         "bande audio sur bobine"@fr,
         "registrazione a bobina aperta"@it .
+
+spav:fvtif a crm:E55_Type,
+        premis:StorageMedium,
+        skos:Concept,
+        rico:CarrierType ;
+    skos:broader spav:fvonl ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "IIIF"@de,
+        "IIIF"@en,
+        "IIIF"@fr,
+        "IIIF"@it .
 
 spav:fvuhk a crm:E55_Type,
         premis:StorageMedium,
@@ -3799,7 +3842,7 @@ spav:muecs a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Kostümentwurf"@de,
         "costume design"@en,
-        "conception de costume"@fr,
+        "conception costume"@fr,
         "design costumi"@it .
 
 spav:mufbo a crm:E55_Type,
@@ -4012,7 +4055,7 @@ spav:munib a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Schauspiel"@de,
         "acting"@en,
-        "jeu d'acteur"@fr,
+        "interprète"@fr,
         "recitazione"@it .
 
 spav:munuj a crm:E55_Type,
@@ -4358,7 +4401,8 @@ spav:rgprv a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:rg ;
     skos:prefLabel "Aufnahme aus privatem Umfeld"@de,
-        "private recording"@en ;
+        "private recording"@en,
+        "enregistrement privé"@fr ;
     skos:topConceptOf spav:rg .
 
 spav:rgrhr a crm:E55_Type,
@@ -4381,7 +4425,8 @@ spav:rgtvr a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:rg ;
     skos:prefLabel "Fernsehaufzeichnung"@de,
-        "tv recording"@en ;
+        "tv recording"@en,
+        "enregistrement TV"@fr ;
     skos:topConceptOf spav:rg .
 
 spav:rgvdd a crm:E55_Type,
@@ -4560,20 +4605,23 @@ spav:stwkp a crm:E55_Type,
 spav:tjeev a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tj ;
-    skos:prefLabel "staff only"@en ;
+    skos:prefLabel "staff only"@en,
+        "interne"@fr ;
     skos:topConceptOf spav:tj .
 
 spav:tjzns a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tj ;
-    skos:prefLabel "public"@en ;
+    skos:prefLabel "public"@en,
+        "public"@fr ;
     skos:topConceptOf spav:tj .
 
 spav:tpeop a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tp ;
     skos:prefLabel "Zeitraumende"@de,
-        "end of period"@en ;
+        "end of period"@en,
+        "fin de période"@fr ;
     skos:topConceptOf spav:tp .
 
 spav:tpunk a crm:E55_Type,
@@ -5243,6 +5291,18 @@ spav:fvlkh a crm:E55_Type,
         "CD"@fr,
         "CD"@it .
 
+spav:fvonl a crm:E55_Type,
+        premis:StorageMedium,
+        skos:Concept,
+        rico:CarrierType ;
+    skos:broader spav:fvdgf ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fvtif ;
+    skos:prefLabel "online"@de,
+        "online"@en,
+        "online"@fr,
+        "online"@it .
+
 spav:fvqpw a crm:E55_Type,
         premis:StorageMedium,
         skos:Concept,
@@ -5311,7 +5371,7 @@ spav:mueeb a crm:E55_Type,
     skos:narrower spav:mujig ;
     skos:prefLabel "Aufnahme"@de,
         "recording"@en,
-        "enregitrement"@fr,
+        "enregistrement"@fr,
         "registrazione"@it ;
     skos:topConceptOf spav:mu .
 
@@ -5714,7 +5774,8 @@ spav:ac a skos:ConceptScheme ;
     skos:hasTopConcept spav:acpbc,
         spav:acstf ;
     skos:prefLabel "Zugänglichkeit"@de,
-        "accessability"@en .
+        "accessability"@en,
+        "accessibilité"@fr .
 
 spav:dfdui a crm:E55_Type,
         skos:Concept,
@@ -5970,7 +6031,8 @@ spav:tp a skos:ConceptScheme ;
     skos:hasTopConcept spav:tpeop,
         spav:tpunk ;
     skos:prefLabel "Schutzfristkategorie"@de,
-        "term of protection"@en .
+        "term of protection"@en,
+        "durée de protection"@fr .
 
 spav:vriuw a crm:E55_Type,
         skos:Concept ;
@@ -6160,7 +6222,7 @@ spav:dq a skos:ConceptScheme ;
         spav:dqext ;
     skos:prefLabel "Datumskennzeichen"@de,
         "date qualifier"@en,
-        "qualificatif de date"@fr,
+        "indicateur de date"@fr,
         "data qualificatore"@it .
 
 spav:fvoda a crm:E55_Type,
@@ -6183,7 +6245,8 @@ spav:kn a skos:ConceptScheme ;
     skos:hasTopConcept spav:knept,
         spav:knnvd,
         spav:knsiw ;
-    skos:prefLabel "gender"@en .
+    skos:prefLabel "gender"@en,
+        "genre"@fr .
 
 spav:mnggs a crm:E55_Type,
         skos:Concept ;
@@ -6221,20 +6284,23 @@ spav:pm a skos:ConceptScheme ;
         spav:pmnon,
         spav:pmprv ;
     skos:prefLabel "Bewilligung"@de,
-        "permission"@en .
+        "permission"@en,
+        "autorisation"@fr .
 
 spav:pu a skos:ConceptScheme ;
     skos:hasTopConcept spav:punps,
         spav:pures,
         spav:puurs ;
     skos:prefLabel "Physische Benutzbarkeit"@de,
-        "physical usability"@en .
+        "physical usability"@en,
+        "consultabilité physique"@fr .
 
 spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
         spav:wamim,
         spav:wayst ;
-    skos:prefLabel "identifier"@en .
+    skos:prefLabel "identifier"@en,
+        "identification"@fr .
 
 spav:etmoc a crm:E55_Type,
         skos:Concept,
@@ -6304,7 +6370,8 @@ spav:bs a skos:ConceptScheme ;
         spav:bsnts,
         spav:bspal,
         spav:bsscm ;
-    skos:prefLabel "broadcast standard"@en .
+    skos:prefLabel "broadcast standard"@en,
+        "norme de diffusion"@fr .
 
 spav:cd a skos:ConceptScheme ;
     skos:hasTopConcept spav:cdict,
@@ -6312,7 +6379,8 @@ spav:cd a skos:ConceptScheme ;
         spav:cdsdg,
         spav:cdunk ;
     skos:prefLabel "Zustand"@de,
-        "condition"@en .
+        "condition"@en,
+        "état"@fr .
 
 spav:ct a skos:ConceptScheme ;
     skos:hasTopConcept spav:ctcrt,
@@ -6327,7 +6395,8 @@ spav:ct a skos:ConceptScheme ;
 spav:et a skos:ConceptScheme ;
     skos:hasTopConcept spav:etmoc ;
     skos:prefLabel "Ergeignisart"@de,
-        "event type"@en .
+        "event type"@en,
+        "type d'entrée"@fr .
 
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
@@ -6461,7 +6530,7 @@ spav:go a skos:ConceptScheme ;
         spav:gowgn ;
     skos:prefLabel "Titelart"@de,
         "title type"@en,
-        "titre"@fr,
+        "type de titre"@fr,
         "titolo"@it .
 
 spav:mulga a crm:E55_Type,
@@ -6538,7 +6607,8 @@ spav:eo a skos:ConceptScheme ;
         spav:eonms,
         spav:eonsw,
         spav:eonvd ;
-    skos:prefLabel "note type"@en .
+    skos:prefLabel "note type"@en,
+        "type de note"@fr .
 
 spav:mneyg a crm:E55_Type,
         skos:Concept ;
@@ -6568,7 +6638,8 @@ spav:mneyg a crm:E55_Type,
 
 spav:ya a skos:ConceptScheme ;
     skos:hasTopConcept spav:yakdx ;
-    skos:prefLabel "appellation"@en .
+    skos:prefLabel "appellation"@en,
+        "appellation"@fr .
 
 spav:cl a skos:ConceptScheme ;
     skos:altLabel "colour content"@en ;
@@ -6578,7 +6649,17 @@ spav:cl a skos:ConceptScheme ;
         spav:clmix,
         spav:clmul,
         spav:clone ;
-    skos:prefLabel "color content"@en .
+    skos:prefLabel "color content"@en,
+        "couleur"@fr .
+
+spav:eu a skos:ConceptScheme ;
+    skos:hasTopConcept spav:eubox,
+        spav:euenv,
+        spav:eugen,
+        spav:eulnm,
+        spav:eupcs,
+        spav:euwgt ;
+    skos:prefLabel "extent unit"@en .
 
 spav:fverx a crm:E55_Type,
         premis:StorageMedium,
@@ -6637,7 +6718,8 @@ spav:pk a skos:ConceptScheme ;
         spav:pkdgf,
         spav:pkpnt,
         spav:pkpst ;
-    skos:prefLabel "packing"@en .
+    skos:prefLabel "packing"@en,
+        "conditionnement"@fr .
 
 spav:rs a skos:ConceptScheme ;
     skos:hasTopConcept spav:rsitm,
@@ -6653,6 +6735,7 @@ spav:fr a skos:ConceptScheme ;
         spav:froqj ;
     skos:prefLabel "Produktionstechnik"@de,
         "production technique"@en,
+        "technique de production"@fr,
         "produzione tecnica"@it .
 
 spav:hl a skos:ConceptScheme ;
@@ -6703,7 +6786,8 @@ spav:zj a skos:ConceptScheme ;
         spav:zjvpd,
         spav:zjwcj,
         spav:zjyky ;
-    skos:prefLabel "material"@en .
+    skos:prefLabel "material"@en,
+        "matériaux"@fr .
 
 spav:rg a skos:ConceptScheme ;
     skos:hasTopConcept spav:rgcmp,
@@ -6719,7 +6803,8 @@ spav:rg a skos:ConceptScheme ;
         spav:rgssr,
         spav:rgtvr,
         spav:rgvdd ;
-    skos:prefLabel "recording genre"@en .
+    skos:prefLabel "recording genre"@en,
+        "genre d'enregistrement"@fr .
 
 spav:cf a skos:ConceptScheme ;
     rdfs:comment ""@en ;
