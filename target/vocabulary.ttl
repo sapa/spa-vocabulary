@@ -30,15 +30,11 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-02-15T09:58:23.073657+01:00"^^xsd:dateTime .
-
-spav:ha a skos:ConceptScheme ;
-    skos:prefLabel "conditions of use"@en,
-        "condition d'utiisation"@fr .
+    prov:generatedAtTime "2021-03-02T19:15:14.849816+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
-        "condition d'accès"@fr .
+        "condition d’accès"@fr .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -676,7 +672,7 @@ spav:dfeov a crm:E55_Type,
     skos:inScheme spav:df ;
     skos:prefLabel "Kunstplakat"@de,
         "art poster"@en,
-        "affiche d'art"@fr,
+        "affiche d’art"@fr,
         "Poster artistico"@it .
 
 spav:dffci a crm:E55_Type,
@@ -718,7 +714,7 @@ spav:dfgei a crm:E55_Type,
     skos:inScheme spav:df ;
     skos:prefLabel "Ölgemälde"@de,
         "oil painting"@en,
-        "peinture à l'huile"@fr,
+        "peinture à l’huile"@fr,
         "pittura a olio"@it .
 
 spav:dfhdo a crm:E55_Type,
@@ -749,7 +745,7 @@ spav:dfhwk a crm:E55_Type,
     skos:inScheme spav:df ;
     skos:prefLabel "Ausstellungsplakat"@de,
         "exhibition poster"@en,
-        "affiche d'exposition"@fr,
+        "affiche d’exposition"@fr,
         "Poster della mostra"@it .
 
 spav:dfjdc a crm:E55_Type,
@@ -816,7 +812,7 @@ spav:dfnrv a crm:E55_Type,
     skos:prefLabel "Veranstaltungsplakat"@de,
         "event poster"@en,
         "affiche de manifestation"@fr,
-        "poster dell'evento"@it .
+        "poster dell’evento"@it .
 
 spav:dfoff a crm:E55_Type,
         skos:Concept,
@@ -1112,7 +1108,7 @@ spav:etcpa a crm:E55_Type,
     skos:inScheme spav:et ;
     skos:prefLabel "Kopie erstellt durch Archiv"@de,
         "copy created by archive"@en,
-        "copie créée par l'archive"@fr .
+        "copie créée par l’archive"@fr .
 
 spav:etdon a crm:E55_Type,
         skos:Concept,
@@ -1291,7 +1287,7 @@ spav:frkub a crm:E55_Type,
     skos:inScheme spav:fr ;
     skos:prefLabel "Tintenstrahldruck"@de,
         "inkjet print"@en,
-        "impression jet d'encre"@fr,
+        "impression jet d’encre"@fr,
         "stampa a inchiostro"@it .
 
 spav:froqj a crm:E55_Type,
@@ -2107,7 +2103,7 @@ spav:gotlb a crm:E55_Type,
 
 spav:gowgn a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "titolo dell'opera"@it ;
+    skos:altLabel "titolo dell’opera"@it ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417228> ;
     skos:inScheme spav:go ;
     skos:prefLabel "Arbeitstitel"@de,
@@ -3005,7 +3001,7 @@ spav:mnanz a crm:E55_Type,
     skos:altLabel "Agit-Prop-Theater"@de,
         "Propagandistisches Theater"@de,
         "agitprop-theatre"@en,
-        "théâtre d'agitprop"@fr,
+        "théâtre d’agitprop"@fr,
         "teatro agit-prop"@it,
         "teatro di propaganda"@it ;
     skos:broader spav:mneyg ;
@@ -3222,7 +3218,7 @@ spav:mnfwa a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Ausdruckstanz"@de,
         "expressionist dance"@en,
-        "danse d'expression"@fr,
+        "danse d’expression"@fr,
         "danza espressionista"@it .
 
 spav:mnhaf a crm:E55_Type,
@@ -3321,8 +3317,8 @@ spav:mnjiw a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Absurdes Theater"@de,
         "theatre of the absurd"@en,
-        "théâtre de l'absurde"@fr,
-        "teatro dell'assurdo"@it .
+        "théâtre de l’absurde"@fr,
+        "teatro dell’assurdo"@it .
 
 spav:mnjva a crm:E55_Type,
         skos:Concept ;
@@ -3489,10 +3485,10 @@ spav:mnorx a crm:E55_Type,
         <http://vocab.getty.edu/aat/300055912>,
         wd:Q191890 ;
     skos:inScheme spav:mn ;
-    skos:prefLabel "Commedia dell'arte"@de,
-        "Commedia dell'arte"@en,
-        "Commedia dell'arte"@fr,
-        "Commedia dell'arte"@it .
+    skos:prefLabel "Commedia dell’arte"@de,
+        "Commedia dell’arte"@en,
+        "Commedia dell’arte"@fr,
+        "Commedia dell’arte"@it .
 
 spav:mnppw a crm:E55_Type,
         skos:Concept ;
@@ -3682,7 +3678,7 @@ spav:mnygb a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Theater der Unterdrückten"@de,
         "theatre of the oppressed"@en,
-        "teatro dell' oppresso"@it ;
+        "teatro dell’ oppresso"@it ;
     skos:broader spav:mnnvd ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Forumtheater"@de,
@@ -3697,7 +3693,7 @@ spav:mnyhs a crm:E55_Type,
     skos:prefLabel "Freilichttheater"@de,
         "open-air theatre"@en,
         "théâtre en plein air"@fr,
-        "teatro all'aperto"@it .
+        "teatro all’aperto"@it .
 
 spav:mnyng a crm:E55_Type,
         skos:Concept ;
@@ -3714,8 +3710,8 @@ spav:mnzgv a crm:E55_Type,
     skos:inScheme spav:mn ;
     skos:prefLabel "Objekttheater"@de,
         "object theatre"@en,
-        "théâtre d'objet"@fr,
-        "teatro d'oggetti"@it .
+        "théâtre d’objet"@fr,
+        "teatro d’oggetti"@it .
 
 spav:mnzgw a crm:E55_Type,
         skos:Concept ;
@@ -4116,7 +4112,7 @@ spav:muqjb a crm:E55_Type,
     skos:exactMatch eclap:scenographer ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Bühnenbild"@de,
-        "scenographery"@en,
+        "scenography"@en,
         "scénographie"@fr,
         "scenografia"@it .
 
@@ -4632,6 +4628,34 @@ spav:tpunk a crm:E55_Type,
         "inconnu"@fr ;
     skos:topConceptOf spav:tp .
 
+spav:vddrp a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Dropouts"@de,
+        "dropouts"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vddrt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Schmutz"@de,
+        "dirt"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdhst a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "horiz. Störstreifen"@de,
+        "horizontal stripes"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdtrt a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "zerrissenes Band"@de,
+        "torn tape"@en ;
+    skos:topConceptOf spav:vd .
+
 spav:vfai a skos:Concept,
         ebucore:VideoFormat ;
     skos:altLabel "AVC-Ultra"@en ;
@@ -4783,7 +4807,7 @@ spav:vrbyg a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Künstleragentur"@de,
         "artist agency"@en,
-        "agence d'artistes"@fr,
+        "agence d’artistes"@fr,
         "agenzia di artisti"@it .
 
 spav:vrctx a crm:E55_Type,
@@ -4812,7 +4836,7 @@ spav:vrfcm a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Gastspielhaus"@de,
         "guest performance host"@en,
-        "Théâtre d'accueil"@fr,
+        "Théâtre d’accueil"@fr,
         "teatro ospitante"@it .
 
 spav:vrggs a crm:E55_Type,
@@ -4933,7 +4957,7 @@ spav:vrorh a crm:E55_Type,
     skos:inScheme spav:vr ;
     skos:prefLabel "Verlag"@de,
         "publisher"@en,
-        "maison d'édition"@fr,
+        "maison d’édition"@fr,
         "casa editrice"@it ;
     skos:topConceptOf spav:vr .
 
@@ -4999,7 +5023,7 @@ spav:yaajh a crm:E55_Type,
     skos:altLabel "Bühnenname"@de,
         "Künstlername"@de,
         "stage name"@en,
-        "nome d'arte"@it ;
+        "nome d’arte"@it ;
     skos:broader spav:yakdx ;
     skos:exactMatch <http://vocab.getty.edu/aat/300404657> ;
     skos:inScheme spav:ya ;
@@ -5073,7 +5097,7 @@ spav:yatcx a crm:E55_Type,
     skos:inScheme spav:ya ;
     skos:prefLabel "Gebräuchlicher Name"@de,
         "common name"@en,
-        "nom d'usage"@fr,
+        "nom d’usage"@fr,
         "nome comunemente usato"@it .
 
 spav:yauzw a crm:E55_Type,
@@ -5393,8 +5417,8 @@ spav:muqfg a crm:E55_Type,
     skos:narrower spav:mufcc ;
     skos:prefLabel "Dirigent"@de,
         "conductor"@en,
-        "chef d'orchestre"@fr,
-        "direttore d'orchestra"@it ;
+        "chef d’orchestre"@fr,
+        "direttore d’orchestra"@it ;
     skos:topConceptOf spav:mu .
 
 spav:mutnt a crm:E55_Type,
@@ -5412,7 +5436,7 @@ spav:mutnt a crm:E55_Type,
 
 spav:rsfnd a crm:E55_Type,
         skos:Concept ;
-    rdfs:comment "\"The whole of the records, regardless of form or medium, organically created and/or accumulated and used by a particular person, family, or corporate body in the course of that creator's activities and functions.\" (ISAD-G, 2nd ed.)"@en ;
+    rdfs:comment "\"The whole of the records, regardless of form or medium, organically created and/or accumulated and used by a particular person, family, or corporate body in the course of that creator’s activities and functions.\" (ISAD-G, 2nd ed.)"@en ;
     skos:broader spav:rstyp ;
     skos:exactMatch wd:Q3052382,
         ric-rst:Fonds ;
@@ -5973,7 +5997,7 @@ spav:mnxrs a crm:E55_Type,
     skos:prefLabel "Avantgardetheater"@de,
         "avant-garde theatre"@en,
         "théâtre avant-gardiste"@fr,
-        "teatro d'avanguardia"@it .
+        "teatro d’avanguardia"@it .
 
 spav:muiuk a crm:E55_Type,
         skos:Concept ;
@@ -6315,7 +6339,7 @@ spav:etmoc a crm:E55_Type,
         spav:etpur ;
     skos:prefLabel "Eingangsart"@de,
         "methods of acquisition"@en,
-        "type d'acquisition"@fr ;
+        "type d’acquisition"@fr ;
     skos:topConceptOf spav:et .
 
 spav:hlamu a crm:E55_Type,
@@ -6396,7 +6420,7 @@ spav:et a skos:ConceptScheme ;
     skos:hasTopConcept spav:etmoc ;
     skos:prefLabel "Ergeignisart"@de,
         "event type"@en,
-        "type d'entrée"@fr .
+        "type d’entrée"@fr .
 
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
@@ -6407,6 +6431,14 @@ spav:ih a skos:ConceptScheme ;
         "contact point"@en,
         "contact"@fr,
         "contatto"@it .
+
+spav:vd a skos:ConceptScheme ;
+    skos:hasTopConcept spav:vddrp,
+        spav:vddrt,
+        spav:vdhst,
+        spav:vdtrt ;
+    skos:prefLabel "Video-Schaden"@de,
+        "video damage"@en .
 
 spav:frgzf a crm:E55_Type,
         skos:Concept,
@@ -6510,7 +6542,7 @@ spav:as a skos:ConceptScheme ;
         spav:asdsp,
         spav:asprc ;
     skos:prefLabel "preservation state"@en,
-        "Statut de l'archive"@fr .
+        "Statut de l’archive"@fr .
 
 spav:cp a skos:ConceptScheme ;
     skos:hasTopConcept spav:cpno,
@@ -6520,7 +6552,7 @@ spav:cp a skos:ConceptScheme ;
         spav:cpyes ;
     skos:prefLabel "Urheberrechtserklärung"@de,
         "copyright declaration"@en,
-        "déclaration d'accord"@fr .
+        "déclaration d’accord"@fr .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
@@ -6804,7 +6836,7 @@ spav:rg a skos:ConceptScheme ;
         spav:rgtvr,
         spav:rgvdd ;
     skos:prefLabel "recording genre"@en,
-        "genre d'enregistrement"@fr .
+        "genre d’enregistrement"@fr .
 
 spav:cf a skos:ConceptScheme ;
     rdfs:comment ""@en ;
@@ -6909,7 +6941,7 @@ spav:mu a skos:ConceptScheme ;
         spav:muyql,
         spav:muzua ;
     skos:prefLabel "activity type"@en,
-        "type d'activités"@fr .
+        "type d’activités"@fr .
 
 spav:mn a skos:ConceptScheme ;
     skos:hasTopConcept spav:mnbhp,
