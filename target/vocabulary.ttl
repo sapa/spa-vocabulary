@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-02T19:15:14.849816+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-02T19:42:26.889674+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -4628,6 +4628,20 @@ spav:tpunk a crm:E55_Type,
         "inconnu"@fr ;
     skos:topConceptOf spav:tp .
 
+spav:vdbad a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Blockartefakten (digital)"@de,
+        "block artifacts (digital)"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdcld a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Farbstörungen"@de,
+        "color disturbances"@en ;
+    skos:topConceptOf spav:vd .
+
 spav:vddrp a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
@@ -4647,6 +4661,34 @@ spav:vdhst a crm:E55_Type,
     skos:inScheme spav:vd ;
     skos:prefLabel "horiz. Störstreifen"@de,
         "horizontal stripes"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdimn a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Bildrauschen"@de,
+        "image noise"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vditw a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Unregelmässiges Bandwickel"@de,
+        "irregular tape wrap"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdsnd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Tonsstörungen"@de,
+        "sound disturbances"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdtpc a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Bandknitter"@de,
+        "tape crinklers"@en ;
     skos:topConceptOf spav:vd .
 
 spav:vdtrt a crm:E55_Type,
@@ -6432,14 +6474,6 @@ spav:ih a skos:ConceptScheme ;
         "contact"@fr,
         "contatto"@it .
 
-spav:vd a skos:ConceptScheme ;
-    skos:hasTopConcept spav:vddrp,
-        spav:vddrt,
-        spav:vdhst,
-        spav:vdtrt ;
-    skos:prefLabel "Video-Schaden"@de,
-        "video damage"@en .
-
 spav:frgzf a crm:E55_Type,
         skos:Concept,
         rico:ProductionTechniqueType ;
@@ -6807,6 +6841,20 @@ spav:mnnvd a crm:E55_Type,
         "autre"@fr,
         "altro"@it ;
     skos:topConceptOf spav:mn .
+
+spav:vd a skos:ConceptScheme ;
+    skos:hasTopConcept spav:vdbad,
+        spav:vdcld,
+        spav:vddrp,
+        spav:vddrt,
+        spav:vdhst,
+        spav:vdimn,
+        spav:vditw,
+        spav:vdsnd,
+        spav:vdtpc,
+        spav:vdtrt ;
+    skos:prefLabel "Video-Schaden"@de,
+        "video damage"@en .
 
 spav:zj a skos:ConceptScheme ;
     skos:hasTopConcept spav:zjajf,
