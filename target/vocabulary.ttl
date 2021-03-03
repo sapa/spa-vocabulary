@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-03T16:00:07.440759+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-03T16:04:01.617135+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -1315,8 +1315,8 @@ spav:froqj a crm:E55_Type,
 spav:frvrj a crm:E55_Type,
         skos:Concept,
         rico:ProductionTechniqueType ;
-    skos:altLabel " bitumen process"@en,
-        "Niépceotype"@en ;
+    skos:altLabel "Niépceotype"@en,
+        "bitumen process"@en ;
     skos:broader spav:frbyr ;
     skos:exactMatch <http://vocab.getty.edu/aat/300133322> ;
     skos:inScheme spav:fr ;
@@ -1760,7 +1760,7 @@ spav:fvpln a crm:E55_Type,
         premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
-    skos:altLabel " CAC"@en,
+    skos:altLabel "CAC"@en,
         "Compact Audio Cassette"@en ;
     skos:broader spav:fvzxp ;
     skos:inScheme spav:fv ;
@@ -3008,11 +3008,11 @@ spav:lgzza a crm:E55_Type,
 
 spav:mnanz a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Agit-Prop-Theater"@de,
+    skos:altLabel "Agit-Prop-Theater"@de,
         "Propagandistisches Theater"@de,
         "agitprop-theatre"@en,
         "théâtre d’agitprop"@fr,
-        " teatro agit-prop"@it,
+        "teatro agit-prop"@it,
         "teatro di propaganda"@it ;
     skos:broader spav:mneyg ;
     skos:exactMatch wd:Q442725 ;
@@ -3089,8 +3089,8 @@ spav:mnbhp a crm:E55_Type,
 
 spav:mnbiq a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " teatro dei pupazzi a bacchetta"@it,
-        "teatro dei burattini a stecca"@it ;
+    skos:altLabel "teatro dei burattini a stecca"@it,
+        "teatro dei pupazzi a bacchetta"@it ;
     skos:broader spav:mnuzw ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Stabpuppentheater"@de,
@@ -3111,19 +3111,19 @@ spav:mnbjn a crm:E55_Type,
 
 spav:mnbxj a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Passionsspiel"@de,
-        " Totentanz"@de,
-        "Osterspiel"@de,
+    skos:altLabel "Osterspiel"@de,
+        "Passionsspiel"@de,
+        "Totentanz"@de,
         "miracle play"@en,
-        " danse macabre"@fr,
-        " mystère de la Passion"@fr,
+        "danse macabre"@fr,
         "mystère de Pâques"@fr,
-        " mistero della Passione"@it,
-        "mistero della Pasqua"@it ;
+        "mystère de la Passion"@fr,
+        "mistero della Pasqua"@it,
+        "mistero della Passione"@it ;
     skos:broader spav:mnnvd ;
-    skos:hiddenLabel " danse macabre"@en,
-        " passion play"@en,
-        "easter drama"@en ;
+    skos:hiddenLabel "danse macabre"@en,
+        "easter drama"@en,
+        "passion play"@en ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Mysterienspiel"@de,
         "mystery play"@en,
@@ -3210,10 +3210,10 @@ spav:mneoj a crm:E55_Type,
 
 spav:mnfey a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " teatro delle marotte"@it,
-        " teatro di burattini a bastone"@it,
-        " teatro di pupazzi a bastone"@it,
-        "teatro dei burattini a bastone"@it ;
+    skos:altLabel "teatro dei burattini a bastone"@it,
+        "teatro delle marotte"@it,
+        "teatro di burattini a bastone"@it,
+        "teatro di pupazzi a bastone"@it ;
     skos:broader spav:mnuzw ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Stockpuppentheater"@de,
@@ -3244,7 +3244,7 @@ spav:mnhaf a crm:E55_Type,
 
 spav:mnhgz a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Kasperlitheater"@de,
+    skos:altLabel "Kasperlitheater"@de,
         "Kasperltheater"@de ;
     skos:broader spav:mnuzw ;
     skos:inScheme spav:mn ;
@@ -3285,14 +3285,14 @@ spav:mniqe a crm:E55_Type,
 
 spav:mniuw a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Dada-Theater"@de,
-        " Dadaistisches Theater"@de,
-        "Dada"@de,
-        " dada-theatre"@en,
+    skos:altLabel "Dada"@de,
+        "Dada-Theater"@de,
+        "Dadaistisches Theater"@de,
         "dada"@en,
+        "dada-theatre"@en,
         "dada, dada-théâtre"@fr,
-        " dadaista"@it,
-        "dada"@it ;
+        "dada"@it,
+        "dadaista"@it ;
     skos:broader spav:mnxrs ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Dadaismus"@de,
@@ -3366,7 +3366,7 @@ spav:mnjzh a crm:E55_Type,
 
 spav:mnkht a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " model theatre"@en,
+    skos:altLabel "model theatre"@en,
         "paper theatre"@en ;
     skos:broader spav:mndvh ;
     skos:inScheme spav:mn ;
@@ -3530,20 +3530,20 @@ spav:mnqqk a crm:E55_Type,
 
 spav:mnseo a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Einakter"@de,
-        " Mikrodrama"@de,
-        " Monolog"@de,
-        "Dramolett"@de,
-        " microdama"@en,
-        " monologue"@en,
-        " one-act play"@en,
+    skos:altLabel "Dramolett"@de,
+        "Einakter"@de,
+        "Mikrodrama"@de,
+        "Monolog"@de,
         "dramolet"@en,
-        " monologue"@fr,
-        " pièce en un acte"@fr,
+        "microdama"@en,
+        "monologue"@en,
+        "one-act play"@en,
         "micro-drame"@fr,
-        " dramoletto"@it,
-        " monologo"@it,
-        "micro-dramma"@it ;
+        "monologue"@fr,
+        "pièce en un acte"@fr,
+        "dramoletto"@it,
+        "micro-dramma"@it,
+        "monologo"@it ;
     skos:broader spav:mneyg ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Minidrama"@de,
@@ -3563,11 +3563,11 @@ spav:mnsjj a crm:E55_Type,
 
 spav:mntcq a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Clownerie"@de,
-        " Jonglage"@de,
-        "Artistik"@de,
-        " clownerie"@it,
-        " giocoleria"@it,
+    skos:altLabel "Artistik"@de,
+        "Clownerie"@de,
+        "Jonglage"@de,
+        "clownerie"@it,
+        "giocoleria"@it,
         "varietà"@it ;
     skos:broader spav:mnubc ;
     skos:inScheme spav:mn ;
@@ -3589,8 +3589,8 @@ spav:mntin a crm:E55_Type,
 
 spav:mntjx a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " teatro di marionette"@it,
-        "teatro dei pupi"@it ;
+    skos:altLabel "teatro dei pupi"@it,
+        "teatro di marionette"@it ;
     skos:broader spav:mnuzw ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Marionettentheater"@de,
@@ -3620,9 +3620,9 @@ spav:mnusm a crm:E55_Type,
 
 spav:mnuyk a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " teatro di burattini a dita"@it,
-        " teatro di burattini a dito"@it,
-        "teatro dei burattini a dita"@it ;
+    skos:altLabel "teatro dei burattini a dita"@it,
+        "teatro di burattini a dita"@it,
+        "teatro di burattini a dito"@it ;
     skos:broader spav:mnuzw ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Fingerpuppentheater"@de,
@@ -3725,7 +3725,7 @@ spav:mnzgv a crm:E55_Type,
 
 spav:mnzgw a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Rezitation"@de,
+    skos:altLabel "Rezitation"@de,
         "szenische Lesung"@de ;
     skos:broader spav:mneyg ;
     skos:inScheme spav:mn ;
@@ -3869,7 +3869,7 @@ spav:mufcc a crm:E55_Type,
     skos:inScheme spav:mu ;
     skos:prefLabel "Chorleitung"@de,
         "choral conductor"@en,
-        "chef de choeur "@fr,
+        "chef de choeur"@fr,
         "direttore del coro"@it .
 
 spav:mufif a crm:E55_Type,
@@ -3955,7 +3955,7 @@ spav:muiqu a crm:E55_Type,
 
 spav:mujfv a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " amministrazione"@it,
+    skos:altLabel "amministrazione"@it,
         "gestione"@it ;
     skos:inScheme spav:mu ;
     skos:prefLabel "Management"@de,
@@ -4492,7 +4492,7 @@ spav:rsfil a crm:E55_Type,
 spav:rsitm a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "\"Recorded information in any form or medium, created or received and maintained, by an organization or person in the transaction of business or the conduct of affairs.\" (ISAD-G, 2nd end.)"@en ;
-    skos:altLabel " item"@en,
+    skos:altLabel "item"@en,
         "record"@en ;
     skos:exactMatch wd:Q11723795 ;
     skos:inScheme spav:rs ;
@@ -4785,8 +4785,8 @@ spav:vfapcs a skos:Concept,
 
 spav:vfavc1 a skos:Concept,
         ebucore:VideoFormat ;
-    skos:altLabel " H.264"@en,
-        "Advanced Video Coding"@en ;
+    skos:altLabel "Advanced Video Coding"@en,
+        "H.264"@en ;
     skos:exactMatch wd:Q212633 ;
     skos:inScheme spav:vf ;
     skos:prefLabel "AVC"@en ;
@@ -4834,8 +4834,8 @@ spav:vficod a skos:Concept,
 
 spav:vfmjpa a skos:Concept,
         ebucore:VideoFormat ;
-    skos:altLabel " MJPEG"@en,
-        "M-JPEG"@en ;
+    skos:altLabel "M-JPEG"@en,
+        "MJPEG"@en ;
     skos:exactMatch wd:Q850954,
         <https://www.loc.gov/preservation/digital/formats/fdd/fdd000063.shtml> ;
     skos:inScheme spav:vf ;
@@ -4891,7 +4891,7 @@ spav:vrbyg a crm:E55_Type,
 
 spav:vrctx a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " promoter"@it,
+    skos:altLabel "promoter"@it,
         "società di promozione"@it ;
     skos:broader spav:vrjhq ;
     skos:inScheme spav:vr ;
@@ -4934,8 +4934,8 @@ spav:vripy a crm:E55_Type,
     skos:altLabel "Theaterfestival"@de,
         "theatre festival"@en,
         "festival de théâtre"@fr,
-        " festival teatrale"@it,
-        "festival del teatro"@it ;
+        "festival del teatro"@it,
+        "festival teatrale"@it ;
     skos:exactMatch <http://d-nb.info/gnd/4501725-6>,
         wd:Q1751626 ;
     skos:inScheme spav:vr ;
@@ -5635,8 +5635,8 @@ spav:asprc a crm:E55_Type,
 spav:dfeip a crm:E55_Type,
         skos:Concept,
         rico:DocumentaryFormType ;
-    skos:altLabel " schizzo"@it,
-        "bozza"@it ;
+    skos:altLabel "bozza"@it,
+        "schizzo"@it ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfecs,
         spav:dfrsu ;
@@ -5772,9 +5772,9 @@ spav:fvzuj a crm:E55_Type,
         premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
-    skos:altLabel " Digital Versatile Disc"@en,
-        " Digital Video Disc"@en,
-        "DVD-Video"@en ;
+    skos:altLabel "DVD-Video"@en,
+        "Digital Versatile Disc"@en,
+        "Digital Video Disc"@en ;
     skos:broader spav:fvaha ;
     skos:exactMatch <http://vocab.getty.edu/aat/300264677> ;
     skos:inScheme spav:fv ;
@@ -5926,7 +5926,7 @@ spav:fvgye a crm:E55_Type,
     skos:prefLabel "Schallplatte"@de,
         "phonograph record"@en,
         "disque (phonographique)"@fr,
-        "disco "@it ;
+        "disco"@it ;
     skos:topConceptOf spav:fv .
 
 spav:fvjtf a crm:E55_Type,
@@ -6170,7 +6170,7 @@ spav:vrxbs a crm:E55_Type,
 
 spav:zjyky a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Gewebe"@de,
+    skos:altLabel "Gewebe"@de,
         "Textil"@de ;
     skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1039>,
         <http://vocab.getty.edu/aat/300231565> ;
@@ -6560,8 +6560,8 @@ spav:fvaha a crm:E55_Type,
 spav:mnuzw a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "puppet theatre"@en,
-        " teatro dei burattini"@it,
-        " teatro di burattini"@it,
+        "teatro dei burattini"@it,
+        "teatro di burattini"@it,
         "teatro di marionette"@it ;
     skos:broader spav:mnhzn ;
     skos:inScheme spav:mn ;
@@ -6699,10 +6699,10 @@ spav:eo a skos:ConceptScheme ;
 
 spav:mneyg a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel " Drama"@de,
+    skos:altLabel "Drama"@de,
         "Schaupiel"@de,
         "drama"@en,
-        " arte drammatica"@it,
+        "arte drammatica"@it,
         "teatro di prosa"@it ;
     skos:exactMatch <http://vocab.getty.edu/aat/300054148>,
         wd:Q39892385 ;
@@ -6796,7 +6796,7 @@ spav:fverx a crm:E55_Type,
 spav:dfqot a crm:E55_Type,
         skos:Concept,
         rico:DocumentaryFormType ;
-    skos:altLabel " locandina"@it,
+    skos:altLabel "locandina"@it,
         "poster"@it ;
     skos:exactMatch <http://vocab.getty.edu/aat/300027221> ;
     skos:inScheme spav:df ;
