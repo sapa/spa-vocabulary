@@ -112,7 +112,7 @@ for sheet in ['skos', 'formats']:
                 ns, pred, lang = c.split('_')
                 if not pd.isnull(row[c]):
                     for s in row[c].split(';'):
-                        graph.add((uri, SKOS[pred], Literal(s.strip(), lang=lang)))
+                        graph.add((uri, SKOS[pred], Literal(s.strip("'"), lang=lang)))
         # same as
         if not pd.isnull(row['skos_exactMatch']) and row['skos_exactMatch'].strip() != '-':
             for s in row['skos_exactMatch'].split(';'):

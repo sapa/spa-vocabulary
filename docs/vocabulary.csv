@@ -594,7 +594,7 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 593,http://vocab.performing-arts.ch/dqdrg,http://vocab.performing-arts.ch/dq,False,Date,,,,,during,,,während,,pendant,,durante,,
 594,http://vocab.performing-arts.ch/nd,,True,Date,rico:Date,,,,no date value,,,,,,,,,
 595,http://vocab.performing-arts.ch/ndsd,http://vocab.performing-arts.ch/nd,False,Date,,,,,s.d.,,,,,,,,,
-596,http://vocab.performing-arts.ch/ndna,http://vocab.performing-arts.ch/nd,False,Date,,,,,,,,,,,,,,
+596,http://vocab.performing-arts.ch/ndna,http://vocab.performing-arts.ch/nd,False,Date,,,,,'N/A',,,,,,,,,
 597,http://vocab.performing-arts.ch/et,,True,Event,rico:Event,rico:hasEventType,,,event type,,,Ergeignisart,,type d’entrée,,,,
 598,http://vocab.performing-arts.ch/etmoc,http://vocab.performing-arts.ch/et,False,Event,,,aat:300417634,,methods of acquisition,,,Eingangsart,,type d’acquisition,,,,
 599,http://vocab.performing-arts.ch/etpur,http://vocab.performing-arts.ch/etmoc,False,Event,,,aat:300417642,,purchase,,,Ankauf,,achat,,,,
