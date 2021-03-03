@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-02T19:42:26.889674+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-03T15:28:23.260026+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -4225,6 +4225,17 @@ spav:muzua a crm:E55_Type,
         "testo aggiunto"@it ;
     skos:topConceptOf spav:mu .
 
+spav:ndna a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:nd ;
+    skos:topConceptOf spav:nd .
+
+spav:ndsd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:nd ;
+    skos:prefLabel "s.d."@en ;
+    skos:topConceptOf spav:nd .
+
 spav:pkba4 a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:pk ;
@@ -4631,7 +4642,7 @@ spav:tpunk a crm:E55_Type,
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
-    skos:prefLabel "Blockartefakten (digital)"@de,
+    skos:prefLabel "Blockartefakte (digital)"@de,
         "block artifacts (digital)"@en ;
     skos:topConceptOf spav:vd .
 
@@ -4667,14 +4678,15 @@ spav:vdimn a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bildrauschen"@de,
-        "image noise"@en ;
+        "picture noise"@en ;
     skos:topConceptOf spav:vd .
 
 spav:vditw a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "irregular tape pack"@en ;
     skos:inScheme spav:vd ;
-    skos:prefLabel "Unregelmässiges Bandwickel"@de,
-        "irregular tape wrap"@en ;
+    skos:prefLabel "Unregelmässiger Bandwickel"@de,
+        "tape pack"@en ;
     skos:topConceptOf spav:vd .
 
 spav:vdsnd a crm:E55_Type,
@@ -4684,11 +4696,25 @@ spav:vdsnd a crm:E55_Type,
         "sound disturbances"@en ;
     skos:topConceptOf spav:vd .
 
+spav:vdsts a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Bandkleben und -quietschen"@de,
+        "sticky tape syndrome"@en ;
+    skos:topConceptOf spav:vd .
+
 spav:vdtpc a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bandknitter"@de,
-        "tape crinklers"@en ;
+        "crumpled tape"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdtpd a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Deformation des Bandes"@de,
+        "tape deformation"@en ;
     skos:topConceptOf spav:vd .
 
 spav:vdtrt a crm:E55_Type,
@@ -6068,6 +6094,11 @@ spav:muyql a crm:E55_Type,
         "creazione"@it ;
     skos:topConceptOf spav:mu .
 
+spav:nd a skos:ConceptScheme ;
+    skos:hasTopConcept spav:ndna,
+        spav:ndsd ;
+    skos:prefLabel "no date value"@en .
+
 spav:sf a skos:ConceptScheme ;
     skos:hasTopConcept spav:sfint,
         spav:sfpro ;
@@ -6842,20 +6873,6 @@ spav:mnnvd a crm:E55_Type,
         "altro"@it ;
     skos:topConceptOf spav:mn .
 
-spav:vd a skos:ConceptScheme ;
-    skos:hasTopConcept spav:vdbad,
-        spav:vdcld,
-        spav:vddrp,
-        spav:vddrt,
-        spav:vdhst,
-        spav:vdimn,
-        spav:vditw,
-        spav:vdsnd,
-        spav:vdtpc,
-        spav:vdtrt ;
-    skos:prefLabel "Video-Schaden"@de,
-        "video damage"@en .
-
 spav:zj a skos:ConceptScheme ;
     skos:hasTopConcept spav:zjajf,
         spav:zjjoe,
@@ -6868,6 +6885,22 @@ spav:zj a skos:ConceptScheme ;
         spav:zjyky ;
     skos:prefLabel "material"@en,
         "matériaux"@fr .
+
+spav:vd a skos:ConceptScheme ;
+    skos:hasTopConcept spav:vdbad,
+        spav:vdcld,
+        spav:vddrp,
+        spav:vddrt,
+        spav:vdhst,
+        spav:vdimn,
+        spav:vditw,
+        spav:vdsnd,
+        spav:vdsts,
+        spav:vdtpc,
+        spav:vdtpd,
+        spav:vdtrt ;
+    skos:prefLabel "Video-Schaden"@de,
+        "video damage"@en .
 
 spav:rg a skos:ConceptScheme ;
     skos:hasTopConcept spav:rgcmp,
