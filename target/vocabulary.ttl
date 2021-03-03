@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-03T15:28:23.260026+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-03T15:37:15.336098+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -926,6 +926,16 @@ spav:dftws a crm:E55_Type,
         "festival poster"@en,
         "affiche de festival"@fr,
         "Poster del festival"@it .
+
+spav:dftxd a crm:E55_Type,
+        skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dflvv ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300263751> ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "Textdokument"@de,
+        "text document"@en,
+        "document textuel"@fr .
 
 spav:dfuuh a crm:E55_Type,
         skos:Concept,
@@ -6677,27 +6687,6 @@ spav:yakdx a crm:E55_Type,
         "nome"@it ;
     skos:topConceptOf spav:ya .
 
-spav:dflvv a crm:E55_Type,
-        skos:Concept,
-        rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
-    skos:inScheme spav:df ;
-    skos:narrower spav:dfblx,
-        spav:dfbok,
-        spav:dffop,
-        spav:dfhdo,
-        spav:dfjnl,
-        spav:dfmyd,
-        spav:dfowt,
-        spav:dfwox,
-        spav:dfyfs,
-        spav:dfzpy ;
-    skos:prefLabel "Dokumentgattungen"@de,
-        "document genre"@en,
-        "genre de document"@fr,
-        "tipo di documento"@it ;
-    skos:topConceptOf spav:df .
-
 spav:eo a skos:ConceptScheme ;
     skos:hasTopConcept spav:eoept,
         spav:eokdx,
@@ -6748,6 +6737,28 @@ spav:cl a skos:ConceptScheme ;
         spav:clone ;
     skos:prefLabel "color content"@en,
         "couleur"@fr .
+
+spav:dflvv a crm:E55_Type,
+        skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfblx,
+        spav:dfbok,
+        spav:dffop,
+        spav:dfhdo,
+        spav:dfjnl,
+        spav:dfmyd,
+        spav:dfowt,
+        spav:dftxd,
+        spav:dfwox,
+        spav:dfyfs,
+        spav:dfzpy ;
+    skos:prefLabel "Dokumentgattungen"@de,
+        "document genre"@en,
+        "genre de document"@fr,
+        "tipo di documento"@it ;
+    skos:topConceptOf spav:df .
 
 spav:eu a skos:ConceptScheme ;
     skos:hasTopConcept spav:eubox,
