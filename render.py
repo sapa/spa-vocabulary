@@ -62,6 +62,7 @@ for sheet in ['skos', 'formats']:
     scheme = None
     for idx, row in df.iterrows():
         uri = None
+        rico = False
         # new scheme?
         if not pd.isnull(row['skos_ConceptScheme']):
             # save old graph first?
@@ -83,14 +84,16 @@ for sheet in ['skos', 'formats']:
                 print(f'{uri} already exists!')
             uris.append(uri)
             graph.add((uri, RDF.type, SKOS.Concept))
-            if sheet == 'skos':
-                graph.add((uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
             if not pd.isnull(row['additional_class']):
                 for c in row['additional_class'].split(';'):
                     p = c.strip().split(':')[0]
                     q = c.strip().split(':')[1]
                     if p in vocabs:
                         graph.add((uri, RDF.type, URIRef(vocabs[p] + q)))
+                        if p == 'rico':
+                            rico = True
+            if not rico and sheet == 'skos':
+                graph.add((uri, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E55_Type')))
 
             graph.add((uri, SKOS.inScheme, scheme_uri))
             # broader, narrower
@@ -113,6 +116,8 @@ for sheet in ['skos', 'formats']:
                 if not pd.isnull(row[c]):
                     for s in row[c].split(';'):
                         graph.add((uri, SKOS[pred], Literal(s.strip("' "), lang=lang)))
+                        if rico and pred == 'prefLabel':
+                            graph.add((uri, URIRef('https://www.ica.org/standards/RiC/ontology#name'), Literal(s.strip("' "), lang=lang)))
         # same as
         if not pd.isnull(row['skos_exactMatch']) and row['skos_exactMatch'].strip() != '-':
             for s in row['skos_exactMatch'].split(';'):

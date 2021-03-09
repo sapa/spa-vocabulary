@@ -30,7 +30,19 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-03T16:04:01.617135+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-09T08:10:07.418482+01:00"^^xsd:dateTime .
+
+spav:eucm a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:eu ;
+    skos:prefLabel "cm"@de,
+        "cm"@en,
+        "cm"@fr,
+        "cm"@it ;
+    rico:name "cm"@de,
+        "cm"@en,
+        "cm"@fr,
+        "cm"@it .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -561,18 +573,20 @@ spav:ctuct a crm:E55_Type,
         "incerto"@it ;
     skos:topConceptOf spav:ct .
 
-spav:dfaur a crm:E55_Type,
-        skos:Concept,
+spav:dfaur a skos:Concept,
         rico:DocumentaryFormType ;
     skos:inScheme spav:df ;
     skos:prefLabel "Audioaufnahme"@de,
         "audio recording"@en,
         "enregistrement audio"@fr,
         "registrazione audio"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Audioaufnahme"@de,
+        "audio recording"@en,
+        "enregistrement audio"@fr,
+        "registrazione audio"@it .
 
-spav:dfblx a crm:E55_Type,
-        skos:Concept,
+spav:dfblx a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300249572> ;
@@ -580,60 +594,76 @@ spav:dfblx a crm:E55_Type,
     skos:prefLabel "Promotionsmaterial"@de,
         "promotional material"@en,
         "matériel promotionnel"@fr,
+        "materiale promozionale"@it ;
+    rico:name "Promotionsmaterial"@de,
+        "promotional material"@en,
+        "matériel promotionnel"@fr,
         "materiale promozionale"@it .
 
-spav:dfbok a crm:E55_Type,
-        skos:Concept,
+spav:dfbok a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:inScheme spav:df ;
     skos:prefLabel "Buch"@de,
         "book"@en,
         "livre"@fr,
+        "libro"@it ;
+    rico:name "Buch"@de,
+        "book"@en,
+        "livre"@fr,
         "libro"@it .
 
-spav:dfcbi a crm:E55_Type,
-        skos:Concept,
+spav:dfcbi a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Zirkusplakat"@de,
         "circus poster"@en,
         "affiche de cirque"@fr,
+        "Poster del circo"@it ;
+    rico:name "Zirkusplakat"@de,
+        "circus poster"@en,
+        "affiche de cirque"@fr,
         "Poster del circo"@it .
 
-spav:dfctp a crm:E55_Type,
-        skos:Concept,
+spav:dfctp a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqrl ;
     skos:exactMatch <http://vocab.getty.edu/aat/300127183> ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kontaktabzug"@de,
         "contact sheet"@en,
+        "planche-contact"@fr ;
+    rico:name "Kontaktabzug"@de,
+        "contact sheet"@en,
         "planche-contact"@fr .
 
-spav:dfdia a crm:E55_Type,
-        skos:Concept,
+spav:dfdia a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300128371> ;
     skos:inScheme spav:df ;
     skos:prefLabel "Dia"@de,
         "slide"@en,
+        "diapositive"@fr ;
+    rico:name "Dia"@de,
+        "slide"@en,
         "diapositive"@fr .
 
-spav:dfdvh a crm:E55_Type,
-        skos:Concept,
+spav:dfdvh a skos:Concept,
         rico:DocumentaryFormType ;
     skos:inScheme spav:df ;
     skos:prefLabel "Diverses"@de,
         "miscellaneous"@en,
         "diverses"@fr,
         "varie"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Diverses"@de,
+        "miscellaneous"@en,
+        "diverses"@fr,
+        "varie"@it .
 
-spav:dfdzo a crm:E55_Type,
-        skos:Concept,
+spav:dfdzo a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "bozzetto"@it ;
     skos:exactMatch <http://vocab.getty.edu/aat/300015617> ;
@@ -642,10 +672,13 @@ spav:dfdzo a crm:E55_Type,
         "sketch"@en,
         "esquisse"@fr,
         "schizzo"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Skizze"@de,
+        "sketch"@en,
+        "esquisse"@fr,
+        "schizzo"@it .
 
-spav:dfecs a crm:E55_Type,
-        skos:Concept,
+spav:dfecs a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfeip ;
     skos:exactMatch <http://vocab.getty.edu/aat/300163423> ;
@@ -653,40 +686,52 @@ spav:dfecs a crm:E55_Type,
     skos:prefLabel "Kostümentwurf"@de,
         "costume design"@en,
         "projet de costume"@fr,
+        "costumi (bozze)"@it ;
+    rico:name "Kostümentwurf"@de,
+        "costume design"@en,
+        "projet de costume"@fr,
         "costumi (bozze)"@it .
 
-spav:dfemz a crm:E55_Type,
-        skos:Concept,
+spav:dfemz a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Saisonplakat"@de,
         "season poster"@en,
         "affiche de la saison"@fr,
+        "poster stagionale"@it ;
+    rico:name "Saisonplakat"@de,
+        "season poster"@en,
+        "affiche de la saison"@fr,
         "poster stagionale"@it .
 
-spav:dfeov a crm:E55_Type,
-        skos:Concept,
+spav:dfeov a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kunstplakat"@de,
         "art poster"@en,
         "affiche d’art"@fr,
+        "Poster artistico"@it ;
+    rico:name "Kunstplakat"@de,
+        "art poster"@en,
+        "affiche d’art"@fr,
         "Poster artistico"@it .
 
-spav:dffci a crm:E55_Type,
-        skos:Concept,
+spav:dffci a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kursplakat"@de,
         "course poster"@en,
         "affiche de cours"@fr,
+        "Poster del corso"@it ;
+    rico:name "Kursplakat"@de,
+        "course poster"@en,
+        "affiche de cours"@fr,
         "Poster del corso"@it .
 
-spav:dffop a crm:E55_Type,
-        skos:Concept,
+spav:dffop a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026867> ;
@@ -694,20 +739,26 @@ spav:dffop a crm:E55_Type,
     skos:prefLabel "Zeitungsartikel"@de,
         "clipping"@en,
         "article de presse"@fr,
+        "articolo di giornale"@it ;
+    rico:name "Zeitungsartikel"@de,
+        "clipping"@en,
+        "article de presse"@fr,
         "articolo di giornale"@it .
 
-spav:dffvd a crm:E55_Type,
-        skos:Concept,
+spav:dffvd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Spielplanplakat"@de,
         "schedule poster"@en,
         "affiche du calendrier"@fr,
+        "cartellone"@it ;
+    rico:name "Spielplanplakat"@de,
+        "schedule poster"@en,
+        "affiche du calendrier"@fr,
         "cartellone"@it .
 
-spav:dfgei a crm:E55_Type,
-        skos:Concept,
+spav:dfgei a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300033799> ;
@@ -715,10 +766,13 @@ spav:dfgei a crm:E55_Type,
     skos:prefLabel "Ölgemälde"@de,
         "oil painting"@en,
         "peinture à l’huile"@fr,
+        "pittura a olio"@it ;
+    rico:name "Ölgemälde"@de,
+        "oil painting"@en,
+        "peinture à l’huile"@fr,
         "pittura a olio"@it .
 
-spav:dfhdo a crm:E55_Type,
-        skos:Concept,
+spav:dfhdo a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417623> ;
@@ -726,30 +780,39 @@ spav:dfhdo a crm:E55_Type,
     skos:prefLabel "Notation"@de,
         "dance notation"@en,
         "notation"@fr,
+        "notazione della danza"@it ;
+    rico:name "Notation"@de,
+        "dance notation"@en,
+        "notation"@fr,
         "notazione della danza"@it .
 
-spav:dfhmi a crm:E55_Type,
-        skos:Concept,
+spav:dfhmi a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Konzertplakat"@de,
         "concert poster"@en,
         "affiche de concert"@fr,
+        "Poster del concerto"@it ;
+    rico:name "Konzertplakat"@de,
+        "concert poster"@en,
+        "affiche de concert"@fr,
         "Poster del concerto"@it .
 
-spav:dfhwk a crm:E55_Type,
-        skos:Concept,
+spav:dfhwk a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Ausstellungsplakat"@de,
         "exhibition poster"@en,
         "affiche d’exposition"@fr,
+        "Poster della mostra"@it ;
+    rico:name "Ausstellungsplakat"@de,
+        "exhibition poster"@en,
+        "affiche d’exposition"@fr,
         "Poster della mostra"@it .
 
-spav:dfjdc a crm:E55_Type,
-        skos:Concept,
+spav:dfjdc a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300033973> ;
     skos:inScheme spav:df ;
@@ -757,10 +820,13 @@ spav:dfjdc a crm:E55_Type,
         "drawing"@en,
         "dessin"@fr,
         "disegno"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Zeichnung"@de,
+        "drawing"@en,
+        "dessin"@fr,
+        "disegno"@it .
 
-spav:dfjnl a crm:E55_Type,
-        skos:Concept,
+spav:dfjnl a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "Zeuting"@de,
         "newspaper"@en ;
@@ -769,20 +835,25 @@ spav:dfjnl a crm:E55_Type,
     skos:inScheme spav:df ;
     skos:prefLabel "Zeitschrift"@de,
         "journal"@en,
+        "journal"@fr ;
+    rico:name "Zeitschrift"@de,
+        "journal"@en,
         "journal"@fr .
 
-spav:dfjoa a crm:E55_Type,
-        skos:Concept,
+spav:dfjoa a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Stückplakat"@de,
         "production poster"@en,
         "affiche de la production"@fr,
+        "poster di produzione"@it ;
+    rico:name "Stückplakat"@de,
+        "production poster"@en,
+        "affiche de la production"@fr,
         "poster di produzione"@it .
 
-spav:dfmyd a crm:E55_Type,
-        skos:Concept,
+spav:dfmyd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300028037> ;
@@ -790,20 +861,26 @@ spav:dfmyd a crm:E55_Type,
     skos:prefLabel "persönliche Dokumente ?"@de,
         "personal paper"@en,
         "document personnel"@fr,
+        "documento personale"@it ;
+    rico:name "persönliche Dokumente ?"@de,
+        "personal paper"@en,
+        "document personnel"@fr,
         "documento personale"@it .
 
-spav:dfmzh a crm:E55_Type,
-        skos:Concept,
+spav:dfmzh a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Filmplakat"@de,
         "fim poster"@en,
         "affiche de film"@fr,
+        "Poster del film"@it ;
+    rico:name "Filmplakat"@de,
+        "fim poster"@en,
+        "affiche de film"@fr,
         "Poster del film"@it .
 
-spav:dfnrv a crm:E55_Type,
-        skos:Concept,
+spav:dfnrv a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "Vortragsplakat"@de,
         "lecture poster"@en ;
@@ -812,10 +889,13 @@ spav:dfnrv a crm:E55_Type,
     skos:prefLabel "Veranstaltungsplakat"@de,
         "event poster"@en,
         "affiche de manifestation"@fr,
+        "poster dell’evento"@it ;
+    rico:name "Veranstaltungsplakat"@de,
+        "event poster"@en,
+        "affiche de manifestation"@fr,
         "poster dell’evento"@it .
 
-spav:dfoff a crm:E55_Type,
-        skos:Concept,
+spav:dfoff a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300078925> ;
@@ -823,10 +903,13 @@ spav:dfoff a crm:E55_Type,
     skos:prefLabel "Aquarell"@de,
         "watercolor"@en,
         "aquarelle"@fr,
+        "acquarello"@it ;
+    rico:name "Aquarell"@de,
+        "watercolor"@en,
+        "aquarelle"@fr,
         "acquarello"@it .
 
-spav:dfowt a crm:E55_Type,
-        skos:Concept,
+spav:dfowt a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300027568> ;
@@ -834,18 +917,22 @@ spav:dfowt a crm:E55_Type,
     skos:prefLabel "Rechnung"@de,
         "invoice"@en,
         "facture"@fr,
+        "fattura"@it ;
+    rico:name "Rechnung"@de,
+        "invoice"@en,
+        "facture"@fr,
         "fattura"@it .
 
-spav:dfpmd a crm:E55_Type,
-        skos:Concept,
+spav:dfpmd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfwrq ;
     skos:inScheme spav:df ;
     skos:prefLabel "purchase medium"@de,
+        "purchase medium"@en ;
+    rico:name "purchase medium"@de,
         "purchase medium"@en .
 
-spav:dfpwk a crm:E55_Type,
-        skos:Concept,
+spav:dfpwk a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
     skos:exactMatch <http://vocab.getty.edu/aat/300181918> ;
@@ -853,10 +940,13 @@ spav:dfpwk a crm:E55_Type,
     skos:prefLabel "Acrylgemälde"@de,
         "acrylic painting"@en,
         "peinture acrylique"@fr,
+        "pittura acrilica"@it ;
+    rico:name "Acrylgemälde"@de,
+        "acrylic painting"@en,
+        "peinture acrylique"@fr,
         "pittura acrilica"@it .
 
-spav:dfrsp a crm:E55_Type,
-        skos:Concept,
+spav:dfrsp a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300127173> ;
@@ -864,10 +954,13 @@ spav:dfrsp a crm:E55_Type,
     skos:prefLabel "Negativ (Foto-Negativ)"@de,
         "negative"@en,
         "négatif"@fr,
+        "negativo"@it ;
+    rico:name "Negativ (Foto-Negativ)"@de,
+        "negative"@en,
+        "négatif"@fr,
         "negativo"@it .
 
-spav:dfrsu a crm:E55_Type,
-        skos:Concept,
+spav:dfrsu a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "scenography"@en ;
     skos:broader spav:dfeip ;
@@ -876,69 +969,88 @@ spav:dfrsu a crm:E55_Type,
     skos:prefLabel "Bühnenbildentwurf"@de,
         "stage set design"@en,
         "projet de décor"@fr,
+        "scenografia (bozza)"@it ;
+    rico:name "Bühnenbildentwurf"@de,
+        "stage set design"@en,
+        "projet de décor"@fr,
         "scenografia (bozza)"@it .
 
-spav:dfsze a crm:E55_Type,
-        skos:Concept,
+spav:dfsze a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfrwd ;
     skos:inScheme spav:df ;
     skos:prefLabel "personal object"@en,
         "object personnel"@fr,
+        "oggetto personale"@it ;
+    rico:name "personal object"@en,
+        "object personnel"@fr,
         "oggetto personale"@it .
 
-spav:dfszq a crm:E55_Type,
-        skos:Concept,
+spav:dfszq a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Programmplakat"@de,
         "program poster"@en,
         "affiche du programme"@fr,
+        "poster del programma"@it ;
+    rico:name "Programmplakat"@de,
+        "program poster"@en,
+        "affiche du programme"@fr,
         "poster del programma"@it .
 
-spav:dftng a crm:E55_Type,
-        skos:Concept,
+spav:dftng a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfrwd ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kostüm"@de,
         "costume"@en,
         "costume"@fr,
+        "costume"@it ;
+    rico:name "Kostüm"@de,
+        "costume"@en,
+        "costume"@fr,
         "costume"@it .
 
-spav:dftvr a crm:E55_Type,
-        skos:Concept,
+spav:dftvr a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfwrq ;
     skos:inScheme spav:df ;
     skos:prefLabel "Fernsehaufzeichnung"@de,
         "tv recording"@en,
         "enregistrement télévisuel"@fr,
+        "registrazione televisiva"@it ;
+    rico:name "Fernsehaufzeichnung"@de,
+        "tv recording"@en,
+        "enregistrement télévisuel"@fr,
         "registrazione televisiva"@it .
 
-spav:dftws a crm:E55_Type,
-        skos:Concept,
+spav:dftws a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Festivalplakat"@de,
         "festival poster"@en,
         "affiche de festival"@fr,
+        "Poster del festival"@it ;
+    rico:name "Festivalplakat"@de,
+        "festival poster"@en,
+        "affiche de festival"@fr,
         "Poster del festival"@it .
 
-spav:dftxd a crm:E55_Type,
-        skos:Concept,
+spav:dftxd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300263751> ;
     skos:inScheme spav:df ;
     skos:prefLabel "Textdokument"@de,
         "text document"@en,
+        "document textuel"@fr ;
+    rico:name "Textdokument"@de,
+        "text document"@en,
         "document textuel"@fr .
 
-spav:dfuuh a crm:E55_Type,
-        skos:Concept,
+spav:dfuuh a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "maquette construite de scène"@fr ;
     skos:broader spav:dfrwd ;
@@ -946,10 +1058,13 @@ spav:dfuuh a crm:E55_Type,
     skos:prefLabel "Bühnenbildmodell"@de,
         "stage model"@en,
         "maquette"@fr,
+        "modello di scenografia"@it ;
+    rico:name "Bühnenbildmodell"@de,
+        "stage model"@en,
+        "maquette"@fr,
         "modello di scenografia"@it .
 
-spav:dfvjf a crm:E55_Type,
-        skos:Concept,
+spav:dfvjf a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfrwd ;
     skos:exactMatch <http://vocab.getty.edu/aat/300251645> ;
@@ -957,10 +1072,13 @@ spav:dfvjf a crm:E55_Type,
     skos:prefLabel "Requisiten (Bühnenzubehör?)"@de,
         "stage accessorie"@en,
         "accessoire de scène"@fr,
+        "accessorio di scena"@it ;
+    rico:name "Requisiten (Bühnenzubehör?)"@de,
+        "stage accessorie"@en,
+        "accessoire de scène"@fr,
         "accessorio di scena"@it .
 
-spav:dfwox a crm:E55_Type,
-        skos:Concept,
+spav:dfwox a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026877> ;
@@ -968,10 +1086,13 @@ spav:dfwox a crm:E55_Type,
     skos:prefLabel "Korrespondenz"@de,
         "correspondence"@en,
         "correspondance"@fr,
+        "corrispondenza"@it ;
+    rico:name "Korrespondenz"@de,
+        "correspondence"@en,
+        "correspondance"@fr,
         "corrispondenza"@it .
 
-spav:dfyfs a crm:E55_Type,
-        skos:Concept,
+spav:dfyfs a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300027112> ;
@@ -979,25 +1100,35 @@ spav:dfyfs a crm:E55_Type,
     skos:prefLabel "Tagebuch"@de,
         "diary"@en,
         "agenda"@fr,
+        "diario"@it ;
+    rico:name "Tagebuch"@de,
+        "diary"@en,
+        "agenda"@fr,
         "diario"@it .
 
-spav:dfzcy a crm:E55_Type,
-        skos:Concept,
+spav:dfzcy a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Hausplakat"@de,
         "institutional poster"@en,
         "affiche institutionnelle"@fr,
+        "poster istituzionale"@it ;
+    rico:name "Hausplakat"@de,
+        "institutional poster"@en,
+        "affiche institutionnelle"@fr,
         "poster istituzionale"@it .
 
-spav:dfzpy a crm:E55_Type,
-        skos:Concept,
+spav:dfzpy a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300027200> ;
     skos:inScheme spav:df ;
     skos:prefLabel "Notiz"@de,
+        "note"@en,
+        "note"@fr,
+        "annotazione"@it ;
+    rico:name "Notiz"@de,
         "note"@en,
         "note"@fr,
         "annotazione"@it .
@@ -1101,102 +1232,126 @@ spav:eonvd a crm:E55_Type,
         "nota pubblica"@it ;
     skos:topConceptOf spav:eo .
 
-spav:etbeq a crm:E55_Type,
-        skos:Concept,
+spav:etbeq a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417641> ;
     skos:inScheme spav:et ;
     skos:prefLabel "Legat"@de,
         "bequest"@en,
+        "legs"@fr ;
+    rico:name "Legat"@de,
+        "bequest"@en,
         "legs"@fr .
 
-spav:etcpa a crm:E55_Type,
-        skos:Concept,
+spav:etcpa a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:inScheme spav:et ;
     skos:prefLabel "Kopie erstellt durch Archiv"@de,
         "copy created by archive"@en,
+        "copie créée par l’archive"@fr ;
+    rico:name "Kopie erstellt durch Archiv"@de,
+        "copy created by archive"@en,
         "copie créée par l’archive"@fr .
 
-spav:etdon a crm:E55_Type,
-        skos:Concept,
+spav:etdon a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417638> ;
     skos:inScheme spav:et ;
     skos:prefLabel "Schenkung"@de,
         "donation"@en,
+        "donation"@fr ;
+    rico:name "Schenkung"@de,
+        "donation"@en,
         "donation"@fr .
 
-spav:etloa a crm:E55_Type,
-        skos:Concept,
+spav:etloa a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417645> ;
     skos:inScheme spav:et ;
     skos:prefLabel "Leihgabe"@de,
         "loan"@en,
+        "dépôt"@fr ;
+    rico:name "Leihgabe"@de,
+        "loan"@en,
         "dépôt"@fr .
 
-spav:etopd a crm:E55_Type,
-        skos:Concept,
+spav:etopd a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:inScheme spav:et ;
     skos:prefLabel "Eigenproduktion"@de,
         "own production"@en,
+        "production interne"@fr ;
+    rico:name "Eigenproduktion"@de,
+        "own production"@en,
         "production interne"@fr .
 
-spav:etpur a crm:E55_Type,
-        skos:Concept,
+spav:etpur a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417642> ;
     skos:inScheme spav:et ;
     skos:prefLabel "Ankauf"@de,
         "purchase"@en,
+        "achat"@fr ;
+    rico:name "Ankauf"@de,
+        "purchase"@en,
         "achat"@fr .
 
-spav:eubox a crm:E55_Type,
-        skos:Concept ;
+spav:eubox a skos:Concept,
+        rico:unitOfMeasurement ;
     skos:inScheme spav:eu ;
     skos:prefLabel "boxes"@en ;
-    skos:topConceptOf spav:eu .
+    skos:topConceptOf spav:eu ;
+    rico:name "boxes"@en .
 
-spav:euenv a crm:E55_Type,
-        skos:Concept ;
+spav:euenv a skos:Concept,
+        rico:unitOfMeasurement ;
     skos:inScheme spav:eu ;
     skos:prefLabel "envelopes"@en ;
-    skos:topConceptOf spav:eu .
+    skos:topConceptOf spav:eu ;
+    rico:name "envelopes"@en .
 
-spav:eugen a crm:E55_Type,
-        skos:Concept ;
+spav:eukg a skos:Concept,
+        rico:unitOfMeasurement ;
     skos:inScheme spav:eu ;
-    skos:prefLabel "generic"@en ;
-    skos:topConceptOf spav:eu .
+    skos:prefLabel "kg"@de,
+        "kg"@en,
+        "kg"@fr,
+        "kg"@it ;
+    skos:topConceptOf spav:eu ;
+    rico:name "kg"@de,
+        "kg"@en,
+        "kg"@fr,
+        "kg"@it .
 
-spav:eulnm a crm:E55_Type,
-        skos:Concept ;
+spav:eulnm a skos:Concept,
+        rico:unitOfMeasurement ;
     skos:inScheme spav:eu ;
-    skos:prefLabel "linear meters"@en ;
-    skos:topConceptOf spav:eu .
+    skos:prefLabel "Laufmeter"@de,
+        "linear meters"@en,
+        "mètre linéaire"@fr,
+        "metri lineari"@it ;
+    skos:topConceptOf spav:eu ;
+    rico:name "Laufmeter"@de,
+        "linear meters"@en,
+        "mètre linéaire"@fr,
+        "metri lineari"@it .
 
-spav:eupcs a crm:E55_Type,
-        skos:Concept ;
+spav:eupcs a skos:Concept,
+        rico:unitOfMeasurement ;
     skos:inScheme spav:eu ;
-    skos:prefLabel "pieces"@en ;
-    skos:topConceptOf spav:eu .
+    skos:prefLabel "Stück"@de,
+        "pieces"@en ;
+    skos:topConceptOf spav:eu ;
+    rico:name "Stück"@de,
+        "pieces"@en .
 
-spav:euwgt a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "weight"@en ;
-    skos:topConceptOf spav:eu .
-
-spav:frabo a crm:E55_Type,
-        skos:Concept,
+spav:frabo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
     skos:exactMatch <http://vocab.getty.edu/aat/300041567> ;
@@ -1204,10 +1359,13 @@ spav:frabo a crm:E55_Type,
     skos:prefLabel "Original"@de,
         "original print?"@en,
         "original"@fr,
+        "originale"@it ;
+    rico:name "Original"@de,
+        "original print?"@en,
+        "original"@fr,
         "originale"@it .
 
-spav:fracn a crm:E55_Type,
-        skos:Concept,
+spav:fracn a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
     skos:exactMatch <http://vocab.getty.edu/aat/300041338> ;
@@ -1215,10 +1373,13 @@ spav:fracn a crm:E55_Type,
     skos:prefLabel "Tiefdruck"@de,
         "intaglio print"@en,
         "gravure en creux"@fr,
+        "incisione"@it ;
+    rico:name "Tiefdruck"@de,
+        "intaglio print"@en,
+        "gravure en creux"@fr,
         "incisione"@it .
 
-spav:fragx a crm:E55_Type,
-        skos:Concept,
+spav:fragx a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
     skos:exactMatch <http://vocab.getty.edu/aat/300041393> ;
@@ -1226,10 +1387,13 @@ spav:fragx a crm:E55_Type,
     skos:prefLabel "Linolschnitt"@de,
         "linocut"@en,
         "linogravure"@fr,
+        "linoleografia"@it ;
+    rico:name "Linolschnitt"@de,
+        "linocut"@en,
+        "linogravure"@fr,
         "linoleografia"@it .
 
-spav:frbbo a crm:E55_Type,
-        skos:Concept,
+spav:frbbo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "Steindruck"@de ;
     skos:broader spav:frgzf ;
@@ -1239,10 +1403,13 @@ spav:frbbo a crm:E55_Type,
     skos:prefLabel "Lithografie"@de,
         "lithography"@en,
         "lithographie"@fr,
+        "litografia"@it ;
+    rico:name "Lithografie"@de,
+        "lithography"@en,
+        "lithographie"@fr,
         "litografia"@it .
 
-spav:frbvo a crm:E55_Type,
-        skos:Concept,
+spav:frbvo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "Kollotypie"@de,
         "phototypie"@fr ;
@@ -1253,10 +1420,13 @@ spav:frbvo a crm:E55_Type,
         "collotype"@en,
         "collotypie"@fr,
         "collotipia"@it ;
-    skos:topConceptOf spav:fr .
+    skos:topConceptOf spav:fr ;
+    rico:name "Lichtdruck"@de,
+        "collotype"@en,
+        "collotypie"@fr,
+        "collotipia"@it .
 
-spav:frcbt a crm:E55_Type,
-        skos:Concept,
+spav:frcbt a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "serigraph"@en ;
     skos:broader spav:frgzf ;
@@ -1265,10 +1435,13 @@ spav:frcbt a crm:E55_Type,
     skos:prefLabel "Siebdruck"@de,
         "screen print"@en,
         "sérigraphie"@fr,
+        "serigrafia"@it ;
+    rico:name "Siebdruck"@de,
+        "screen print"@en,
+        "sérigraphie"@fr,
         "serigrafia"@it .
 
-spav:frhoj a crm:E55_Type,
-        skos:Concept,
+spav:frhoj a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
     skos:exactMatch <http://vocab.getty.edu/aat/300053279> ;
@@ -1276,10 +1449,13 @@ spav:frhoj a crm:E55_Type,
     skos:prefLabel "Offsetdruck"@de,
         "offset-printed"@en,
         "impression offset"@fr,
+        "stampa offset"@it ;
+    rico:name "Offsetdruck"@de,
+        "offset-printed"@en,
+        "impression offset"@fr,
         "stampa offset"@it .
 
-spav:friyp a crm:E55_Type,
-        skos:Concept,
+spav:friyp a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
     skos:exactMatch <http://vocab.getty.edu/aat/300178926> ;
@@ -1287,10 +1463,13 @@ spav:friyp a crm:E55_Type,
     skos:prefLabel "Buchdruck"@de,
         "letterpress"@en,
         "impression en relief typographique"@fr,
+        "stampa tipografica"@it ;
+    rico:name "Buchdruck"@de,
+        "letterpress"@en,
+        "impression en relief typographique"@fr,
         "stampa tipografica"@it .
 
-spav:frkub a crm:E55_Type,
-        skos:Concept,
+spav:frkub a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frhui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300265621> ;
@@ -1298,10 +1477,13 @@ spav:frkub a crm:E55_Type,
     skos:prefLabel "Tintenstrahldruck"@de,
         "inkjet print"@en,
         "impression jet d’encre"@fr,
+        "stampa a inchiostro"@it ;
+    rico:name "Tintenstrahldruck"@de,
+        "inkjet print"@en,
+        "impression jet d’encre"@fr,
         "stampa a inchiostro"@it .
 
-spav:froqj a crm:E55_Type,
-        skos:Concept,
+spav:froqj a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:exactMatch <http://rdaregistry.info/termList/RDAproductionMethod/1008>,
         <http://vocab.getty.edu/aat/300136847> ;
@@ -1310,10 +1492,13 @@ spav:froqj a crm:E55_Type,
         "photocopy"@en,
         "photocopie"@fr,
         "fotocopia"@it ;
-    skos:topConceptOf spav:fr .
+    skos:topConceptOf spav:fr ;
+    rico:name "Fotokopie"@de,
+        "photocopy"@en,
+        "photocopie"@fr,
+        "fotocopia"@it .
 
-spav:frvrj a crm:E55_Type,
-        skos:Concept,
+spav:frvrj a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "Niépceotype"@en,
         "bitumen process"@en ;
@@ -1323,10 +1508,13 @@ spav:frvrj a crm:E55_Type,
     skos:prefLabel "Heliografie"@de,
         "heliography"@en,
         "héliographie"@fr,
+        "eliografia"@it ;
+    rico:name "Heliografie"@de,
+        "heliography"@en,
+        "héliographie"@fr,
         "eliografia"@it .
 
-spav:fvbrm a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvbrm a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvese ;
@@ -1335,10 +1523,13 @@ spav:fvbrm a crm:E55_Type,
     skos:prefLabel "Fotonegative"@de,
         "photo negative"@en,
         "négatif"@fr,
+        "negativo (foto)"@it ;
+    rico:name "Fotonegative"@de,
+        "photo negative"@en,
+        "négatif"@fr,
         "negativo (foto)"@it .
 
-spav:fvecx a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvecx a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Mini-DV"@en ;
@@ -1348,10 +1539,13 @@ spav:fvecx a crm:E55_Type,
     skos:prefLabel "MiniDV"@de,
         "MiniDV"@en,
         "MiniDV"@fr,
+        "MiniDV"@it ;
+    rico:name "MiniDV"@de,
+        "MiniDV"@en,
+        "MiniDV"@fr,
         "MiniDV"@it .
 
-spav:fvefk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvefk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvzuj ;
@@ -1359,20 +1553,25 @@ spav:fvefk a crm:E55_Type,
     skos:prefLabel "DVD-R"@de,
         "DVD-R"@en,
         "DVD-R"@fr,
+        "DVD-R"@it ;
+    rico:name "DVD-R"@de,
+        "DVD-R"@en,
+        "DVD-R"@fr,
         "DVD-R"@it .
 
-spav:fvekd a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvekd a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvdex ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Papierabzug"@de,
         "photographic print on paper"@en,
+        "epreuve sur papier"@fr ;
+    rico:name "Papierabzug"@de,
+        "photographic print on paper"@en,
         "epreuve sur papier"@fr .
 
-spav:fveny a crm:E55_Type,
-        premis:StorageMedium,
+spav:fveny a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "U-matic high-band"@de,
@@ -1384,10 +1583,13 @@ spav:fveny a crm:E55_Type,
     skos:prefLabel "U-matic HB"@de,
         "U-matic HB"@en,
         "U-matic HB"@fr,
+        "U-matic HB"@it ;
+    rico:name "U-matic HB"@de,
+        "U-matic HB"@en,
+        "U-matic HB"@fr,
         "U-matic HB"@it .
 
-spav:fvevf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvevf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvlvi ;
@@ -1395,10 +1597,13 @@ spav:fvevf a crm:E55_Type,
     skos:prefLabel "2\" Quad"@de,
         "2\" Quad"@en,
         "2\" Quad"@fr,
+        "2 pollici Quad"@it ;
+    rico:name "2\" Quad"@de,
+        "2\" Quad"@en,
+        "2\" Quad"@fr,
         "2 pollici Quad"@it .
 
-spav:fvfac a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvfac a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvaha ;
@@ -1406,10 +1611,13 @@ spav:fvfac a crm:E55_Type,
     skos:prefLabel "HD-DVD"@de,
         "HD-DVD"@en,
         "HD-DVD"@fr,
+        "HD-DVD"@it ;
+    rico:name "HD-DVD"@de,
+        "HD-DVD"@en,
+        "HD-DVD"@fr,
         "HD-DVD"@it .
 
-spav:fvfbg a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvfbg a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvvnm ;
@@ -1417,10 +1625,13 @@ spav:fvfbg a crm:E55_Type,
     skos:prefLabel "BetacamSX gross"@de,
         "BetacamSX large"@en,
         "BetacamSX grande"@fr,
+        "BetacamSX grande"@it ;
+    rico:name "BetacamSX gross"@de,
+        "BetacamSX large"@en,
+        "BetacamSX grande"@fr,
         "BetacamSX grande"@it .
 
-spav:fvfce a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvfce a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvqpw ;
@@ -1428,10 +1639,13 @@ spav:fvfce a crm:E55_Type,
     skos:prefLabel "SVCD"@de,
         "SVCD"@en,
         "SVCD"@fr,
+        "SVCD"@it ;
+    rico:name "SVCD"@de,
+        "SVCD"@en,
+        "SVCD"@fr,
         "SVCD"@it .
 
-spav:fvfws a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvfws a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "U-matic low-band"@de,
@@ -1443,10 +1657,13 @@ spav:fvfws a crm:E55_Type,
     skos:prefLabel "U-matic LB"@de,
         "U-matic LB"@en,
         "U-matic LB"@fr,
+        "U-matic LB"@it ;
+    rico:name "U-matic LB"@de,
+        "U-matic LB"@en,
+        "U-matic LB"@fr,
         "U-matic LB"@it .
 
-spav:fvgbf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvgbf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvlkh ;
@@ -1454,10 +1671,13 @@ spav:fvgbf a crm:E55_Type,
     skos:prefLabel "CD-R"@de,
         "CD-R"@en,
         "CD-R"@fr,
+        "CD-R"@it ;
+    rico:name "CD-R"@de,
+        "CD-R"@en,
+        "CD-R"@fr,
         "CD-R"@it .
 
-spav:fvgwb a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvgwb a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -1465,10 +1685,13 @@ spav:fvgwb a crm:E55_Type,
     skos:prefLabel "Video 2000"@de,
         "Video 2000"@en,
         "Video 2000"@fr,
+        "Video 2000"@it ;
+    rico:name "Video 2000"@de,
+        "Video 2000"@en,
+        "Video 2000"@fr,
         "Video 2000"@it .
 
-spav:fvhaq a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhaq a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvaha ;
@@ -1476,20 +1699,25 @@ spav:fvhaq a crm:E55_Type,
     skos:prefLabel "LaserDisc"@de,
         "LaserDisc"@en,
         "LaserDisc"@fr,
+        "LaserDisc"@it ;
+    rico:name "LaserDisc"@de,
+        "LaserDisc"@en,
+        "LaserDisc"@fr,
         "LaserDisc"@it .
 
-spav:fvhcz a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhcz a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvkmy ;
     skos:inScheme spav:fv ;
     skos:prefLabel "8\" floppy"@en,
         "disquette 8 pouces"@fr,
+        "floppy disk 8 pollici"@it ;
+    rico:name "8\" floppy"@en,
+        "disquette 8 pouces"@fr,
         "floppy disk 8 pollici"@it .
 
-spav:fvhhx a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhhx a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvhcu ;
@@ -1498,10 +1726,13 @@ spav:fvhhx a crm:E55_Type,
     skos:prefLabel "Super 16mm"@de,
         "Super 16mm"@en,
         "Super 16mm"@fr,
+        "Super16mm"@it ;
+    rico:name "Super 16mm"@de,
+        "Super 16mm"@en,
+        "Super 16mm"@fr,
         "Super16mm"@it .
 
-spav:fvhiw a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhiw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -1511,10 +1742,13 @@ spav:fvhiw a crm:E55_Type,
     skos:prefLabel "Betamax"@de,
         "Betamax"@en,
         "Betamax"@fr,
+        "Betamax"@it ;
+    rico:name "Betamax"@de,
+        "Betamax"@en,
+        "Betamax"@fr,
         "Betamax"@it .
 
-spav:fvhuq a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhuq a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "MD"@it ;
@@ -1522,10 +1756,12 @@ spav:fvhuq a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:prefLabel "MiniDisc"@en,
         "MiniDisc"@fr,
+        "MiniDisc"@it ;
+    rico:name "MiniDisc"@en,
+        "MiniDisc"@fr,
         "MiniDisc"@it .
 
-spav:fvicw a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvicw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digital Compact Cassette"@en ;
@@ -1534,10 +1770,13 @@ spav:fvicw a crm:E55_Type,
     skos:prefLabel "DCC"@de,
         "DCC"@en,
         "DCC"@fr,
+        "DCC"@it ;
+    rico:name "DCC"@de,
+        "DCC"@en,
+        "DCC"@fr,
         "DCC"@it .
 
-spav:fvidn a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvidn a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvpmq ;
@@ -1545,10 +1784,13 @@ spav:fvidn a crm:E55_Type,
     skos:prefLabel "HDV"@de,
         "HDV"@en,
         "HDV"@fr,
+        "HDV"@it ;
+    rico:name "HDV"@de,
+        "HDV"@en,
+        "HDV"@fr,
         "HDV"@it .
 
-spav:fvioo a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvioo a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Beta SP small"@en ;
@@ -1557,10 +1799,13 @@ spav:fvioo a crm:E55_Type,
     skos:prefLabel "BetacamSP klein"@de,
         "BetacamSP small"@en,
         "BetacamSP petite"@fr,
+        "BetacamSP piccola"@it ;
+    rico:name "BetacamSP klein"@de,
+        "BetacamSP small"@en,
+        "BetacamSP petite"@fr,
         "BetacamSP piccola"@it .
 
-spav:fvjbs a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvjbs a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Hi-8-mm"@en ;
@@ -1570,10 +1815,13 @@ spav:fvjbs a crm:E55_Type,
     skos:prefLabel "Hi8"@de,
         "Hi8"@en,
         "Hi8"@fr,
+        "Hi8"@it ;
+    rico:name "Hi8"@de,
+        "Hi8"@en,
+        "Hi8"@fr,
         "Hi8"@it .
 
-spav:fvjej a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvjej a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Super VHS-C"@en ;
@@ -1582,10 +1830,13 @@ spav:fvjej a crm:E55_Type,
     skos:prefLabel "S-VHS-C"@de,
         "S-VHS-C"@en,
         "S-VHS-C"@fr,
+        "S-VHS-C"@it ;
+    rico:name "S-VHS-C"@de,
+        "S-VHS-C"@en,
+        "S-VHS-C"@fr,
         "S-VHS-C"@it .
 
-spav:fvkyo a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvkyo a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvlvi ;
@@ -1593,10 +1844,13 @@ spav:fvkyo a crm:E55_Type,
     skos:prefLabel "1/2\" Open Reel"@de,
         "1/2\" open reel"@en,
         "1/2\" Open Reel"@fr,
+        "1/2 pollice bobina aperta"@it ;
+    rico:name "1/2\" Open Reel"@de,
+        "1/2\" open reel"@en,
+        "1/2\" Open Reel"@fr,
         "1/2 pollice bobina aperta"@it .
 
-spav:fvlfa a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlfa a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Beta SP large"@en ;
@@ -1605,20 +1859,25 @@ spav:fvlfa a crm:E55_Type,
     skos:prefLabel "BetacamSP gross"@de,
         "BetacamSP large"@en,
         "BetacamSP grande"@fr,
+        "BetacamSP grande"@it ;
+    rico:name "BetacamSP gross"@de,
+        "BetacamSP large"@en,
+        "BetacamSP grande"@fr,
         "BetacamSP grande"@it .
 
-spav:fvlfo a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlfo a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvdex ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Proof auf Karton geklebt"@de,
         "proof glued on cardboard"@en,
+        "epreuve collée sur carton"@fr ;
+    rico:name "Proof auf Karton geklebt"@de,
+        "proof glued on cardboard"@en,
         "epreuve collée sur carton"@fr .
 
-spav:fvlxb a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlxb a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvoda ;
@@ -1626,20 +1885,25 @@ spav:fvlxb a crm:E55_Type,
     skos:prefLabel "VHS-C"@de,
         "VHS-C"@en,
         "VHS-C"@fr,
+        "VHS-C"@it ;
+    rico:name "VHS-C"@de,
+        "VHS-C"@en,
+        "VHS-C"@fr,
         "VHS-C"@it .
 
-spav:fvlyj a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlyj a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvkmy ;
     skos:inScheme spav:fv ;
     skos:prefLabel "3\"1/2 floppy"@en,
         "disquette 3 pouces et demi"@fr,
+        "floppy disk 3 1/2 pollici"@it ;
+    rico:name "3\"1/2 floppy"@en,
+        "disquette 3 pouces et demi"@fr,
         "floppy disk 3 1/2 pollici"@it .
 
-spav:fvlyk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlyk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digital Audio Tape"@en ;
@@ -1648,10 +1912,13 @@ spav:fvlyk a crm:E55_Type,
     skos:prefLabel "DAT"@de,
         "DAT"@en,
         "DAT"@fr,
+        "DAT"@it ;
+    rico:name "DAT"@de,
+        "DAT"@en,
+        "DAT"@fr,
         "DAT"@it .
 
-spav:fvmdu a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmdu a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "35 millimetri"@it ;
@@ -1661,10 +1928,13 @@ spav:fvmdu a crm:E55_Type,
     skos:prefLabel "35mm"@de,
         "35mm"@en,
         "35mm"@fr,
+        "35mm"@it ;
+    rico:name "35mm"@de,
+        "35mm"@en,
+        "35mm"@fr,
         "35mm"@it .
 
-spav:fvmjw a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmjw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvvnm ;
@@ -1672,10 +1942,13 @@ spav:fvmjw a crm:E55_Type,
     skos:prefLabel "BetacamSX klein"@de,
         "BetacamSX small"@en,
         "BetacamSX petite"@fr,
+        "BetacamSX piccola"@it ;
+    rico:name "BetacamSX klein"@de,
+        "BetacamSX small"@en,
+        "BetacamSX petite"@fr,
         "BetacamSX piccola"@it .
 
-spav:fvmoe a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmoe a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvpmq ;
@@ -1683,10 +1956,13 @@ spav:fvmoe a crm:E55_Type,
     skos:prefLabel "DVCPro"@de,
         "DVCPro"@en,
         "DVCPro"@fr,
+        "DVCPro"@it ;
+    rico:name "DVCPro"@de,
+        "DVCPro"@en,
+        "DVCPro"@fr,
         "DVCPro"@it .
 
-spav:fvmoi a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmoi a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Dia"@de ;
@@ -1696,10 +1972,13 @@ spav:fvmoi a crm:E55_Type,
     skos:prefLabel "Diapositiv"@de,
         "slide"@en,
         "diapositive"@fr,
+        "diapositiva"@it ;
+    rico:name "Diapositiv"@de,
+        "slide"@en,
+        "diapositive"@fr,
         "diapositiva"@it .
 
-spav:fvmql a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmql a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvgye ;
@@ -1707,10 +1986,12 @@ spav:fvmql a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:prefLabel "45 rpm record"@en,
         "disque 45 tours"@fr,
+        "45 giri"@it ;
+    rico:name "45 rpm record"@en,
+        "disque 45 tours"@fr,
         "45 giri"@it .
 
-spav:fvmrk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvmrk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvpso ;
@@ -1719,10 +2000,13 @@ spav:fvmrk a crm:E55_Type,
     skos:prefLabel "Super 8"@de,
         "Super 8"@en,
         "Super 8"@fr,
+        "Super 8"@it ;
+    rico:name "Super 8"@de,
+        "Super 8"@en,
+        "Super 8"@fr,
         "Super 8"@it .
 
-spav:fvnvy a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvnvy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digi Beta small"@en ;
@@ -1731,10 +2015,13 @@ spav:fvnvy a crm:E55_Type,
     skos:prefLabel "Digital Betacam klein"@de,
         "Digital Betacam small"@en,
         "Betacam numérique grande petite"@fr,
+        "Digital Betacam piccola"@it ;
+    rico:name "Digital Betacam klein"@de,
+        "Digital Betacam small"@en,
+        "Betacam numérique grande petite"@fr,
         "Digital Betacam piccola"@it .
 
-spav:fvodg a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvodg a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvaha ;
@@ -1742,10 +2029,13 @@ spav:fvodg a crm:E55_Type,
     skos:prefLabel "DVD-Audio"@de,
         "DVD-Audio"@en,
         "DVD-Audio"@fr,
+        "DVD-Audio"@it ;
+    rico:name "DVD-Audio"@de,
+        "DVD-Audio"@en,
+        "DVD-Audio"@fr,
         "DVD-Audio"@it .
 
-spav:fvpco a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvpco a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digital VHS"@en ;
@@ -1754,10 +2044,13 @@ spav:fvpco a crm:E55_Type,
     skos:prefLabel "D-VHS"@de,
         "D-VHS"@en,
         "D-VHS"@fr,
+        "D-VHS"@it ;
+    rico:name "D-VHS"@de,
+        "D-VHS"@en,
+        "D-VHS"@fr,
         "D-VHS"@it .
 
-spav:fvpln a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvpln a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "CAC"@en,
@@ -1767,10 +2060,13 @@ spav:fvpln a crm:E55_Type,
     skos:prefLabel "Kompaktkassette"@de,
         "Compact Cassette"@en,
         "cassette compacte"@fr,
+        "musicassetta"@it ;
+    rico:name "Kompaktkassette"@de,
+        "Compact Cassette"@en,
+        "cassette compacte"@fr,
         "musicassetta"@it .
 
-spav:fvpro a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvpro a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvunk ;
@@ -1778,10 +2074,13 @@ spav:fvpro a crm:E55_Type,
     skos:prefLabel "Digital 8"@de,
         "Digital 8"@en,
         "Digital 8"@fr,
+        "Digital 8"@it ;
+    rico:name "Digital 8"@de,
+        "Digital 8"@en,
+        "Digital 8"@fr,
         "Digital 8"@it .
 
-spav:fvqow a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvqow a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Normal-8"@de,
@@ -1792,10 +2091,13 @@ spav:fvqow a crm:E55_Type,
     skos:prefLabel "8mm"@de,
         "8mm"@en,
         "8mm"@fr,
+        "8mm"@it ;
+    rico:name "8mm"@de,
+        "8mm"@en,
+        "8mm"@fr,
         "8mm"@it .
 
-spav:fvrpy a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvrpy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvgye ;
@@ -1803,10 +2105,12 @@ spav:fvrpy a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:prefLabel "78 rpm record"@en,
         "disque 78 tours"@fr,
+        "78 giri"@it ;
+    rico:name "78 rpm record"@en,
+        "disque 78 tours"@fr,
         "78 giri"@it .
 
-spav:fvrtb a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvrtb a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvlvi ;
@@ -1815,10 +2119,13 @@ spav:fvrtb a crm:E55_Type,
     skos:prefLabel "1\" Type C"@de,
         "1\" Type C"@en,
         "1\" Type C"@fr,
+        "1 pollice standard C"@it ;
+    rico:name "1\" Type C"@de,
+        "1\" Type C"@en,
+        "1\" Type C"@fr,
         "1 pollice standard C"@it .
 
-spav:fvruf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvruf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digital-S"@de,
@@ -1829,10 +2136,13 @@ spav:fvruf a crm:E55_Type,
     skos:prefLabel "D9"@de,
         "D9"@en,
         "D9"@fr,
+        "D9"@it ;
+    rico:name "D9"@de,
+        "D9"@en,
+        "D9"@fr,
         "D9"@it .
 
-spav:fvsvv a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvsvv a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Super Audio CD"@en ;
@@ -1841,10 +2151,13 @@ spav:fvsvv a crm:E55_Type,
     skos:prefLabel "SACD"@de,
         "SACD"@en,
         "SACD"@fr,
+        "SACD"@it ;
+    rico:name "SACD"@de,
+        "SACD"@en,
+        "SACD"@fr,
         "SACD"@it .
 
-spav:fvtfa a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvtfa a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvodj ;
@@ -1853,10 +2166,13 @@ spav:fvtfa a crm:E55_Type,
     skos:prefLabel "Open Reel Audio Tape"@de,
         "open reel audiotape"@en,
         "bande audio sur bobine"@fr,
+        "registrazione a bobina aperta"@it ;
+    rico:name "Open Reel Audio Tape"@de,
+        "open reel audiotape"@en,
+        "bande audio sur bobine"@fr,
         "registrazione a bobina aperta"@it .
 
-spav:fvtif a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvtif a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvonl ;
@@ -1864,10 +2180,13 @@ spav:fvtif a crm:E55_Type,
     skos:prefLabel "IIIF"@de,
         "IIIF"@en,
         "IIIF"@fr,
+        "IIIF"@it ;
+    rico:name "IIIF"@de,
+        "IIIF"@en,
+        "IIIF"@fr,
         "IIIF"@it .
 
-spav:fvuhk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvuhk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvskn ;
@@ -1875,10 +2194,13 @@ spav:fvuhk a crm:E55_Type,
     skos:prefLabel "U-matic SP"@de,
         "U-matic SP"@en,
         "U-matic SP"@fr,
+        "U-matic SP"@it ;
+    rico:name "U-matic SP"@de,
+        "U-matic SP"@en,
+        "U-matic SP"@fr,
         "U-matic SP"@it .
 
-spav:fvukd a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvukd a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvajf ;
@@ -1887,20 +2209,25 @@ spav:fvukd a crm:E55_Type,
     skos:prefLabel "Postkarte"@de,
         "postcard"@en,
         "carte postale"@fr,
+        "cartolina"@it ;
+    rico:name "Postkarte"@de,
+        "postcard"@en,
+        "carte postale"@fr,
         "cartolina"@it .
 
-spav:fvulp a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvulp a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvkmy ;
     skos:inScheme spav:fv ;
     skos:prefLabel "5\"1/4 floppy"@en,
         "mini-disquette de 5 pouces un quart"@fr,
+        "floppy disk 5 1/4 pollici"@it ;
+    rico:name "5\"1/4 floppy"@en,
+        "mini-disquette de 5 pouces un quart"@fr,
         "floppy disk 5 1/4 pollici"@it .
 
-spav:fvuum a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvuum a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvaha ;
@@ -1908,10 +2235,13 @@ spav:fvuum a crm:E55_Type,
     skos:prefLabel "Blu-Ray"@de,
         "Blu-Ray"@en,
         "Blu-Ray"@fr,
+        "Blu-Ray"@it ;
+    rico:name "Blu-Ray"@de,
+        "Blu-Ray"@en,
+        "Blu-Ray"@fr,
         "Blu-Ray"@it .
 
-spav:fvuus a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvuus a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -1919,10 +2249,13 @@ spav:fvuus a crm:E55_Type,
     skos:prefLabel "D3"@de,
         "D3"@en,
         "D3"@fr,
+        "D3"@it ;
+    rico:name "D3"@de,
+        "D3"@en,
+        "D3"@fr,
         "D3"@it .
 
-spav:fvvax a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvvax a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvpmq ;
@@ -1930,10 +2263,13 @@ spav:fvvax a crm:E55_Type,
     skos:prefLabel "DVCAM"@de,
         "DVCAM"@en,
         "DVCAM"@fr,
+        "DVCAM"@it ;
+    rico:name "DVCAM"@de,
+        "DVCAM"@en,
+        "DVCAM"@fr,
         "DVCAM"@it .
 
-spav:fvviy a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvviy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Super VHS"@en ;
@@ -1944,10 +2280,13 @@ spav:fvviy a crm:E55_Type,
     skos:prefLabel "S-VHS"@de,
         "S-VHS"@en,
         "S-VHS"@fr,
+        "S-VHS"@it ;
+    rico:name "S-VHS"@de,
+        "S-VHS"@en,
+        "S-VHS"@fr,
         "S-VHS"@it .
 
-spav:fvvyd a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvvyd a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "16 millimetri"@it ;
@@ -1957,10 +2296,13 @@ spav:fvvyd a crm:E55_Type,
     skos:prefLabel "16mm"@de,
         "16mm"@en,
         "16mm"@fr,
+        "16mm"@it ;
+    rico:name "16mm"@de,
+        "16mm"@en,
+        "16mm"@fr,
         "16mm"@it .
 
-spav:fvwry a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvwry a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvuut ;
@@ -1969,10 +2311,13 @@ spav:fvwry a crm:E55_Type,
     skos:prefLabel "Kontaktabzug"@de,
         "contact print"@en,
         "planche-contact"@fr,
+        "stampa a contatto"@it ;
+    rico:name "Kontaktabzug"@de,
+        "contact print"@en,
+        "planche-contact"@fr,
         "stampa a contatto"@it .
 
-spav:fvxdz a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvxdz a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvunk ;
@@ -1980,10 +2325,13 @@ spav:fvxdz a crm:E55_Type,
     skos:prefLabel "Video8"@de,
         "Video8"@en,
         "Video8"@fr,
+        "Video8"@it ;
+    rico:name "Video8"@de,
+        "Video8"@en,
+        "Video8"@fr,
         "Video8"@it .
 
-spav:fvxmd a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvxmd a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvzuj ;
@@ -1991,10 +2339,13 @@ spav:fvxmd a crm:E55_Type,
     skos:prefLabel "DVD-RW"@de,
         "DVD-RW"@en,
         "DVD-RW"@fr,
+        "DVD-RW"@it ;
+    rico:name "DVD-RW"@de,
+        "DVD-RW"@en,
+        "DVD-RW"@fr,
         "DVD-RW"@it .
 
-spav:fvxpt a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvxpt a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvskn ;
@@ -2002,10 +2353,13 @@ spav:fvxpt a crm:E55_Type,
     skos:prefLabel "U-matic S"@de,
         "U-matic S"@en,
         "U-matic S"@fr,
+        "U-matic S"@it ;
+    rico:name "U-matic S"@de,
+        "U-matic S"@en,
+        "U-matic S"@fr,
         "U-matic S"@it .
 
-spav:fvxzi a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvxzi a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digi Beta large"@en ;
@@ -2014,10 +2368,13 @@ spav:fvxzi a crm:E55_Type,
     skos:prefLabel "Digital Betacam gross"@de,
         "Digital Betacam large"@en,
         "Betacam numérique grande"@fr,
+        "Digital Betacam grande"@it ;
+    rico:name "Digital Betacam gross"@de,
+        "Digital Betacam large"@en,
+        "Betacam numérique grande"@fr,
         "Digital Betacam grande"@it .
 
-spav:fvywh a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvywh a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvoda ;
@@ -2027,10 +2384,13 @@ spav:fvywh a crm:E55_Type,
     skos:prefLabel "VHS"@de,
         "VHS"@en,
         "VHS"@fr,
+        "VHS"@it ;
+    rico:name "VHS"@de,
+        "VHS"@en,
+        "VHS"@fr,
         "VHS"@it .
 
-spav:fvyxa a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvyxa a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "LP"@it ;
@@ -2039,10 +2399,12 @@ spav:fvyxa a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:prefLabel "long-playing record"@en,
         "disque 33 tours"@fr,
+        "33 giri"@it ;
+    rico:name "long-playing record"@en,
+        "disque 33 tours"@fr,
         "33 giri"@it .
 
-spav:fvzgv a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvzgv a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Video Cassette Recording"@de,
@@ -2055,16 +2417,23 @@ spav:fvzgv a crm:E55_Type,
     skos:prefLabel "VCR"@de,
         "VCR"@en,
         "VCR"@fr,
+        "VCR"@it ;
+    rico:name "VCR"@de,
+        "VCR"@en,
+        "VCR"@fr,
         "VCR"@it .
 
-spav:fvzrb a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvzrb a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
     skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1005> ;
     skos:inScheme spav:fv ;
     skos:prefLabel "D2"@de,
+        "D2"@en,
+        "D2"@fr,
+        "D2"@it ;
+    rico:name "D2"@de,
         "D2"@en,
         "D2"@fr,
         "D2"@it .
@@ -4528,40 +4897,40 @@ spav:rsssr a crm:E55_Type,
         "sub-series"@en,
         "sous-série"@fr .
 
-spav:rtac a crm:E55_Type,
-        skos:Concept,
+spav:rtac a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "acoustic"@en ;
-    skos:topConceptOf spav:rt .
+    skos:topConceptOf spav:rt ;
+    rico:name "acoustic"@en .
 
-spav:rtmi a crm:E55_Type,
-        skos:Concept,
+spav:rtmi a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "moving image"@en ;
-    skos:topConceptOf spav:rt .
+    skos:topConceptOf spav:rt ;
+    rico:name "moving image"@en .
 
-spav:rtsp a crm:E55_Type,
-        skos:Concept,
+spav:rtsp a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "spatial"@en ;
-    skos:topConceptOf spav:rt .
+    skos:topConceptOf spav:rt ;
+    rico:name "spatial"@en .
 
-spav:rttx a crm:E55_Type,
-        skos:Concept,
+spav:rttx a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "textual"@en ;
-    skos:topConceptOf spav:rt .
+    skos:topConceptOf spav:rt ;
+    rico:name "textual"@en .
 
-spav:rtvs a crm:E55_Type,
-        skos:Concept,
+spav:rtvs a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "visual"@en ;
-    skos:topConceptOf spav:rt .
+    skos:topConceptOf spav:rt ;
+    rico:name "visual"@en .
 
 spav:sfint a crm:E55_Type,
         skos:Concept ;
@@ -4589,8 +4958,7 @@ spav:sotop a crm:E55_Type,
     skos:prefLabel "top"@en ;
     skos:topConceptOf spav:so .
 
-spav:stltp a crm:E55_Type,
-        skos:Concept,
+spav:stltp a skos:Concept,
         rico:RecordResourceState ;
     rdfs:comment "\"Photographic prints made much later than the negative and usually not by the original photographer.\" (AAT)"@en ;
     skos:broader spav:stpps ;
@@ -4598,25 +4966,32 @@ spav:stltp a crm:E55_Type,
     skos:inScheme spav:st ;
     skos:prefLabel "moderner Abzug"@de,
         "later print"@en,
+        "tirage moderne"@fr ;
+    rico:name "moderner Abzug"@de,
+        "later print"@en,
         "tirage moderne"@fr .
 
-spav:stvpd a crm:E55_Type,
-        skos:Concept,
+spav:stvpd a skos:Concept,
         rico:RecordResourceState ;
     skos:broader spav:stvps ;
     skos:inScheme spav:st ;
     skos:prefLabel "Original, signiert, datiert"@de,
         "vintage print, signed, dated"@en,
+        "original, signé, daté"@fr ;
+    rico:name "Original, signiert, datiert"@de,
+        "vintage print, signed, dated"@en,
         "original, signé, daté"@fr .
 
-spav:stwkp a crm:E55_Type,
-        skos:Concept,
+spav:stwkp a skos:Concept,
         rico:RecordResourceState ;
     rdfs:comment "\"Photographic prints made for examination and reference, such as those done before an edition is produced.\" (AAT)"@en ;
     skos:broader spav:stpps ;
     skos:exactMatch <http://vocab.getty.edu/aat/300189331> ;
     skos:inScheme spav:st ;
     skos:prefLabel "Arbeitskopie"@de,
+        "work print"@en,
+        "tirage de travail"@fr ;
+    rico:name "Arbeitskopie"@de,
         "work print"@en,
         "tirage de travail"@fr .
 
@@ -5320,8 +5695,7 @@ spav:zjwcj a crm:E55_Type,
         "metallo"@it ;
     skos:topConceptOf spav:zj .
 
-spav:dfqrl a crm:E55_Type,
-        skos:Concept,
+spav:dfqrl a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
     skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
@@ -5330,10 +5704,13 @@ spav:dfqrl a crm:E55_Type,
     skos:prefLabel "Positiv (Foto-Positiv)"@de,
         "positive"@en,
         "positif"@fr,
+        "positivo"@it ;
+    rico:name "Positiv (Foto-Positiv)"@de,
+        "positive"@en,
+        "positif"@fr,
         "positivo"@it .
 
-spav:frbyr a crm:E55_Type,
-        skos:Concept,
+spav:frbyr a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:inScheme spav:fr ;
     skos:narrower spav:frvrj ;
@@ -5341,10 +5718,13 @@ spav:frbyr a crm:E55_Type,
         "photography"@en,
         "photographie"@fr,
         "fotografia"@it ;
-    skos:topConceptOf spav:fr .
+    skos:topConceptOf spav:fr ;
+    rico:name "Fotografie"@de,
+        "photography"@en,
+        "photographie"@fr,
+        "fotografia"@it .
 
-spav:frhui a crm:E55_Type,
-        skos:Concept,
+spav:frhui a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "laser printing?"@en ;
     skos:broader spav:frgzf ;
@@ -5354,10 +5734,13 @@ spav:frhui a crm:E55_Type,
     skos:prefLabel "Digitaldruck"@de,
         "digital print"@en,
         "impression numérique"@fr,
+        "stampa digitale"@it ;
+    rico:name "Digitaldruck"@de,
+        "digital print"@en,
+        "impression numérique"@fr,
         "stampa digitale"@it .
 
-spav:fvajf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvajf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300014109> ;
@@ -5367,10 +5750,13 @@ spav:fvajf a crm:E55_Type,
         "paper"@en,
         "papier"@fr,
         "carta"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Papier"@de,
+        "paper"@en,
+        "papier"@fr,
+        "carta"@it .
 
-spav:fvdgf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvdgf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:inScheme spav:fv ;
@@ -5379,10 +5765,13 @@ spav:fvdgf a crm:E55_Type,
         "digital file"@en,
         "fichier numérique"@fr,
         "file digitale"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "digitale Datei"@de,
+        "digital file"@en,
+        "fichier numérique"@fr,
+        "file digitale"@it .
 
-spav:fvlkh a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlkh a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Compact Disc"@en ;
@@ -5392,10 +5781,13 @@ spav:fvlkh a crm:E55_Type,
     skos:prefLabel "CD"@de,
         "CD"@en,
         "CD"@fr,
+        "CD"@it ;
+    rico:name "CD"@de,
+        "CD"@en,
+        "CD"@fr,
         "CD"@it .
 
-spav:fvonl a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvonl a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvdgf ;
@@ -5404,10 +5796,13 @@ spav:fvonl a crm:E55_Type,
     skos:prefLabel "online"@de,
         "online"@en,
         "online"@fr,
+        "online"@it ;
+    rico:name "online"@de,
+        "online"@en,
+        "online"@fr,
         "online"@it .
 
-spav:fvqpw a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvqpw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Video CD"@en ;
@@ -5415,6 +5810,10 @@ spav:fvqpw a crm:E55_Type,
     skos:inScheme spav:fv ;
     skos:narrower spav:fvfce ;
     skos:prefLabel "VCD"@de,
+        "VCD"@en,
+        "VCD"@fr,
+        "VCD"@it ;
+    rico:name "VCD"@de,
         "VCD"@en,
         "VCD"@fr,
         "VCD"@it .
@@ -5560,18 +5959,19 @@ spav:rssrs a crm:E55_Type,
         "série"@fr,
         "serie"@it .
 
-spav:stvps a crm:E55_Type,
-        skos:Concept,
+spav:stvps a skos:Concept,
         rico:RecordResourceState ;
     skos:broader spav:stvtp ;
     skos:inScheme spav:st ;
     skos:narrower spav:stvpd ;
     skos:prefLabel "Original, signiert"@de,
         "vintage print, signed"@en,
+        "original, signé"@fr ;
+    rico:name "Original, signiert"@de,
+        "vintage print, signed"@en,
         "original, signé"@fr .
 
-spav:stvtp a crm:E55_Type,
-        skos:Concept,
+spav:stvtp a skos:Concept,
         rico:RecordResourceState ;
     rdfs:comment "\"Photographic prints made by the original photographer or soon after the picture was taken, that is, of the same historical vintage as the original.\" (AAT)"@en ;
     skos:broader spav:stpps ;
@@ -5579,6 +5979,9 @@ spav:stvtp a crm:E55_Type,
     skos:inScheme spav:st ;
     skos:narrower spav:stvps ;
     skos:prefLabel "Original"@de,
+        "vintage print"@en,
+        "original"@fr ;
+    rico:name "Original"@de,
         "vintage print"@en,
         "original"@fr .
 
@@ -5632,8 +6035,7 @@ spav:asprc a crm:E55_Type,
         "copie de conservation"@fr ;
     skos:topConceptOf spav:as .
 
-spav:dfeip a crm:E55_Type,
-        skos:Concept,
+spav:dfeip a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "bozza"@it,
         "schizzo"@it ;
@@ -5644,10 +6046,13 @@ spav:dfeip a crm:E55_Type,
         "design"@en,
         "Projet"@fr,
         "progetto"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Entwurf"@de,
+        "design"@en,
+        "Projet"@fr,
+        "progetto"@it .
 
-spav:dfwrq a crm:E55_Type,
-        skos:Concept,
+spav:dfwrq a skos:Concept,
         rico:DocumentaryFormType ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfpmd,
@@ -5656,10 +6061,13 @@ spav:dfwrq a crm:E55_Type,
         "film or video recording"@en,
         "enregistrement film ou vidéo"@fr,
         "registrazione cinematografica o video"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Film- oder Videoaufzeichnung"@de,
+        "film or video recording"@en,
+        "enregistrement film ou vidéo"@fr,
+        "registrazione cinematografica o video"@it .
 
-spav:fvdex a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvdex a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvuut ;
@@ -5670,10 +6078,13 @@ spav:fvdex a crm:E55_Type,
     skos:prefLabel "Abzug (Fotografie)"@de,
         "photographic print"@en,
         "tirage"@fr,
+        "stampa fotografica"@it ;
+    rico:name "Abzug (Fotografie)"@de,
+        "photographic print"@en,
+        "tirage"@fr,
         "stampa fotografica"@it .
 
-spav:fvdie a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvdie a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:inScheme spav:fv ;
@@ -5682,10 +6093,12 @@ spav:fvdie a crm:E55_Type,
     skos:prefLabel "magnetic disc"@en,
         "disque magnétique"@fr,
         "disco magnetico"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "magnetic disc"@en,
+        "disque magnétique"@fr,
+        "disco magnetico"@it .
 
-spav:fvese a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvese a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300046300> ;
@@ -5696,10 +6109,13 @@ spav:fvese a crm:E55_Type,
         "photographic image"@en,
         "photographie"@fr,
         "fotografia"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Fotografie"@de,
+        "photographic image"@en,
+        "photographie"@fr,
+        "fotografia"@it .
 
-spav:fvhcu a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhcu a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvzfk ;
@@ -5709,10 +6125,13 @@ spav:fvhcu a crm:E55_Type,
     skos:prefLabel "16mm Format"@de,
         "16mm format"@en,
         "format 16mm"@fr,
+        "formato 16mm"@it ;
+    rico:name "16mm Format"@de,
+        "16mm format"@en,
+        "format 16mm"@fr,
         "formato 16mm"@it .
 
-spav:fvhxo a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvhxo a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Beta SP"@en ;
@@ -5725,10 +6144,13 @@ spav:fvhxo a crm:E55_Type,
     skos:prefLabel "BetacamSP"@de,
         "BetacamSP"@en,
         "BetacamSP"@fr,
+        "BetacamSP"@it ;
+    rico:name "BetacamSP"@de,
+        "BetacamSP"@en,
+        "BetacamSP"@fr,
         "BetacamSP"@it .
 
-spav:fvpso a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvpso a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvzfk ;
@@ -5738,10 +6160,13 @@ spav:fvpso a crm:E55_Type,
     skos:prefLabel "8mm Format"@de,
         "8mm format"@en,
         "format 8mm"@fr,
+        "formato 8mm"@it ;
+    rico:name "8mm Format"@de,
+        "8mm format"@en,
+        "format 8mm"@fr,
         "formato 8mm"@it .
 
-spav:fvqle a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvqle a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "Digi Beta"@en ;
@@ -5753,10 +6178,13 @@ spav:fvqle a crm:E55_Type,
     skos:prefLabel "Digital Betacam"@de,
         "Digital Betacam"@en,
         "Betacam numérique"@fr,
+        "Digital Betacam"@it ;
+    rico:name "Digital Betacam"@de,
+        "Digital Betacam"@en,
+        "Betacam numérique"@fr,
         "Digital Betacam"@it .
 
-spav:fvvnm a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvvnm a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvjtf ;
@@ -5766,10 +6194,13 @@ spav:fvvnm a crm:E55_Type,
     skos:prefLabel "BetacamSX"@de,
         "BetacamSX"@en,
         "BetacamSX"@fr,
+        "BetacamSX"@it ;
+    rico:name "BetacamSX"@de,
+        "BetacamSX"@en,
+        "BetacamSX"@fr,
         "BetacamSX"@it .
 
-spav:fvzuj a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvzuj a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "DVD-Video"@en,
@@ -5781,6 +6212,10 @@ spav:fvzuj a crm:E55_Type,
     skos:narrower spav:fvefk,
         spav:fvxmd ;
     skos:prefLabel "DVD"@de,
+        "DVD"@en,
+        "DVD"@fr,
+        "DVD"@it ;
+    rico:name "DVD"@de,
         "DVD"@en,
         "DVD"@fr,
         "DVD"@it .
@@ -5880,8 +6315,7 @@ spav:ac a skos:ConceptScheme ;
         "accessability"@en,
         "accessibilité"@fr .
 
-spav:dfdui a crm:E55_Type,
-        skos:Concept,
+spav:dfdui a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300046300> ;
     skos:inScheme spav:df ;
@@ -5892,10 +6326,13 @@ spav:dfdui a crm:E55_Type,
         "photograph"@en,
         "photographie"@fr,
         "fotografia"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Fotografie"@de,
+        "photograph"@en,
+        "photographie"@fr,
+        "fotografia"@it .
 
-spav:dfkoy a crm:E55_Type,
-        skos:Concept,
+spav:dfkoy a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300033618> ;
     skos:inScheme spav:df ;
@@ -5906,15 +6343,18 @@ spav:dfkoy a crm:E55_Type,
         "painting"@en,
         "peinture"@fr,
         "pittura"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Gemälde"@de,
+        "painting"@en,
+        "peinture"@fr,
+        "pittura"@it .
 
 spav:dw a skos:ConceptScheme ;
     skos:hasTopConcept spav:dwelq,
         spav:dwmkn ;
     skos:prefLabel "object type"@en .
 
-spav:fvgye a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvgye a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "vinile"@it ;
@@ -5927,10 +6367,13 @@ spav:fvgye a crm:E55_Type,
         "phonograph record"@en,
         "disque (phonographique)"@fr,
         "disco"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Schallplatte"@de,
+        "phonograph record"@en,
+        "disque (phonographique)"@fr,
+        "disco"@it .
 
-spav:fvjtf a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvjtf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -5943,10 +6386,13 @@ spav:fvjtf a crm:E55_Type,
     skos:prefLabel "Betacam"@de,
         "Betacam"@en,
         "Betacam"@fr,
+        "Betacam"@it ;
+    rico:name "Betacam"@de,
+        "Betacam"@en,
+        "Betacam"@fr,
         "Betacam"@it .
 
-spav:fvkmy a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvkmy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvdie ;
@@ -5957,10 +6403,12 @@ spav:fvkmy a crm:E55_Type,
         spav:fvulp ;
     skos:prefLabel "floppy disk"@en,
         "disquette"@fr,
+        "floppy disk"@it ;
+    rico:name "floppy disk"@en,
+        "disquette"@fr,
         "floppy disk"@it .
 
-spav:fvlvi a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvlvi a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvodj ;
@@ -5970,10 +6418,12 @@ spav:fvlvi a crm:E55_Type,
         spav:fvrtb ;
     skos:prefLabel "open reel videotape"@en,
         "bande vidéo sur bobine"@fr,
+        "video a bobina aperta"@it ;
+    rico:name "open reel videotape"@en,
+        "bande vidéo sur bobine"@fr,
         "video a bobina aperta"@it .
 
-spav:fvunk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvunk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -5985,10 +6435,13 @@ spav:fvunk a crm:E55_Type,
     skos:prefLabel "8mm Format"@de,
         "8mm format"@en,
         "format 8mm"@fr,
+        "formato 8mm"@it ;
+    rico:name "8mm Format"@de,
+        "8mm format"@en,
+        "format 8mm"@fr,
         "formato 8mm"@it .
 
-spav:fvuut a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvuut a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvese ;
@@ -6000,10 +6453,13 @@ spav:fvuut a crm:E55_Type,
     skos:prefLabel "Fotopositiv"@de,
         "photo positive"@en,
         "positif"@fr,
+        "positivo (foto)"@it ;
+    rico:name "Fotopositiv"@de,
+        "photo positive"@en,
+        "positif"@fr,
         "positivo (foto)"@it .
 
-spav:fvzfk a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvzfk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300014637> ;
@@ -6015,10 +6471,13 @@ spav:fvzfk a crm:E55_Type,
         "film"@en,
         "film"@fr,
         "pellicola"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Film"@de,
+        "film"@en,
+        "film"@fr,
+        "pellicola"@it .
 
-spav:fvzxp a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvzxp a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "audiocassetta"@it ;
@@ -6029,6 +6488,10 @@ spav:fvzxp a crm:E55_Type,
         spav:fvlyk,
         spav:fvpln ;
     skos:prefLabel "Audiokassette"@de,
+        "audio cassette"@en,
+        "cassette audio"@fr,
+        "musicassetta"@it ;
+    rico:name "Audiokassette"@de,
         "audio cassette"@en,
         "cassette audio"@fr,
         "musicassetta"@it .
@@ -6120,15 +6583,15 @@ spav:so a skos:ConceptScheme ;
         spav:sotop ;
     skos:prefLabel "video scanning order"@en .
 
-spav:stpps a crm:E55_Type,
-        skos:Concept,
+spav:stpps a skos:Concept,
         rico:RecordResourceState ;
     skos:inScheme spav:st ;
     skos:narrower spav:stltp,
         spav:stvtp,
         spav:stwkp ;
     skos:prefLabel "photographic print state"@en ;
-    skos:topConceptOf spav:st .
+    skos:topConceptOf spav:st ;
+    rico:name "photographic print state"@en .
 
 spav:tj a skos:ConceptScheme ;
     skos:hasTopConcept spav:tjeev,
@@ -6184,8 +6647,7 @@ spav:zjyky a crm:E55_Type,
         "tessuto"@it ;
     skos:topConceptOf spav:zj .
 
-spav:dfrwd a crm:E55_Type,
-        skos:Concept,
+spav:dfrwd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300185711> ;
     skos:inScheme spav:df ;
@@ -6196,10 +6658,12 @@ spav:dfrwd a crm:E55_Type,
     skos:prefLabel "object"@en,
         "objet"@fr,
         "oggetto"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "object"@en,
+        "objet"@fr,
+        "oggetto"@it .
 
-spav:fvodj a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvodj a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:inScheme spav:fv ;
@@ -6211,10 +6675,13 @@ spav:fvodj a crm:E55_Type,
         "magnetic tape"@en,
         "bande magnétique"@fr,
         "banda magnetica"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Magnetband"@de,
+        "magnetic tape"@en,
+        "bande magnétique"@fr,
+        "banda magnetica"@it .
 
-spav:fvpmq a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvpmq a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -6226,10 +6693,13 @@ spav:fvpmq a crm:E55_Type,
     skos:prefLabel "DV"@de,
         "DV"@en,
         "DV"@fr,
+        "DV"@it ;
+    rico:name "DV"@de,
+        "DV"@en,
+        "DV"@fr,
         "DV"@it .
 
-spav:fvskn a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvskn a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -6241,6 +6711,10 @@ spav:fvskn a crm:E55_Type,
         spav:fvuhk,
         spav:fvxpt ;
     skos:prefLabel "U-matic"@de,
+        "U-matic"@en,
+        "U-matic"@fr,
+        "U-matic"@it ;
+    rico:name "U-matic"@de,
         "U-matic"@en,
         "U-matic"@fr,
         "U-matic"@it .
@@ -6333,8 +6807,7 @@ spav:dq a skos:ConceptScheme ;
         "indicateur de date"@fr,
         "data qualificatore"@it .
 
-spav:fvoda a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvoda a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
@@ -6345,6 +6818,10 @@ spav:fvoda a crm:E55_Type,
         spav:fvviy,
         spav:fvywh ;
     skos:prefLabel "VHS Format"@de,
+        "VHS format"@en,
+        "format VHS"@fr,
+        "formato VHS"@it ;
+    rico:name "VHS Format"@de,
         "VHS format"@en,
         "format VHS"@fr,
         "formato VHS"@it .
@@ -6410,8 +6887,7 @@ spav:wa a skos:ConceptScheme ;
     skos:prefLabel "identifier"@en,
         "identification"@fr .
 
-spav:etmoc a crm:E55_Type,
-        skos:Concept,
+spav:etmoc a skos:Concept,
         rico:EventType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300417634> ;
     skos:inScheme spav:et ;
@@ -6424,7 +6900,10 @@ spav:etmoc a crm:E55_Type,
     skos:prefLabel "Eingangsart"@de,
         "methods of acquisition"@en,
         "type d’acquisition"@fr ;
-    skos:topConceptOf spav:et .
+    skos:topConceptOf spav:et ;
+    rico:name "Eingangsart"@de,
+        "methods of acquisition"@en,
+        "type d’acquisition"@fr .
 
 spav:hlamu a crm:E55_Type,
         skos:Concept ;
@@ -6516,8 +6995,7 @@ spav:ih a skos:ConceptScheme ;
         "contact"@fr,
         "contatto"@it .
 
-spav:frgzf a crm:E55_Type,
-        skos:Concept,
+spav:frgzf a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "estampe"@fr,
         "impressione"@it ;
@@ -6536,10 +7014,13 @@ spav:frgzf a crm:E55_Type,
         "print"@en,
         "gravure"@fr,
         "stampa"@it ;
-    skos:topConceptOf spav:fr .
+    skos:topConceptOf spav:fr ;
+    rico:name "Druck"@de,
+        "print"@en,
+        "gravure"@fr,
+        "stampa"@it .
 
-spav:fvaha a crm:E55_Type,
-        premis:StorageMedium,
+spav:fvaha a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:inScheme spav:fv ;
@@ -6555,7 +7036,11 @@ spav:fvaha a crm:E55_Type,
         "optical disc"@en,
         "disque optique"@fr,
         "disco ottico"@it ;
-    skos:topConceptOf spav:fv .
+    skos:topConceptOf spav:fv ;
+    rico:name "Optische Disk"@de,
+        "optical disc"@en,
+        "disque optique"@fr,
+        "disco ottico"@it .
 
 spav:mnuzw a crm:E55_Type,
         skos:Concept ;
@@ -6697,6 +7182,14 @@ spav:eo a skos:ConceptScheme ;
     skos:prefLabel "note type"@en,
         "type de note"@fr .
 
+spav:eu a skos:ConceptScheme ;
+    skos:hasTopConcept spav:eubox,
+        spav:euenv,
+        spav:eukg,
+        spav:eulnm,
+        spav:eupcs ;
+    skos:prefLabel "extent unit"@en .
+
 spav:mneyg a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Drama"@de,
@@ -6739,8 +7232,7 @@ spav:cl a skos:ConceptScheme ;
     skos:prefLabel "color content"@en,
         "couleur"@fr .
 
-spav:dflvv a crm:E55_Type,
-        skos:Concept,
+spav:dflvv a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
     skos:inScheme spav:df ;
@@ -6759,19 +7251,13 @@ spav:dflvv a crm:E55_Type,
         "document genre"@en,
         "genre de document"@fr,
         "tipo di documento"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Dokumentgattungen"@de,
+        "document genre"@en,
+        "genre de document"@fr,
+        "tipo di documento"@it .
 
-spav:eu a skos:ConceptScheme ;
-    skos:hasTopConcept spav:eubox,
-        spav:euenv,
-        spav:eugen,
-        spav:eulnm,
-        spav:eupcs,
-        spav:euwgt ;
-    skos:prefLabel "extent unit"@en .
-
-spav:fverx a crm:E55_Type,
-        premis:StorageMedium,
+spav:fverx a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvodj ;
@@ -6791,10 +7277,13 @@ spav:fverx a crm:E55_Type,
     skos:prefLabel "Videokassette"@de,
         "video cassette"@en,
         "cassette vidéo"@fr,
+        "videocassetta"@it ;
+    rico:name "Videokassette"@de,
+        "video cassette"@en,
+        "cassette vidéo"@fr,
         "videocassetta"@it .
 
-spav:dfqot a crm:E55_Type,
-        skos:Concept,
+spav:dfqot a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "locandina"@it,
         "poster"@it ;
@@ -6817,7 +7306,11 @@ spav:dfqot a crm:E55_Type,
         "poster"@en,
         "affiche"@fr,
         "manifesto"@it ;
-    skos:topConceptOf spav:df .
+    skos:topConceptOf spav:df ;
+    rico:name "Plakat"@de,
+        "poster"@en,
+        "affiche"@fr,
+        "manifesto"@it .
 
 spav:pk a skos:ConceptScheme ;
     skos:hasTopConcept spav:pkba4,
