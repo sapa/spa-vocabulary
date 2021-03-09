@@ -30,11 +30,15 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-09T08:10:07.418482+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-09T09:20:18.224924+01:00"^^xsd:dateTime .
 
-spav:eucm a skos:Concept,
+spav:sz a skos:ConceptScheme ;
+    skos:prefLabel "conditions of access"@en,
+        "condition d’accès"@fr .
+
+spav:umcm a skos:Concept,
         rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
+    skos:inScheme spav:um ;
     skos:prefLabel "cm"@de,
         "cm"@en,
         "cm"@fr,
@@ -43,10 +47,6 @@ spav:eucm a skos:Concept,
         "cm"@en,
         "cm"@fr,
         "cm"@it .
-
-spav:sz a skos:ConceptScheme ;
-    skos:prefLabel "conditions of access"@en,
-        "condition d’accès"@fr .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -1301,55 +1301,6 @@ spav:etpur a skos:Concept,
     rico:name "Ankauf"@de,
         "purchase"@en,
         "achat"@fr .
-
-spav:eubox a skos:Concept,
-        rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "boxes"@en ;
-    skos:topConceptOf spav:eu ;
-    rico:name "boxes"@en .
-
-spav:euenv a skos:Concept,
-        rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "envelopes"@en ;
-    skos:topConceptOf spav:eu ;
-    rico:name "envelopes"@en .
-
-spav:eukg a skos:Concept,
-        rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "kg"@de,
-        "kg"@en,
-        "kg"@fr,
-        "kg"@it ;
-    skos:topConceptOf spav:eu ;
-    rico:name "kg"@de,
-        "kg"@en,
-        "kg"@fr,
-        "kg"@it .
-
-spav:eulnm a skos:Concept,
-        rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "Laufmeter"@de,
-        "linear meters"@en,
-        "mètre linéaire"@fr,
-        "metri lineari"@it ;
-    skos:topConceptOf spav:eu ;
-    rico:name "Laufmeter"@de,
-        "linear meters"@en,
-        "mètre linéaire"@fr,
-        "metri lineari"@it .
-
-spav:eupcs a skos:Concept,
-        rico:unitOfMeasurement ;
-    skos:inScheme spav:eu ;
-    skos:prefLabel "Stück"@de,
-        "pieces"@en ;
-    skos:topConceptOf spav:eu ;
-    rico:name "Stück"@de,
-        "pieces"@en .
 
 spav:frabo a skos:Concept,
         rico:ProductionTechniqueType ;
@@ -5025,6 +4976,55 @@ spav:tpunk a crm:E55_Type,
         "inconnu"@fr ;
     skos:topConceptOf spav:tp .
 
+spav:umbox a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "boxes"@en ;
+    skos:topConceptOf spav:um ;
+    rico:name "boxes"@en .
+
+spav:umenv a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "envelopes"@en ;
+    skos:topConceptOf spav:um ;
+    rico:name "envelopes"@en .
+
+spav:umkg a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "kg"@de,
+        "kg"@en,
+        "kg"@fr,
+        "kg"@it ;
+    skos:topConceptOf spav:um ;
+    rico:name "kg"@de,
+        "kg"@en,
+        "kg"@fr,
+        "kg"@it .
+
+spav:umlnm a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "Laufmeter"@de,
+        "linear meters"@en,
+        "mètre linéaire"@fr,
+        "metri lineari"@it ;
+    skos:topConceptOf spav:um ;
+    rico:name "Laufmeter"@de,
+        "linear meters"@en,
+        "mètre linéaire"@fr,
+        "metri lineari"@it .
+
+spav:umpcs a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "Stück"@de,
+        "pieces"@en ;
+    skos:topConceptOf spav:um ;
+    rico:name "Stück"@de,
+        "pieces"@en .
+
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
@@ -7182,14 +7182,6 @@ spav:eo a skos:ConceptScheme ;
     skos:prefLabel "note type"@en,
         "type de note"@fr .
 
-spav:eu a skos:ConceptScheme ;
-    skos:hasTopConcept spav:eubox,
-        spav:euenv,
-        spav:eukg,
-        spav:eulnm,
-        spav:eupcs ;
-    skos:prefLabel "extent unit"@en .
-
 spav:mneyg a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Drama"@de,
@@ -7215,6 +7207,14 @@ spav:mneyg a crm:E55_Type,
         "théâtre parlé"@fr,
         "teatro drammatico"@it ;
     skos:topConceptOf spav:mn .
+
+spav:um a skos:ConceptScheme ;
+    skos:hasTopConcept spav:umbox,
+        spav:umenv,
+        spav:umkg,
+        spav:umlnm,
+        spav:umpcs ;
+    skos:prefLabel "extent unit"@en .
 
 spav:ya a skos:ConceptScheme ;
     skos:hasTopConcept spav:yakdx ;
