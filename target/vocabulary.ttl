@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-09T09:20:18.224924+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-09T11:14:26.529141+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -2609,28 +2609,36 @@ spav:knsiw a crm:E55_Type,
         "femminile"@it ;
     skos:topConceptOf spav:kn .
 
-spav:lgalb a crm:E55_Type,
-        skos:Concept ;
+spav:lgalb a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:alb ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Albanisch"@de,
         "Albanian"@en,
         "albanais"@fr,
         "albanese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Albanisch"@de,
+        "Albanian"@en,
+        "albanais"@fr,
+        "albanese"@it .
 
-spav:lgals a crm:E55_Type,
-        skos:Concept ;
+spav:lgals a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:gsw ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Elsässisch"@de,
         "Alsatian"@en,
         "alsacien"@fr,
         "alsaziano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Elsässisch"@de,
+        "Alsatian"@en,
+        "alsacien"@fr,
+        "alsaziano"@it .
 
-spav:lgara a crm:E55_Type,
-        skos:Concept ;
+spav:lgara a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ara,
         wd:Q13955 ;
     skos:inScheme spav:lg ;
@@ -2638,50 +2646,70 @@ spav:lgara a crm:E55_Type,
         "Arabic"@en,
         "arabe"@fr,
         "arabo"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Arabisch"@de,
+        "Arabic"@en,
+        "arabe"@fr,
+        "arabo"@it .
 
-spav:lgarm a crm:E55_Type,
-        skos:Concept ;
+spav:lgarm a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:arm ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Armenisch"@de,
         "Armenian"@en,
         "armémien"@fr,
         "armeno"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Armenisch"@de,
+        "Armenian"@en,
+        "armémien"@fr,
+        "armeno"@it .
 
-spav:lgbam a crm:E55_Type,
-        skos:Concept ;
+spav:lgbam a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:bam ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Bambara"@de,
         "Bambara"@en,
         "bambara"@fr,
         "bambara"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Bambara"@de,
+        "Bambara"@en,
+        "bambara"@fr,
+        "bambara"@it .
 
-spav:lgbos a crm:E55_Type,
-        skos:Concept ;
+spav:lgbos a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:bos ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Bosnisch"@de,
         "Bosnian"@en,
         "bosniaque"@fr,
         "bosniaco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Bosnisch"@de,
+        "Bosnian"@en,
+        "bosniaque"@fr,
+        "bosniaco"@it .
 
-spav:lgbul a crm:E55_Type,
-        skos:Concept ;
+spav:lgbul a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:bul ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Bulgarisch"@de,
         "Bulgarian"@en,
         "bulgare"@fr,
         "bulgaro"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Bulgarisch"@de,
+        "Bulgarian"@en,
+        "bulgare"@fr,
+        "bulgaro"@it .
 
-spav:lgces a crm:E55_Type,
-        skos:Concept ;
+spav:lgces a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ces,
         wd:Q9056 ;
     skos:inScheme spav:lg ;
@@ -2689,10 +2717,14 @@ spav:lgces a crm:E55_Type,
         "Czech"@en,
         "tchèque"@fr,
         "ceco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Tschechisch"@de,
+        "Czech"@en,
+        "tchèque"@fr,
+        "ceco"@it .
 
-spav:lgchi a crm:E55_Type,
-        skos:Concept ;
+spav:lgchi a skos:Concept,
+        rico:Language ;
     skos:altLabel "Kantonesisch"@de,
         "Cantonese"@en ;
     skos:exactMatch iso639-2:chi ;
@@ -2701,20 +2733,28 @@ spav:lgchi a crm:E55_Type,
         "Chinese"@en,
         "chinois"@fr,
         "cinese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Chinesisch"@de,
+        "Chinese"@en,
+        "chinois"@fr,
+        "cinese"@it .
 
-spav:lgdan a crm:E55_Type,
-        skos:Concept ;
+spav:lgdan a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:dan ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Dänisch"@de,
         "Danish"@en,
         "danois"@fr,
         "danese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Dänisch"@de,
+        "Danish"@en,
+        "danois"@fr,
+        "danese"@it .
 
-spav:lgdeu a crm:E55_Type,
-        skos:Concept ;
+spav:lgdeu a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:deu,
         wd:Q188 ;
     skos:inScheme spav:lg ;
@@ -2722,10 +2762,14 @@ spav:lgdeu a crm:E55_Type,
         "German"@en,
         "allemand"@fr,
         "tedesco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Deutsch"@de,
+        "German"@en,
+        "allemand"@fr,
+        "tedesco"@it .
 
-spav:lgdut a crm:E55_Type,
-        skos:Concept ;
+spav:lgdut a skos:Concept,
+        rico:Language ;
     skos:altLabel "Flemish"@en,
         "flamand"@fr ;
     skos:exactMatch iso639-2:dut,
@@ -2735,10 +2779,14 @@ spav:lgdut a crm:E55_Type,
         "Dutch"@en,
         "néerlandais"@fr,
         "olandese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Niederländisch"@de,
+        "Dutch"@en,
+        "néerlandais"@fr,
+        "olandese"@it .
 
-spav:lgell a crm:E55_Type,
-        skos:Concept ;
+spav:lgell a skos:Concept,
+        rico:Language ;
     skos:altLabel "Modern Greek"@en ;
     skos:exactMatch iso639-2:ell ;
     skos:inScheme spav:lg ;
@@ -2746,10 +2794,14 @@ spav:lgell a crm:E55_Type,
         "Greek"@en,
         "grec moderne"@fr,
         "greco moderno"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Griechisch"@de,
+        "Greek"@en,
+        "grec moderne"@fr,
+        "greco moderno"@it .
 
-spav:lgeng a crm:E55_Type,
-        skos:Concept ;
+spav:lgeng a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:eng,
         wd:Q1860 ;
     skos:inScheme spav:lg ;
@@ -2757,30 +2809,42 @@ spav:lgeng a crm:E55_Type,
         "English"@en,
         "anglais"@fr,
         "inglese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Englisch"@de,
+        "English"@en,
+        "anglais"@fr,
+        "inglese"@it .
 
-spav:lgest a crm:E55_Type,
-        skos:Concept ;
+spav:lgest a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:est ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Estnisch"@de,
         "Estonian"@en,
         "estonien"@fr,
         "estone"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Estnisch"@de,
+        "Estonian"@en,
+        "estonien"@fr,
+        "estone"@it .
 
-spav:lgfao a crm:E55_Type,
-        skos:Concept ;
+spav:lgfao a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:fao ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Färöisch"@de,
         "Faroese"@en,
         "féroïen"@fr,
         "faroese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Färöisch"@de,
+        "Faroese"@en,
+        "féroïen"@fr,
+        "faroese"@it .
 
-spav:lgfas a crm:E55_Type,
-        skos:Concept ;
+spav:lgfas a skos:Concept,
+        rico:Language ;
     skos:altLabel "Farsi"@en ;
     skos:exactMatch iso639-2:fas ;
     skos:inScheme spav:lg ;
@@ -2788,30 +2852,42 @@ spav:lgfas a crm:E55_Type,
         "Persian"@en,
         "persan"@fr,
         "farsi"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Farsi"@de,
+        "Persian"@en,
+        "persan"@fr,
+        "farsi"@it .
 
-spav:lgfin a crm:E55_Type,
-        skos:Concept ;
+spav:lgfin a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:fin ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Finnisch"@de,
         "Finnish"@en,
         "finnois"@fr,
         "finlandese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Finnisch"@de,
+        "Finnish"@en,
+        "finnois"@fr,
+        "finlandese"@it .
 
-spav:lgfrc a crm:E55_Type,
-        skos:Concept ;
+spav:lgfrc a skos:Concept,
+        rico:Language ;
     skos:broader spav:lgfra ;
     skos:exactMatch wd:Q1480152 ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Schweizer Französisch"@de,
         "Swiss French"@en,
         "français suisse"@fr,
+        "lingua francese in Svizzera"@it ;
+    rico:name "Schweizer Französisch"@de,
+        "Swiss French"@en,
+        "français suisse"@fr,
         "lingua francese in Svizzera"@it .
 
-spav:lgfur a crm:E55_Type,
-        skos:Concept ;
+spav:lgfur a skos:Concept,
+        rico:Language ;
     skos:altLabel "Furlanisch"@de,
         "Friulan"@en ;
     skos:exactMatch iso639-2:fur ;
@@ -2820,10 +2896,14 @@ spav:lgfur a crm:E55_Type,
         "Friulian"@en,
         "frioulan"@fr,
         "friulano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Friaulisch"@de,
+        "Friulian"@en,
+        "frioulan"@fr,
+        "friulano"@it .
 
-spav:lggrn a crm:E55_Type,
-        skos:Concept ;
+spav:lggrn a skos:Concept,
+        rico:Language ;
     skos:altLabel "Paraguayan Guarani"@en ;
     skos:exactMatch iso639-2:grn ;
     skos:inScheme spav:lg ;
@@ -2831,10 +2911,14 @@ spav:lggrn a crm:E55_Type,
         "Guarani"@en,
         "guarani"@fr,
         "guarani"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Guaraní"@de,
+        "Guarani"@en,
+        "guarani"@fr,
+        "guarani"@it .
 
-spav:lggsw a crm:E55_Type,
-        skos:Concept ;
+spav:lggsw a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:gsw,
         wd:Q387066 ;
     skos:inScheme spav:lg ;
@@ -2842,49 +2926,69 @@ spav:lggsw a crm:E55_Type,
         "Swiss German"@en,
         "suisse allemand"@fr,
         "svizzero tedesco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Schweizerdeutsch"@de,
+        "Swiss German"@en,
+        "suisse allemand"@fr,
+        "svizzero tedesco"@it .
 
-spav:lghbo a crm:E55_Type,
-        skos:Concept ;
+spav:lghbo a skos:Concept,
+        rico:Language ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Althebräisch"@de,
         "Old Hebrew"@en,
         "hébreu ancien"@fr,
         "ebraico antico"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Althebräisch"@de,
+        "Old Hebrew"@en,
+        "hébreu ancien"@fr,
+        "ebraico antico"@it .
 
-spav:lgheb a crm:E55_Type,
-        skos:Concept ;
+spav:lgheb a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:heb ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Hebräisch"@de,
         "Hebrew"@en,
         "hébreu"@fr,
         "ebraico"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Hebräisch"@de,
+        "Hebrew"@en,
+        "hébreu"@fr,
+        "ebraico"@it .
 
-spav:lghin a crm:E55_Type,
-        skos:Concept ;
+spav:lghin a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:hin ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Hindi"@de,
         "Hindi"@en,
         "hindi"@fr,
         "hindi"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Hindi"@de,
+        "Hindi"@en,
+        "hindi"@fr,
+        "hindi"@it .
 
-spav:lghrv a crm:E55_Type,
-        skos:Concept ;
+spav:lghrv a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:hrv ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Kroatisch"@de,
         "Croatian"@en,
         "croate"@fr,
         "croato"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Kroatisch"@de,
+        "Croatian"@en,
+        "croate"@fr,
+        "croato"@it .
 
-spav:lghun a crm:E55_Type,
-        skos:Concept ;
+spav:lghun a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:hun,
         wd:Q9067 ;
     skos:inScheme spav:lg ;
@@ -2892,10 +2996,14 @@ spav:lghun a crm:E55_Type,
         "Hungarian"@en,
         "hongrois"@fr,
         "ungherese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Ungarisch"@de,
+        "Hungarian"@en,
+        "hongrois"@fr,
+        "ungherese"@it .
 
-spav:lgice a crm:E55_Type,
-        skos:Concept ;
+spav:lgice a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ice,
         wd:Q294 ;
     skos:inScheme spav:lg ;
@@ -2903,30 +3011,42 @@ spav:lgice a crm:E55_Type,
         "Icelandic"@en,
         "islandais"@fr,
         "islandese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Isländisch"@de,
+        "Icelandic"@en,
+        "islandais"@fr,
+        "islandese"@it .
 
-spav:lgind a crm:E55_Type,
-        skos:Concept ;
+spav:lgind a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ind ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Indonesisch"@de,
         "Indonesian"@en,
         "indonésien"@fr,
         "indonesiano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Indonesisch"@de,
+        "Indonesian"@en,
+        "indonésien"@fr,
+        "indonesiano"@it .
 
-spav:lgitt a crm:E55_Type,
-        skos:Concept ;
+spav:lgitt a skos:Concept,
+        rico:Language ;
     skos:broader spav:lgita ;
     skos:exactMatch wd:Q672147 ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Schweizer Italienisch"@de,
         "Swiss Italian"@en,
         "italien suisse"@fr,
+        "lingua italiana in Svizzera"@it ;
+    rico:name "Schweizer Italienisch"@de,
+        "Swiss Italian"@en,
+        "italien suisse"@fr,
         "lingua italiana in Svizzera"@it .
 
-spav:lgjap a crm:E55_Type,
-        skos:Concept ;
+spav:lgjap a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:jap,
         wd:Q5287 ;
     skos:inScheme spav:lg ;
@@ -2934,80 +3054,112 @@ spav:lgjap a crm:E55_Type,
         "Japanese"@en,
         "japonais"@fr,
         "giapponese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Japanisch"@de,
+        "Japanese"@en,
+        "japonais"@fr,
+        "giapponese"@it .
 
-spav:lgkor a crm:E55_Type,
-        skos:Concept ;
+spav:lgkor a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:kor ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Koreanisch"@de,
         "Korean"@en,
         "coréen"@fr,
         "coreano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Koreanisch"@de,
+        "Korean"@en,
+        "coréen"@fr,
+        "coreano"@it .
 
-spav:lgkur a crm:E55_Type,
-        skos:Concept ;
+spav:lgkur a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:kur ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Kurdisch"@de,
         "Kurdish"@en,
         "kurde"@fr,
         "curdo"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Kurdisch"@de,
+        "Kurdish"@en,
+        "kurde"@fr,
+        "curdo"@it .
 
-spav:lglat a crm:E55_Type,
-        skos:Concept ;
+spav:lglat a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:lat ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Latein"@de,
         "Latin"@en,
         "latin"@fr,
         "latino"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Latein"@de,
+        "Latin"@en,
+        "latin"@fr,
+        "latino"@it .
 
-spav:lglav a crm:E55_Type,
-        skos:Concept ;
+spav:lglav a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:lav ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Lettisch"@de,
         "Latvian"@en,
         "letton"@fr,
         "lettone"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Lettisch"@de,
+        "Latvian"@en,
+        "letton"@fr,
+        "lettone"@it .
 
-spav:lglin a crm:E55_Type,
-        skos:Concept ;
+spav:lglin a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:lin ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Lingala"@de,
         "Lingala"@en,
         "lingala"@fr,
         "lingala"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Lingala"@de,
+        "Lingala"@en,
+        "lingala"@fr,
+        "lingala"@it .
 
-spav:lglit a crm:E55_Type,
-        skos:Concept ;
+spav:lglit a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:lit ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Litauisch"@de,
         "Lithuanian"@en,
         "lituatien"@fr,
         "lituano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Litauisch"@de,
+        "Lithuanian"@en,
+        "lituatien"@fr,
+        "lituano"@it .
 
-spav:lgmao a crm:E55_Type,
-        skos:Concept ;
+spav:lgmao a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:mao ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Maori"@de,
         "Maori"@en,
         "māori"@fr,
         "maori"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Maori"@de,
+        "Maori"@en,
+        "māori"@fr,
+        "maori"@it .
 
-spav:lgmlg a crm:E55_Type,
-        skos:Concept ;
+spav:lgmlg a skos:Concept,
+        rico:Language ;
     skos:altLabel "Malagassi"@de ;
     skos:exactMatch iso639-2:mlg ;
     skos:inScheme spav:lg ;
@@ -3015,10 +3167,14 @@ spav:lgmlg a crm:E55_Type,
         "Malagasy"@en,
         "malgache"@fr,
         "malgascio"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Malagasy"@de,
+        "Malagasy"@en,
+        "malgache"@fr,
+        "malgascio"@it .
 
-spav:lgmnd a crm:E55_Type,
-        skos:Concept ;
+spav:lgmnd a skos:Concept,
+        rico:Language ;
     skos:altLabel "cinese mandarino"@it ;
     skos:exactMatch iso639-2:chi ;
     skos:inScheme spav:lg ;
@@ -3026,10 +3182,14 @@ spav:lgmnd a crm:E55_Type,
         "Mandarin"@en,
         "mandarin"@fr,
         "mandarino"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Mandarin"@de,
+        "Mandarin"@en,
+        "mandarin"@fr,
+        "mandarino"@it .
 
-spav:lgmos a crm:E55_Type,
-        skos:Concept ;
+spav:lgmos a skos:Concept,
+        rico:Language ;
     skos:altLabel "Moore"@de,
         "Mòoré"@en,
         "Mòoré"@fr ;
@@ -3039,10 +3199,14 @@ spav:lgmos a crm:E55_Type,
         "Mossi"@en,
         "moré"@fr,
         "more"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Mòoré"@de,
+        "Mossi"@en,
+        "moré"@fr,
+        "more"@it .
 
-spav:lgnno a crm:E55_Type,
-        skos:Concept ;
+spav:lgnno a skos:Concept,
+        rico:Language ;
     skos:altLabel "Neunorwegisch"@de,
         "New Norwegian"@en,
         "néo-norvégien"@fr,
@@ -3054,10 +3218,14 @@ spav:lgnno a crm:E55_Type,
     skos:prefLabel "Norwegisch (Nynorsk)"@de,
         "Norwegian Nynorsk"@en,
         "norvégien nynorsk"@fr,
+        "norvegese nynorsk"@it ;
+    rico:name "Norwegisch (Nynorsk)"@de,
+        "Norwegian Nynorsk"@en,
+        "norvégien nynorsk"@fr,
         "norvegese nynorsk"@it .
 
-spav:lgnob a crm:E55_Type,
-        skos:Concept ;
+spav:lgnob a skos:Concept,
+        rico:Language ;
     skos:broader spav:lgnor ;
     skos:exactMatch iso639-2:nob,
         wd:Q25167 ;
@@ -3065,10 +3233,14 @@ spav:lgnob a crm:E55_Type,
     skos:prefLabel "Norwegisch (Bokmål)"@de,
         "Norwegian Bokmål"@en,
         "norvégien bokmål"@fr,
+        "norvegese bokmål"@it ;
+    rico:name "Norwegisch (Bokmål)"@de,
+        "Norwegian Bokmål"@en,
+        "norvégien bokmål"@fr,
         "norvegese bokmål"@it .
 
-spav:lgnou a crm:E55_Type,
-        skos:Concept ;
+spav:lgnou a skos:Concept,
+        rico:Language ;
     skos:altLabel "Noussi"@de,
         "Noussi"@en,
         "Noussi"@fr,
@@ -3079,20 +3251,28 @@ spav:lgnou a crm:E55_Type,
         "Nouchi"@en,
         "nouchi"@fr,
         "nouchi"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Nouchi"@de,
+        "Nouchi"@en,
+        "nouchi"@fr,
+        "nouchi"@it .
 
-spav:lgoci a crm:E55_Type,
-        skos:Concept ;
+spav:lgoci a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:oci ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Okzitanisch"@de,
         "Occitan"@en,
         "occitan"@fr,
         "occitano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Okzitanisch"@de,
+        "Occitan"@en,
+        "occitan"@fr,
+        "occitano"@it .
 
-spav:lgpol a crm:E55_Type,
-        skos:Concept ;
+spav:lgpol a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:pol,
         wd:Q809 ;
     skos:inScheme spav:lg ;
@@ -3100,10 +3280,14 @@ spav:lgpol a crm:E55_Type,
         "Polish"@en,
         "polonais"@fr,
         "polacco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Polnisch"@de,
+        "Polish"@en,
+        "polonais"@fr,
+        "polacco"@it .
 
-spav:lgpor a crm:E55_Type,
-        skos:Concept ;
+spav:lgpor a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:por,
         wd:Q5146 ;
     skos:inScheme spav:lg ;
@@ -3111,10 +3295,14 @@ spav:lgpor a crm:E55_Type,
         "Portuguese"@en,
         "portugais"@fr,
         "portoghese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Portugiesisch"@de,
+        "Portuguese"@en,
+        "portugais"@fr,
+        "portoghese"@it .
 
-spav:lgroh a crm:E55_Type,
-        skos:Concept ;
+spav:lgroh a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:roh,
         wd:Q13199 ;
     skos:inScheme spav:lg ;
@@ -3122,10 +3310,14 @@ spav:lgroh a crm:E55_Type,
         "Romansh"@en,
         "rhéto-roman"@fr,
         "romancio"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Rätoromanisch"@de,
+        "Romansh"@en,
+        "rhéto-roman"@fr,
+        "romancio"@it .
 
-spav:lgrum a crm:E55_Type,
-        skos:Concept ;
+spav:lgrum a skos:Concept,
+        rico:Language ;
     skos:altLabel "romeno"@it ;
     skos:exactMatch iso639-2:rum ;
     skos:inScheme spav:lg ;
@@ -3133,10 +3325,14 @@ spav:lgrum a crm:E55_Type,
         "Romanian"@en,
         "roumain"@fr,
         "rumeno"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Rumänisch"@de,
+        "Romanian"@en,
+        "roumain"@fr,
+        "rumeno"@it .
 
-spav:lgrus a crm:E55_Type,
-        skos:Concept ;
+spav:lgrus a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:rus,
         wd:Q7737 ;
     skos:inScheme spav:lg ;
@@ -3144,20 +3340,28 @@ spav:lgrus a crm:E55_Type,
         "Russian"@en,
         "russe"@fr,
         "russo"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Russisch"@de,
+        "Russian"@en,
+        "russe"@fr,
+        "russo"@it .
 
-spav:lgsan a crm:E55_Type,
-        skos:Concept ;
+spav:lgsan a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:san ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Sanskrit"@de,
         "Sanskrit"@en,
         "sanskrit"@fr,
         "sanscrito"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Sanskrit"@de,
+        "Sanskrit"@en,
+        "sanskrit"@fr,
+        "sanscrito"@it .
 
-spav:lgsgn a crm:E55_Type,
-        skos:Concept ;
+spav:lgsgn a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:sgn,
         wd:Q34228 ;
     skos:inScheme spav:lg ;
@@ -3165,10 +3369,14 @@ spav:lgsgn a crm:E55_Type,
         "sign language"@en,
         "langue des signes	"@fr,
         "lingua dei segni"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Gebärdensprache"@de,
+        "sign language"@en,
+        "langue des signes	"@fr,
+        "lingua dei segni"@it .
 
-spav:lgslv a crm:E55_Type,
-        skos:Concept ;
+spav:lgslv a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:slv,
         wd:Q9063 ;
     skos:inScheme spav:lg ;
@@ -3176,10 +3384,14 @@ spav:lgslv a crm:E55_Type,
         "Slovene"@en,
         "slovène"@fr,
         "sloveno"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Slowenisch"@de,
+        "Slovene"@en,
+        "slovène"@fr,
+        "sloveno"@it .
 
-spav:lgspa a crm:E55_Type,
-        skos:Concept ;
+spav:lgspa a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:spa,
         wd:Q1321 ;
     skos:inScheme spav:lg ;
@@ -3187,20 +3399,28 @@ spav:lgspa a crm:E55_Type,
         "Spanish"@en,
         "espagnol"@fr,
         "spagnolo"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Spanisch"@de,
+        "Spanish"@en,
+        "espagnol"@fr,
+        "spagnolo"@it .
 
-spav:lgsrp a crm:E55_Type,
-        skos:Concept ;
+spav:lgsrp a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:srp ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Serbisch"@de,
         "Serbian"@en,
         "serbe"@fr,
         "serbo"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Serbisch"@de,
+        "Serbian"@en,
+        "serbe"@fr,
+        "serbo"@it .
 
-spav:lgswa a crm:E55_Type,
-        skos:Concept ;
+spav:lgswa a skos:Concept,
+        rico:Language ;
     skos:altLabel "Suaheli"@de,
         "Kiswahili"@en ;
     skos:exactMatch iso639-2:swa ;
@@ -3209,10 +3429,14 @@ spav:lgswa a crm:E55_Type,
         "Swahili"@en,
         "swahili"@fr,
         "swahili"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Swahili"@de,
+        "Swahili"@en,
+        "swahili"@fr,
+        "swahili"@it .
 
-spav:lgswe a crm:E55_Type,
-        skos:Concept ;
+spav:lgswe a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:swe,
         wd:Q9027 ;
     skos:inScheme spav:lg ;
@@ -3220,10 +3444,14 @@ spav:lgswe a crm:E55_Type,
         "Swedish"@en,
         "suédois"@fr,
         "svedese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Schwedisch"@de,
+        "Swedish"@en,
+        "suédois"@fr,
+        "svedese"@it .
 
-spav:lgtam a crm:E55_Type,
-        skos:Concept ;
+spav:lgtam a skos:Concept,
+        rico:Language ;
     skos:altLabel "Tamilisch"@de ;
     skos:exactMatch iso639-2:tam ;
     skos:inScheme spav:lg ;
@@ -3231,70 +3459,98 @@ spav:lgtam a crm:E55_Type,
         "Tamil"@en,
         "tamoul"@fr,
         "tamil"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Tamil"@de,
+        "Tamil"@en,
+        "tamoul"@fr,
+        "tamil"@it .
 
-spav:lgtha a crm:E55_Type,
-        skos:Concept ;
+spav:lgtha a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:tha ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Thai"@de,
         "Thai"@en,
         "thaï"@fr,
         "tailandese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Thai"@de,
+        "Thai"@en,
+        "thaï"@fr,
+        "tailandese"@it .
 
-spav:lgtuk a crm:E55_Type,
-        skos:Concept ;
+spav:lgtuk a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:tuk ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Turkmenisch"@de,
         "Turkmen"@en,
         "turkmène"@fr,
         "turcmeno"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Turkmenisch"@de,
+        "Turkmen"@en,
+        "turkmène"@fr,
+        "turcmeno"@it .
 
-spav:lgtur a crm:E55_Type,
-        skos:Concept ;
+spav:lgtur a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:tur ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Türkisch"@de,
         "Turkish"@en,
         "turc"@fr,
         "turco"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Türkisch"@de,
+        "Turkish"@en,
+        "turc"@fr,
+        "turco"@it .
 
-spav:lgukr a crm:E55_Type,
-        skos:Concept ;
+spav:lgukr a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ukr ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Ukrainisch"@de,
         "Ukrainian"@en,
         "ukrainien"@fr,
         "ucraino"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Ukrainisch"@de,
+        "Ukrainian"@en,
+        "ukrainien"@fr,
+        "ucraino"@it .
 
-spav:lgvie a crm:E55_Type,
-        skos:Concept ;
+spav:lgvie a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:vie ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Vietnamesisch"@de,
         "Vietnamese"@en,
         "vietnamien"@fr,
         "vietnamita"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Vietnamesisch"@de,
+        "Vietnamese"@en,
+        "vietnamien"@fr,
+        "vietnamita"@it .
 
-spav:lgwen a crm:E55_Type,
-        skos:Concept ;
+spav:lgwen a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:wen ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Sorbische Sprachen"@de,
         "Sorbian languages"@en,
         "langues sorabe"@fr,
         "lingue lusaziane"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Sorbische Sprachen"@de,
+        "Sorbian languages"@en,
+        "langues sorabe"@fr,
+        "lingue lusaziane"@it .
 
-spav:lgxho a crm:E55_Type,
-        skos:Concept ;
+spav:lgxho a skos:Concept,
+        rico:Language ;
     skos:altLabel "isiXhosa"@de,
         "isiXhosa"@en ;
     skos:exactMatch iso639-2:xho ;
@@ -3303,20 +3559,28 @@ spav:lgxho a crm:E55_Type,
         "Xhosa"@en,
         "xhosa"@fr,
         "xhosa"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Xhosa"@de,
+        "Xhosa"@en,
+        "xhosa"@fr,
+        "xhosa"@it .
 
-spav:lgyid a crm:E55_Type,
-        skos:Concept ;
+spav:lgyid a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:yid ;
     skos:inScheme spav:lg ;
     skos:prefLabel "Jiddisch"@de,
         "Yiddish"@en,
         "yiddish"@fr,
         "yiddish"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Jiddisch"@de,
+        "Yiddish"@en,
+        "yiddish"@fr,
+        "yiddish"@it .
 
-spav:lgzza a crm:E55_Type,
-        skos:Concept ;
+spav:lgzza a skos:Concept,
+        rico:Language ;
     skos:altLabel "Zazaisch"@de ;
     skos:exactMatch iso639-2:zza ;
     skos:inScheme spav:lg ;
@@ -3324,7 +3588,11 @@ spav:lgzza a crm:E55_Type,
         "Zaza"@en,
         "zazaki"@fr,
         "zazaki"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Zaza"@de,
+        "Zaza"@en,
+        "zazaki"@fr,
+        "zazaki"@it .
 
 spav:mnanz a crm:E55_Type,
         skos:Concept ;
@@ -4910,7 +5178,7 @@ spav:sotop a crm:E55_Type,
     skos:topConceptOf spav:so .
 
 spav:stltp a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     rdfs:comment "\"Photographic prints made much later than the negative and usually not by the original photographer.\" (AAT)"@en ;
     skos:broader spav:stpps ;
     skos:exactMatch <http://vocab.getty.edu/aat/300189480> ;
@@ -4923,7 +5191,7 @@ spav:stltp a skos:Concept,
         "tirage moderne"@fr .
 
 spav:stvpd a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     skos:broader spav:stvps ;
     skos:inScheme spav:st ;
     skos:prefLabel "Original, signiert, datiert"@de,
@@ -4934,7 +5202,7 @@ spav:stvpd a skos:Concept,
         "original, signé, daté"@fr .
 
 spav:stwkp a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     rdfs:comment "\"Photographic prints made for examination and reference, such as those done before an edition is produced.\" (AAT)"@en ;
     skos:broader spav:stpps ;
     skos:exactMatch <http://vocab.getty.edu/aat/300189331> ;
@@ -5818,8 +6086,8 @@ spav:fvqpw a premis:StorageMedium,
         "VCD"@fr,
         "VCD"@it .
 
-spav:lgfra a crm:E55_Type,
-        skos:Concept ;
+spav:lgfra a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:fra,
         wd:Q150 ;
     skos:inScheme spav:lg ;
@@ -5828,10 +6096,14 @@ spav:lgfra a crm:E55_Type,
         "French"@en,
         "français"@fr,
         "francese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Französisch"@de,
+        "French"@en,
+        "français"@fr,
+        "francese"@it .
 
-spav:lgita a crm:E55_Type,
-        skos:Concept ;
+spav:lgita a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:ita,
         wd:Q652 ;
     skos:inScheme spav:lg ;
@@ -5840,7 +6112,11 @@ spav:lgita a crm:E55_Type,
         "Italian"@en,
         "italien"@fr,
         "italiano"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Italienisch"@de,
+        "Italian"@en,
+        "italien"@fr,
+        "italiano"@it .
 
 spav:mnlxt a crm:E55_Type,
         skos:Concept ;
@@ -5960,7 +6236,7 @@ spav:rssrs a crm:E55_Type,
         "serie"@it .
 
 spav:stvps a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     skos:broader spav:stvtp ;
     skos:inScheme spav:st ;
     skos:narrower spav:stvpd ;
@@ -5972,7 +6248,7 @@ spav:stvps a skos:Concept,
         "original, signé"@fr .
 
 spav:stvtp a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     rdfs:comment "\"Photographic prints made by the original photographer or soon after the picture was taken, that is, of the same historical vintage as the original.\" (AAT)"@en ;
     skos:broader spav:stpps ;
     skos:exactMatch <http://vocab.getty.edu/aat/300136578> ;
@@ -6220,8 +6496,8 @@ spav:fvzuj a premis:StorageMedium,
         "DVD"@fr,
         "DVD"@it .
 
-spav:lgnor a crm:E55_Type,
-        skos:Concept ;
+spav:lgnor a skos:Concept,
+        rico:Language ;
     skos:exactMatch iso639-2:nor,
         wd:Q9043 ;
     skos:inScheme spav:lg ;
@@ -6231,7 +6507,11 @@ spav:lgnor a crm:E55_Type,
         "Norwegian"@en,
         "norvégien"@fr,
         "norvegese"@it ;
-    skos:topConceptOf spav:lg .
+    skos:topConceptOf spav:lg ;
+    rico:name "Norwegisch"@de,
+        "Norwegian"@en,
+        "norvégien"@fr,
+        "norvegese"@it .
 
 spav:mngvi a crm:E55_Type,
         skos:Concept ;
@@ -6584,7 +6864,7 @@ spav:so a skos:ConceptScheme ;
     skos:prefLabel "video scanning order"@en .
 
 spav:stpps a skos:Concept,
-        rico:RecordResourceState ;
+        rico:RecordState ;
     skos:inScheme spav:st ;
     skos:narrower spav:stltp,
         spav:stvtp,
