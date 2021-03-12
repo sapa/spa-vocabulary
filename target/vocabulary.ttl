@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-09T11:14:26.529141+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-12T11:11:05.627223+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -47,6 +47,12 @@ spav:umcm a skos:Concept,
         "cm"@en,
         "cm"@fr,
         "cm"@it .
+
+spav:vdpcj a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Bildstandschwankungen"@de,
+        "picture jumping"@en .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -456,7 +462,8 @@ spav:clblw a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/blw> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "black and white"@en,
+    skos:prefLabel "s/w"@de,
+        "black and white"@en,
         "noir et blanc"@fr ;
     skos:topConceptOf spav:cl .
 
@@ -464,7 +471,8 @@ spav:clgry a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/gry> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "gray scale"@en,
+    skos:prefLabel "Graustufen"@de,
+        "gray scale"@en,
         "niveau de gris"@fr ;
     skos:topConceptOf spav:cl .
 
@@ -472,21 +480,24 @@ spav:clhnd a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/hnd> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "hand colored"@en ;
+    skos:prefLabel "handcoloriert"@de,
+        "hand colored"@en ;
     skos:topConceptOf spav:cl .
 
 spav:clmix a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/mix> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "mixed color"@en ;
+    skos:prefLabel "Mischfarbe"@de,
+        "mixed color"@en ;
     skos:topConceptOf spav:cl .
 
 spav:clmul a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/mul> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "color"@en,
+    skos:prefLabel "Farbe"@de,
+        "color"@en,
         "couleur"@fr ;
     skos:topConceptOf spav:cl .
 
@@ -494,7 +505,8 @@ spav:clone a crm:E55_Type,
         skos:Concept ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/one> ;
     skos:inScheme spav:cl ;
-    skos:prefLabel "one color"@en ;
+    skos:prefLabel "einfarbig"@de,
+        "one color"@en ;
     skos:topConceptOf spav:cl .
 
 spav:cpno a crm:E55_Type,
@@ -828,7 +840,7 @@ spav:dfjdc a skos:Concept,
 
 spav:dfjnl a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:altLabel "Zeuting"@de,
+    skos:altLabel "Zeitung"@de,
         "newspaper"@en ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300215390> ;
@@ -858,11 +870,11 @@ spav:dfmyd a skos:Concept,
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300028037> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "persönliche Dokumente ?"@de,
+    skos:prefLabel "persönliche Dokumente"@de,
         "personal paper"@en,
         "document personnel"@fr,
         "documento personale"@it ;
-    rico:name "persönliche Dokumente ?"@de,
+    rico:name "persönliche Dokumente"@de,
         "personal paper"@en,
         "document personnel"@fr,
         "documento personale"@it .
@@ -979,10 +991,12 @@ spav:dfsze a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfrwd ;
     skos:inScheme spav:df ;
-    skos:prefLabel "personal object"@en,
+    skos:prefLabel "persönlicher Gegenstand"@de,
+        "personal object"@en,
         "object personnel"@fr,
         "oggetto personale"@it ;
-    rico:name "personal object"@en,
+    rico:name "persönlicher Gegenstand"@de,
+        "personal object"@en,
         "object personnel"@fr,
         "oggetto personale"@it .
 
@@ -1069,11 +1083,11 @@ spav:dfvjf a skos:Concept,
     skos:broader spav:dfrwd ;
     skos:exactMatch <http://vocab.getty.edu/aat/300251645> ;
     skos:inScheme spav:df ;
-    skos:prefLabel "Requisiten (Bühnenzubehör?)"@de,
+    skos:prefLabel "Requisit"@de,
         "stage accessorie"@en,
         "accessoire de scène"@fr,
         "accessorio di scena"@it ;
-    rico:name "Requisiten (Bühnenzubehör?)"@de,
+    rico:name "Requisit"@de,
         "stage accessorie"@en,
         "accessoire de scène"@fr,
         "accessorio di scena"@it .
@@ -1308,11 +1322,11 @@ spav:frabo a skos:Concept,
     skos:exactMatch <http://vocab.getty.edu/aat/300041567> ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Original"@de,
-        "original print?"@en,
+        "original print"@en,
         "original"@fr,
         "originale"@it ;
     rico:name "Original"@de,
-        "original print?"@en,
+        "original print"@en,
         "original"@fr,
         "originale"@it .
 
@@ -5119,9 +5133,11 @@ spav:rsssr a crm:E55_Type,
 spav:rtac a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
-    skos:prefLabel "acoustic"@en ;
+    skos:prefLabel "akustisch"@de,
+        "acoustic"@en ;
     skos:topConceptOf spav:rt ;
-    rico:name "acoustic"@en .
+    rico:name "akustisch"@de,
+        "acoustic"@en .
 
 spav:rtmi a skos:Concept,
         rico:RepresentationType ;
@@ -5133,23 +5149,29 @@ spav:rtmi a skos:Concept,
 spav:rtsp a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
-    skos:prefLabel "spatial"@en ;
+    skos:prefLabel "räumlich"@de,
+        "spatial"@en ;
     skos:topConceptOf spav:rt ;
-    rico:name "spatial"@en .
+    rico:name "räumlich"@de,
+        "spatial"@en .
 
 spav:rttx a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
-    skos:prefLabel "textual"@en ;
+    skos:prefLabel "textlich"@de,
+        "textual"@en ;
     skos:topConceptOf spav:rt ;
-    rico:name "textual"@en .
+    rico:name "textlich"@de,
+        "textual"@en .
 
 spav:rtvs a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
-    skos:prefLabel "visual"@en ;
+    skos:prefLabel "visuell"@de,
+        "visual"@en ;
     skos:topConceptOf spav:rt ;
-    rico:name "visual"@en .
+    rico:name "visuell"@de,
+        "visual"@en .
 
 spav:sfint a crm:E55_Type,
         skos:Concept ;
@@ -5217,14 +5239,16 @@ spav:stwkp a skos:Concept,
 spav:tjeev a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tj ;
-    skos:prefLabel "staff only"@en,
+    skos:prefLabel "intern"@de,
+        "staff only"@en,
         "interne"@fr ;
     skos:topConceptOf spav:tj .
 
 spav:tjzns a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tj ;
-    skos:prefLabel "public"@en,
+    skos:prefLabel "öffentlich"@de,
+        "public"@en,
         "public"@fr ;
     skos:topConceptOf spav:tj .
 
@@ -5247,16 +5271,24 @@ spav:tpunk a crm:E55_Type,
 spav:umbox a skos:Concept,
         rico:unitOfMeasurement ;
     skos:inScheme spav:um ;
-    skos:prefLabel "boxes"@en ;
+    skos:prefLabel "Schachteln"@de,
+        "boxes"@en,
+        "boîtes"@fr ;
     skos:topConceptOf spav:um ;
-    rico:name "boxes"@en .
+    rico:name "Schachteln"@de,
+        "boxes"@en,
+        "boîtes"@fr .
 
 spav:umenv a skos:Concept,
         rico:unitOfMeasurement ;
     skos:inScheme spav:um ;
-    skos:prefLabel "envelopes"@en ;
+    skos:prefLabel "Couverts"@de,
+        "envelopes"@en,
+        "fourre"@fr ;
     skos:topConceptOf spav:um ;
-    rico:name "envelopes"@en .
+    rico:name "Couverts"@de,
+        "envelopes"@en,
+        "fourre"@fr .
 
 spav:umkg a skos:Concept,
         rico:unitOfMeasurement ;
@@ -5288,10 +5320,12 @@ spav:umpcs a skos:Concept,
         rico:unitOfMeasurement ;
     skos:inScheme spav:um ;
     skos:prefLabel "Stück"@de,
-        "pieces"@en ;
+        "pieces"@en,
+        "pièces"@fr ;
     skos:topConceptOf spav:um ;
     rico:name "Stück"@de,
-        "pieces"@en .
+        "pieces"@en,
+        "pièces"@fr .
 
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
@@ -5328,19 +5362,19 @@ spav:vdhst a crm:E55_Type,
         "horizontal stripes"@en ;
     skos:topConceptOf spav:vd .
 
-spav:vdimn a crm:E55_Type,
-        skos:Concept ;
-    skos:inScheme spav:vd ;
-    skos:prefLabel "Bildrauschen"@de,
-        "picture noise"@en ;
-    skos:topConceptOf spav:vd .
-
 spav:vditw a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "irregular tape pack"@en ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Unregelmässiger Bandwickel"@de,
         "tape pack"@en ;
+    skos:topConceptOf spav:vd .
+
+spav:vdpcn a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:vd ;
+    skos:prefLabel "Bildrauschen"@de,
+        "picture noise"@en ;
     skos:topConceptOf spav:vd .
 
 spav:vdsnd a crm:E55_Type,
@@ -6935,11 +6969,13 @@ spav:dfrwd a skos:Concept,
         spav:dftng,
         spav:dfuuh,
         spav:dfvjf ;
-    skos:prefLabel "object"@en,
+    skos:prefLabel "Objekt"@de,
+        "object"@en,
         "objet"@fr,
         "oggetto"@it ;
     skos:topConceptOf spav:df ;
-    rico:name "object"@en,
+    rico:name "Objekt"@de,
+        "object"@en,
         "objet"@fr,
         "oggetto"@it .
 
@@ -7164,8 +7200,10 @@ spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
         spav:wamim,
         spav:wayst ;
-    skos:prefLabel "identifier"@en,
-        "identification"@fr .
+    skos:prefLabel "Identifizierungszeichen"@de,
+        "identifier"@en,
+        "identification"@fr,
+        "identificatore"@it .
 
 spav:etmoc a skos:Concept,
         rico:EventType ;
@@ -7210,9 +7248,7 @@ spav:rstyp a crm:E55_Type,
         spav:rssct,
         spav:rssrs ;
     skos:prefLabel "Record-Set-Typ"@de,
-        "record set type"@en,
-        "record set type"@fr,
-        "record set type"@it ;
+        "record set type"@en ;
     skos:topConceptOf spav:rs .
 
 spav:st a skos:ConceptScheme ;
@@ -7677,8 +7713,8 @@ spav:vd a skos:ConceptScheme ;
         spav:vddrp,
         spav:vddrt,
         spav:vdhst,
-        spav:vdimn,
         spav:vditw,
+        spav:vdpcn,
         spav:vdsnd,
         spav:vdsts,
         spav:vdtpc,
