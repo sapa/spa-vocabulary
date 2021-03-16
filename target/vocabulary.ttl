@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-12T11:11:05.627223+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-16T15:21:45.295582+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -3711,6 +3711,15 @@ spav:mnbjn a crm:E55_Type,
         "stand-up-comedy"@fr,
         "stand-up"@it .
 
+spav:mnblr a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnunb ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Ballet russes"@de,
+        "Ballet russes"@en,
+        "Ballet russes"@fr,
+        "Ballet russes"@it .
+
 spav:mnbxj a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Osterspiel"@de,
@@ -3966,6 +3975,16 @@ spav:mnjzh a crm:E55_Type,
         "nouveau cirque"@fr,
         "nouveau cirque"@it .
 
+spav:mnkbk a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnjpt ;
+    skos:exactMatch wd:Q199701 ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Kabuki-Theater"@de,
+        "kabuki"@en,
+        "théâtre kabuki"@fr,
+        "teatro Kabuki"@it .
+
 spav:mnkht a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "model theatre"@en,
@@ -4060,6 +4079,16 @@ spav:mnnmd a crm:E55_Type,
         "chanson"@en,
         "chanson"@fr,
         "chanson"@it .
+
+spav:mnno a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnjpt ;
+    skos:exactMatch wd:Q226887 ;
+    skos:inScheme spav:mn ;
+    skos:prefLabel "Nō-Theater"@de,
+        "nō play"@en,
+        "théâtre nō"@fr,
+        "teatro Nō"@it .
 
 spav:mnoic a crm:E55_Type,
         skos:Concept ;
@@ -4199,17 +4228,6 @@ spav:mntjx a crm:E55_Type,
         "marionette theatre"@en,
         "théâtre de marionnettes à fils"@fr,
         "teatro delle marionette (a fili)"@it .
-
-spav:mnunb a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "balletto"@it ;
-    skos:broader spav:mnhbj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300389782> ;
-    skos:inScheme spav:mn ;
-    skos:prefLabel "Klassischer Tanz"@de,
-        "classical dance"@en,
-        "danse classique"@fr,
-        "danza classica"@it .
 
 spav:mnusm a crm:E55_Type,
         skos:Concept ;
@@ -6176,6 +6194,18 @@ spav:mnnhz a crm:E55_Type,
         "cirque"@fr,
         "circo"@it .
 
+spav:mnunb a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "balletto"@it ;
+    skos:broader spav:mnhbj ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300389782> ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnblr ;
+    skos:prefLabel "Klassischer Tanz"@de,
+        "classical dance"@en,
+        "danse classique"@fr,
+        "danza classica"@it .
+
 spav:mueeb a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "equivalent in SPA Data Model: is recordist of"@en ;
@@ -6560,6 +6590,17 @@ spav:mngvi a crm:E55_Type,
         "social dance"@en,
         "danse de société"@fr,
         "ballo di gruppo"@it .
+
+spav:mnjpt a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:mnnvd ;
+    skos:inScheme spav:mn ;
+    skos:narrower spav:mnkbk,
+        spav:mnno ;
+    skos:prefLabel "Japanisches Theater"@de,
+        "Japanese theater"@en,
+        "théâtre japonais"@fr,
+        "teatro giapponese"@it .
 
 spav:mnjtg a crm:E55_Type,
         skos:Concept ;
@@ -7677,6 +7718,7 @@ spav:mnnvd a crm:E55_Type,
         spav:mnbyg,
         spav:mnddp,
         spav:mneoj,
+        spav:mnjpt,
         spav:mnjzg,
         spav:mnktz,
         spav:mnmeq,
