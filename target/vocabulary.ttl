@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-16T15:21:45.295582+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-21T12:59:44.042621+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -52,7 +52,8 @@ spav:vdpcj a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bildstandschwankungen"@de,
-        "picture jumping"@en .
+        "picture jumping"@en,
+        "immagine intermittente"@it .
 
 spav:xg a skos:ConceptScheme ;
     skos:prefLabel "classification"@en .
@@ -68,7 +69,8 @@ spav:acpbc a crm:E55_Type,
     skos:inScheme spav:ac ;
     skos:prefLabel "öffentlich"@de,
         "public"@en,
-        "publique"@fr ;
+        "publique"@fr,
+        "pubblico"@it ;
     skos:topConceptOf spav:ac .
 
 spav:acstf a crm:E55_Type,
@@ -76,7 +78,8 @@ spav:acstf a crm:E55_Type,
     skos:inScheme spav:ac ;
     skos:prefLabel "Mitarbeitende"@de,
         "staff"@en,
-        "collaborateurs"@fr ;
+        "collaborateurs"@fr,
+        "collaboratori"@it ;
     skos:topConceptOf spav:ac .
 
 spav:afaac a skos:Concept,
@@ -155,7 +158,8 @@ spav:asarm a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Archivmaster"@de,
         "archival master"@en,
-        "master archive"@fr ;
+        "master archive"@fr,
+        "master archivio"@it ;
     skos:topConceptOf spav:as .
 
 spav:asdcd a crm:E55_Type,
@@ -164,7 +168,8 @@ spav:asdcd a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sichtungskopie digital"@de,
         "dissemination copy digital"@en,
-        "copie de diffusion numérique"@fr .
+        "copie de diffusion numérique"@fr,
+        "copia digitale di diffusione"@it .
 
 spav:asdcp a crm:E55_Type,
         skos:Concept ;
@@ -172,7 +177,8 @@ spav:asdcp a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sichtungskopie physisch"@de,
         "dissemination copy physical"@en,
-        "copie de diffusion physique"@fr .
+        "copie de diffusion physique"@fr,
+        "copia fisica di diffusione"@it .
 
 spav:aspcd a crm:E55_Type,
         skos:Concept ;
@@ -180,7 +186,8 @@ spav:aspcd a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sicherungskopie digital"@de,
         "preservation copy digital"@en,
-        "copie de conservation numérique"@fr .
+        "copie de conservation numérique"@fr,
+        "copia di conservazione digitale"@it .
 
 spav:aspcp a crm:E55_Type,
         skos:Concept ;
@@ -188,14 +195,16 @@ spav:aspcp a crm:E55_Type,
     skos:inScheme spav:as ;
     skos:prefLabel "Sicherungskopie physisch"@de,
         "preservation copy physical"@en,
-        "copie de conservation physique"@fr .
+        "copie de conservation physique"@fr,
+        "copia di conservazione fisica"@it .
 
 spav:blno a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:bl ;
     skos:prefLabel "nein"@de,
         "no"@en,
-        "non"@fr ;
+        "non"@fr,
+        "no"@it ;
     skos:topConceptOf spav:bl .
 
 spav:blukn a crm:E55_Type,
@@ -203,7 +212,8 @@ spav:blukn a crm:E55_Type,
     skos:inScheme spav:bl ;
     skos:prefLabel "unbekannt"@de,
         "unknown"@en,
-        "inconnu"@fr ;
+        "inconnu"@fr,
+        "sconosciuto"@it ;
     skos:topConceptOf spav:bl .
 
 spav:blyes a crm:E55_Type,
@@ -211,7 +221,8 @@ spav:blyes a crm:E55_Type,
     skos:inScheme spav:bl ;
     skos:prefLabel "ja"@de,
         "yes"@en,
-        "oui"@fr ;
+        "oui"@fr,
+        "sì"@it ;
     skos:topConceptOf spav:bl .
 
 spav:bshdt a crm:E55_Type,
@@ -267,7 +278,8 @@ spav:cdict a crm:E55_Type,
     skos:inScheme spav:cd ;
     skos:prefLabel "intakt"@de,
         "intact"@en,
-        "intact"@fr ;
+        "intact"@fr,
+        "intatto"@it ;
     skos:topConceptOf spav:cd .
 
 spav:cdldg a crm:E55_Type,
@@ -275,7 +287,8 @@ spav:cdldg a crm:E55_Type,
     skos:inScheme spav:cd ;
     skos:prefLabel "leicht beschädigt"@de,
         "lightly damaged"@en,
-        "légèrement endommagé"@fr ;
+        "légèrement endommagé"@fr,
+        "leggermente danneggiato"@it ;
     skos:topConceptOf spav:cd .
 
 spav:cdsdg a crm:E55_Type,
@@ -283,7 +296,8 @@ spav:cdsdg a crm:E55_Type,
     skos:inScheme spav:cd ;
     skos:prefLabel "stark beschädigt"@de,
         "strongly damaged"@en,
-        "très dégradé"@fr ;
+        "très dégradé"@fr,
+        "molto danneggiato"@it ;
     skos:topConceptOf spav:cd .
 
 spav:cdunk a crm:E55_Type,
@@ -291,7 +305,8 @@ spav:cdunk a crm:E55_Type,
     skos:inScheme spav:cd ;
     skos:prefLabel "unbekannt"@de,
         "unknown"@en,
-        "inconnu"@fr ;
+        "inconnu"@fr,
+        "sconosciuto"@it ;
     skos:topConceptOf spav:cd .
 
 spav:cfaif a dct:FileFormat,
@@ -460,11 +475,13 @@ spav:cfzip a dct:FileFormat,
 
 spav:clblw a crm:E55_Type,
         skos:Concept ;
+    skos:altLabel "b/n"@it ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/blw> ;
     skos:inScheme spav:cl ;
     skos:prefLabel "s/w"@de,
         "black and white"@en,
-        "noir et blanc"@fr ;
+        "noir et blanc"@fr,
+        "bianco e nero"@it ;
     skos:topConceptOf spav:cl .
 
 spav:clgry a crm:E55_Type,
@@ -473,7 +490,8 @@ spav:clgry a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "Graustufen"@de,
         "gray scale"@en,
-        "niveau de gris"@fr ;
+        "niveau de gris"@fr,
+        "scala di grigi"@it ;
     skos:topConceptOf spav:cl .
 
 spav:clhnd a crm:E55_Type,
@@ -481,7 +499,8 @@ spav:clhnd a crm:E55_Type,
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/hnd> ;
     skos:inScheme spav:cl ;
     skos:prefLabel "handcoloriert"@de,
-        "hand colored"@en ;
+        "hand colored"@en,
+        "colorato a mano"@it ;
     skos:topConceptOf spav:cl .
 
 spav:clmix a crm:E55_Type,
@@ -489,7 +508,8 @@ spav:clmix a crm:E55_Type,
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/mix> ;
     skos:inScheme spav:cl ;
     skos:prefLabel "Mischfarbe"@de,
-        "mixed color"@en ;
+        "mixed color"@en,
+        "colore composto"@it ;
     skos:topConceptOf spav:cl .
 
 spav:clmul a crm:E55_Type,
@@ -498,7 +518,8 @@ spav:clmul a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "Farbe"@de,
         "color"@en,
-        "couleur"@fr ;
+        "couleur"@fr,
+        "colore"@it ;
     skos:topConceptOf spav:cl .
 
 spav:clone a crm:E55_Type,
@@ -506,7 +527,8 @@ spav:clone a crm:E55_Type,
     skos:exactMatch <http://id.loc.gov/vocabulary/mcolor/one> ;
     skos:inScheme spav:cl ;
     skos:prefLabel "einfarbig"@de,
-        "one color"@en ;
+        "one color"@en,
+        "colore unico"@it ;
     skos:topConceptOf spav:cl .
 
 spav:cpno a crm:E55_Type,
@@ -514,7 +536,8 @@ spav:cpno a crm:E55_Type,
     skos:inScheme spav:cp ;
     skos:prefLabel "nein"@de,
         "no"@en,
-        "non"@fr ;
+        "non"@fr,
+        "no"@it ;
     skos:topConceptOf spav:cp .
 
 spav:cppnd a crm:E55_Type,
@@ -522,7 +545,8 @@ spav:cppnd a crm:E55_Type,
     skos:inScheme spav:cp ;
     skos:prefLabel "pendent"@de,
         "pending"@en,
-        "en cours"@fr ;
+        "en cours"@fr,
+        "in corso"@it ;
     skos:topConceptOf spav:cp .
 
 spav:cpprs a crm:E55_Type,
@@ -530,7 +554,8 @@ spav:cpprs a crm:E55_Type,
     skos:inScheme spav:cp ;
     skos:prefLabel "Ankauf"@de,
         "purchase"@en,
-        "achat"@fr ;
+        "achat"@fr,
+        "acquisto"@it ;
     skos:topConceptOf spav:cp .
 
 spav:cpprt a crm:E55_Type,
@@ -538,7 +563,8 @@ spav:cpprt a crm:E55_Type,
     skos:inScheme spav:cp ;
     skos:prefLabel "partiell"@de,
         "partial"@en,
-        "partiel"@fr ;
+        "partiel"@fr,
+        "parziale"@it ;
     skos:topConceptOf spav:cp .
 
 spav:cpyes a crm:E55_Type,
@@ -546,7 +572,8 @@ spav:cpyes a crm:E55_Type,
     skos:inScheme spav:cp ;
     skos:prefLabel "ja"@de,
         "yes"@en,
-        "oui"@fr ;
+        "oui"@fr,
+        "sì"@it ;
     skos:topConceptOf spav:cp .
 
 spav:ctcrt a crm:E55_Type,
@@ -645,10 +672,12 @@ spav:dfctp a skos:Concept,
     skos:inScheme spav:df ;
     skos:prefLabel "Kontaktabzug"@de,
         "contact sheet"@en,
-        "planche-contact"@fr ;
+        "planche-contact"@fr,
+        "stampa a contatto"@it ;
     rico:name "Kontaktabzug"@de,
         "contact sheet"@en,
-        "planche-contact"@fr .
+        "planche-contact"@fr,
+        "stampa a contatto"@it .
 
 spav:dfdia a skos:Concept,
         rico:DocumentaryFormType ;
@@ -657,10 +686,12 @@ spav:dfdia a skos:Concept,
     skos:inScheme spav:df ;
     skos:prefLabel "Dia"@de,
         "slide"@en,
-        "diapositive"@fr ;
+        "diapositive"@fr,
+        "diapositiva"@it ;
     rico:name "Dia"@de,
         "slide"@en,
-        "diapositive"@fr .
+        "diapositive"@fr,
+        "diapositiva"@it .
 
 spav:dfdvh a skos:Concept,
         rico:DocumentaryFormType ;
@@ -841,16 +872,19 @@ spav:dfjdc a skos:Concept,
 spav:dfjnl a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "Zeitung"@de,
-        "newspaper"@en ;
+        "newspaper"@en,
+        "rivista"@it ;
     skos:broader spav:dflvv ;
     skos:exactMatch <http://vocab.getty.edu/aat/300215390> ;
     skos:inScheme spav:df ;
     skos:prefLabel "Zeitschrift"@de,
         "journal"@en,
-        "journal"@fr ;
+        "journal"@fr,
+        "giornale"@it ;
     rico:name "Zeitschrift"@de,
         "journal"@en,
-        "journal"@fr .
+        "journal"@fr,
+        "giornale"@it .
 
 spav:dfjoa a skos:Concept,
         rico:DocumentaryFormType ;
@@ -940,9 +974,11 @@ spav:dfpmd a skos:Concept,
     skos:broader spav:dfwrq ;
     skos:inScheme spav:df ;
     skos:prefLabel "purchase medium"@de,
-        "purchase medium"@en ;
+        "purchase medium"@en,
+        "purchase medium"@it ;
     rico:name "purchase medium"@de,
-        "purchase medium"@en .
+        "purchase medium"@en,
+        "purchase medium"@it .
 
 spav:dfpwk a skos:Concept,
         rico:DocumentaryFormType ;
@@ -1059,10 +1095,12 @@ spav:dftxd a skos:Concept,
     skos:inScheme spav:df ;
     skos:prefLabel "Textdokument"@de,
         "text document"@en,
-        "document textuel"@fr ;
+        "document textuel"@fr,
+        "documento testuale"@it ;
     rico:name "Textdokument"@de,
         "text document"@en,
-        "document textuel"@fr .
+        "document textuel"@fr,
+        "documento testuale"@it .
 
 spav:dfuuh a skos:Concept,
         rico:DocumentaryFormType ;
@@ -1219,14 +1257,16 @@ spav:eonct a crm:E55_Type,
     skos:inScheme spav:eo ;
     skos:prefLabel "Anmerkung zum Kontext"@de,
         "note on context"@en,
-        "note sur le contexte"@fr .
+        "note sur le contexte"@fr,
+        "nota sul contesto"@it .
 
 spav:eonms a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:eo ;
     skos:prefLabel "Anmerkung zur Musik"@de,
         "note on music"@en,
-        "note sur la musique"@fr ;
+        "note sur la musique"@fr,
+        "nota sulla musica"@it ;
     skos:topConceptOf spav:eo .
 
 spav:eonsw a crm:E55_Type,
@@ -1234,7 +1274,8 @@ spav:eonsw a crm:E55_Type,
     skos:inScheme spav:eo ;
     skos:prefLabel "Anmerkung zum Bühnenwerk"@de,
         "note on stage work"@en,
-        "note sur le travail scénique"@fr ;
+        "note sur le travail scénique"@fr,
+        "nota sulla messa in scena"@it ;
     skos:topConceptOf spav:eo .
 
 spav:eonvd a crm:E55_Type,
@@ -1253,10 +1294,12 @@ spav:etbeq a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Legat"@de,
         "bequest"@en,
-        "legs"@fr ;
+        "legs"@fr,
+        "legato"@it ;
     rico:name "Legat"@de,
         "bequest"@en,
-        "legs"@fr .
+        "legs"@fr,
+        "legato"@it .
 
 spav:etcpa a skos:Concept,
         rico:EventType ;
@@ -1264,10 +1307,12 @@ spav:etcpa a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Kopie erstellt durch Archiv"@de,
         "copy created by archive"@en,
-        "copie créée par l’archive"@fr ;
+        "copie créée par l’archive"@fr,
+        "copia creata dall'archivio"@it ;
     rico:name "Kopie erstellt durch Archiv"@de,
         "copy created by archive"@en,
-        "copie créée par l’archive"@fr .
+        "copie créée par l’archive"@fr,
+        "copia creata dall'archivio"@it .
 
 spav:etdon a skos:Concept,
         rico:EventType ;
@@ -1276,10 +1321,12 @@ spav:etdon a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Schenkung"@de,
         "donation"@en,
-        "donation"@fr ;
+        "donation"@fr,
+        "donazione"@it ;
     rico:name "Schenkung"@de,
         "donation"@en,
-        "donation"@fr .
+        "donation"@fr,
+        "donazione"@it .
 
 spav:etloa a skos:Concept,
         rico:EventType ;
@@ -1288,10 +1335,12 @@ spav:etloa a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Leihgabe"@de,
         "loan"@en,
-        "dépôt"@fr ;
+        "dépôt"@fr,
+        "deposito"@it ;
     rico:name "Leihgabe"@de,
         "loan"@en,
-        "dépôt"@fr .
+        "dépôt"@fr,
+        "deposito"@it .
 
 spav:etopd a skos:Concept,
         rico:EventType ;
@@ -1299,10 +1348,12 @@ spav:etopd a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Eigenproduktion"@de,
         "own production"@en,
-        "production interne"@fr ;
+        "production interne"@fr,
+        "produzione interna"@it ;
     rico:name "Eigenproduktion"@de,
         "own production"@en,
-        "production interne"@fr .
+        "production interne"@fr,
+        "produzione interna"@it .
 
 spav:etpur a skos:Concept,
         rico:EventType ;
@@ -1311,10 +1362,12 @@ spav:etpur a skos:Concept,
     skos:inScheme spav:et ;
     skos:prefLabel "Ankauf"@de,
         "purchase"@en,
-        "achat"@fr ;
+        "achat"@fr,
+        "acquisto"@it ;
     rico:name "Ankauf"@de,
         "purchase"@en,
-        "achat"@fr .
+        "achat"@fr,
+        "acquisto"@it .
 
 spav:frabo a skos:Concept,
         rico:ProductionTechniqueType ;
@@ -1531,10 +1584,12 @@ spav:fvekd a premis:StorageMedium,
     skos:inScheme spav:fv ;
     skos:prefLabel "Papierabzug"@de,
         "photographic print on paper"@en,
-        "epreuve sur papier"@fr ;
+        "epreuve sur papier"@fr,
+        "stampa su carta"@it ;
     rico:name "Papierabzug"@de,
         "photographic print on paper"@en,
-        "epreuve sur papier"@fr .
+        "epreuve sur papier"@fr,
+        "stampa su carta"@it .
 
 spav:fveny a premis:StorageMedium,
         skos:Concept,
@@ -1837,10 +1892,12 @@ spav:fvlfo a premis:StorageMedium,
     skos:inScheme spav:fv ;
     skos:prefLabel "Proof auf Karton geklebt"@de,
         "proof glued on cardboard"@en,
-        "epreuve collée sur carton"@fr ;
+        "epreuve collée sur carton"@fr,
+        "bozza incollata su cartone"@it ;
     rico:name "Proof auf Karton geklebt"@de,
         "proof glued on cardboard"@en,
-        "epreuve collée sur carton"@fr .
+        "epreuve collée sur carton"@fr,
+        "bozza incollata su cartone"@it .
 
 spav:fvlxb a premis:StorageMedium,
         skos:Concept,
@@ -4872,7 +4929,8 @@ spav:pkba4 a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Karton A4"@de,
         "box A4"@en,
-        "carton A4"@fr ;
+        "carton A4"@fr,
+        "scatola A4"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkba5 a crm:E55_Type,
@@ -4880,7 +4938,8 @@ spav:pkba5 a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Karton A5"@de,
         "box A5"@en,
-        "carton A5"@fr ;
+        "carton A5"@fr,
+        "scatola A5"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkbag a crm:E55_Type,
@@ -4888,7 +4947,8 @@ spav:pkbag a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Karton GF"@de,
         "box GF"@en,
-        "carton GF"@fr ;
+        "carton GF"@fr,
+        "scatola GF"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkbco a crm:E55_Type,
@@ -4896,7 +4956,8 @@ spav:pkbco a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Karton Kostüm und Objekt"@de,
         "box costume and object"@en,
-        "Carton costume et objet"@fr ;
+        "Carton costume et objet"@fr,
+        "scatola per costumi e oggetti"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkdgf a crm:E55_Type,
@@ -4904,7 +4965,8 @@ spav:pkdgf a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Digital Datei"@de,
         "digital file"@en,
-        "fichier"@fr ;
+        "fichier"@fr,
+        "file digitale"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkpnt a crm:E55_Type,
@@ -4912,7 +4974,8 @@ spav:pkpnt a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Gemälde"@de,
         "painting"@en,
-        "tableau"@fr ;
+        "tableau"@fr,
+        "dipinto"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pkpst a crm:E55_Type,
@@ -4920,7 +4983,8 @@ spav:pkpst a crm:E55_Type,
     skos:inScheme spav:pk ;
     skos:prefLabel "Plakat"@de,
         "poster"@en,
-        "affiche"@fr ;
+        "affiche"@fr,
+        "poster"@it ;
     skos:topConceptOf spav:pk .
 
 spav:pmarc a crm:E55_Type,
@@ -4928,7 +4992,8 @@ spav:pmarc a crm:E55_Type,
     skos:inScheme spav:pm ;
     skos:prefLabel "Archivar"@de,
         "archivist"@en,
-        "archiviste"@fr ;
+        "archiviste"@fr,
+        "archivista"@it ;
     skos:topConceptOf spav:pm .
 
 spav:pmnon a crm:E55_Type,
@@ -4936,7 +5001,8 @@ spav:pmnon a crm:E55_Type,
     skos:inScheme spav:pm ;
     skos:prefLabel "keine"@de,
         "none"@en,
-        "aucune"@fr ;
+        "aucune"@fr,
+        "nessuna"@it ;
     skos:topConceptOf spav:pm .
 
 spav:pmprv a crm:E55_Type,
@@ -4944,7 +5010,8 @@ spav:pmprv a crm:E55_Type,
     skos:inScheme spav:pm ;
     skos:prefLabel "Provenienz"@de,
         "provenance"@en,
-        "provenance"@fr ;
+        "provenance"@fr,
+        "provenienza"@it ;
     skos:topConceptOf spav:pm .
 
 spav:punps a crm:E55_Type,
@@ -4952,7 +5019,8 @@ spav:punps a crm:E55_Type,
     skos:inScheme spav:pu ;
     skos:prefLabel "nicht möglich"@de,
         "not possible"@en,
-        "impossible"@fr ;
+        "impossible"@fr,
+        "non possibile"@it ;
     skos:topConceptOf spav:pu .
 
 spav:pures a crm:E55_Type,
@@ -4960,7 +5028,8 @@ spav:pures a crm:E55_Type,
     skos:inScheme spav:pu ;
     skos:prefLabel "eingeschränkt"@de,
         "restricted"@en,
-        "restreinte"@fr ;
+        "restreinte"@fr,
+        "limitata"@it ;
     skos:topConceptOf spav:pu .
 
 spav:puurs a crm:E55_Type,
@@ -4968,7 +5037,8 @@ spav:puurs a crm:E55_Type,
     skos:inScheme spav:pu ;
     skos:prefLabel "uneingeschränkt"@de,
         "unrestricted"@en,
-        "sans restriction"@fr ;
+        "sans restriction"@fr,
+        "senza restrizioni"@it ;
     skos:topConceptOf spav:pu .
 
 spav:rgcmp a crm:E55_Type,
@@ -4976,7 +5046,8 @@ spav:rgcmp a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Sammelband"@de,
         "compilation"@en,
-        "recueil"@fr ;
+        "recueil"@fr,
+        "antologia"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgcmt a crm:E55_Type,
@@ -4984,7 +5055,8 @@ spav:rgcmt a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Werbetrailer"@de,
         "commercial trailer"@en,
-        "film publicitaire"@fr ;
+        "film publicitaire"@fr,
+        "trailer pubblicitario"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgdcf a crm:E55_Type,
@@ -4992,7 +5064,8 @@ spav:rgdcf a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Dokumentarfilm"@de,
         "documentary film"@en,
-        "film documentaire"@fr ;
+        "film documentaire"@fr,
+        "documentario"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgdnf a crm:E55_Type,
@@ -5000,7 +5073,8 @@ spav:rgdnf a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Tanzfilm"@de,
         "dance film"@en,
-        "film de danse"@fr ;
+        "film de danse"@fr,
+        "film di danza"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgedu a crm:E55_Type,
@@ -5008,7 +5082,8 @@ spav:rgedu a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Lehrfilm"@de,
         "educational film"@en,
-        "film pédagogique"@fr ;
+        "film pédagogique"@fr,
+        "film pedagogico"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgexp a crm:E55_Type,
@@ -5016,7 +5091,8 @@ spav:rgexp a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Ausschnitt"@de,
         "excerpt"@en,
-        "extrait"@fr ;
+        "extrait"@fr,
+        "estratto"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgint a crm:E55_Type,
@@ -5024,7 +5100,8 @@ spav:rgint a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Interview"@de,
         "interview"@en,
-        "interview"@fr ;
+        "interview"@fr,
+        "intervista"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgprt a crm:E55_Type,
@@ -5032,7 +5109,8 @@ spav:rgprt a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Porträt"@de,
         "portrait"@en,
-        "portrait"@fr ;
+        "portrait"@fr,
+        "ritratto"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgprv a crm:E55_Type,
@@ -5040,7 +5118,8 @@ spav:rgprv a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Aufnahme aus privatem Umfeld"@de,
         "private recording"@en,
-        "enregistrement privé"@fr ;
+        "enregistrement privé"@fr,
+        "registrazione privata"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgrhr a crm:E55_Type,
@@ -5048,7 +5127,8 @@ spav:rgrhr a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Aufzeichnung Probe"@de,
         "rehearsal recording"@en,
-        "enregistrement de répétition"@fr ;
+        "enregistrement de répétition"@fr,
+        "registrazione delle prove"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgssr a crm:E55_Type,
@@ -5056,7 +5136,8 @@ spav:rgssr a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Bühnen- und Studioaufzeichnung"@de,
         "stage or studio recording"@en,
-        "enregistrement sur scène et en studio"@fr ;
+        "enregistrement sur scène et en studio"@fr,
+        "registrazione della messa in scena e in studio"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgtvr a crm:E55_Type,
@@ -5064,7 +5145,8 @@ spav:rgtvr a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Fernsehaufzeichnung"@de,
         "tv recording"@en,
-        "enregistrement TV"@fr ;
+        "enregistrement TV"@fr,
+        "registrazione TV"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rgvdd a crm:E55_Type,
@@ -5072,7 +5154,8 @@ spav:rgvdd a crm:E55_Type,
     skos:inScheme spav:rg ;
     skos:prefLabel "Videotanz"@de,
         "video dance"@en,
-        "vidéo de danse"@fr ;
+        "vidéo de danse"@fr,
+        "video di danza"@it ;
     skos:topConceptOf spav:rg .
 
 spav:rsarc a crm:E55_Type,
@@ -5146,7 +5229,8 @@ spav:rsssr a crm:E55_Type,
     skos:inScheme spav:rs ;
     skos:prefLabel "Teilserie"@de,
         "sub-series"@en,
-        "sous-série"@fr .
+        "sous-série"@fr,
+        "sotto serie"@it .
 
 spav:rtac a skos:Concept,
         rico:RepresentationType ;
@@ -5225,10 +5309,12 @@ spav:stltp a skos:Concept,
     skos:inScheme spav:st ;
     skos:prefLabel "moderner Abzug"@de,
         "later print"@en,
-        "tirage moderne"@fr ;
+        "tirage moderne"@fr,
+        "copia moderna"@it ;
     rico:name "moderner Abzug"@de,
         "later print"@en,
-        "tirage moderne"@fr .
+        "tirage moderne"@fr,
+        "copia moderna"@it .
 
 spav:stvpd a skos:Concept,
         rico:RecordState ;
@@ -5236,10 +5322,12 @@ spav:stvpd a skos:Concept,
     skos:inScheme spav:st ;
     skos:prefLabel "Original, signiert, datiert"@de,
         "vintage print, signed, dated"@en,
-        "original, signé, daté"@fr ;
+        "original, signé, daté"@fr,
+        "originale, firmato, datato"@it ;
     rico:name "Original, signiert, datiert"@de,
         "vintage print, signed, dated"@en,
-        "original, signé, daté"@fr .
+        "original, signé, daté"@fr,
+        "originale, firmato, datato"@it .
 
 spav:stwkp a skos:Concept,
         rico:RecordState ;
@@ -5249,17 +5337,20 @@ spav:stwkp a skos:Concept,
     skos:inScheme spav:st ;
     skos:prefLabel "Arbeitskopie"@de,
         "work print"@en,
-        "tirage de travail"@fr ;
+        "tirage de travail"@fr,
+        "copia di lavoro"@it ;
     rico:name "Arbeitskopie"@de,
         "work print"@en,
-        "tirage de travail"@fr .
+        "tirage de travail"@fr,
+        "copia di lavoro"@it .
 
 spav:tjeev a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:tj ;
     skos:prefLabel "intern"@de,
         "staff only"@en,
-        "interne"@fr ;
+        "interne"@fr,
+        "interno"@it ;
     skos:topConceptOf spav:tj .
 
 spav:tjzns a crm:E55_Type,
@@ -5267,7 +5358,8 @@ spav:tjzns a crm:E55_Type,
     skos:inScheme spav:tj ;
     skos:prefLabel "öffentlich"@de,
         "public"@en,
-        "public"@fr ;
+        "public"@fr,
+        "pubblico"@it ;
     skos:topConceptOf spav:tj .
 
 spav:tpeop a crm:E55_Type,
@@ -5275,7 +5367,8 @@ spav:tpeop a crm:E55_Type,
     skos:inScheme spav:tp ;
     skos:prefLabel "Zeitraumende"@de,
         "end of period"@en,
-        "fin de période"@fr ;
+        "fin de période"@fr,
+        "fine del periodo"@it ;
     skos:topConceptOf spav:tp .
 
 spav:tpunk a crm:E55_Type,
@@ -5283,7 +5376,8 @@ spav:tpunk a crm:E55_Type,
     skos:inScheme spav:tp ;
     skos:prefLabel "unbekannt"@de,
         "unknown"@en,
-        "inconnu"@fr ;
+        "inconnu"@fr,
+        "sconosciuto"@it ;
     skos:topConceptOf spav:tp .
 
 spav:umbox a skos:Concept,
@@ -5291,22 +5385,26 @@ spav:umbox a skos:Concept,
     skos:inScheme spav:um ;
     skos:prefLabel "Schachteln"@de,
         "boxes"@en,
-        "boîtes"@fr ;
+        "boîtes"@fr,
+        "scatola"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Schachteln"@de,
         "boxes"@en,
-        "boîtes"@fr .
+        "boîtes"@fr,
+        "scatola"@it .
 
 spav:umenv a skos:Concept,
         rico:unitOfMeasurement ;
     skos:inScheme spav:um ;
     skos:prefLabel "Couverts"@de,
         "envelopes"@en,
-        "fourre"@fr ;
+        "fourre"@fr,
+        "busta"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Couverts"@de,
         "envelopes"@en,
-        "fourre"@fr .
+        "fourre"@fr,
+        "busta"@it .
 
 spav:umkg a skos:Concept,
         rico:unitOfMeasurement ;
@@ -5339,45 +5437,57 @@ spav:umpcs a skos:Concept,
     skos:inScheme spav:um ;
     skos:prefLabel "Stück"@de,
         "pieces"@en,
-        "pièces"@fr ;
+        "pièces"@fr,
+        "pezzo"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Stück"@de,
         "pieces"@en,
-        "pièces"@fr .
+        "pièces"@fr,
+        "pezzo"@it .
 
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Blockartefakte (digital)"@de,
-        "block artifacts (digital)"@en ;
+        "block artifacts (digital)"@en,
+        "macroblocking artefact (digital)"@fr,
+        "problema di compressione (digitale)"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdcld a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Farbstörungen"@de,
-        "color disturbances"@en ;
+        "color disturbances"@en,
+        "perturbations de la couleur"@fr,
+        "perturbazione del colore"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vddrp a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Dropouts"@de,
-        "dropouts"@en ;
+        "dropouts"@en,
+        "drop out"@fr,
+        "drop out"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vddrt a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Schmutz"@de,
-        "dirt"@en ;
+        "dirt"@en,
+        "saleté"@fr,
+        "sporcizia"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdhst a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "horiz. Störstreifen"@de,
-        "horizontal stripes"@en ;
+        "horizontal stripes"@en,
+        "bandes d’interférence horizontales"@fr,
+        "linee orizzontali"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vditw a crm:E55_Type,
@@ -5385,49 +5495,63 @@ spav:vditw a crm:E55_Type,
     skos:altLabel "irregular tape pack"@en ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Unregelmässiger Bandwickel"@de,
-        "tape pack"@en ;
+        "tape pack"@en,
+        "rembobinage irrégulier"@fr,
+        "avvolgimento irregolare"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdpcn a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bildrauschen"@de,
-        "picture noise"@en ;
+        "picture noise"@en,
+        "bruit de l‘image"@fr,
+        "rumore d'immagine"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdsnd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Tonsstörungen"@de,
-        "sound disturbances"@en ;
+        "sound disturbances"@en,
+        "perturbations du son"@fr,
+        "perturbazione del suono"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdsts a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bandkleben und -quietschen"@de,
-        "sticky tape syndrome"@en ;
+        "sticky tape syndrome"@en,
+        "sticky tape syndrome (dégradation du liant)"@fr,
+        "sindrome dell'incollamento"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdtpc a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Bandknitter"@de,
-        "crumpled tape"@en ;
+        "crumpled tape"@en,
+        "plis sur la bande"@fr,
+        "nastro danneggiato"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdtpd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "Deformation des Bandes"@de,
-        "tape deformation"@en ;
+        "tape deformation"@en,
+        "déformation de la bande"@fr,
+        "deformazione del nastro"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vdtrt a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
     skos:prefLabel "zerrissenes Band"@de,
-        "torn tape"@en ;
+        "torn tape"@en,
+        "déchirure de la bande"@fr,
+        "nastro strappato"@it ;
     skos:topConceptOf spav:vd .
 
 spav:vfai a skos:Concept,
@@ -6306,10 +6430,12 @@ spav:stvps a skos:Concept,
     skos:narrower spav:stvpd ;
     skos:prefLabel "Original, signiert"@de,
         "vintage print, signed"@en,
-        "original, signé"@fr ;
+        "original, signé"@fr,
+        "originale, firmato"@it ;
     rico:name "Original, signiert"@de,
         "vintage print, signed"@en,
-        "original, signé"@fr .
+        "original, signé"@fr,
+        "originale, firmato"@it .
 
 spav:stvtp a skos:Concept,
         rico:RecordState ;
@@ -6320,10 +6446,12 @@ spav:stvtp a skos:Concept,
     skos:narrower spav:stvps ;
     skos:prefLabel "Original"@de,
         "vintage print"@en,
-        "original"@fr ;
+        "original"@fr,
+        "originale"@it ;
     rico:name "Original"@de,
         "vintage print"@en,
-        "original"@fr .
+        "original"@fr,
+        "originale"@it .
 
 spav:vfffv1 a skos:Concept,
         ebucore:VideoFormat ;
@@ -6362,7 +6490,8 @@ spav:asdsp a crm:E55_Type,
         spav:asdcp ;
     skos:prefLabel "Sichtungskopie"@de,
         "dissemination copy"@en,
-        "copie de diffusion"@fr ;
+        "copie de diffusion"@fr,
+        "copia di diffusione"@it ;
     skos:topConceptOf spav:as .
 
 spav:asprc a crm:E55_Type,
@@ -6372,7 +6501,8 @@ spav:asprc a crm:E55_Type,
         spav:aspcp ;
     skos:prefLabel "Sicherungskopie"@de,
         "preservation copy"@en,
-        "copie de conservation"@fr ;
+        "copie de conservation"@fr,
+        "copia di conservazione"@it ;
     skos:topConceptOf spav:as .
 
 spav:dfeip a skos:Concept,
@@ -6668,7 +6798,8 @@ spav:ac a skos:ConceptScheme ;
         spav:acstf ;
     skos:prefLabel "Zugänglichkeit"@de,
         "accessability"@en,
-        "accessibilité"@fr .
+        "accessibilité"@fr,
+        "accessibilità"@it .
 
 spav:dfdui a skos:Concept,
         rico:DocumentaryFormType ;
@@ -6958,7 +7089,8 @@ spav:tp a skos:ConceptScheme ;
         spav:tpunk ;
     skos:prefLabel "Schutzfristkategorie"@de,
         "term of protection"@en,
-        "durée de protection"@fr .
+        "durée de protection"@fr,
+        "durata di protezione"@it .
 
 spav:vriuw a crm:E55_Type,
         skos:Concept ;
@@ -7227,7 +7359,8 @@ spav:pm a skos:ConceptScheme ;
         spav:pmprv ;
     skos:prefLabel "Bewilligung"@de,
         "permission"@en,
-        "autorisation"@fr .
+        "autorisation"@fr,
+        "autorizzazione"@it .
 
 spav:pu a skos:ConceptScheme ;
     skos:hasTopConcept spav:punps,
@@ -7235,7 +7368,8 @@ spav:pu a skos:ConceptScheme ;
         spav:puurs ;
     skos:prefLabel "Physische Benutzbarkeit"@de,
         "physical usability"@en,
-        "consultabilité physique"@fr .
+        "consultabilité physique"@fr,
+        "consultabilità pubblica"@it .
 
 spav:wa a skos:ConceptScheme ;
     skos:hasTopConcept spav:wajzb,
@@ -7258,11 +7392,13 @@ spav:etmoc a skos:Concept,
         spav:etpur ;
     skos:prefLabel "Eingangsart"@de,
         "methods of acquisition"@en,
-        "type d’acquisition"@fr ;
+        "type d’acquisition"@fr,
+        "tipo di acquisizione"@it ;
     skos:topConceptOf spav:et ;
     rico:name "Eingangsart"@de,
         "methods of acquisition"@en,
-        "type d’acquisition"@fr .
+        "type d’acquisition"@fr,
+        "tipo di acquisizione"@it .
 
 spav:hlamu a crm:E55_Type,
         skos:Concept ;
@@ -7289,7 +7425,8 @@ spav:rstyp a crm:E55_Type,
         spav:rssct,
         spav:rssrs ;
     skos:prefLabel "Record-Set-Typ"@de,
-        "record set type"@en ;
+        "record set type"@en,
+        "tipo di record set"@it ;
     skos:topConceptOf spav:rs .
 
 spav:st a skos:ConceptScheme ;
@@ -7340,7 +7477,8 @@ spav:et a skos:ConceptScheme ;
     skos:hasTopConcept spav:etmoc ;
     skos:prefLabel "Ergeignisart"@de,
         "event type"@en,
-        "type d’entrée"@fr .
+        "type d’entrée"@fr,
+        "tipo di acquisizione"@it .
 
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
@@ -7470,7 +7608,8 @@ spav:cp a skos:ConceptScheme ;
         spav:cpyes ;
     skos:prefLabel "Urheberrechtserklärung"@de,
         "copyright declaration"@en,
-        "déclaration d’accord"@fr .
+        "déclaration d’accord"@fr,
+        "dichiarazione dei diritti d'autore"@it .
 
 spav:go a skos:ConceptScheme ;
     skos:hasTopConcept spav:goctj,
@@ -7763,7 +7902,8 @@ spav:vd a skos:ConceptScheme ;
         spav:vdtpd,
         spav:vdtrt ;
     skos:prefLabel "Video-Schaden"@de,
-        "video damage"@en .
+        "video damage"@en,
+        "danni video"@it .
 
 spav:rg a skos:ConceptScheme ;
     skos:hasTopConcept spav:rgcmp,
