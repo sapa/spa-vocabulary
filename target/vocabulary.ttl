@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-21T12:59:44.042621+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-03-25T16:14:46.862616+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -53,6 +53,7 @@ spav:vdpcj a crm:E55_Type,
     skos:inScheme spav:vd ;
     skos:prefLabel "Bildstandschwankungen"@de,
         "picture jumping"@en,
+        "picture jumping"@fr,
         "immagine intermittente"@it .
 
 spav:xg a skos:ConceptScheme ;
@@ -500,6 +501,7 @@ spav:clhnd a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "handcoloriert"@de,
         "hand colored"@en,
+        "colorisé à la main"@fr,
         "colorato a mano"@it ;
     skos:topConceptOf spav:cl .
 
@@ -509,6 +511,7 @@ spav:clmix a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "Mischfarbe"@de,
         "mixed color"@en,
+        "couleur mélangée"@fr,
         "colore composto"@it ;
     skos:topConceptOf spav:cl .
 
@@ -528,6 +531,7 @@ spav:clone a crm:E55_Type,
     skos:inScheme spav:cl ;
     skos:prefLabel "einfarbig"@de,
         "one color"@en,
+        "monochrome"@fr,
         "colore unico"@it ;
     skos:topConceptOf spav:cl .
 
@@ -975,9 +979,11 @@ spav:dfpmd a skos:Concept,
     skos:inScheme spav:df ;
     skos:prefLabel "purchase medium"@de,
         "purchase medium"@en,
+        "purchase medium"@fr,
         "purchase medium"@it ;
     rico:name "purchase medium"@de,
         "purchase medium"@en,
+        "purchase medium"@fr,
         "purchase medium"@it .
 
 spav:dfpwk a skos:Concept,
@@ -7426,6 +7432,7 @@ spav:rstyp a crm:E55_Type,
         spav:rssrs ;
     skos:prefLabel "Record-Set-Typ"@de,
         "record set type"@en,
+        "Type d'unité de description"@fr,
         "tipo di record set"@it ;
     skos:topConceptOf spav:rs .
 
