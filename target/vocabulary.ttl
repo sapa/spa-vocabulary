@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-04-28T15:05:42.901330+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-04-28T15:12:51.309879+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -5447,6 +5447,15 @@ spav:umpcs a skos:Concept,
         "pièces"@fr,
         "pezzo"@it .
 
+spav:umsdc a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "Einzeldokumente"@de,
+        "single documents"@en ;
+    skos:topConceptOf spav:um ;
+    rico:name "Einzeldokumente"@de,
+        "single documents"@en .
+
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:vd ;
@@ -7788,14 +7797,6 @@ spav:fverx a premis:StorageMedium,
         "cassette vidéo"@fr,
         "videocassetta"@it .
 
-spav:um a skos:ConceptScheme ;
-    skos:hasTopConcept spav:umbox,
-        spav:umenv,
-        spav:umkg,
-        spav:umlnm,
-        spav:umpcs ;
-    skos:prefLabel "extent unit"@en .
-
 spav:dfqot a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "locandina"@it,
@@ -7842,6 +7843,15 @@ spav:rs a skos:ConceptScheme ;
     skos:prefLabel "Archivebene"@de,
         "archival level"@en,
         "niveau archives"@fr .
+
+spav:um a skos:ConceptScheme ;
+    skos:hasTopConcept spav:umbox,
+        spav:umenv,
+        spav:umkg,
+        spav:umlnm,
+        spav:umpcs,
+        spav:umsdc ;
+    skos:prefLabel "extent unit"@en .
 
 spav:fr a skos:ConceptScheme ;
     skos:hasTopConcept spav:frbvo,
