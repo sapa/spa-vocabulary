@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-03-25T16:14:46.862616+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-04-28T15:05:42.901330+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -5399,18 +5399,14 @@ spav:umbox a skos:Concept,
         "boîtes"@fr,
         "scatola"@it .
 
-spav:umenv a skos:Concept,
+spav:umcen a skos:Concept,
         rico:unitOfMeasurement ;
+    skos:broader spav:umenv ;
     skos:inScheme spav:um ;
-    skos:prefLabel "Couverts"@de,
-        "envelopes"@en,
-        "fourre"@fr,
-        "busta"@it ;
-    skos:topConceptOf spav:um ;
-    rico:name "Couverts"@de,
-        "envelopes"@en,
-        "fourre"@fr,
-        "busta"@it .
+    skos:prefLabel "Sammelcouverts"@de,
+        "collection envelopes"@en ;
+    rico:name "Sammelcouverts"@de,
+        "collection envelopes"@en .
 
 spav:umkg a skos:Concept,
         rico:unitOfMeasurement ;
@@ -6458,6 +6454,20 @@ spav:stvtp a skos:Concept,
         "vintage print"@en,
         "original"@fr,
         "originale"@it .
+
+spav:umenv a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:narrower spav:umcen ;
+    skos:prefLabel "Couverts"@de,
+        "envelopes"@en,
+        "fourre"@fr,
+        "busta"@it ;
+    skos:topConceptOf spav:um ;
+    rico:name "Couverts"@de,
+        "envelopes"@en,
+        "fourre"@fr,
+        "busta"@it .
 
 spav:vfffv1 a skos:Concept,
         ebucore:VideoFormat ;
@@ -7711,14 +7721,6 @@ spav:mneyg a crm:E55_Type,
         "teatro drammatico"@it ;
     skos:topConceptOf spav:mn .
 
-spav:um a skos:ConceptScheme ;
-    skos:hasTopConcept spav:umbox,
-        spav:umenv,
-        spav:umkg,
-        spav:umlnm,
-        spav:umpcs ;
-    skos:prefLabel "extent unit"@en .
-
 spav:ya a skos:ConceptScheme ;
     skos:hasTopConcept spav:yakdx ;
     skos:prefLabel "appellation"@en,
@@ -7785,6 +7787,14 @@ spav:fverx a premis:StorageMedium,
         "video cassette"@en,
         "cassette vidéo"@fr,
         "videocassetta"@it .
+
+spav:um a skos:ConceptScheme ;
+    skos:hasTopConcept spav:umbox,
+        spav:umenv,
+        spav:umkg,
+        spav:umlnm,
+        spav:umpcs ;
+    skos:prefLabel "extent unit"@en .
 
 spav:dfqot a skos:Concept,
         rico:DocumentaryFormType ;
