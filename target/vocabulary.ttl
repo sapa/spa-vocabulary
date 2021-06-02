@@ -30,7 +30,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-04-28T15:12:51.309879+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2021-06-02T11:49:27.070082+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -592,10 +592,10 @@ spav:ctcrt a crm:E55_Type,
 spav:ctddd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:ct ;
-    skos:prefLabel "abgeleitetes Datum"@de,
-        "deduced date"@en,
-        "date déduite"@fr,
-        "data dedotta"@it ;
+    skos:prefLabel "abgeleitet"@de,
+        "deduced"@en,
+        "déduite"@fr,
+        "dedotta"@it ;
     skos:topConceptOf spav:ct .
 
 spav:ctprb a crm:E55_Type,
@@ -4927,7 +4927,8 @@ spav:ndna a crm:E55_Type,
 spav:ndsd a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:nd ;
-    skos:prefLabel "s.d."@en ;
+    skos:prefLabel "s.d."@en,
+        "s.d."@fr ;
     skos:topConceptOf spav:nd .
 
 spav:pkba4 a crm:E55_Type,
@@ -5391,12 +5392,12 @@ spav:umbox a skos:Concept,
     skos:inScheme spav:um ;
     skos:prefLabel "Schachteln"@de,
         "boxes"@en,
-        "boîtes"@fr,
+        "boîte(s)"@fr,
         "scatola"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Schachteln"@de,
         "boxes"@en,
-        "boîtes"@fr,
+        "boîte(s)"@fr,
         "scatola"@it .
 
 spav:umcen a skos:Concept,
@@ -5404,9 +5405,11 @@ spav:umcen a skos:Concept,
     skos:broader spav:umenv ;
     skos:inScheme spav:um ;
     skos:prefLabel "Sammelcouverts"@de,
-        "collection envelopes"@en ;
+        "collection envelopes"@en,
+        "??"@fr ;
     rico:name "Sammelcouverts"@de,
-        "collection envelopes"@en .
+        "collection envelopes"@en,
+        "??"@fr .
 
 spav:umkg a skos:Concept,
         rico:unitOfMeasurement ;
@@ -5426,12 +5429,12 @@ spav:umlnm a skos:Concept,
     skos:inScheme spav:um ;
     skos:prefLabel "Laufmeter"@de,
         "linear meters"@en,
-        "mètre linéaire"@fr,
+        "mètre(s) linéaire(s)"@fr,
         "metri lineari"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Laufmeter"@de,
         "linear meters"@en,
-        "mètre linéaire"@fr,
+        "mètre(s) linéaire(s)"@fr,
         "metri lineari"@it .
 
 spav:umpcs a skos:Concept,
@@ -5439,22 +5442,24 @@ spav:umpcs a skos:Concept,
     skos:inScheme spav:um ;
     skos:prefLabel "Stück"@de,
         "pieces"@en,
-        "pièces"@fr,
+        "pièce(s)"@fr,
         "pezzo"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Stück"@de,
         "pieces"@en,
-        "pièces"@fr,
+        "pièce(s)"@fr,
         "pezzo"@it .
 
 spav:umsdc a skos:Concept,
         rico:unitOfMeasurement ;
     skos:inScheme spav:um ;
     skos:prefLabel "Einzeldokumente"@de,
-        "single documents"@en ;
+        "single documents"@en,
+        "document(s) isolé(s)"@fr ;
     skos:topConceptOf spav:um ;
     rico:name "Einzeldokumente"@de,
-        "single documents"@en .
+        "single documents"@en,
+        "document(s) isolé(s)"@fr .
 
 spav:vdbad a crm:E55_Type,
         skos:Concept ;
@@ -6470,12 +6475,12 @@ spav:umenv a skos:Concept,
     skos:narrower spav:umcen ;
     skos:prefLabel "Couverts"@de,
         "envelopes"@en,
-        "fourre"@fr,
+        "fourre(s)"@fr,
         "busta"@it ;
     skos:topConceptOf spav:um ;
     rico:name "Couverts"@de,
         "envelopes"@en,
-        "fourre"@fr,
+        "fourre(s)"@fr,
         "busta"@it .
 
 spav:vfffv1 a skos:Concept,
@@ -7082,7 +7087,8 @@ spav:muyql a crm:E55_Type,
 spav:nd a skos:ConceptScheme ;
     skos:hasTopConcept spav:ndna,
         spav:ndsd ;
-    skos:prefLabel "no date value"@en .
+    skos:prefLabel "no date value"@en,
+        "sans valeur de date"@fr .
 
 spav:sf a skos:ConceptScheme ;
     skos:hasTopConcept spav:sfint,
@@ -7851,7 +7857,9 @@ spav:um a skos:ConceptScheme ;
         spav:umlnm,
         spav:umpcs,
         spav:umsdc ;
-    skos:prefLabel "extent unit"@en .
+    skos:prefLabel "Umfang"@de,
+        "extent unit"@en,
+        "unité de mesure"@fr .
 
 spav:fr a skos:ConceptScheme ;
     skos:hasTopConcept spav:frbvo,
@@ -8145,5 +8153,6 @@ spav:lg a skos:ConceptScheme ;
         spav:lgyid,
         spav:lgzza ;
     skos:prefLabel "Sprache"@de,
-        "language"@en .
+        "language"@en,
+        "langue"@fr .
 
