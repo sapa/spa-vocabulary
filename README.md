@@ -2,7 +2,7 @@
 
 This repo contains scripts for transforming a spreadsheet with controlled vocabularies into RDF and CSV. The CSV is used to render [a simple documentation](https://sapa.github.io/spa-vocabulary/) of the vocabularies.
 
-To get started install the requirements via `pip install -r pip install -r requirements.txt`
+To get started install the requirements via `pip install -r requirements.txt`
 
 For every update of the vocabulary:
 
