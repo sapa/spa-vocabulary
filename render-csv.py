@@ -2,7 +2,7 @@
 import pandas as pd
 
 
-df = pd.read_excel('source/ControlledTerms.xlsx', 'skos')
+df = pd.read_excel('source/ControlledTerms.xlsx', 'skos', engine='openpyxl')
 
 df.dropna(how='all', inplace=True)
 df['context'].fillna(method='ffill', inplace=True)
