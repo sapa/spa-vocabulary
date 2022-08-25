@@ -57,7 +57,7 @@ graph.add((ldp, vocabs['prov'].generatedAtTime, Literal(
 uris = []
 
 for sheet in ['skos', 'formats']:
-    df = pd.read_excel('source/ControlledTerms.xlsx', sheet, dtype=str)
+    df = pd.read_excel('source/ControlledTerms.xlsx', sheet, dtype=str, engine='openpyxl')
 
     scheme = None
     for idx, row in df.iterrows():
