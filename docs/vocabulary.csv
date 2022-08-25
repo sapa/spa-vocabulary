@@ -630,3 +630,8 @@ sort,id,parent,scheme,context,domain,property,skos_exactMatch,rdfs_comment_en,sk
 628,http://vocab.performing-arts.ch/puurs,http://vocab.performing-arts.ch/pu,False,Record Resource,,,,,unrestricted,,,uneingeschränkt,,sans restriction,,senza restrizioni,,
 629,http://vocab.performing-arts.ch/pures,http://vocab.performing-arts.ch/pu,False,Record Resource,,,,,restricted,,,eingeschränkt,,restreinte,,limitata,,
 630,http://vocab.performing-arts.ch/punps,http://vocab.performing-arts.ch/pu,False,Record Resource,,,,,not possible,,,nicht möglich,,impossible,,non possibile,,
+631,http://vocab.performing-arts.ch/id,,True,Record Resource,rico:Identifier,crm:P2_has_type,,,identifier,,,Signatur,,identification,,,,
+632,http://vocab.performing-arts.ch/idold,http://vocab.performing-arts.ch/id,False,Record Resource,,,,,old identifier,,,alt Signatur,,ancien identifiant,,,,
+633,http://vocab.performing-arts.ch/iduni,http://vocab.performing-arts.ch/id,False,Record Resource,,,,,Unique ID,,,Identifizierung Signature,,Code d'identification,,,,
+634,http://vocab.performing-arts.ch/idtec,http://vocab.performing-arts.ch/id,False,Record Resource,,,,,Technical identifier,,,,,Identifiant technique,,,,
+635,http://vocab.performing-arts.ch/idcon,http://vocab.performing-arts.ch/id,False,Record Resource,,,,,Contextual Identifier,,,,,Code de contexte,,,,
