@@ -6,23 +6,19 @@
 @prefix gnd: <http://d-nb.info/gnd/> .
 @prefix iso639-2: <http://id.loc.gov/vocabulary/iso639-2/> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix premis: <http://www.loc.gov/premis/rdf/v1#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdabs: <http://rdaregistry.info/termList/broadcastStand/> .
-@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
 @prefix rdagd: <http://rdaregistry.info/termList/gender/> .
 @prefix rdamat: <http://rdaregistry.info/termList/RDAMaterial/> .
 @prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
 @prefix rdavf: <http://rdaregistry.info/termList/videoFormat/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ric-rst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix spav: <http://vocab.performing-arts.ch/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 spav:cn a skos:ConceptScheme ;
@@ -30,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2021-06-02T11:49:27.070082+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2022-09-22T11:30:13.506589+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -230,7 +226,7 @@ spav:bshdt a crm:E55_Type,
         skos:Concept,
         ebucore:Standard ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mbroadstd/hdtv>,
-        <http://rdaregistry.info/termList/broadcastStand/1001> ;
+        rdabs:1001 ;
     skos:inScheme spav:bs ;
     skos:prefLabel "HDTV"@de,
         "HDTV"@en,
@@ -242,7 +238,7 @@ spav:bsnts a crm:E55_Type,
         skos:Concept,
         ebucore:Standard ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc>,
-        <http://rdaregistry.info/termList/broadcastStand/1002> ;
+        rdabs:1002 ;
     skos:inScheme spav:bs ;
     skos:prefLabel "NTSC"@de,
         "NTSC"@en,
@@ -254,7 +250,7 @@ spav:bspal a crm:E55_Type,
         skos:Concept,
         ebucore:Standard ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mbroadstd/pal>,
-        <http://rdaregistry.info/termList/broadcastStand/1003> ;
+        rdabs:1003 ;
     skos:inScheme spav:bs ;
     skos:prefLabel "PAL"@de,
         "PAL"@en,
@@ -266,7 +262,7 @@ spav:bsscm a crm:E55_Type,
         skos:Concept,
         ebucore:Standard ;
     skos:exactMatch <http://id.loc.gov/vocabulary/mbroadstd/secam>,
-        <http://rdaregistry.info/termList/broadcastStand/1004> ;
+        rdabs:1004 ;
     skos:inScheme spav:bs ;
     skos:prefLabel "SECAM"@de,
         "SECAM"@en,
@@ -632,7 +628,7 @@ spav:dfaur a skos:Concept,
 spav:dfblx a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300249572> ;
+    skos:exactMatch aat:300249572 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Promotionsmaterial"@de,
         "promotional material"@en,
@@ -672,7 +668,7 @@ spav:dfcbi a skos:Concept,
 spav:dfctp a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfqrl ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300127183> ;
+    skos:exactMatch aat:300127183 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kontaktabzug"@de,
         "contact sheet"@en,
@@ -686,7 +682,7 @@ spav:dfctp a skos:Concept,
 spav:dfdia a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300128371> ;
+    skos:exactMatch aat:300128371 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Dia"@de,
         "slide"@en,
@@ -713,7 +709,7 @@ spav:dfdvh a skos:Concept,
 spav:dfdzo a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "bozzetto"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300015617> ;
+    skos:exactMatch aat:300015617 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Skizze"@de,
         "sketch"@en,
@@ -728,7 +724,7 @@ spav:dfdzo a skos:Concept,
 spav:dfecs a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfeip ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300163423> ;
+    skos:exactMatch aat:300163423 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Kostümentwurf"@de,
         "costume design"@en,
@@ -781,7 +777,7 @@ spav:dffci a skos:Concept,
 spav:dffop a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026867> ;
+    skos:exactMatch aat:300026867 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Zeitungsartikel"@de,
         "clipping"@en,
@@ -808,7 +804,7 @@ spav:dffvd a skos:Concept,
 spav:dfgei a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300033799> ;
+    skos:exactMatch aat:300033799 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Ölgemälde"@de,
         "oil painting"@en,
@@ -822,7 +818,7 @@ spav:dfgei a skos:Concept,
 spav:dfhdo a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417623> ;
+    skos:exactMatch aat:300417623 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Notation"@de,
         "dance notation"@en,
@@ -861,7 +857,7 @@ spav:dfhwk a skos:Concept,
 
 spav:dfjdc a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300033973> ;
+    skos:exactMatch aat:300033973 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Zeichnung"@de,
         "drawing"@en,
@@ -879,7 +875,7 @@ spav:dfjnl a skos:Concept,
         "newspaper"@en,
         "rivista"@it ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300215390> ;
+    skos:exactMatch aat:300215390 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Zeitschrift"@de,
         "journal"@en,
@@ -906,7 +902,7 @@ spav:dfjoa a skos:Concept,
 spav:dfmyd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028037> ;
+    skos:exactMatch aat:300028037 ;
     skos:inScheme spav:df ;
     skos:prefLabel "persönliche Dokumente"@de,
         "personal paper"@en,
@@ -922,11 +918,11 @@ spav:dfmzh a skos:Concept,
     skos:broader spav:dfqot ;
     skos:inScheme spav:df ;
     skos:prefLabel "Filmplakat"@de,
-        "fim poster"@en,
+        "film poster"@en,
         "affiche de film"@fr,
         "Poster del film"@it ;
     rico:name "Filmplakat"@de,
-        "fim poster"@en,
+        "film poster"@en,
         "affiche de film"@fr,
         "Poster del film"@it .
 
@@ -948,7 +944,7 @@ spav:dfnrv a skos:Concept,
 spav:dfoff a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300078925> ;
+    skos:exactMatch aat:300078925 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Aquarell"@de,
         "watercolor"@en,
@@ -962,7 +958,7 @@ spav:dfoff a skos:Concept,
 spav:dfowt a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300027568> ;
+    skos:exactMatch aat:300027568 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Rechnung"@de,
         "invoice"@en,
@@ -989,7 +985,7 @@ spav:dfpmd a skos:Concept,
 spav:dfpwk a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfkoy ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300181918> ;
+    skos:exactMatch aat:300181918 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Acrylgemälde"@de,
         "acrylic painting"@en,
@@ -1003,7 +999,7 @@ spav:dfpwk a skos:Concept,
 spav:dfrsp a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300127173> ;
+    skos:exactMatch aat:300127173 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Negativ (Foto-Negativ)"@de,
         "negative"@en,
@@ -1018,7 +1014,7 @@ spav:dfrsu a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "scenography"@en ;
     skos:broader spav:dfeip ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300054190> ;
+    skos:exactMatch aat:300054190 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Bühnenbildentwurf"@de,
         "stage set design"@en,
@@ -1035,11 +1031,11 @@ spav:dfsze a skos:Concept,
     skos:inScheme spav:df ;
     skos:prefLabel "persönlicher Gegenstand"@de,
         "personal object"@en,
-        "object personnel"@fr,
+        "objet personnel"@fr,
         "oggetto personale"@it ;
     rico:name "persönlicher Gegenstand"@de,
         "personal object"@en,
-        "object personnel"@fr,
+        "objet personnel"@fr,
         "oggetto personale"@it .
 
 spav:dfszq a skos:Concept,
@@ -1097,7 +1093,7 @@ spav:dftws a skos:Concept,
 spav:dftxd a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263751> ;
+    skos:exactMatch aat:300263751 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Textdokument"@de,
         "text document"@en,
@@ -1125,7 +1121,7 @@ spav:dfuuh a skos:Concept,
 spav:dfvjf a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfrwd ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300251645> ;
+    skos:exactMatch aat:300251645 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Requisit"@de,
         "stage accessorie"@en,
@@ -1139,7 +1135,7 @@ spav:dfvjf a skos:Concept,
 spav:dfwox a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026877> ;
+    skos:exactMatch aat:300026877 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Korrespondenz"@de,
         "correspondence"@en,
@@ -1153,7 +1149,7 @@ spav:dfwox a skos:Concept,
 spav:dfyfs a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300027112> ;
+    skos:exactMatch aat:300027112 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Tagebuch"@de,
         "diary"@en,
@@ -1180,7 +1176,7 @@ spav:dfzcy a skos:Concept,
 spav:dfzpy a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dflvv ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300027200> ;
+    skos:exactMatch aat:300027200 ;
     skos:inScheme spav:df ;
     skos:prefLabel "Notiz"@de,
         "note"@en,
@@ -1296,7 +1292,7 @@ spav:eonvd a crm:E55_Type,
 spav:etbeq a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417641> ;
+    skos:exactMatch aat:300417641 ;
     skos:inScheme spav:et ;
     skos:prefLabel "Legat"@de,
         "bequest"@en,
@@ -1323,7 +1319,7 @@ spav:etcpa a skos:Concept,
 spav:etdon a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417638> ;
+    skos:exactMatch aat:300417638 ;
     skos:inScheme spav:et ;
     skos:prefLabel "Schenkung"@de,
         "donation"@en,
@@ -1337,7 +1333,7 @@ spav:etdon a skos:Concept,
 spav:etloa a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417645> ;
+    skos:exactMatch aat:300417645 ;
     skos:inScheme spav:et ;
     skos:prefLabel "Leihgabe"@de,
         "loan"@en,
@@ -1364,7 +1360,7 @@ spav:etopd a skos:Concept,
 spav:etpur a skos:Concept,
         rico:EventType ;
     skos:broader spav:etmoc ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417642> ;
+    skos:exactMatch aat:300417642 ;
     skos:inScheme spav:et ;
     skos:prefLabel "Ankauf"@de,
         "purchase"@en,
@@ -1378,7 +1374,7 @@ spav:etpur a skos:Concept,
 spav:frabo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300041567> ;
+    skos:exactMatch aat:300041567 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Original"@de,
         "original print"@en,
@@ -1392,7 +1388,7 @@ spav:frabo a skos:Concept,
 spav:fracn a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300041338> ;
+    skos:exactMatch aat:300041338 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Tiefdruck"@de,
         "intaglio print"@en,
@@ -1406,7 +1402,7 @@ spav:fracn a skos:Concept,
 spav:fragx a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300041393> ;
+    skos:exactMatch aat:300041393 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Linolschnitt"@de,
         "linocut"@en,
@@ -1421,8 +1417,8 @@ spav:frbbo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "Steindruck"@de ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAproductionMethod/1007>,
-        <http://vocab.getty.edu/aat/300041379> ;
+    skos:exactMatch rdapm:1007,
+        aat:300041379 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Lithografie"@de,
         "lithography"@en,
@@ -1437,8 +1433,8 @@ spav:frbvo a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "Kollotypie"@de,
         "phototypie"@fr ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAproductionMethod/1003>,
-        <http://vocab.getty.edu/aat/300154355> ;
+    skos:exactMatch rdapm:1003,
+        aat:300154355 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Lichtdruck"@de,
         "collotype"@en,
@@ -1454,7 +1450,7 @@ spav:frcbt a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "serigraph"@en ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300178688> ;
+    skos:exactMatch aat:300178688 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Siebdruck"@de,
         "screen print"@en,
@@ -1468,7 +1464,7 @@ spav:frcbt a skos:Concept,
 spav:frhoj a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300053279> ;
+    skos:exactMatch aat:300053279 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Offsetdruck"@de,
         "offset-printed"@en,
@@ -1482,7 +1478,7 @@ spav:frhoj a skos:Concept,
 spav:friyp a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300178926> ;
+    skos:exactMatch aat:300178926 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Buchdruck"@de,
         "letterpress"@en,
@@ -1496,7 +1492,7 @@ spav:friyp a skos:Concept,
 spav:frkub a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:broader spav:frhui ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300265621> ;
+    skos:exactMatch aat:300265621 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Tintenstrahldruck"@de,
         "inkjet print"@en,
@@ -1509,8 +1505,8 @@ spav:frkub a skos:Concept,
 
 spav:froqj a skos:Concept,
         rico:ProductionTechniqueType ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAproductionMethod/1008>,
-        <http://vocab.getty.edu/aat/300136847> ;
+    skos:exactMatch rdapm:1008,
+        aat:300136847 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Fotokopie"@de,
         "photocopy"@en,
@@ -1527,7 +1523,7 @@ spav:frvrj a skos:Concept,
     skos:altLabel "Niépceotype"@en,
         "bitumen process"@en ;
     skos:broader spav:frbyr ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300133322> ;
+    skos:exactMatch aat:300133322 ;
     skos:inScheme spav:fr ;
     skos:prefLabel "Heliografie"@de,
         "heliography"@en,
@@ -1542,7 +1538,7 @@ spav:fvbrm a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvese ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300127173> ;
+    skos:exactMatch aat:300127173 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Fotonegative"@de,
         "photo negative"@en,
@@ -1558,7 +1554,7 @@ spav:fvecx a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Mini-DV"@en ;
     skos:broader spav:fvpmq ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300264690> ;
+    skos:exactMatch aat:300264690 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "MiniDV"@de,
         "MiniDV"@en,
@@ -1747,7 +1743,7 @@ spav:fvhhx a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvhcu ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300264669> ;
+    skos:exactMatch aat:300264669 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Super 16mm"@de,
         "Super 16mm"@en,
@@ -1762,8 +1758,8 @@ spav:fvhiw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1001>,
-        <http://vocab.getty.edu/aat/300404417> ;
+    skos:exactMatch rdavf:1001,
+        aat:300404417 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Betamax"@de,
         "Betamax"@en,
@@ -1836,7 +1832,7 @@ spav:fvjbs a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Hi-8-mm"@en ;
     skos:broader spav:fvunk ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1008> ;
+    skos:exactMatch rdavf:1008 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Hi8"@de,
         "Hi8"@en,
@@ -1951,7 +1947,7 @@ spav:fvmdu a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "35 millimetri"@it ;
     skos:broader spav:fvzfk ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263816> ;
+    skos:exactMatch aat:300263816 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "35mm"@de,
         "35mm"@en,
@@ -1995,7 +1991,7 @@ spav:fvmoi a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Dia"@de ;
     skos:broader spav:fvuut ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300128371> ;
+    skos:exactMatch aat:300128371 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Diapositiv"@de,
         "slide"@en,
@@ -2010,7 +2006,7 @@ spav:fvmql a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvgye ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300265800> ;
+    skos:exactMatch aat:300265800 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "45 rpm record"@en,
         "disque 45 tours"@fr,
@@ -2023,7 +2019,7 @@ spav:fvmrk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvpso ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263860> ;
+    skos:exactMatch aat:300263860 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Super 8"@de,
         "Super 8"@en,
@@ -2114,7 +2110,7 @@ spav:fvqow a premis:StorageMedium,
     skos:altLabel "Normal-8"@de,
         "8 millimetri"@it ;
     skos:broader spav:fvpso ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263859> ;
+    skos:exactMatch aat:300263859 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "8mm"@de,
         "8mm"@en,
@@ -2129,7 +2125,7 @@ spav:fvrpy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvgye ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300265790> ;
+    skos:exactMatch aat:300265790 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "78 rpm record"@en,
         "disque 78 tours"@fr,
@@ -2189,7 +2185,7 @@ spav:fvtfa a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvodj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417312> ;
+    skos:exactMatch aat:300417312 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Open Reel Audio Tape"@de,
         "open reel audiotape"@en,
@@ -2232,7 +2228,7 @@ spav:fvukd a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvajf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026816> ;
+    skos:exactMatch aat:300026816 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Postkarte"@de,
         "postcard"@en,
@@ -2302,8 +2298,8 @@ spav:fvviy a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Super VHS"@en ;
     skos:broader spav:fvoda ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1012>,
-        <http://vocab.getty.edu/aat/300264684> ;
+    skos:exactMatch rdavf:1012,
+        aat:300264684 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "S-VHS"@de,
         "S-VHS"@en,
@@ -2319,7 +2315,7 @@ spav:fvvyd a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "16 millimetri"@it ;
     skos:broader spav:fvhcu ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300263815> ;
+    skos:exactMatch aat:300263815 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "16mm"@de,
         "16mm"@en,
@@ -2334,7 +2330,7 @@ spav:fvwry a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvuut ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300127169> ;
+    skos:exactMatch aat:300127169 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "Kontaktabzug"@de,
         "contact print"@en,
@@ -2406,8 +2402,8 @@ spav:fvywh a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvoda ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1015>,
-        <http://vocab.getty.edu/aat/300264683> ;
+    skos:exactMatch rdavf:1015,
+        aat:300264683 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "VHS"@de,
         "VHS"@en,
@@ -2423,7 +2419,7 @@ spav:fvyxa a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "LP"@it ;
     skos:broader spav:fvgye ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300265802> ;
+    skos:exactMatch aat:300265802 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "long-playing record"@en,
         "disque 33 tours"@fr,
@@ -2455,7 +2451,7 @@ spav:fvzrb a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1005> ;
+    skos:exactMatch rdavf:1005 ;
     skos:inScheme spav:fv ;
     skos:prefLabel "D2"@de,
         "D2"@en,
@@ -2469,7 +2465,7 @@ spav:fvzrb a premis:StorageMedium,
 spav:goctj a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "titolo abbreviato"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417210> ;
+    skos:exactMatch aat:300417210 ;
     skos:inScheme spav:go ;
     skos:prefLabel "Kurztitel"@de,
         "abbreviated title"@en,
@@ -2479,7 +2475,7 @@ spav:goctj a crm:E55_Type,
 
 spav:goctm a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300312006> ;
+    skos:exactMatch aat:300312006 ;
     skos:inScheme spav:go ;
     skos:prefLabel "Untertitel"@de,
         "subtitle"@en,
@@ -2489,7 +2485,7 @@ spav:goctm a crm:E55_Type,
 
 spav:gogja a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417226> ;
+    skos:exactMatch aat:300417226 ;
     skos:inScheme spav:go ;
     skos:prefLabel "Alternativtitel"@de,
         "alternative title"@en,
@@ -2500,7 +2496,7 @@ spav:gogja a crm:E55_Type,
 spav:gotlb a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "title of a work"@en ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417193> ;
+    skos:exactMatch aat:300417193 ;
     skos:inScheme spav:go ;
     skos:prefLabel "Titel"@de,
         "title"@en,
@@ -2511,7 +2507,7 @@ spav:gotlb a crm:E55_Type,
 spav:gowgn a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "titolo dell’opera"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417228> ;
+    skos:exactMatch aat:300417228 ;
     skos:inScheme spav:go ;
     skos:prefLabel "Arbeitstitel"@de,
         "working title"@en,
@@ -2619,6 +2615,36 @@ spav:hlyjh a crm:E55_Type,
         "matinée"@it ;
     skos:topConceptOf spav:hl .
 
+spav:idcon a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Code de contexte"@de ;
+    skos:inScheme spav:id ;
+    skos:prefLabel "Contextual Identifier"@en ;
+    skos:topConceptOf spav:id .
+
+spav:idold a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "ancien identifiant"@de ;
+    skos:hiddenLabel "alt Signatur"@en ;
+    skos:inScheme spav:id ;
+    skos:prefLabel "old identifier"@en ;
+    skos:topConceptOf spav:id .
+
+spav:idtec a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Identifiant technique"@de ;
+    skos:inScheme spav:id ;
+    skos:prefLabel "Technical identifier"@en ;
+    skos:topConceptOf spav:id .
+
+spav:iduni a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Code d'identification"@de ;
+    skos:hiddenLabel "Identifizierung Signature"@en ;
+    skos:inScheme spav:id ;
+    skos:prefLabel "Unique ID"@en ;
+    skos:topConceptOf spav:id .
+
 spav:ihctx a crm:E55_Type,
         skos:Concept ;
     skos:inScheme spav:ih ;
@@ -2657,8 +2683,8 @@ spav:ihvhu a crm:E55_Type,
 
 spav:knept a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/gender/1002>,
-        <http://vocab.getty.edu/aat/300189559> ;
+    skos:exactMatch rdagd:1002,
+        aat:300189559 ;
     skos:inScheme spav:kn ;
     skos:prefLabel "männlich"@de,
         "male"@en,
@@ -2677,8 +2703,8 @@ spav:knnvd a crm:E55_Type,
 
 spav:knsiw a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/gender/1001>,
-        <http://vocab.getty.edu/aat/300189557> ;
+    skos:exactMatch rdagd:1001,
+        aat:300189557 ;
     skos:inScheme spav:kn ;
     skos:prefLabel "weiblich"@de,
         "female"@en,
@@ -3691,7 +3717,7 @@ spav:mnawx a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "performance art"@en ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300121445> ;
+    skos:exactMatch aat:300121445 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Performance"@de,
         "performance"@en,
@@ -3721,8 +3747,8 @@ spav:mnazh a crm:E55_Type,
 spav:mnbcj a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnlxt ;
-    skos:exactMatch <http://d-nb.info/gnd/4169388-7>,
-        <http://vocab.getty.edu/aat/300375153>,
+    skos:exactMatch gnd:4169388-7,
+        aat:300375153,
         wd:Q191489 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Melodrama"@de,
@@ -3735,7 +3761,7 @@ spav:mnbfm a crm:E55_Type,
     skos:altLabel "théâtre lyrique"@fr,
         "teatro lirico"@it ;
     skos:broader spav:mnyuk ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300054147>,
+    skos:exactMatch aat:300054147,
         wd:Q1344 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Oper"@de,
@@ -3766,7 +3792,7 @@ spav:mnbiq a crm:E55_Type,
 spav:mnbjn a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://d-nb.info/gnd/7702122-8>,
+    skos:exactMatch gnd:7702122-8,
         wd:Q145806 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Stand-up-Comedy"@de,
@@ -3819,7 +3845,7 @@ spav:mnddp a crm:E55_Type,
     skos:altLabel "Impro"@de,
         "improvisation, improv"@en ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://d-nb.info/gnd/4183004-0>,
+    skos:exactMatch gnd:4183004-0,
         wd:Q1140700 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Improvisationstheater"@de,
@@ -3949,7 +3975,7 @@ spav:mniem a crm:E55_Type,
 spav:mniqe a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnggs ;
-    skos:exactMatch <http://d-nb.info/gnd/4192524-5>,
+    skos:exactMatch gnd:4192524-5,
         wd:Q217117 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Burleske"@de,
@@ -4007,7 +4033,7 @@ spav:mnjiw a crm:E55_Type,
 spav:mnjva a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mneyg ;
-    skos:exactMatch <http://d-nb.info/gnd/4025435-5>,
+    skos:exactMatch gnd:4025435-5,
         wd:Q2635894 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Hörspiel"@de,
@@ -4185,8 +4211,8 @@ spav:mnorh a crm:E55_Type,
 spav:mnorx a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://d-nb.info/gnd/4010433-3>,
-        <http://vocab.getty.edu/aat/300055912>,
+    skos:exactMatch gnd:4010433-3,
+        aat:300055912,
         wd:Q191890 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Commedia dell’arte"@de,
@@ -4273,7 +4299,7 @@ spav:mntcq a crm:E55_Type,
 spav:mntin a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnemr ;
-    skos:exactMatch <http://d-nb.info/gnd/4401016-3>,
+    skos:exactMatch gnd:4401016-3,
         wd:Q673769 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Postmoderner Tanz"@de,
@@ -4330,7 +4356,7 @@ spav:mnvlp a crm:E55_Type,
         "schwank"@fr,
         "schwank"@it ;
     skos:broader spav:mnggs ;
-    skos:exactMatch <http://d-nb.info/gnd/4053736-5>,
+    skos:exactMatch gnd:4053736-5,
         wd:Q11871 ;
     skos:inScheme spav:mn ;
     skos:prefLabel "Schwank"@de,
@@ -5243,44 +5269,54 @@ spav:rtac a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "akustisch"@de,
-        "acoustic"@en ;
+        "acoustic"@en,
+        "sonore"@fr ;
     skos:topConceptOf spav:rt ;
     rico:name "akustisch"@de,
-        "acoustic"@en .
+        "acoustic"@en,
+        "sonore"@fr .
 
 spav:rtmi a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
-    skos:prefLabel "moving image"@en ;
+    skos:prefLabel "moving image"@en,
+        "image en mouvement"@fr ;
     skos:topConceptOf spav:rt ;
-    rico:name "moving image"@en .
+    rico:name "moving image"@en,
+        "image en mouvement"@fr .
 
 spav:rtsp a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "räumlich"@de,
-        "spatial"@en ;
+        "spatial"@en,
+        "spatial"@fr ;
     skos:topConceptOf spav:rt ;
     rico:name "räumlich"@de,
-        "spatial"@en .
+        "spatial"@en,
+        "spatial"@fr .
 
 spav:rttx a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "textlich"@de,
-        "textual"@en ;
+        "textual"@en,
+        "textuel"@fr ;
     skos:topConceptOf spav:rt ;
     rico:name "textlich"@de,
-        "textual"@en .
+        "textual"@en,
+        "textuel"@fr .
 
 spav:rtvs a skos:Concept,
         rico:RepresentationType ;
     skos:inScheme spav:rt ;
     skos:prefLabel "visuell"@de,
-        "visual"@en ;
+        "visual"@en,
+        "visuel"@fr ;
     skos:topConceptOf spav:rt ;
     rico:name "visuell"@de,
-        "visual"@en .
+        "visual"@en,
+        "visuel"@fr .
 
 spav:sfint a crm:E55_Type,
         skos:Concept ;
@@ -5312,7 +5348,7 @@ spav:stltp a skos:Concept,
         rico:RecordState ;
     rdfs:comment "\"Photographic prints made much later than the negative and usually not by the original photographer.\" (AAT)"@en ;
     skos:broader spav:stpps ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300189480> ;
+    skos:exactMatch aat:300189480 ;
     skos:inScheme spav:st ;
     skos:prefLabel "moderner Abzug"@de,
         "later print"@en,
@@ -5340,7 +5376,7 @@ spav:stwkp a skos:Concept,
         rico:RecordState ;
     rdfs:comment "\"Photographic prints made for examination and reference, such as those done before an edition is produced.\" (AAT)"@en ;
     skos:broader spav:stpps ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300189331> ;
+    skos:exactMatch aat:300189331 ;
     skos:inScheme spav:st ;
     skos:prefLabel "Arbeitskopie"@de,
         "work print"@en,
@@ -5755,7 +5791,7 @@ spav:vrfcm a crm:E55_Type,
 
 spav:vrggs a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://d-nb.info/gnd/4002859-8>,
+    skos:exactMatch gnd:4002859-8,
         wd:Q166118 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Archiv"@de,
@@ -5771,7 +5807,7 @@ spav:vripy a crm:E55_Type,
         "festival de théâtre"@fr,
         "festival del teatro"@it,
         "festival teatrale"@it ;
-    skos:exactMatch <http://d-nb.info/gnd/4501725-6>,
+    skos:exactMatch gnd:4501725-6,
         wd:Q1751626 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Festival"@de,
@@ -5782,7 +5818,7 @@ spav:vripy a crm:E55_Type,
 
 spav:vriqe a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://d-nb.info/gnd/4006439-6>,
+    skos:exactMatch gnd:4006439-6,
         wd:Q7075 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Bibliothek"@de,
@@ -5866,7 +5902,7 @@ spav:vrnmd a crm:E55_Type,
 
 spav:vrorh a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://d-nb.info/gnd/4063004-3>,
+    skos:exactMatch gnd:4063004-3,
         wd:Q2085381 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Verlag"@de,
@@ -5886,7 +5922,7 @@ spav:vrsiw a crm:E55_Type,
 
 spav:vrsjj a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://d-nb.info/gnd/4040795-0>,
+    skos:exactMatch gnd:4040795-0,
         wd:Q33506 ;
     skos:inScheme spav:vr ;
     skos:prefLabel "Museum"@de,
@@ -5939,7 +5975,7 @@ spav:yaajh a crm:E55_Type,
         "stage name"@en,
         "nome d’arte"@it ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404657> ;
+    skos:exactMatch aat:300404657 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Pseudonym"@de,
         "pseudonym"@en,
@@ -5950,7 +5986,7 @@ spav:yadpx a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "nome di famiglia"@it ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404681> ;
+    skos:exactMatch aat:300404681 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Geburtsname"@de,
         "birth name"@en,
@@ -5960,7 +5996,7 @@ spav:yadpx a crm:E55_Type,
 spav:yallb a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404683> ;
+    skos:exactMatch aat:300404683 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Ehename"@de,
         "married name"@en,
@@ -5971,7 +6007,7 @@ spav:yamqk a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "acronym for the name of a group or institution"@en ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404659> ;
+    skos:exactMatch aat:300404659 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Akronym"@de,
         "acronym"@en,
@@ -5982,7 +6018,7 @@ spav:yanuj a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "official name of a group or institution"@en ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404686> ;
+    skos:exactMatch aat:300404686 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Offizieller Name"@de,
         "official name"@en,
@@ -5993,7 +6029,7 @@ spav:yasis a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "appellation"@en ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404658> ;
+    skos:exactMatch aat:300404658 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Generische Bezeichnung"@de,
         "generic name"@en,
@@ -6007,7 +6043,7 @@ spav:yatcx a crm:E55_Type,
         "preferred name"@en,
         "nome comune"@it ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404687> ;
+    skos:exactMatch aat:300404687 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Gebräuchlicher Name"@de,
         "common name"@en,
@@ -6028,7 +6064,7 @@ spav:yavtx a crm:E55_Type,
     rdfs:comment "alternative name of a group or institution"@en ;
     skos:altLabel "alias"@en ;
     skos:broader spav:yakdx ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404664> ;
+    skos:exactMatch aat:300404664 ;
     skos:inScheme spav:ya ;
     skos:prefLabel "Alternativer Name"@de,
         "alternative name"@en,
@@ -6038,8 +6074,8 @@ spav:yavtx a crm:E55_Type,
 spav:zjagy a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:zjajf ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1006>,
-        <http://vocab.getty.edu/aat/300014224> ;
+    skos:exactMatch rdamat:1006,
+        aat:300014224 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Karton"@de,
         "cardboard"@en,
@@ -6049,7 +6085,7 @@ spav:zjagy a crm:E55_Type,
 spav:zjdyt a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:zjyky ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300133711> ;
+    skos:exactMatch aat:300133711 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Samt"@de,
         "velvet"@en,
@@ -6059,8 +6095,8 @@ spav:zjdyt a crm:E55_Type,
 spav:zjjoe a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "\"A general term for any of a large and varied class of natural or synthetic organic materials that can be molded, extruded, or cast when soft or liquid, and then set into a rigid or slightly elastic form. Natural plastics include tree resins, beeswax, gutta-percha, horn, and clay. Synthetic plastics were first made in the 19th century. Plastics are used widely in manufacturing.\" (AAT)"@en ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1029>,
-        <http://vocab.getty.edu/aat/300014570> ;
+    skos:exactMatch rdamat:1029,
+        aat:300014570 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Plastik"@de,
         "plastic"@en,
@@ -6071,7 +6107,7 @@ spav:zjjoe a crm:E55_Type,
 spav:zjjpx a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:zjyky ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300014067> ;
+    skos:exactMatch aat:300014067 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Baumwolle"@de,
         "cotton"@en,
@@ -6080,8 +6116,8 @@ spav:zjjpx a crm:E55_Type,
 
 spav:zjkjx a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1045>,
-        <http://vocab.getty.edu/aat/300011914> ;
+    skos:exactMatch rdamat:1045,
+        aat:300011914 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Holz"@de,
         "wood"@en,
@@ -6092,7 +6128,7 @@ spav:zjkjx a crm:E55_Type,
 spav:zjsuw a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:zjyky ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300243428> ;
+    skos:exactMatch aat:300243428 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Seide"@de,
         "silk"@en,
@@ -6102,8 +6138,8 @@ spav:zjsuw a crm:E55_Type,
 spav:zjsyn a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "\"\"A material that is created by processing man-made materials, usually as a substitute for a natural material.\" (RDA Material)"@en ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1037>,
-        <http://vocab.getty.edu/aat/300218678> ;
+    skos:exactMatch rdamat:1037,
+        aat:300218678 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Kunststoff"@de,
         "synthetic"@en,
@@ -6113,7 +6149,7 @@ spav:zjsyn a crm:E55_Type,
 
 spav:zjtdg a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300011827> ;
+    skos:exactMatch aat:300011827 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Perlen"@de,
         "pearls"@en,
@@ -6123,8 +6159,8 @@ spav:zjtdg a crm:E55_Type,
 
 spav:zjujz a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1012>,
-        <http://vocab.getty.edu/aat/300010797> ;
+    skos:exactMatch rdamat:1012,
+        aat:300010797 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Glas"@de,
         "glass"@en,
@@ -6135,8 +6171,8 @@ spav:zjujz a crm:E55_Type,
 spav:zjvpd a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "pelle"@it ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1020>,
-        <http://vocab.getty.edu/aat/300011845> ;
+    skos:exactMatch rdamat:1020,
+        aat:300011845 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Leder"@de,
         "leather"@en,
@@ -6146,8 +6182,8 @@ spav:zjvpd a crm:E55_Type,
 
 spav:zjwcj a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1022>,
-        <http://vocab.getty.edu/aat/300010900> ;
+    skos:exactMatch rdamat:1022,
+        aat:300010900 ;
     skos:inScheme spav:zj ;
     skos:prefLabel "Metall"@de,
         "metal"@en,
@@ -6158,7 +6194,7 @@ spav:zjwcj a crm:E55_Type,
 spav:dfqrl a skos:Concept,
         rico:DocumentaryFormType ;
     skos:broader spav:dfdui ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
+    skos:exactMatch aat:300138191 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfctp ;
     skos:prefLabel "Positiv (Foto-Positiv)"@de,
@@ -6188,7 +6224,7 @@ spav:frhui a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "laser printing?"@en ;
     skos:broader spav:frgzf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300312222> ;
+    skos:exactMatch aat:300312222 ;
     skos:inScheme spav:fr ;
     skos:narrower spav:frkub ;
     skos:prefLabel "Digitaldruck"@de,
@@ -6203,7 +6239,7 @@ spav:frhui a skos:Concept,
 spav:fvajf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300014109> ;
+    skos:exactMatch aat:300014109 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvukd ;
     skos:prefLabel "Papier"@de,
@@ -6313,7 +6349,7 @@ spav:lgita a skos:Concept,
 spav:mnlxt a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mneyg ;
-    skos:exactMatch <http://d-nb.info/gnd/4060591-7>,
+    skos:exactMatch gnd:4060591-7,
         wd:Q80930 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnbcj ;
@@ -6325,7 +6361,7 @@ spav:mnlxt a crm:E55_Type,
 spav:mnnhz a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnubc ;
-    skos:exactMatch <http://d-nb.info/gnd/4067878-7>,
+    skos:exactMatch gnd:4067878-7,
         wd:Q47928 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnjzh ;
@@ -6338,7 +6374,7 @@ spav:mnunb a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "balletto"@it ;
     skos:broader spav:mnhbj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300389782> ;
+    skos:exactMatch aat:300389782 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnblr ;
     skos:prefLabel "Klassischer Tanz"@de,
@@ -6457,7 +6493,7 @@ spav:stvtp a skos:Concept,
         rico:RecordState ;
     rdfs:comment "\"Photographic prints made by the original photographer or soon after the picture was taken, that is, of the same historical vintage as the original.\" (AAT)"@en ;
     skos:broader spav:stpps ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300136578> ;
+    skos:exactMatch aat:300136578 ;
     skos:inScheme spav:st ;
     skos:narrower spav:stvps ;
     skos:prefLabel "Original"@de,
@@ -6503,8 +6539,8 @@ spav:vrxrs a crm:E55_Type,
 
 spav:zjajf a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1025>,
-        <http://vocab.getty.edu/aat/300014109> ;
+    skos:exactMatch rdamat:1025,
+        aat:300014109 ;
     skos:inScheme spav:zj ;
     skos:narrower spav:zjagy ;
     skos:prefLabel "Papier"@de,
@@ -6571,7 +6607,7 @@ spav:fvdex a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvuut ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300127104> ;
+    skos:exactMatch aat:300127104 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvekd,
         spav:fvlfo ;
@@ -6601,7 +6637,7 @@ spav:fvdie a premis:StorageMedium,
 spav:fvese a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300046300> ;
+    skos:exactMatch aat:300046300 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvbrm,
         spav:fvuut ;
@@ -6636,8 +6672,8 @@ spav:fvhxo a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Beta SP"@en ;
     skos:broader spav:fvjtf ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1016>,
-        <http://vocab.getty.edu/aat/300264687> ;
+    skos:exactMatch rdavf:1016,
+        aat:300264687 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvioo,
         spav:fvlfa ;
@@ -6671,7 +6707,7 @@ spav:fvqle a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "Digi Beta"@en ;
     skos:broader spav:fvjtf ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300264688> ;
+    skos:exactMatch aat:300264688 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvnvy,
         spav:fvxzi ;
@@ -6707,7 +6743,7 @@ spav:fvzuj a premis:StorageMedium,
         "Digital Versatile Disc"@en,
         "Digital Video Disc"@en ;
     skos:broader spav:fvaha ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300264677> ;
+    skos:exactMatch aat:300264677 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvefk,
         spav:fvxmd ;
@@ -6740,8 +6776,8 @@ spav:lgnor a skos:Concept,
 spav:mngvi a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnlcp ;
-    skos:exactMatch <http://d-nb.info/gnd/4020651-8>,
-        <http://vocab.getty.edu/aat/300389784>,
+    skos:exactMatch gnd:4020651-8,
+        aat:300389784,
         wd:Q3209069 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnlok,
@@ -6833,7 +6869,7 @@ spav:ac a skos:ConceptScheme ;
 
 spav:dfdui a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300046300> ;
+    skos:exactMatch aat:300046300 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfdia,
         spav:dfqrl,
@@ -6850,7 +6886,7 @@ spav:dfdui a skos:Concept,
 
 spav:dfkoy a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300033618> ;
+    skos:exactMatch aat:300033618 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfgei,
         spav:dfoff,
@@ -6874,7 +6910,7 @@ spav:fvgye a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:altLabel "vinile"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028643> ;
+    skos:exactMatch aat:300028643 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvmql,
         spav:fvrpy,
@@ -6893,8 +6929,8 @@ spav:fvjtf a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1002>,
-        <http://vocab.getty.edu/aat/300264686> ;
+    skos:exactMatch rdavf:1002,
+        aat:300264686 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvhxo,
         spav:fvqle,
@@ -6912,7 +6948,7 @@ spav:fvkmy a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvdie ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028553> ;
+    skos:exactMatch aat:300028553 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvhcz,
         spav:fvlyj,
@@ -6943,7 +6979,7 @@ spav:fvunk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1007> ;
+    skos:exactMatch rdavf:1007 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvjbs,
         spav:fvpro,
@@ -6961,7 +6997,7 @@ spav:fvuut a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvese ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300138191> ;
+    skos:exactMatch aat:300138191 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvdex,
         spav:fvmoi,
@@ -6978,7 +7014,7 @@ spav:fvuut a premis:StorageMedium,
 spav:fvzfk a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300014637> ;
+    skos:exactMatch aat:300014637 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvhcu,
         spav:fvmdu,
@@ -6998,7 +7034,7 @@ spav:fvzxp a premis:StorageMedium,
         rico:CarrierType ;
     skos:altLabel "audiocassetta"@it ;
     skos:broader spav:fvodj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028661> ;
+    skos:exactMatch aat:300028661 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvicw,
         spav:fvlyk,
@@ -7029,7 +7065,7 @@ spav:mnubc a crm:E55_Type,
     skos:altLabel "spectacle de travesties"@fr,
         "varietà"@it ;
     skos:broader spav:mnnvd ;
-    skos:exactMatch <http://d-nb.info/gnd/4187453-5>,
+    skos:exactMatch gnd:4187453-5,
         wd:Q186286 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mneec,
@@ -7125,7 +7161,7 @@ spav:tp a skos:ConceptScheme ;
 
 spav:vriuw a crm:E55_Type,
         skos:Concept ;
-    skos:exactMatch <http://d-nb.info/gnd/4480144-0>,
+    skos:exactMatch gnd:4480144-0,
         wd:Q352450 ;
     skos:inScheme spav:vr ;
     skos:narrower spav:vrbjn,
@@ -7153,8 +7189,8 @@ spav:zjyky a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Gewebe"@de,
         "Textil"@de ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAMaterial/1039>,
-        <http://vocab.getty.edu/aat/300231565> ;
+    skos:exactMatch rdamat:1039,
+        aat:300231565 ;
     skos:inScheme spav:zj ;
     skos:narrower spav:zjdyt,
         spav:zjjpx,
@@ -7167,7 +7203,7 @@ spav:zjyky a crm:E55_Type,
 
 spav:dfrwd a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300185711> ;
+    skos:exactMatch aat:300185711 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfsze,
         spav:dftng,
@@ -7223,7 +7259,7 @@ spav:fvskn a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fverx ;
-    skos:exactMatch <http://rdaregistry.info/termList/videoFormat/1014>,
+    skos:exactMatch rdavf:1014,
         wd:Q278080 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fveny,
@@ -7242,7 +7278,7 @@ spav:fvskn a premis:StorageMedium,
 spav:mndvh a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnhzn ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300248147>,
+    skos:exactMatch aat:300248147,
         wd:Q588750 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnhaf,
@@ -7285,8 +7321,8 @@ spav:mnlcp a crm:E55_Type,
 spav:mnmqk a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:mnlcp ;
-    skos:exactMatch <http://d-nb.info/gnd/4184448-8>,
-        <http://vocab.getty.edu/aat/300389783> ;
+    skos:exactMatch gnd:4184448-8,
+        aat:300389783 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnazh,
         spav:mndsg,
@@ -7300,7 +7336,7 @@ spav:mnmqk a crm:E55_Type,
 spav:mnyuk a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "théâtre lyrique"@fr ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417617> ;
+    skos:exactMatch aat:300417617 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnbfm,
         spav:mnkqm,
@@ -7413,7 +7449,7 @@ spav:wa a skos:ConceptScheme ;
 
 spav:etmoc a skos:Concept,
         rico:EventType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300417634> ;
+    skos:exactMatch aat:300417634 ;
     skos:inScheme spav:et ;
     skos:narrower spav:etbeq,
         spav:etcpa,
@@ -7512,6 +7548,23 @@ spav:et a skos:ConceptScheme ;
         "type d’entrée"@fr,
         "tipo di acquisizione"@it .
 
+spav:id a skos:ConceptScheme ;
+    rdfs:comment ""@en ;
+    skos:altLabel "type d'identification"@de,
+        " "@en,
+        " "@fr,
+        " "@it ;
+    skos:definition " "@en ;
+    skos:hasTopConcept spav:idcon,
+        spav:idold,
+        spav:idtec,
+        spav:iduni ;
+    skos:hiddenLabel "Signatur Typ"@en ;
+    skos:prefLabel " "@de,
+        "identifier type"@en,
+        " "@fr,
+        " "@it .
+
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
         spav:ihrml,
@@ -7526,8 +7579,8 @@ spav:frgzf a skos:Concept,
         rico:ProductionTechniqueType ;
     skos:altLabel "estampe"@fr,
         "impressione"@it ;
-    skos:exactMatch <http://rdaregistry.info/termList/RDAproductionMethod/1010>,
-        <http://vocab.getty.edu/aat/300041273> ;
+    skos:exactMatch rdapm:1010,
+        aat:300041273 ;
     skos:inScheme spav:fr ;
     skos:narrower spav:frabo,
         spav:fracn,
@@ -7684,7 +7737,7 @@ spav:rt a skos:ConceptScheme ;
 spav:yakdx a crm:E55_Type,
         skos:Concept ;
     rdfs:comment "name of an actor"@en ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300404650> ;
+    skos:exactMatch aat:300404650 ;
     skos:inScheme spav:ya ;
     skos:narrower spav:yaajh,
         spav:yadpx,
@@ -7717,7 +7770,7 @@ spav:mneyg a crm:E55_Type,
         "drama"@en,
         "arte drammatica"@it,
         "teatro di prosa"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300054148>,
+    skos:exactMatch aat:300054148,
         wd:Q39892385 ;
     skos:inScheme spav:mn ;
     skos:narrower spav:mnanz,
@@ -7754,7 +7807,7 @@ spav:cl a skos:ConceptScheme ;
 
 spav:dflvv a skos:Concept,
         rico:DocumentaryFormType ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300026031> ;
+    skos:exactMatch aat:300026031 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfblx,
         spav:dfbok,
@@ -7781,7 +7834,7 @@ spav:fverx a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
     skos:broader spav:fvodj ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300028692> ;
+    skos:exactMatch aat:300028692 ;
     skos:inScheme spav:fv ;
     skos:narrower spav:fvgwb,
         spav:fvhiw,
@@ -7807,7 +7860,7 @@ spav:dfqot a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "locandina"@it,
         "poster"@it ;
-    skos:exactMatch <http://vocab.getty.edu/aat/300027221> ;
+    skos:exactMatch aat:300027221 ;
     skos:inScheme spav:df ;
     skos:narrower spav:dfcbi,
         spav:dfemz,
@@ -7938,6 +7991,7 @@ spav:vd a skos:ConceptScheme ;
         spav:vdtrt ;
     skos:prefLabel "Video-Schaden"@de,
         "video damage"@en,
+        "Dommages vidéo"@fr,
         "danni video"@it .
 
 spav:rg a skos:ConceptScheme ;
