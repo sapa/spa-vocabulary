@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2022-09-22T11:30:13.506589+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2022-10-20T13:49:02.365750+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -2617,32 +2617,40 @@ spav:hlyjh a crm:E55_Type,
 
 spav:idcon a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "Code de contexte"@de ;
     skos:inScheme spav:id ;
-    skos:prefLabel "Contextual Identifier"@en ;
+    skos:prefLabel "Kontext Signatur"@de,
+        "Contextual Identifier"@en,
+        "Cote de contexte"@fr,
+        "Identificativo contestuale"@it ;
     skos:topConceptOf spav:id .
 
 spav:idold a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "ancien identifiant"@de ;
     skos:hiddenLabel "alt Signatur"@en ;
     skos:inScheme spav:id ;
-    skos:prefLabel "old identifier"@en ;
+    skos:prefLabel "alte Signatur"@de,
+        "Old Identifier"@en,
+        "Ancien identifiant"@fr,
+        "Segnatura precedente"@it ;
     skos:topConceptOf spav:id .
 
 spav:idtec a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "Identifiant technique"@de ;
     skos:inScheme spav:id ;
-    skos:prefLabel "Technical identifier"@en ;
+    skos:prefLabel "Technische Signatur"@de,
+        "Technical Identifier"@en,
+        "Identifiant technique"@fr,
+        "Identificativo tecnico"@it ;
     skos:topConceptOf spav:id .
 
 spav:iduni a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "Code d'identification"@de ;
     skos:hiddenLabel "Identifizierung Signature"@en ;
     skos:inScheme spav:id ;
-    skos:prefLabel "Unique ID"@en ;
+    skos:prefLabel "Signatur ID"@de,
+        "Unique ID"@en,
+        "Cote d'identification"@fr,
+        "ID unico"@it ;
     skos:topConceptOf spav:id .
 
 spav:ihctx a crm:E55_Type,
