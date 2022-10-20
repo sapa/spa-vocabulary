@@ -137,8 +137,8 @@ for sheet in ['skos', 'formats']:
                 graph.add((uri, URIRef(f'{vocabs["ebucore"]}hasMimeType'), Literal(row['ebucore_hasMimeType'].strip())))
 
 
-with open('target/vocabulary.ttl', 'wb') as f:
+with open('target/vocabulary.ttl', 'w') as f:
     f.write(graph.serialize(format='turtle'))
 
-with open('target/vocabulary.nq', 'wb') as f:
+with open('target/vocabulary.nq', 'w') as f:
     f.write(ds.serialize(format='nquads'))
