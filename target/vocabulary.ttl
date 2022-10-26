@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2022-10-20T13:49:02.365750+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2022-10-26T12:04:52.372290+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -43,6 +43,18 @@ spav:umcm a skos:Concept,
         "cm"@en,
         "cm"@fr,
         "cm"@it .
+
+spav:umgig a skos:Concept,
+        rico:unitOfMeasurement ;
+    skos:inScheme spav:um ;
+    skos:prefLabel "GB"@de,
+        "GB"@en,
+        "GB"@fr,
+        "GB"@it ;
+    rico:name "GB"@de,
+        "GB"@en,
+        "GB"@fr,
+        "GB"@it .
 
 spav:vdpcj a crm:E55_Type,
         skos:Concept ;
