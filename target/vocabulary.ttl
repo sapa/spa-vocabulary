@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2022-10-26T12:04:52.372290+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2022-11-03T14:14:37.336146+01:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -2632,8 +2632,8 @@ spav:idcon a crm:E55_Type,
     skos:inScheme spav:id ;
     skos:prefLabel "Kontext Signatur"@de,
         "Contextual Identifier"@en,
-        "Cote de contexte"@fr,
-        "Identificativo contestuale"@it ;
+        "Cote de classement"@fr,
+        "Segnatura contesto"@it ;
     skos:topConceptOf spav:id .
 
 spav:idold a crm:E55_Type,
@@ -2642,7 +2642,7 @@ spav:idold a crm:E55_Type,
     skos:inScheme spav:id ;
     skos:prefLabel "alte Signatur"@de,
         "Old Identifier"@en,
-        "Ancien identifiant"@fr,
+        "Ancienne cote"@fr,
         "Segnatura precedente"@it ;
     skos:topConceptOf spav:id .
 
@@ -2651,8 +2651,8 @@ spav:idtec a crm:E55_Type,
     skos:inScheme spav:id ;
     skos:prefLabel "Technische Signatur"@de,
         "Technical Identifier"@en,
-        "Identifiant technique"@fr,
-        "Identificativo tecnico"@it ;
+        "Cote technique"@fr,
+        "Segnatura tecnica"@it ;
     skos:topConceptOf spav:id .
 
 spav:iduni a crm:E55_Type,
@@ -2662,7 +2662,7 @@ spav:iduni a crm:E55_Type,
     skos:prefLabel "Signatur ID"@de,
         "Unique ID"@en,
         "Cote d'identification"@fr,
-        "ID unico"@it ;
+        "Segnatura ID"@it ;
     skos:topConceptOf spav:id .
 
 spav:ihctx a crm:E55_Type,
@@ -6091,6 +6091,156 @@ spav:yavtx a crm:E55_Type,
         "nom alternatif"@fr,
         "nome alternativo"@it .
 
+spav:zfal8 a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Digital8"@en .
+
+spav:zfbsp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Betacam SP"@en .
+
+spav:zfdib a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "DigitalBetacam"@en .
+
+spav:zfdol a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "dolby"@en .
+
+spav:zfdva a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "DV"@en .
+
+spav:zfdvc a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "DVCAM"@en .
+
+spav:zfdvp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "DVCPRO"@en .
+
+spav:zfeo8 a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Video8"@en .
+
+spav:zfhdv a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "HDV"@en .
+
+spav:zfhi8 a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Hi8"@en .
+
+spav:zfhif a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "hifi"@en .
+
+spav:zflic a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Lichtton"@en .
+
+spav:zflon a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "LP (Long Play)"@en .
+
+spav:zfmag a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "Magnetton"@en .
+
+spav:zfmon a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "mono"@en .
+
+spav:zfmut a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "mute"@en .
+
+spav:zfpcm a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "PCM"@en .
+
+spav:zfslp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "SLP (Super Long Play)"@en .
+
+spav:zfsta a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "SP (Standard Play)"@en .
+
+spav:zfste a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfaut ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "stereo"@en .
+
+spav:zfsvh a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "S-VHS"@en .
+
+spav:zfuhb a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "U-matic HB (high-band)"@en .
+
+spav:zfulb a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "U-matic LB (low-band)"@en .
+
+spav:zfusp a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "U-matic SP (superior performance)"@en .
+
+spav:zfvhs a crm:E55_Type,
+        skos:Concept ;
+    skos:broader spav:zfima ;
+    skos:inScheme spav:zf ;
+    skos:prefLabel "VHS"@en .
+
 spav:zjagy a crm:E55_Type,
         skos:Concept ;
     skos:broader spav:zjajf ;
@@ -7570,9 +7720,7 @@ spav:et a skos:ConceptScheme ;
 
 spav:id a skos:ConceptScheme ;
     rdfs:comment ""@en ;
-    skos:altLabel "type d'identification"@de,
-        " "@en,
-        " "@fr,
+    skos:altLabel " "@en,
         " "@it ;
     skos:definition " "@en ;
     skos:hasTopConcept spav:idcon,
@@ -7580,10 +7728,10 @@ spav:id a skos:ConceptScheme ;
         spav:idtec,
         spav:iduni ;
     skos:hiddenLabel "Signatur Typ"@en ;
-    skos:prefLabel " "@de,
-        "identifier type"@en,
-        " "@fr,
-        " "@it .
+    skos:prefLabel "Identifikation"@de,
+        "identifier"@en,
+        "Identifiants"@fr,
+        "Segnature"@it .
 
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
@@ -7594,6 +7742,19 @@ spav:ih a skos:ConceptScheme ;
         "contact point"@en,
         "contact"@fr,
         "contatto"@it .
+
+spav:zfaut a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:zf ;
+    skos:narrower spav:zfdol,
+        spav:zfhif,
+        spav:zflic,
+        spav:zfmag,
+        spav:zfmon,
+        spav:zfmut,
+        spav:zfpcm,
+        spav:zfste ;
+    skos:prefLabel "Audio"@en .
 
 spav:frgzf a skos:Concept,
         rico:ProductionTechniqueType ;
@@ -7934,6 +8095,28 @@ spav:um a skos:ConceptScheme ;
         "extent unit"@en,
         "unité de mesure"@fr .
 
+spav:zfima a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:zf ;
+    skos:narrower spav:zfal8,
+        spav:zfbsp,
+        spav:zfdib,
+        spav:zfdva,
+        spav:zfdvc,
+        spav:zfdvp,
+        spav:zfeo8,
+        spav:zfhdv,
+        spav:zfhi8,
+        spav:zflon,
+        spav:zfslp,
+        spav:zfsta,
+        spav:zfsvh,
+        spav:zfuhb,
+        spav:zfulb,
+        spav:zfusp,
+        spav:zfvhs ;
+    skos:prefLabel "Image"@en .
+
 spav:fr a skos:ConceptScheme ;
     skos:hasTopConcept spav:frbvo,
         spav:frbyr,
@@ -8030,6 +8213,18 @@ spav:rg a skos:ConceptScheme ;
         spav:rgvdd ;
     skos:prefLabel "recording genre"@en,
         "genre d’enregistrement"@fr .
+
+spav:zf a skos:ConceptScheme ;
+    rdfs:comment ""@en ;
+    skos:altLabel " "@en,
+        " "@fr,
+        " "@it ;
+    skos:definition " "@en ;
+    skos:hiddenLabel "Signatur Typ"@en ;
+    skos:prefLabel " "@de,
+        "recording system"@en,
+        " "@fr,
+        " "@it .
 
 spav:cf a skos:ConceptScheme ;
     rdfs:comment ""@en ;
