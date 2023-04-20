@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2022-11-03T14:14:37.336146+01:00"^^xsd:dateTime .
+    prov:generatedAtTime "2023-04-20T11:13:22.190471+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -938,6 +938,19 @@ spav:dfmzh a skos:Concept,
         "affiche de film"@fr,
         "Poster del film"@it .
 
+spav:dfngl a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dfrsp ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "glass negative"@de,
+        "glass negative"@en,
+        "négatif sur verre"@fr,
+        "glass negative"@it ;
+    rico:name "glass negative"@de,
+        "glass negative"@en,
+        "négatif sur verre"@fr,
+        "glass negative"@it .
+
 spav:dfnrv a skos:Concept,
         rico:DocumentaryFormType ;
     skos:altLabel "Vortragsplakat"@de,
@@ -952,6 +965,32 @@ spav:dfnrv a skos:Concept,
         "event poster"@en,
         "affiche de manifestation"@fr,
         "poster dell’evento"@it .
+
+spav:dfnsx a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dfrsp ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "negative 6/6"@de,
+        "negative 6/6"@en,
+        "négatif 6/6"@fr,
+        "negative 6/6"@it ;
+    rico:name "negative 6/6"@de,
+        "negative 6/6"@en,
+        "négatif 6/6"@fr,
+        "negative 6/6"@it .
+
+spav:dfnvt a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dfrsp ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "negative 24/36"@de,
+        "negative 24/36"@en,
+        "négatif 24/36"@fr,
+        "negative 24/36"@it ;
+    rico:name "negative 24/36"@de,
+        "negative 24/36"@en,
+        "négatif 24/36"@fr,
+        "negative 24/36"@it .
 
 spav:dfoff a skos:Concept,
         rico:DocumentaryFormType ;
@@ -1007,20 +1046,6 @@ spav:dfpwk a skos:Concept,
         "acrylic painting"@en,
         "peinture acrylique"@fr,
         "pittura acrilica"@it .
-
-spav:dfrsp a skos:Concept,
-        rico:DocumentaryFormType ;
-    skos:broader spav:dfdui ;
-    skos:exactMatch aat:300127173 ;
-    skos:inScheme spav:df ;
-    skos:prefLabel "Negativ (Foto-Negativ)"@de,
-        "negative"@en,
-        "négatif"@fr,
-        "negativo"@it ;
-    rico:name "Negativ (Foto-Negativ)"@de,
-        "negative"@en,
-        "négatif"@fr,
-        "negativo"@it .
 
 spav:dfrsu a skos:Concept,
         rico:DocumentaryFormType ;
@@ -7070,6 +7095,23 @@ spav:dfkoy a skos:Concept,
         "painting"@en,
         "peinture"@fr,
         "pittura"@it .
+
+spav:dfrsp a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dfdui ;
+    skos:exactMatch aat:300127173 ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfngl,
+        spav:dfnsx,
+        spav:dfnvt ;
+    skos:prefLabel "Negativ (Foto-Negativ)"@de,
+        "negative"@en,
+        "négatif"@fr,
+        "negativo"@it ;
+    rico:name "Negativ (Foto-Negativ)"@de,
+        "negative"@en,
+        "négatif"@fr,
+        "negativo"@it .
 
 spav:dw a skos:ConceptScheme ;
     skos:hasTopConcept spav:dwelq,
