@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2023-04-20T11:13:22.190471+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2023-05-04T09:57:54.012891+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -1979,6 +1979,20 @@ spav:fvlyk a premis:StorageMedium,
         "DAT"@fr,
         "DAT"@it .
 
+spav:fvman a premis:StorageMedium,
+        skos:Concept,
+        rico:CarrierType ;
+    skos:broader spav:fvonl ;
+    skos:inScheme spav:fv ;
+    skos:prefLabel "IIIF/manifest"@de,
+        "IIIF/manifest"@en,
+        "IIIF/manifest"@fr,
+        "IIIF/manifest"@it ;
+    rico:name "IIIF/manifest"@de,
+        "IIIF/manifest"@en,
+        "IIIF/manifest"@fr,
+        "IIIF/manifest"@it .
+
 spav:fvmdu a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
@@ -2669,6 +2683,15 @@ spav:idold a crm:E55_Type,
         "Old Identifier"@en,
         "Ancienne cote"@fr,
         "Segnatura precedente"@it ;
+    skos:topConceptOf spav:id .
+
+spav:idpid a crm:E55_Type,
+        skos:Concept ;
+    skos:inScheme spav:id ;
+    skos:prefLabel "Cosmos Identifier"@de,
+        "Cosmos Identifier"@en,
+        "Cosmos Identifier"@fr,
+        "Cosmos Identifier"@it ;
     skos:topConceptOf spav:id .
 
 spav:idtec a crm:E55_Type,
@@ -6478,21 +6501,6 @@ spav:fvlkh a premis:StorageMedium,
         "CD"@fr,
         "CD"@it .
 
-spav:fvonl a premis:StorageMedium,
-        skos:Concept,
-        rico:CarrierType ;
-    skos:broader spav:fvdgf ;
-    skos:inScheme spav:fv ;
-    skos:narrower spav:fvtif ;
-    skos:prefLabel "online"@de,
-        "online"@en,
-        "online"@fr,
-        "online"@it ;
-    rico:name "online"@de,
-        "online"@en,
-        "online"@fr,
-        "online"@it .
-
 spav:fvqpw a premis:StorageMedium,
         skos:Concept,
         rico:CarrierType ;
@@ -6880,6 +6888,22 @@ spav:fvhxo a premis:StorageMedium,
         "BetacamSP"@en,
         "BetacamSP"@fr,
         "BetacamSP"@it .
+
+spav:fvonl a premis:StorageMedium,
+        skos:Concept,
+        rico:CarrierType ;
+    skos:broader spav:fvdgf ;
+    skos:inScheme spav:fv ;
+    skos:narrower spav:fvman,
+        spav:fvtif ;
+    skos:prefLabel "online"@de,
+        "online"@en,
+        "online"@fr,
+        "online"@it ;
+    rico:name "online"@de,
+        "online"@en,
+        "online"@fr,
+        "online"@it .
 
 spav:fvpso a premis:StorageMedium,
         skos:Concept,
@@ -7760,21 +7784,6 @@ spav:et a skos:ConceptScheme ;
         "type d’entrée"@fr,
         "tipo di acquisizione"@it .
 
-spav:id a skos:ConceptScheme ;
-    rdfs:comment ""@en ;
-    skos:altLabel " "@en,
-        " "@it ;
-    skos:definition " "@en ;
-    skos:hasTopConcept spav:idcon,
-        spav:idold,
-        spav:idtec,
-        spav:iduni ;
-    skos:hiddenLabel "Signatur Typ"@en ;
-    skos:prefLabel "Identifikation"@de,
-        "identifier"@en,
-        "Identifiants"@fr,
-        "Segnature"@it .
-
 spav:ih a skos:ConceptScheme ;
     skos:hasTopConcept spav:ihctx,
         spav:ihrml,
@@ -7929,6 +7938,22 @@ spav:go a skos:ConceptScheme ;
         "title type"@en,
         "type de titre"@fr,
         "titolo"@it .
+
+spav:id a skos:ConceptScheme ;
+    rdfs:comment ""@en ;
+    skos:altLabel " "@en,
+        " "@it ;
+    skos:definition " "@en ;
+    skos:hasTopConcept spav:idcon,
+        spav:idold,
+        spav:idpid,
+        spav:idtec,
+        spav:iduni ;
+    skos:hiddenLabel "Signatur Typ"@en ;
+    skos:prefLabel "Identifikation"@de,
+        "identifier"@en,
+        "Identifiants"@fr,
+        "Segnature"@it .
 
 spav:mulga a crm:E55_Type,
         skos:Concept ;
