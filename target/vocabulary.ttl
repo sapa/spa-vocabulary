@@ -26,7 +26,7 @@ spav:cn a skos:ConceptScheme ;
 
 spav:container a ldp:Resource,
         prov:Entity ;
-    prov:generatedAtTime "2023-05-04T09:57:54.012891+02:00"^^xsd:dateTime .
+    prov:generatedAtTime "2023-08-30T11:00:35.829514+02:00"^^xsd:dateTime .
 
 spav:sz a skos:ConceptScheme ;
     skos:prefLabel "conditions of access"@en,
@@ -1032,6 +1032,19 @@ spav:dfpmd a skos:Concept,
         "purchase medium"@en,
         "purchase medium"@fr,
         "purchase medium"@it .
+
+spav:dfprt a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:broader spav:dfdui ;
+    skos:inScheme spav:df ;
+    skos:prefLabel "Fotoabzug"@de,
+        "photographic print"@en,
+        "tirage photo"@fr,
+        "stampa fotografica"@it ;
+    rico:name "Fotoabzug"@de,
+        "photographic print"@en,
+        "tirage photo"@fr,
+        "stampa fotografica"@it .
 
 spav:dfpwk a skos:Concept,
         rico:DocumentaryFormType ;
@@ -7086,23 +7099,6 @@ spav:ac a skos:ConceptScheme ;
         "accessibilité"@fr,
         "accessibilità"@it .
 
-spav:dfdui a skos:Concept,
-        rico:DocumentaryFormType ;
-    skos:exactMatch aat:300046300 ;
-    skos:inScheme spav:df ;
-    skos:narrower spav:dfdia,
-        spav:dfqrl,
-        spav:dfrsp ;
-    skos:prefLabel "Fotografie"@de,
-        "photograph"@en,
-        "photographie"@fr,
-        "fotografia"@it ;
-    skos:topConceptOf spav:df ;
-    rico:name "Fotografie"@de,
-        "photograph"@en,
-        "photographie"@fr,
-        "fotografia"@it .
-
 spav:dfkoy a skos:Concept,
         rico:DocumentaryFormType ;
     skos:exactMatch aat:300033618 ;
@@ -7436,6 +7432,24 @@ spav:zjyky a crm:E55_Type,
         "textile"@fr,
         "tessuto"@it ;
     skos:topConceptOf spav:zj .
+
+spav:dfdui a skos:Concept,
+        rico:DocumentaryFormType ;
+    skos:exactMatch aat:300046300 ;
+    skos:inScheme spav:df ;
+    skos:narrower spav:dfdia,
+        spav:dfprt,
+        spav:dfqrl,
+        spav:dfrsp ;
+    skos:prefLabel "Fotografie"@de,
+        "photograph"@en,
+        "photographie"@fr,
+        "fotografia"@it ;
+    skos:topConceptOf spav:df ;
+    rico:name "Fotografie"@de,
+        "photograph"@en,
+        "photographie"@fr,
+        "fotografia"@it .
 
 spav:dfrwd a skos:Concept,
         rico:DocumentaryFormType ;
